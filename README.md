@@ -1,2 +1,2 @@
-# digitalid-design.github.com
-digitalid.design website
+# digitalid.design
+website for digitalid.design
