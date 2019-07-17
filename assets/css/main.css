@@ -178,12 +178,12 @@ input, select, textarea {
 		transition: border-bottom-color 0.25s ease-in-out;
 		text-decoration: none;
 		color: #222;
-		border-bottom: 1px dotted #222;
+		border-bottom: 2px dotted #69c3aa;
 	}
 
 		a:hover {
 			text-decoration: none;
-			border-bottom: 1px solid #222;
+			border-bottom: 2px solid #69c3aa;
 		}
 
 	strong, b {
@@ -275,6 +275,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 0.875rem;
+		line-height: 5rem;
 	}
 
 	h4 {

@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -178,12 +178,12 @@ input, select, textarea {
 		transition: border-bottom-color 0.25s ease-in-out;
 		text-decoration: none;
 		color: #222;
-		border-bottom: 1px dotted #222;
+		border-bottom: 2px dotted #69c3aa;
 	}
 
 		a:hover {
 			text-decoration: none;
-			border-bottom: 1px solid #222;
+			border-bottom: 2px solid #69c3aa;
 		}
 
 	strong, b {
@@ -204,6 +204,10 @@ input, select, textarea {
 		line-height: 1.8rem;
 	}
 
+	p.indent {
+		text-indent: 1.5rem;
+	}
+
 	footer > p {
 		font-size: 0.8rem;
 		line-height: 1.5rem;
@@ -212,7 +216,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
-		font-family: "IBM Plex Serif", sans-serif;
+		font-family: "IBM Plex Serif", serif;
 		font-weight: 600;
 /*
 		letter-spacing: 0.175em;
@@ -226,8 +230,33 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+	p.pullquote {
+		font-family: "Fira Sans", sans;
+		font-size: 1.25rem;
+		font-weight: 600;
+		font-style: italic;
+		color: #69c3aa;
+
+	}
+
+	p.intro {
+		font-family: "Fira Sans", sans;
+		font-size: 1.5rem;
+		font-weight: 400;
+		line-height: 2rem;
+	}
+
+	p.caption {
+		font-family: "Fira Sans", sans;
+		font-size: 0.9rem !important;
+		font-weight: 400;
+		line-height: 1.2rem !important;
+		text-align: right;
+		margin-bottom: 30px;
+	}
+
 	h1 {
-		font-family: "IBM Plex Serif", sans;
+		font-family: "IBM Plex Serif", serif;
 		font-size: 2.8rem;
 		font-weight: 700;
 		letter-spacing: -0.01em;
@@ -250,7 +279,6 @@ input, select, textarea {
 		font-size: 2rem;
 		font-weight: 400;
 		letter-spacing: 0rem;
-		line-height: 2.8rem;
 	}
 
 	h4 {
