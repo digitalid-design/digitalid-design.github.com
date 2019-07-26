@@ -2605,6 +2605,183 @@ input, select, textarea {
 				top: 0;
 			}
 
+	.diagram {
+		border: 0;
+		border-bottom: 0px solid #000;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+	}
+
+		.diagram img {
+			display: block;
+		}
+
+		.diagram[data-position] img {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.diagram[data-position="top left"] img {
+			-moz-object-position: top left;
+			-webkit-object-position: top left;
+			-ms-object-position: top left;
+			object-position: top left;
+		}
+
+		.diagram[data-position="top"] img {
+			-moz-object-position: top;
+			-webkit-object-position: top;
+			-ms-object-position: top;
+			object-position: top;
+		}
+
+		.diagram[data-position="top right"] img {
+			-moz-object-position: top right;
+			-webkit-object-position: top right;
+			-ms-object-position: top right;
+			object-position: top right;
+		}
+
+		.diagram[data-position="right"] img {
+			-moz-object-position: right;
+			-webkit-object-position: right;
+			-ms-object-position: right;
+			object-position: right;
+		}
+
+		.diagram[data-position="bottom right"] img {
+			-moz-object-position: bottom right;
+			-webkit-object-position: bottom right;
+			-ms-object-position: bottom right;
+			object-position: bottom right;
+		}
+
+		.diagram[data-position="bottom"] img {
+			-moz-object-position: bottom;
+			-webkit-object-position: bottom;
+			-ms-object-position: bottom;
+			object-position: bottom;
+		}
+
+		.diagram[data-position="bottom left"] img {
+			-moz-object-position: bottom left;
+			-webkit-object-position: bottom left;
+			-ms-object-position: bottom left;
+			object-position: bottom left;
+		}
+
+		.diagram[data-position="left"] img {
+			-moz-object-position: left;
+			-webkit-object-position: left;
+			-ms-object-position: left;
+			object-position: left;
+		}
+
+		.diagram[data-position="center"] img {
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+		}
+
+		.diagram[data-position="25% 25%"] img {
+			-moz-object-position: 25% 25%;
+			-webkit-object-position: 25% 25%;
+			-ms-object-position: 25% 25%;
+			object-position: 25% 25%;
+		}
+
+		.diagram[data-position="75% 25%"] img {
+			-moz-object-position: 75% 25%;
+			-webkit-object-position: 75% 25%;
+			-ms-object-position: 75% 25%;
+			object-position: 75% 25%;
+		}
+
+		.diagram[data-position="75% 75%"] img {
+			-moz-object-position: 75% 75%;
+			-webkit-object-position: 75% 75%;
+			-ms-object-position: 75% 75%;
+			object-position: 75% 75%;
+		}
+
+		.diagram[data-position="25% 75%"] img {
+			-moz-object-position: 25% 75%;
+			-webkit-object-position: 25% 75%;
+			-ms-object-position: 25% 75%;
+			object-position: 25% 75%;
+		}
+
+		.diagram.left, .diagram.right {
+			max-width: 40%;
+		}
+
+			.diagram.left img, .diagram.right img {
+				width: 100%;
+			}
+
+		.diagram.left {
+			float: left;
+			margin: 0 2rem 2rem 0;
+			top: 0.25rem;
+		}
+
+		.diagram.right {
+			float: right;
+			margin: 0 0 2rem 2rem;
+			top: 0.25rem;
+		}
+
+		.diagram.fit {
+			display: block;
+			margin: 0 0 2rem 0;
+			width: 100%;
+		}
+
+			.diagram.fit img {
+				width: 100%;
+			}
+
+		.diagram.main {
+			display: block;
+			margin: 3rem 0;
+			width: 100%;
+		}
+
+			.diagram.main img {
+				width: 100%;
+			}
+
+			.diagram.main:first-child {
+				margin-top: 0;
+			}
+
+		.diagram.fill {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+			.diagram.fill img {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+
 /* List */
 
 	ol {
