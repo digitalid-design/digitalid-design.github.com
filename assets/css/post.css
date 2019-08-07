@@ -279,6 +279,14 @@ input, select, textarea {
 		font-size: 2rem;
 		font-weight: 400;
 		letter-spacing: 0rem;
+		line-height: 2.2rem;
+	}
+
+	.numbered-left {
+
+	text-align: right !important;
+	line-height: 1.5rem;
+
 	}
 
 	h4 {
@@ -292,6 +300,71 @@ input, select, textarea {
 	h6 {
 		font-size: 0.625rem;
 	}
+
+	.internal-nav {
+		font-family: Fira Sans;
+		font-size: 0.75rem;
+		line-height: 1.4rem;
+		text-transform: uppercase;
+		color: #69c3aa;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+	}
+
+	.internal-nav a {
+		color: inherit;
+		border: none;
+	}
+
+	.internal-nav a:hover {
+		color: #aaa;
+	}
+
+	.superscript {
+		font-family: Fira Sans;
+		font-weight: 800;
+		color: #69c3aa;
+		font-variant-numeric: 'tabular-nums';
+	}
+
+	.superscript a {
+		border: 0;
+		color: inherit;
+	}
+
+	.superscript a:hover {
+		color: #aaa;
+		border: 0;
+	}
+
+	.footnote {
+		font-size: 1em;
+		line-height: 1.4em;
+		font-weight: 400;
+		letter-spacing: 0;
+	}
+
+	table.footnote {
+		border-collapse: collapse;
+  		width: 100%;
+	}
+
+	td.number {
+  		text-align: left;
+  		width: 1.25em;
+  		vertical-align:top;
+  		padding-right: 1em;
+  		padding-bottom: 1em;
+  		font-family: Fira Sans;
+		font-weight: 800;
+		color: #69c3aa;
+	}
+
+	td.reference {
+  		text-align: left;
+  		padding-bottom: 1em;
+	}
+
 /*
 	@media screen and (max-width: 736px) {
 
@@ -2784,7 +2857,7 @@ input, select, textarea {
 
 /* List */
 
-	ol {
+	/*ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
 		padding-left: 1.25rem;
@@ -2792,17 +2865,59 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25rem;
-		}
+		}*/
+
+	ol {
+  		list-style: none;
+  		counter-reset: list-counter;
+  		padding-left: 0.8rem;
+  		list-style-position: outside;
+	}
+
+	ol li {
+  		counter-increment: list-counter;
+  		padding-left: 0.325rem;
+	
+	}
+	
+	ol li::before {
+  		content: counter(list-counter);
+  		text-align: right !important; 
+  		font-family: Fira Sans;
+		font-weight: 800;
+		color: #69c3aa;
+  		width: 1em;
+  		margin-left: -1em;
+  		margin-right: 0.2em;
+
+}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 	}
 
 		ul li {
 			padding-left: 0.325rem;
+			font-size: 1.2rem;
+			line-height: 1.8rem;
+			letter-spacing: 0;
+			margin-bottom: 0.75em;
 		}
+
+		ul li::before {
+  			content: "›";
+  			color: #69c3aa;
+  			font-family: "Fira Sans";
+  			font-weight: 600;
+  			display: inline-block; 
+  			width: 1em;
+  			margin-left: -1em;
+  			position: relative;
+  			top: -2px;
+		}
+
 
 		ul.alt {
 			list-style: none;
@@ -2940,6 +3055,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+				ul li {
+			padding-left: 0.325rem;
+			font-size: 1.1rem;
+			line-height: 1.8rem;
+			letter-spacing: 0;
+			margin-bottom: 0.25em;
+		}
+
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
@@ -3039,17 +3162,17 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px rgba(144, 144, 144, 0.25);
+			/*border: solid 1px rgba(144, 144, 144, 0.25);
 			border-left: 0;
-			border-right: 0;
+			border-right: 0;*/
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			/*table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(144, 144, 144, 0.1);
-			}
+			}*/
 
 		table td {
-			padding: 0.75rem 0.75rem;
+			/*padding: 0.75rem 0.75rem;*/
 		}
 
 		table th {
@@ -3352,6 +3475,15 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 1152px) {
+
+
+			.numbered-left {
+
+				/*text-align: left !important;
+				line-height: 1.5rem;*/
+				display:none;
+
+			}
 
 			.gallery a img {
 				height: 20rem;
@@ -4094,6 +4226,8 @@ input, select, textarea {
 
 			h3 {
 				font-size: 1.8rem;
+				line-height: 2.2rem;
+				margin-left: 0.6em;
 			}
 
 			hr {
@@ -4351,6 +4485,10 @@ input, select, textarea {
 
 		h3 {
 			font-size: 1.5rem;
+		}
+
+		h4 {
+			margin-top: 2rem;
 		}
 
 		image.logo img {
