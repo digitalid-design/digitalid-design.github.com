@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400i,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -231,7 +231,7 @@ input, select, textarea {
 		}
 
 	p.pullquote {
-		font-family: "Fira Sans", sans;
+		font-family: "Fira Sans", sans-serif;
 		font-size: 1.25rem;
 		font-weight: 600;
 		font-style: italic;
@@ -240,19 +240,33 @@ input, select, textarea {
 	}
 
 	p.intro {
-		font-family: "Fira Sans", sans;
+		font-family: "Fira Sans", sans-serif;
 		font-size: 1.5rem;
 		font-weight: 400;
 		line-height: 2rem;
 	}
 
 	p.caption {
-		font-family: "Fira Sans", sans;
+		font-family: "Fira Sans", sans-serif;
 		font-size: 0.9rem !important;
 		font-weight: 400;
 		line-height: 1.2rem !important;
 		text-align: right;
 		margin-bottom: 30px;
+	}
+
+	p.highlight {
+		font-family: "Fira Sans", sans-serif;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		font-weight: 600;
+	}
+
+	.img-reference {
+	}
+
+	header.reference {
+		text-align: right !important;
 	}
 
 	h1 {
@@ -299,6 +313,14 @@ input, select, textarea {
 
 	h6 {
 		font-size: 0.625rem;
+	}
+
+	.svg-diagram-mobile {
+		display: none;
+	}
+
+	.instructions-mobile {
+		display: none;
 	}
 
 	.internal-nav {
@@ -363,6 +385,89 @@ input, select, textarea {
 	td.reference {
   		text-align: left;
   		padding-bottom: 1em;
+	}
+
+	.svg-diagram {
+		text-align: center;
+		margin-bottom: 7em;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 0.9em;
+		text-anchor: middle;
+		background-color: #f4f4f4;
+		padding-top: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	.svg-diagram-mobile {
+		background-color: #f4f4f4;
+		text-align: center;
+		padding-top: 2em;
+		padding-left: 7em;
+		padding-right: 7em;
+		padding-bottom: 1em;
+		margin-bottom: 3em;
+	}
+
+	.svg-diagram-mobile-text {
+		text-align: center;
+		margin-bottom: 2em;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 1em;
+		line-height: 1.4em;	
+		margin-top: 1em;
+	}
+
+	.svg-diagram-mobile-link {
+		text-transform: uppercase;
+	}
+
+	.svg-diagram-mobile-link a {
+		border: none;
+		color: #69c3aa;
+		font-weight: 500;
+	}
+
+	.svg-diagram-mobile-link a:hover {
+		color: #bbb;
+	}
+
+	.svg-diagram-element a:hover {
+		-webkit-filter: grayscale(100%); 
+  		filter: grayscale(100%);
+	}
+
+	.svg-diagram-label {
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 1em;
+		text-transform: uppercase;
+		text-align: right;
+
+	}
+
+	.svg-diagram-link {
+		text-transform: uppercase;
+		fill: #69c3aa;
+		font-weight: 500;
+	}
+
+	.svg-diagram-link a:hover {
+		fill: #bbb;
+	}
+
+	p.instructions {
+		font-family: 'Fira Sans', sans-serif;
+		color: #aaa;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-top: 3em;
+	}
+
+	p.instructions-mobile {
+		font-family: 'Fira Sans', sans-serif;
+		color: #aaa;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-top: 3em;
 	}
 
 /*
@@ -3478,11 +3583,11 @@ input, select, textarea {
 
 
 			.numbered-left {
-
-				/*text-align: left !important;
-				line-height: 1.5rem;*/
 				display:none;
+			}
 
+			.img-reference {
+				display: none;
 			}
 
 			.gallery a img {
@@ -3537,7 +3642,10 @@ input, select, textarea {
 */
 		@media screen and (max-width: 480px) {
 
-			
+		.svg-diagram-mobile {
+			padding: 2em;
+			margin-bottom: 1em;
+		}
 
 			.gallery a img {
 				height: 12rem;
@@ -3609,6 +3717,22 @@ input, select, textarea {
 					ul.feature-icons li:nth-child(2) {
 						margin-top: 2rem;
 					}
+
+			.svg-diagram {
+				display: none;
+			}
+
+			.instructions {
+				display: none;
+			}
+
+			.svg-diagram-mobile {
+				display: block;
+			}
+
+			.instructions-mobile {
+				display: block;
+			}
 
 		}
 
