@@ -398,6 +398,18 @@ input, select, textarea {
 		padding-bottom: 1em;
 	}
 
+	.svg-diagram-text {
+		text-align: left !important;
+		display: block;
+		margin-bottom: 7em;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 0.9em;
+		text-anchor: middle;
+		background-color: #f4f4f4;
+		padding-top: 1.5em;
+		padding-bottom: 1em;
+	}
+
 	.svg-diagram-mobile {
 		background-color: #f4f4f4;
 		text-align: center;
@@ -433,7 +445,12 @@ input, select, textarea {
 
 	.svg-diagram-element a:hover {
 		-webkit-filter: grayscale(100%); 
+		-webkit-filter: grayscale(1); 
+		-moz-filter: grayscale(100%);
+  		-ms-filter: grayscale(100%);
+  		-o-filter: grayscale(100%);
   		filter: grayscale(100%);
+  		filter: gray;
 	}
 
 	.svg-diagram-label {
@@ -452,6 +469,10 @@ input, select, textarea {
 
 	.svg-diagram-link a:hover {
 		fill: #bbb;
+	}
+
+	.svg-diagram-link a:visited {
+		fill: #69c3aa;
 	}
 
 	p.instructions {
