@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400i,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400i,600,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -3755,6 +3755,12 @@ input, select, textarea {
 				display: block;
 			}
 
+			.wide-screen {
+				display: none;
+			}
+
+
+
 		}
 
 /* Wrapper */
@@ -3801,6 +3807,7 @@ input, select, textarea {
 				#wrapper section > header h4 {
 					color: #222;
 					margin: 0 0 2rem 0;
+					text-align: right;
 				}
 
 				#wrapper section > header p {
@@ -3912,7 +3919,7 @@ input, select, textarea {
 				position: relative;
 			}
 
-			#wrapper > section > header h3 {
+			#wrapper > section > header h3 h4{
 				text-align: right;
 			}
 /*
@@ -4216,6 +4223,10 @@ input, select, textarea {
 							display: none;
 						}
 
+						#wrapper > section > header h4 {
+							text-align: right;
+						}
+
 						#wrapper > section > header h1:before, #wrapper > section > header h2:before {
 							display: none;
 						}
@@ -4377,6 +4388,17 @@ input, select, textarea {
 
 			hr {
 				margin: 1rem 3rem 2rem 3rem;
+			}
+
+			#wrapper > section > header h3 {
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			#wrapper > section > header h4 {
+				padding-left: 0;
+				margin-left: 0;
+				text-align: left;
 			}
 
 			.image.logo {
