@@ -190,5 +190,9 @@ h1,h2,h3,h4,p {
 .logo {
     float: right;
     margin-top: 2.4em;
+    text-align: center;
     width: 80%;
+}
+.logo p {
+    clear: all;
 }
