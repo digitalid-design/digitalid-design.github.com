@@ -1,0 +1,198 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+/* Typography */
+html {
+    font-size: 16px;
+}
+h1,h2,h3,h4,p {
+    font-family: 'IBM Plex Serif', serif;
+}
+/* Navigation */
+.nav-top {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.nav-top a {
+    color: #69c3aa;
+    text-transform: uppercase;
+}
+.nav-top a:hover,
+.nav-top a:active {
+    border-bottom: 2px solid #69c3aa;
+} 
+/* Header */
+.site-title {
+    background-color: #69c3aa;
+    color: white;
+    position: absolute;
+    padding: 1rem;
+    top: 6rem;
+}
+.site-title h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+.site-title h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: -1rem;
+}
+.site-desc {
+    background-color: black;
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    position: absolute;
+    top: 20rem;
+}
+.site-desc p {
+    font-size: 0.9em;
+    padding: 1rem;
+}
+/* Body */
+.gray {
+    background-color: #efefef;
+    padding-bottom: 2em;
+}
+.text h1 {
+    color: #333;
+    font-size: 2.7em;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 1em;
+}
+.text p {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.media {
+    margin-top: 2em;
+}
+.media p {
+    color: #69c3aa;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+.media a {
+    border-bottom: 2px dotted #69c3aa; 
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    text-transform: none;
+}
+.media a:hover,
+.media a:active {
+    border-bottom: 2px solid #69c3aa; 
+    color: black;
+}
+.list h1 {
+    color: #efefef;
+    font-size: 2.8em;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1em;
+}
+.list h3 {
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+.list p {
+    border-top: 1px solid #333;
+    color: #69c3aa;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0.8em;
+    text-transform: uppercase;
+}
+.list a {
+    border-bottom: 2px dotted #69c3aa; 
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    text-transform: none;
+}
+.list a:hover,
+.list a:active {
+    border-bottom: 2px solid #69c3aa; 
+    color: black;
+}
+.maps {
+    background-color: #69c3aa;
+    color: black;
+    position: absolute;
+    padding: 1rem;
+    top: 6rem;
+    width: 75%;
+    float: right;
+}
+.site-title h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.site-title h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: -1rem;
+}
+.site-desc {
+    background-color: black;
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    position: absolute;
+    top: 20rem;
+}
+.site-desc p {
+    font-size: 0.9em;
+    padding: 1rem;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    padding-bottom: 2em;
+}
+.footer h1 {
+    color: #69c3aa;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.9em;
+    padding-top: 2.4em;
+    text-transform: uppercase;
+}
+.footer p {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+.footer a {
+    border-bottom: 1px dotted white;
+    color: white;
+}
+.footer a:hover,
+.footer a:active {
+    border-bottom: 1px solid white;
+}
+.colophon {
+    margin-top: 2.4em;
+}
+.logo {
+    float: right;
+    margin-top: 2.4em;
+    text-align: center;
+    width: 80%;
+}
+.logo p {
+    clear: all;
+}
