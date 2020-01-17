@@ -9,17 +9,18 @@ h1,h2,h3,h4,p {
 }
 /* Navigation */
 .nav-top {
+    color: white;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     padding: 1rem 0;
 }
 .nav-top a {
-    color: #69c3aa;
+    color: white;
     text-transform: uppercase;
 }
 .nav-top a:hover,
 .nav-top a:active {
-    border-bottom: 2px solid #69c3aa;
+    border-bottom: 2px solid white;
 } 
 /* Header */
 .site-title {
@@ -54,29 +55,35 @@ h1,h2,h3,h4,p {
 /* Body */
 .gray {
     background-color: #efefef;
-    padding-bottom: 2em;
+    padding: 2em 0 2em 0;
+}
+.green {
+    background-color: #69c3aa;
+}
+.space3 {
+    height: 3em;
+}
+.space5 {
+    height: 5em;
 }
 .text h1 {
     color: #333;
-    font-size: 2.7em;
+    font-size: 3em;
     font-style: italic;
-    font-weight: 600;
-    margin-top: 1em;
+    font-weight: 500;
+    margin: 1.4em 0 0.2em 0;
 }
 .text p {
     color: black;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 400;
-}
-.media {
-    margin-top: 2em;
 }
 .media p {
     color: #69c3aa;
     font-family: 'Fira Sans', sans-serif;
     font-size: 1em;
     font-weight: 600;
-    margin-top: 1em;
+    margin: 1em 0 1em 0;
     text-transform: uppercase;
 }
 .media a {
@@ -101,9 +108,9 @@ h1,h2,h3,h4,p {
 .list h3 {
     color: #333;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: 600;
-    margin-top: 2em;
+    padding: 1.2em 0 1em 0;
     text-transform: uppercase;
 }
 .list p {
@@ -136,25 +143,12 @@ h1,h2,h3,h4,p {
     width: 75%;
     float: right;
 }
-.site-title h1 {
+.maps h1 {
     font-family: 'IBM Plex Serif', serif;
     font-size: 3rem;
     font-weight: 700;
 }
-.site-title h2 {
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 3em;
-    font-weight: 300;
-    margin-top: -1rem;
-}
-.site-desc {
-    background-color: black;
-    color: white;
-    font-family: 'IBM Plex Serif', serif;
-    position: absolute;
-    top: 20rem;
-}
-.site-desc p {
+.maps p {
     font-size: 0.9em;
     padding: 1rem;
 }
@@ -166,14 +160,14 @@ h1,h2,h3,h4,p {
 .footer h1 {
     color: #69c3aa;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.2em;
     padding-top: 2.4em;
     text-transform: uppercase;
 }
 .footer p {
     color: white;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.6em;
 }
 .footer a {
@@ -184,14 +178,16 @@ h1,h2,h3,h4,p {
 .footer a:active {
     border-bottom: 1px solid white;
 }
-.colophon {
-    margin-top: 2.4em;
+.team p,
+.contributors p {
+    line-height: 1.2em;
 }
 .logo {
     float: right;
     margin-top: 2.4em;
+    max-width: 240px;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 .logo p {
     clear: all;
