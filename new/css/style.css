@@ -13,15 +13,18 @@ h1,h2,h3,h4,p {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     padding: 1rem 0;
+    text-transform: uppercase;
 }
 .nav-top a {
     color: white;
-    text-transform: uppercase;
 }
 .nav-top a:hover,
 .nav-top a:active {
     border-bottom: 2px solid white;
-} 
+}
+.nav-top #inactive {
+    color: #333;
+}
 /* Header */
 .site-title {
     background-color: #69c3aa;
@@ -53,6 +56,10 @@ h1,h2,h3,h4,p {
     padding: 1rem;
 }
 /* Body */
+.light-gray {
+    background-color: #f4f4f4;
+    padding: 2em 0 2em 0;
+}
 .gray {
     background-color: #efefef;
     padding: 2em 0 2em 0;
@@ -133,6 +140,21 @@ h1,h2,h3,h4,p {
 .list a:active {
     border-bottom: 2px solid #69c3aa; 
     color: black;
+}
+.slider{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	position: absolute;
 }
 .maps {
     background-color: #69c3aa;
