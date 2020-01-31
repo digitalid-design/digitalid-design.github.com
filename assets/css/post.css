@@ -3014,6 +3014,10 @@ input, select, textarea {
 	ol li {
   		counter-increment: list-counter;
   		padding-left: 0.325rem;
+  		font-size: 1.2rem;
+		line-height: 1.8rem;
+		letter-spacing: 0;
+		margin-bottom: 0.75em;
 	
 	}
 	
