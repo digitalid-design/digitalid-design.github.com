@@ -86,10 +86,18 @@ h1,h2,h3,h4,p {
 .text h5 {
     color: #555;
     font-family: 'IBM Plex Serif', serif;
+<<<<<<< HEAD
     font-size: 1.05em;
     font-weight: 400;
     margin: 1.4em 0 0.2em 0;
     width: 60%;
+=======
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
+    margin: 1.4em 0 0.2em 0;
+    width: 50%;
+>>>>>>> dc32de5438a1f22e1e55c580b65601b256d73875
 }
 .text p {
     color: black;
