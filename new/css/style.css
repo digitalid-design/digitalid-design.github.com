@@ -26,6 +26,9 @@ h1,h2,h3,h4,p {
     color: #333;
 }
 /* Header */
+.banner {
+    text-align: center;
+}
 .site-title {
     background-color: #69c3aa;
     color: white;
@@ -80,10 +83,19 @@ h1,h2,h3,h4,p {
     font-weight: 500;
     margin: 1.4em 0 0.2em 0;
 }
+.text h5 {
+    color: #555;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.05em;
+    font-weight: 400;
+    margin: 1.4em 0 0.2em 0;
+    width: 60%;
+}
 .text p {
     color: black;
     font-size: 1.2em;
     font-weight: 400;
+    line-height: 1.5em;
 }
 .media p {
     color: #69c3aa;
@@ -173,6 +185,9 @@ h1,h2,h3,h4,p {
 .maps p {
     font-size: 0.9em;
     padding: 1rem;
+}
+.maps-desc h1 {
+    margin-bottom: 0em;
 }
 /* Footer */
 .footer {
