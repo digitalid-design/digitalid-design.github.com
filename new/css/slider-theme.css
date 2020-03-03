@@ -128,3 +128,7 @@
 	color: white;
 	border-bottom: 2px solid white;
 }
+/* Make slide description disappear on tablets */
+@media screen and (max-width: 800px) {
+    .maps-desc { display:none; }
+}
