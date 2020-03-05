@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
 /* Typography */
 html {
     font-size: 16px;
@@ -13,7 +13,12 @@ h1,h2,h3,h4,p {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     padding: 1rem 0;
+    line-height: 1.6em;
+    position: fixed;
     text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
 .nav-top a {
     color: white;
@@ -28,6 +33,11 @@ h1,h2,h3,h4,p {
 /* Header */
 .banner {
     text-align: center;
+    margin-top: 1.6em;
+}
+.banner-image {
+    max-height: 400px;
+    overflow: hidden;
 }
 .site-title {
     background-color: #69c3aa;
@@ -48,7 +58,7 @@ h1,h2,h3,h4,p {
     margin-top: -1rem;
 }
 .site-desc {
-    background-color: black;
+    background-color: #333;
     color: white;
     font-family: 'IBM Plex Serif', serif;
     position: absolute;
@@ -61,7 +71,7 @@ h1,h2,h3,h4,p {
 /* Body */
 .light-gray {
     background-color: #f4f4f4;
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
 }
 .gray {
     background-color: #efefef;
@@ -86,18 +96,11 @@ h1,h2,h3,h4,p {
 .text h5 {
     color: #555;
     font-family: 'IBM Plex Serif', serif;
-<<<<<<< HEAD
-    font-size: 1.05em;
-    font-weight: 400;
-    margin: 1.4em 0 0.2em 0;
-    width: 60%;
-=======
     font-size: 1.2em;
     font-style: italic;
     font-weight: 400;
     margin: 1.4em 0 0.2em 0;
     width: 50%;
->>>>>>> dc32de5438a1f22e1e55c580b65601b256d73875
 }
 .text p {
     color: black;
@@ -124,6 +127,9 @@ h1,h2,h3,h4,p {
 .media a:active {
     border-bottom: 2px solid #69c3aa; 
     color: black;
+}
+.list-uses {
+    padding-top: 0.5em;
 }
 .list h1 {
     color: #efefef;
@@ -181,7 +187,6 @@ h1,h2,h3,h4,p {
     color: black;
     position: absolute;
     padding: 1rem;
-    top: 6rem;
     width: 75%;
     float: right;
 }
@@ -225,15 +230,79 @@ h1,h2,h3,h4,p {
 }
 .team p,
 .contributors p {
-    line-height: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 0.5em;
+}
+.image-link {
+    border-bottom: 0px;
+}
+.image-link:hover {
+    border-bottom: 0px;
 }
 .logo {
     float: right;
-    margin-top: 2.4em;
+    margin-top: 3em;
     max-width: 240px;
     text-align: center;
     width: 100%;
 }
 .logo p {
     clear: all;
+}
+.icons {
+    margin-top: 3em;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.icons a,
+.icons a:hover {
+    border-bottom: 0px;
+}
+.fa-twitter {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    margin-top: 1em;
+}
+.fa-twitter:hover {
+    color: #69c3aa;
+}
+.fa-instagram {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+.fa-instagram:hover {
+    color: #69c3aa;
+}
+.fa-youtube {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+.fa-youtube:hover {
+    color: #69c3aa;
+}
+/* CSS changes for tablet/mobile screens */
+@media screen and (max-width: 1200px) {
+    .text h5 { width: 75%; }
+}
+@media screen and (max-width: 1000px) {
+    .iis-caption-content p { display: none; }
+    .text h5 { width: 90%; }
+    .ui.container { padding-left: 1em; padding-right: 1em; }
+}
+@media screen and (max-width: 767px) {
+    .contributors h1 {padding-top: 0em;}
+    .footer {margin-top: 1em; text-align: center;}
+    .icons {margin-top: 0em; padding-top: 1em; margin-bottom: 1.5em;}
+    .ideal-image-slider {display: none;}
+    .logo { float: none; margin-top: 0em; }
+    .site-title {top: 6.5rem;}
+    .team h1 {padding-top: 0.5em;}
+}
+@media screen and (max-width: 499px) {
+    .banner-image {height: 300px;}
+    .site-title {margin-right: 2em;}
+    .site-desc {display: none;}
+    .space5 {height: 3em;}
+    .text h1 {margin-top: 1.2em;}
 }
