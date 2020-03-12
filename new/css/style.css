@@ -39,6 +39,12 @@ h1,h2,h3,h4,p {
     max-height: 400px;
     overflow: hidden;
 }
+.banner-image img {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .site-title {
     background-color: #69c3aa;
     color: white;
