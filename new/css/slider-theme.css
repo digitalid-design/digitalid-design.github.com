@@ -110,8 +110,8 @@
 }
 .iis-caption .iis-caption-content h1 {
 	color: white;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
-    font-style: italic;
     font-weight: 400;
 	margin-bottom: 0.5em;
 }
@@ -119,7 +119,6 @@
 .iis-caption .iis-caption-content a:visited {
 	color: white;
 	border-bottom: 2px dotted white;
-    font-style: italic;
     font-weight: 600;
 	text-decoration: none;
 }

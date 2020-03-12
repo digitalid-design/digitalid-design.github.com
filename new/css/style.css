@@ -36,14 +36,14 @@ h1,h2,h3,h4,p {
     margin-top: 1.6em;
 }
 .banner-image {
-    max-height: 400px;
-    overflow: hidden;
-}
-.banner-image img {
-    left: 0;
-    position: fixed;
-    top: 0;
     width: 100%;
+    min-height: 450px;
+    max-height: 450px;
+    overflow: hidden;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: 1600px 452px;
+    background-position: center top;
 }
 .site-title {
     background-color: #69c3aa;
@@ -81,7 +81,7 @@ h1,h2,h3,h4,p {
 }
 .gray {
     background-color: #efefef;
-    padding: 2em 0 2em 0;
+    padding: 2em 0 1em 0;
 }
 .green {
     background-color: #69c3aa;
@@ -103,10 +103,18 @@ h1,h2,h3,h4,p {
     color: #555;
     font-family: 'IBM Plex Serif', serif;
     font-size: 1.2em;
-    font-style: italic;
     font-weight: 400;
+    line-height: 1.5em;
     margin: 1.4em 0 0.2em 0;
     width: 50%;
+}
+.text h5 a {
+    color: #555;
+    border-bottom: 2px dotted #69c3aa;
+}
+.text h5 a:hover {
+    color: #555;
+    border-bottom: 2px solid #69c3aa;
 }
 .text p {
     color: black;
@@ -134,7 +142,7 @@ h1,h2,h3,h4,p {
     border-bottom: 2px solid #69c3aa; 
     color: black;
 }
-.list-uses {
+.list-governingID {
     padding-top: 0.5em;
 }
 .list h1 {
@@ -294,7 +302,6 @@ h1,h2,h3,h4,p {
 @media screen and (max-width: 1000px) {
     .iis-caption-content p { display: none; }
     .text h5 { width: 90%; }
-    .ui.container { padding-left: 1em; padding-right: 1em; }
 }
 @media screen and (max-width: 767px) {
     .contributors h1 {padding-top: 0em;}

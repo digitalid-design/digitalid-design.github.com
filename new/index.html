@@ -5,23 +5,37 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network India" />
-  <!-- Site Properties -->
+  <meta name="description" content="Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network" />
+  <!-- Title + CSS + Favicon -->
   <title>Digital Identities: Design and Uses</title>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <!-- Ideal Image Slider CSS + JS -->
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/slider-theme.css">
+  <script src="js/slider.js"></script>
+  <script src="js/slider-captions.js"></script>
+  <style media="screen">
+    #slider {
+      max-width: 1200px;
+      margin: 0 1em 0 1em;
+	}
+  </style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4c415b9185.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Top navigation bar -->
-  <div class="green">
-    <div class="ui container nav-top">
-      <a href="">Appropriate Uses</a> / <a href="">Exploratory Research Maps</a> / <a href="">Design Choices</a> / <a href="">Blog</a>
+  <!-- Top Navigation Bar -->
+  <div class="green nav-top">
+    <div class="ui container">
+      <span id="inactive">Home</span> / <a href="#governingID">Governing ID</a> / <a href="#maps">Exploratory Research Maps</a> / <a href="#method">Methodology</a> / <a href="#blog">Blog</a>
     </div>
   </div>
   <!-- Header -->
   <div class="gray">
-    <div class="ui fluid container">
-      <img src="img/banner.png" style="max-height:400px;overflow:hidden" alt="Digital Identities: Design and Uses">
+    <div class="ui fluid container banner">
+      <div class="banner-image"></div>
     </div>
   </div>
   <div class="ui container">
@@ -30,137 +44,166 @@
       <h2>Design and Uses</h2>
     </div>
     <div class="site-desc">
-      <p>A project of the Centre for Internet and Society, India<br/>Supported by Omidyar Network India</p>
+      <p>A project of the Centre for Internet and Society, India<br/>Supported by Omidyar Network</p>
     </div>
   </div>
   <!-- Appropriate Uses of Digital Identity -->
-  <div class="white">
-    <div class="ui container grid">
-      <div class="twelve wide column">
-          <div class="row text">
-            <h1>The Appropriate Uses of Digital Identity</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis nisi, dictum non rhoncus non, condimentum at arcu. Etiam a lectus placerat, ultrices lorem vel, lobortis mi. Vivamus fringilla egestas elit at ultricies. Sed quis ultricies nunc. Mauris auctor malesuada arcu vel hendrerit. Vivamus cursus sit amet justo id varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Vestibulum aliquam lacus ac libero mattis, volutpat blandit felis fringilla. Aliquam nec lobortis quam. Duis sed risus aliquam, pellentesque nisl eget, vehicula felis. Fusce gravida malesuada lorem, nec condimentum erat blandit sit amet. Aliquam eu ante lectus.</p>
-          </div>
-          <div class="ui two column grid">
-            <div class="column media">
-              <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-              <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-            </div>
-            <div class="column media">
-              <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-              <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-            </div>
-          </div>
+  <div class="white" id="governingID">
+    <div class="ui container two column stackable grid">
+      <div class="twelve wide column text">
+        <h1>Governing ID: Principles for Evaluation</h1>
       </div>
-      <div class="four wide column">
-        <div class="row list">
-          <h1>.</h1>
-          <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-          <p>WORKING DRAFTS <a href="">Draft frameworks by CIPIT, ITS and CIS</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
-          <p>CASE STUDY <a href="">Healthcare sector in the United Kingdom</a></p>
+      <div class="row">
+        <div class="twelve wide column text">
+          <p>As governments across the globe implement new and foundational digital identification systems (Digital ID), or modernize existing ID programs, there is an urgent need for more research and discussion about appropriate uses of Digital ID systems. This momentum toward Digital ID has been accompanied with concerns about privacy, surveillance and exclusion harms of state-issued Digital IDs in several parts of the world, resulting in campaigns and litigations in countries, such as UK, India, Kenya, and Jamaica. Given the sweeping range of considerations required to evaluate Digital ID projects, it is necessary to formulate evaluation frameworks that can be used for this purpose.</p>
+          <br />
+          <div class="media">
+            <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/zHKRgNbP4R0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br />
+          </div>
+        </div>	      
+        <div class="four wide column list list-governingID">
+          <p>Evaluation Framework <a href="https://digitalid.design/evaluation-framework-02.html">Governing ID: Principles for Evaluation</a></p>
+          <p>Working Drafts <a href="">Draft frameworks by CIPIT, ITS and CIS</a></p>
+          <p>Case Study <a href="https://digitalid.design/evaluation-framework-case-studies/ekyc-in-india.html">Use of Digital Identity for e-KYC in India</a></p>
+          <p>Case Study <a href="https://digitalid.design/evaluation-framework-case-studies/kenya.html">Kenya’s Huduma Namba Programme</a></p>
+          <p>Case Study <a href="https://digitalid.design/evaluation-framework-case-studies/healthcare.html">Use of Digital ID in the Healthcare Sector</a></p>
+          <p>Case Study <a href="https://digitalid.design/evaluation-framework-case-studies/india.html">India’s Unique Identity Programme</a></p>
+          <p>Case Study <a href="https://digitalid.design/evaluation-framework-case-studies/verification.html">Use of Digital ID for Verification</a></p>
+          <p>Draft for Discussion <a href="https://digitalid.design/evaluation-framework-01.html">Towards a framework for evaluation of Digital ID</a></p>
           <p></p>
         </div>
       </div>
     </div>
   </div>
+  <div class="space3">
+  </div>
   <!-- Exploratory Research Maps -->
-  <div class="ui fluid container">
-    <img src="img/header.png" style="max-height:400px;overflow:hidden" alt="Digital Identities: Design and Uses">
+  <div class="light-gray" id="maps">
+    <div class="ui container centered column">
+      <div class="text">
+        <h1>Exploratory Research Maps</h1>
+        <h5>Exploratory Research Maps are a result of our global survey of digital identity systems. Read together with the <a href="core-concepts-processes.html">glossary of core concepts and processes</a>, these maps provide a coherent view of digital identity in one country. They shine a light on the pervasiveness of digital identity, as well as dissect digital identity systems in a way that brings attention to the actions of key stakeholders, and to kinds of data and how they are shared. Designed as stepping stones to further research, the maps facilitate the identification of points of accountability and intervention.</h5>
+      </div>
+      <div class="media">
+        <p>Mapping Digital ID Systems <a href="https://digitalid.design/research-maps/estonia.html">Estonia</a></p>
+        <br/>
+      </div>
+      <div id="slider">
+        <img src="img/CIS_Estonia_1.png" data-src-2x="img/CIS_Estonia_1.png" alt="This will be overridden" data-caption="#caption-1" />
+		<img data-src="img/CIS_Estonia_2.png" data-src-2x="img/CIS_Estonia_1.png" src="" alt="This will be overridden" data-caption="#caption-2" />
+		<img data-src="img/CIS_Estonia_3.png" data-src-2x="img/CIS_Estonia_1.png" src="" alt="This will be overridden" data-caption="#caption-3" />
+      </div>
+      <div class="maps-desc" id="caption-1" style="display:none;">
+        <h1><a href="" target="_blank">Estonia</a></h1>
+        <p>See maps covering Estonia’s eID programme in its different forms, X-Road Interoperability, and the uses of eID in sectors like Agriculture, Education, Finance, Healthcare and Welfare.</p>
+      </div>
+      <div class="maps-desc" id="caption-2" style="display:none;">
+        <h1><a href="" target="_blank">Estonia</a></h1>
+        <p>See maps covering Estonia’s eID programme in its different forms, X-Road Interoperability, and the uses of eID in sectors like Agriculture, Education, Finance, Healthcare and Welfare.</p>
+      </div>
+      <div class="maps-desc" id="caption-3" style="display:none;">
+        <h1><a href="" target="_blank">Estonia</a></h1>
+        <p>See maps covering Estonia’s eID programme in its different forms, X-Road Interoperability, and the uses of eID in sectors like Agriculture, Education, Finance, Healthcare, and Welfare.</p>
+      </div>
+    </div>
   </div>
-  <!--
-  <div class="ui container maps">
-    <h1>Exploratory Research Maps</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis nisi, dictum non rhoncus non, condimentum at arcu. Etiam a lectus placerat, ultrices lorem vel, lobortis mi. Vivamus fringilla egestas elit at ultricies. Sed quis ultricies nunc. Mauris auctor malesuada arcu vel hendrerit. Vivamus cursus sit amet justo id varius.</p>
-    <p>COUNTRIES <a href="">United Kingdom</a> • <a href="">India</a> • <a href="">Estonia</a></p>
+  <div class="space3">
   </div>
-  -->
   <!-- Latest + Blog -->
-  <div class="gray">
-    <div class="ui container grid">
+  <div class="white" id="blog">
+    <div class="ui container two column stackable grid">
       <div class="eight wide column list">
         <h3>Latest</h3>
-        <p>13.09.2019 <a href="">Towards a framework for evaluation of Digital ID</a></p>
-        <p>13.09.2019 <a href="">Draft frameworks by CIPIT, ITS and CIS</a></p>
-        <p>13.09.2019 <a href="">Healthcare sector in the United Kingdom</a></p>
+        <p>05.03.2020 <a href="https://digitalid.design/evaluation-framework-case-studies/ekyc-in-india.html">Use of Digital Identity for e-KYC in India</a></p>
+        <p>27.02.2020 <a href="https://digitalid.design/evaluation-framework-case-studies/kenya.html">Kenya’s Huduma Namba Programme</a></p>
+        <p>13.02.2020 <a href="https://digitalid.design/evaluation-framework-case-studies/healthcare.html">Use of Digital ID in the Healthcare Sector</a></p>
+        <p>06.02.2020 <a href="https://digitalid.design/evaluation-framework-case-studies/india.html">India’s Unique Identity Programme</a></p>
+        <p>30.01.2020 <a href="https://digitalid.design/evaluation-framework-case-studies/verification.html">Use of Digital ID for Verification</a></p>
         <p></p>
       </div>
       <div class="eight wide column list">
         <h3>Blog</h3>
-        <p>13.09.2019 <a href="">Towards a framework for evaluation of Digital ID</a></p>
-        <p>13.09.2019 <a href="">Draft frameworks by CIPIT, ITS and CIS</a></p>
-        <p>13.09.2019 <a href="">Healthcare sector in the United Kingdom</a></p>
+        <p>22.01.2020 <a href="https://digitalid.design/introducing-evaluation-framework-02.html">Introducing our Evaluation Framework</a></p>
+        <p>13.12.2019 <a href="https://digitalid.design/research-maps/estonia-insights.html">Digital ID in Estonia: Insights from Research Mapping</a></p>
+        <p>29.11.2019 <a href="https://digitalid.design/good-id-practice-workshop-2019-report.html">ID4D — Good ID in Practice Workshop</a></p>
+        <p>07.08.2019 <a href="https://digitalid.design/comments-ID4D-practitioners-guide.html">Comments to the ID4D Practitioners’ Guide</a></p>
+        <p>17.07.2019 <a href="https://digitalid.design/rightscon-2019-report.html">Holding ID Issuers Accountable, What Works?</a></p>
+        <p>29.05.2019 <a href="https://digitalid.design/systems-thinking-masterclass.html">Picking ‘Wholes’: Thinking in Systems Workshop</a></p>
+        <p>07.05.2019 <a href="">Research Grant on Digital Identities: Design and Uses</a></p>
         <p></p>
-      </div>
-      <div class="row">
-        <p>&nbsp;</p>
       </div>
     </div>
   </div>
+  <div class="space3">
+  </div>
   <!-- Methodology -->
-  <div class="ui container grid">
-    <div class="sixteen wide column">
-      <div class="row text">
-        <h1>Methodology</h1>
-      </div>
+  <div class="light-gray" id="method">
+  <div class="ui container three column stackable grid">
+    <div class="eight wide column text">
+      <h1>Methodology</h1>
     </div>
     <div class="row">
       <div class="four wide column list">
-        <p>Draft for Discussion <a href="">Towards a framework for evaluation of Digital ID</a></p>
-        <p>Working Drafts <a href="">Draft frameworks by CIPIT, ITS and CIS</a></p>
+        <p>13.09.2020 <a href="https://digitalid.design/core-concepts-processes.html">Core Concepts and Processes</a></p>
+        <p>26.07.2019 <a href="https://digitalid.design/research-plan.html">Research Plan</a></p>
         <p></p>
       </div>
       <div class="six wide column media">
-        <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-    </div>
+        <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <div class="six wide column media">
-        <iframe width="400" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/1-V7lyxrOmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="row">
-      <p>&nbsp;</p>
-    </div>
+  </div>
+  <div class="space5">
+  </div>
   </div>
   <!-- Footer -->
-  <div class="footer">
-    <div class="ui container four column grid">
+  <div class="footer">	
+    <div class="ui container four column stackable grid">
+      <div class="six wide column">
+        <h1>Digital Identities: Design and Uses</h1>
+        <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyar.com/" target="_blank">Omidyar Network</a>.</p>
+        <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
+        <p>Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> and <a href="https://github.com/Codeinwp/Ideal-Image-Slider-JS" target="_blank">Ideal Image Slider</a><br/><a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>Social media icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a><br/>Hosted on <a href="https://github.com/digitalid-design/digitalid-design.github.com" target="_blank">GitHub</a></p>
+      </div>
       <div class="three wide column team">
         <h1>Team</h1>
-        <p><a href="">Akash Sheshadri</a></p>
-        <p><a href="">Amber Sinha</a></p>
-        <p><a href="">Pooja Saxena</a></p>
-        <p><a href="">Saumyaa Naidu</a></p>
-        <p><a href="">Shruti Trikanad</a></p>
-        <p><a href="">Yesha Tshering Paul</a></p>
+        <p>Akash Sheshadri</p>
+        <p>Amber Sinha</p>
+        <p>Pooja Saxena</p>
+        <p>Saumyaa Naidu</p>
+        <p>Shruti Trikanad</p>
+        <p>Yesha Tshering Paul</p>
       </div>
       <div class="three wide column contributors">
         <h1>Contributors</h1>
-        <p><a href="">Kushang Mishra</a></p>
-        <p><a href="">Prakriti Singh</a></p>
-        <p><a href="">Sumandro Chattapadhyay</a></p>
-        <p><a href="">Sunil Abraham</a></p>
-        <p><a href="">Vrinda Bhandari</a></p>
-      </div>
-      <div class="six wide column">
-        <h1>&nbsp;</h1>
-        <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyarnetwork.in/" target="_blank">Omidyar Network India</a>.</p>
-        <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
-        <p>Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a><br/><a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>Hosted on <a href="http://github.com/" target="_blank">GitHub</a></p>
+        <p>Kushang Mishra</p>
+        <p>Prakriti Singh</p>
+        <p>Sumandro Chattapadhyay</p>
+        <p>Sunil Abraham</p>
+        <p>Vrinda Bhandari</p>
       </div>
       <div class="four wide column">
-        <img src="img/logo.png" alt="The Centre for Internet and Society, India" class="logo" />
-        <p class="logo"><a href="https://cis-india.org" target="_blank">Website</a> / <a href="https://twitter.com/cis_india" target="_blank">Twitter</a></p>
+        <div>
+          <a href="https://cis-india.org/" target="_blank" style="border-bottom: 0px solid"><img src="img/logo.png" alt="The Centre for Internet and Society, India" class="logo" /></a>
+        </div>
+        <div class="icons">
+          <a href="https://twitter.com/cis_india" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a href="https://www.instagram.com/cis.india/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a> <a href="https://www.youtube.com/channel/UC0SLNXQo9XQGUE7Enujr9Ng" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></p>
+        </div>
       </div>
     </div>
   </div>
+  <!-- Ideal Image Slider Script -->
+  <script>
+	var slider = new IdealImageSlider.Slider({
+      selector: '#slider',
+      interval: 8000
+    });
+	slider.addCaptions();
+	slider.start();
+  </script>
 </body>
 </html>
