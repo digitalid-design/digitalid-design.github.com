@@ -38,21 +38,32 @@ h3 {
 .content h4 {
     color: black;
     font-family: "IBM Plex Serif", serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0em;
-    line-height: 1.4em;
-    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    margin-bottom: 0.8em;
     margin-top: 0;
 }
 .content h5 {
+    color: black;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: 1em;
+    margin-bottom: 1.2em;
+    margin-top: 0.1em;
+}
+.content h6 {
     color: #69c3aa;
     font-family: "Fira Sans", sans;
     font-size: 0.9em;
     font-weight: 600;
     letter-spacing: 0.15em;
     line-height: 1.75em;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 .content p {
@@ -113,7 +124,7 @@ p.instructions {
 	line-height: 1.4rem;
 	margin-top: 3em;
 }
-.content .superscript {
+.content .superscript a {
     color: #69c3aa;
     border-bottom: 0px solid;
     font-family: "Fira Sans", sand-serif;
@@ -121,9 +132,9 @@ p.instructions {
     font-variant-numeric: 'tabular-nums';
     font-weight: 800;
     position: relative;
-    top: -0.5rem;
+    top: -0.1rem;
 }
-.content .superscript:hover {
+.content .superscript a:hover {
     color: #333;
     border-bottom: 0px solid;
 }
