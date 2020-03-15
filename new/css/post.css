@@ -35,6 +35,9 @@ h3 {
     line-height: 1.4rem;
     margin: 0.2em 0 0.8em 0;
 }
+.title h3 {
+    font-size: 2rem;
+}
 .content h4 {
     color: black;
     font-family: "IBM Plex Serif", serif;
@@ -99,6 +102,54 @@ p.highlight {
 	line-height: 1.4rem;
 	font-weight: 600;
 }
+.content ol {
+    list-style: none;
+  	counter-reset: list-counter;
+  	padding-left: 1.5rem;
+  	list-style-position: outside;
+}
+.content ol li {
+  	counter-increment: list-counter;
+  	padding-left: 0.325rem;
+  	font-family: 'IBM Plex Serif', serif;
+  	font-size: 1.2rem;
+	line-height: 1.8rem;
+	letter-spacing: 0;
+	margin-bottom: 0.75em;
+}
+.content ol li::before {
+  	content: counter(list-counter);
+  	text-align: right !important; 
+  	font-family: Fira Sans;
+	font-weight: 800;
+	color: #69c3aa;
+  	width: 1em;
+  	margin-left: -1.4em;
+  	margin-right: 1rem;
+}
+.content ul {
+	list-style: none;
+	margin: 0 0 2rem 0;
+	padding-left: 1rem;
+}
+.content ul li {
+	padding-left: 0.325rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	letter-spacing: 0;
+	margin-bottom: 0.75em;
+}
+.content ul li::before {
+  	content: "›";
+  	color: #69c3aa;
+  	font-family: "Fira Sans";
+  	font-weight: 600;
+  	display: inline-block; 
+  	width: 1em;
+  	margin-left: -1em;
+  	position: relative;
+  	top: -2px;
+}
 p.pullquote {
     background-color: #f4f4f4;
     border-top: 3px solid #69c3aa;
@@ -108,6 +159,16 @@ p.pullquote {
     line-height: 1.3em;
     margin: 1.6em 0;
     padding: 20px;
+}
+.pullquote .superscript {
+    color: #69c3aa;
+    border-bottom: 0px solid;
+    font-family: "Fira Sans", sand-serif;
+    font-size: 0.8rem;
+    font-variant-numeric: 'tabular-nums';
+    font-weight: 800;
+    position: relative;
+    top: -0.5rem;
 }
 p.instructions {
 	color: #aaa;
