@@ -1,7 +1,8 @@
 /* Horizontal green line */
 .break {
     border-top: 3px dotted #69c3aa;
-    margin: 2em 0 1em 0;
+    height: 0rem;
+    margin: 1em 0 2em 0;
 }
 /* Content */
 a {
@@ -388,7 +389,7 @@ td.reference {
 }
 @media screen and (max-width: 480px) {
 	html {font-size: 11pt;}
-    .break {top: 1rem; height: 3rem;}
+    .break {top: 1rem; height: 0rem;}
     .content p.instructions {display: none;}
     .content p.instructions-mobile {display: block;}
     .diagram {margin-top: 2rem; margin-bottom: 4rem;}

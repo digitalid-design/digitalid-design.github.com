@@ -315,10 +315,11 @@ h1,h2,h3,h4,p {
     .logo { float: none; margin-top: 0em; }
     .site-title {top: 6.5rem;}
     .team h1 {padding-top: 0.5em;}
+    .ui.container {width: auto !important; margin-left: 1.2em !important; margin-right: 1.2em !important;}
 }
 @media screen and (max-width: 499px) {
     .banner-image {height: 300px;}
-    .site-desc {top: 17.5rem; width: 68%;}
+    .site-desc {top: 18rem; width: 68%;}
     .site-title h1 {font-size: 2.8em;}
     .site-title h2 {font-size: 2.5em;}
     .site-title {margin-right: 2em;}
