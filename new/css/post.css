@@ -33,13 +33,14 @@ h3 {
 }
 .content h3 {
     font-weight: 600;
-    line-height: 1.4rem;
-    margin: 0.2em 0 0.8em 0;
+    line-height: 1.2em;
+    margin: 0.25em 0 0.8em 0;
 }
 .title h3 {
     font-size: 2rem;
 }
-.content h4 {
+.content h4,
+.meta h4 {
     color: black;
     font-family: "IBM Plex Serif", serif;
     font-size: 1.5rem;
@@ -56,8 +57,8 @@ h3 {
     font-weight: 600;
     letter-spacing: 0em;
     line-height: 1em;
-    margin-bottom: 1.2em;
-    margin-top: 0.1em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 .content h6 {
     color: #69c3aa;
@@ -70,7 +71,8 @@ h3 {
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.content p {
+.content p,
+.title p {
     color: #222;
     font-family: "IBM Plex Serif", serif;
     font-size: 1.2rem;
@@ -96,6 +98,42 @@ p.caption {
 	line-height: 1.2rem !important;
 	text-align: right;
 	margin-bottom: 30px;
+}
+.img-caption {
+    text-align: right;
+}
+.img-caption-mobile {
+    display: none;
+    margin-top: 2em;
+    text-align: left;
+}
+.img-caption p,
+.img-caption-mobile p {
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 400;
+	line-height: 1.2rem !important;
+	margin-bottom: 30px;
+}
+.img-caption-mobile p {
+	margin-bottom: 20px;
+}
+.img-caption h7,
+.img-caption-mobile h7 {
+    color: #69c3aa;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 600;
+	line-height: 1.2rem !important;
+    text-transform: uppercase;
+}
+.img-caption h8,
+.img-caption-mobile h8 {
+    color: #aaa;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 400;
+	line-height: 1.2rem !important;
 }
 p.highlight {
 	font-family: "Fira Sans", sans-serif;
@@ -135,6 +173,7 @@ p.highlight {
 }
 .content ul li {
 	padding-left: 0.325rem;
+    font-family: "IBM Plex Serif", serif;
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 	letter-spacing: 0;
@@ -222,10 +261,18 @@ p.instructions {
 .diagram {
     background-color: #f4f4f4;
     margin-top: 4rem;
+    padding: 2em 0 0.5em 0;
+    text-align: center;
+}
+p.footnote {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 /* Meta */
 .meta {
-    margin-top: 0.2em;
+    margin-top: 0.1em;
     padding-right: 4em;
     text-align: right;
 }
@@ -393,6 +440,10 @@ td.reference {
     .content p.instructions {display: none;}
     .content p.instructions-mobile {display: block;}
     .diagram {margin-top: 2rem; margin-bottom: 4rem;}
+    .img-caption {display: none;}
+    .img-caption-mobile {display: block;}
+    .meta h4 {margin-bottom: -0.7em;}
+    .post-title h2 {margin-top: 0.5em;}
     .svg-diagram {display: none;}
 	.svg-diagram-mobile {display: block; padding: 3em 2em;}
 }
