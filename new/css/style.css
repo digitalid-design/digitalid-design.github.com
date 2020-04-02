@@ -135,16 +135,25 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
 }
 .media a {
-    border-bottom: 2px dotted #69c3aa; 
-    color: black;
-    font-family: 'IBM Plex Serif', serif;
-    font-weight: 400;
-    text-transform: none;
+    border-bottom: none; 
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .media a:hover,
 .media a:active {
     border-bottom: 2px solid #69c3aa; 
-    color: black;
+    color: #333;
+}
+.media-mobile {
+    display: none;
+}
+.media-narrow {
+    display: none;
+}
+.media-wide {
+    display: block;
 }
 .list-governingID {
     padding-top: 0.5em;
@@ -174,16 +183,17 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
 }
 .list a {
-    border-bottom: 2px dotted #69c3aa; 
-    color: black;
-    font-family: 'IBM Plex Serif', serif;
-    font-weight: 400;
-    text-transform: none;
+    border-bottom: none; 
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-transform: uppercase;
 }
 .list a:hover,
 .list a:active {
     border-bottom: 2px solid #69c3aa; 
-    color: black;
+    color: #333;
 }
 .slider{
 	width: 100%;
@@ -248,8 +258,8 @@ h1,h2,h3,h4,p {
 }
 .team p,
 .contributors p {
-    line-height: 1.6em;
-    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    margin-bottom: 0.2em;
 }
 .image-link {
     border-bottom: 0px;
@@ -307,22 +317,42 @@ h1,h2,h3,h4,p {
     .iis-caption-content p { display: none; }
     .text h5 { width: 90%; }
 }
-@media screen and (max-width: 767px) {
-    .contributors h1 {padding-top: 0em;}
-    .footer {margin-top: 1em; text-align: center;}
+@media screen and (max-width: 800px) {
+    .contributors h1 {padding-top: 2.4em; padding-bottom: 1.2em;}
     .icons {margin-top: 0em; padding-top: 1em; margin-bottom: 1.5em;}
     .ideal-image-slider {display: none;}
-    .logo { float: none; margin-top: 0em; }
-    .site-title {top: 6.5rem;}
-    .team h1 {padding-top: 0.5em;}
+    .list {margin-left: -1em;}
+    .logo { float: none; margin-top: 3em;}
+    .media-mobile {display: none;}
+    .media-narrow {display: block;}
+    .media-wide {display: none;}
+    .media p {margin-left: -1em;}
+    .site-desc {top: 14rem;}
+    .site-title {top: 5rem;}
+    .team h1 {padding-top: 2.4em; padding-bottom: 1.2em;}
+    .text {margin-left: -1em;}
+    .text h1 {margin-top: 1em;}
     .ui.container {width: auto !important; margin-left: 1.2em !important; margin-right: 1.2em !important;}
+    #maps {padding-left: 1.2em;}
+    #notOnMobile {display: none;}
 }
 @media screen and (max-width: 499px) {
     .banner-image {height: 300px;}
+    .contributors h1 {padding-top: 0em; padding-bottom: 0em;}
+    .footer {margin-top: 1em; text-align: center;}
+    .list {margin-left: 0em;}
+    .logo { float: none; margin-top: 0em;}
+    .media-mobile {display: block;}
+    .media-narrow {display: none;}
+    .media-wide {display: none;}
+    .media p {margin-left: 0em;}
     .site-desc {top: 18rem; width: 68%;}
     .site-title h1 {font-size: 2.8em;}
     .site-title h2 {font-size: 2.5em;}
-    .site-title {margin-right: 2em;}
+    .site-title {margin-right: 2em; top: 6.5rem;}
     .space5 {height: 3em;}
+    .team h1 {padding-top: 0em; padding-bottom: 0em;}
+    .text {margin-left: 0em;}
     .text h1 {margin-top: 1.2em;}
+    #maps {padding-left: 0em;}
 }
