@@ -42,7 +42,7 @@ h1,h2,h3,h4,p {
     overflow: hidden;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    background-size: 1600px 452px;
+    background-size: 1600px 432px;
     background-position: center top;
 }
 .site-title {
