@@ -1,0 +1,460 @@
+/* Horizontal green line */
+.break {
+    border-top: 3px dotted #69c3aa;
+    height: 0rem;
+    margin: 1em 0 2em 0;
+}
+/* Content */
+a {
+	-moz-transition: border-bottom-color 0.25s ease-in-out;
+	-webkit-transition: border-bottom-color 0.25s ease-in-out;
+	-ms-transition: border-bottom-color 0.25s ease-in-out;
+	transition: border-bottom-color 0.25s ease-in-out;
+	text-decoration: none;
+	color: #222;
+}
+.content a,
+.meta a {
+	border-bottom: 2px dotted #69c3aa;
+}
+a:hover {
+	text-decoration: none;
+	border-bottom: 2px solid #69c3aa;
+}
+.content a:hover,
+.meta a:hover {
+    color: #222
+}
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    line-height: 2rem;
+}
+.content h3 {
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0.25em 0 0.8em 0;
+}
+.title h3 {
+    font-size: 2rem;
+}
+.meta h3 {
+    font-weight: 600;
+    padding-bottom: 1em;
+    padding-top: 0.25em;
+}
+.content h4,
+.meta h4 {
+    color: black;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: 1.25em;
+    margin-bottom: 0.8em;
+    margin-top: 0;
+}
+.meta h4 {
+    margin-top: 0.05em;
+}
+.content h5 {
+    color: black;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+.content h6 {
+    color: #69c3aa;
+    font-family: "Fira Sans", sans;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    line-height: 1.75em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.content p,
+.title p {
+    color: #222;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.8rem;
+    margin: 0.25em 0 0.55em 0;
+}
+p.intro {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+p.indent {
+    text-indent: 1.5rem;
+}
+p.caption {
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 400;
+	line-height: 1.2rem !important;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.img-caption {
+    text-align: right;
+}
+.img-caption-mobile {
+    display: none;
+    margin-top: 2em;
+    text-align: left;
+}
+.img-caption p,
+.img-caption-mobile p {
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 400;
+	line-height: 1.2rem !important;
+	margin-bottom: 30px;
+}
+.img-caption-mobile p {
+	margin-bottom: 20px;
+}
+.img-caption h7,
+.img-caption-mobile h7 {
+    color: #69c3aa;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 600;
+	line-height: 1.2rem !important;
+    text-transform: uppercase;
+}
+.img-caption h8,
+.img-caption-mobile h8 {
+    color: #aaa;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 0.9rem !important;
+	font-weight: 400;
+	line-height: 1.2rem !important;
+}
+p.highlight {
+	font-family: "Fira Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	font-weight: 600;
+}
+.content ol {
+    list-style: none;
+  	counter-reset: list-counter;
+  	padding-left: 1.5rem;
+  	list-style-position: outside;
+}
+.content ol li {
+  	counter-increment: list-counter;
+  	padding-left: 0.325rem;
+  	font-family: 'IBM Plex Serif', serif;
+  	font-size: 1.2rem;
+	line-height: 1.8rem;
+	letter-spacing: 0;
+	margin-bottom: 0.75em;
+}
+.content ol li::before {
+  	content: counter(list-counter);
+  	text-align: right !important; 
+  	font-family: Fira Sans;
+	font-weight: 800;
+	color: #69c3aa;
+  	width: 1em;
+  	margin-left: -1.4em;
+  	margin-right: 1rem;
+}
+.content ul {
+	list-style: none;
+	margin: 0 0 2rem 0;
+	padding-left: 1rem;
+}
+.content ul li {
+	padding-left: 0.325rem;
+    font-family: "IBM Plex Serif", serif;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	letter-spacing: 0;
+	margin-bottom: 0.75em;
+}
+.content ul li::before {
+  	content: "›";
+  	color: #69c3aa;
+  	font-family: "Fira Sans";
+  	font-weight: 600;
+  	display: inline-block; 
+  	width: 1em;
+  	margin-left: -1em;
+  	position: relative;
+  	top: -2px;
+}
+p.pullquote {
+    background-color: #f4f4f4;
+    border-top: 3px solid #69c3aa;
+    color: #000;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin: 1.6em 0;
+    padding: 20px;
+}
+.pullquote .superscript {
+    color: #69c3aa;
+    border-bottom: 0px solid;
+    font-family: "Fira Sans", sand-serif;
+    font-size: 0.8rem;
+    font-variant-numeric: 'tabular-nums';
+    font-weight: 800;
+    position: relative;
+    top: -0.5rem;
+}
+p.instructions {
+	color: #aaa;
+    font-family: 'Fira Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	margin-top: 3em;
+}
+.content p.instructions-mobile {
+	color: #aaa;
+    display: none;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	margin-top: 3em;
+}
+.content .superscript a {
+    color: #69c3aa;
+    border-bottom: 0px solid;
+    font-family: "Fira Sans", sand-serif;
+    font-size: 0.8rem;
+    font-variant-numeric: 'tabular-nums';
+    font-weight: 800;
+    position: relative;
+    top: -0.1rem;
+}
+.content .superscript a:hover {
+    color: #333;
+    border-bottom: 0px solid;
+}
+.content .img-reference {
+    margin-top: 0.2em;
+}
+.internal-nav {
+	font-family: Fira Sans;
+	font-size: 0.75rem;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	color: #69c3aa;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}
+.internal-nav a {
+	color: #69c3aa;
+	border: none;
+}
+.internal-nav a:hover {
+	color: #aaa;
+}
+.diagram {
+    background-color: #f4f4f4;
+    margin-top: 4rem;
+    padding: 2em 0 0.5em 0;
+    text-align: center;
+}
+p.footnote {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+/* Meta */
+.meta {
+    margin-top: 0.1em;
+    padding-right: 4em;
+    text-align: right;
+}
+.meta p {
+    color: #222;
+    font-family: "Fira Sans", sans;
+    font-size: 0.9rem;
+	font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0.5rem;
+}
+/* Title */
+.post-title {
+    margin-top: 4rem;
+}
+.post-title h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.9rem;
+    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+.title {
+}
+.title h3 {
+    margin-bottom: 0.8em;
+}
+/* Notes */
+td.number {
+    color: #69c3aa;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    text-align: left;
+    vertical-align: top;
+    width: 1.25em;
+}
+td.reference {
+    color: #222;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+    vertical-align: top;
+}
+.content .internal-nav {
+    border-bottom: 0px solid;
+    color: #69c3aa;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+.content .internal-nav:hover {
+    border-bottom: 0px solid;
+    color: #222;
+}
+/* SVG Diagram */
+.svg-diagram {
+	text-align: center;
+	margin-bottom: 7em;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 0.9em;
+	text-anchor: middle;
+	background-color: #f4f4f4;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+.svg-diagram-text {
+	text-align: left !important;
+	display: block;
+	margin-bottom: 4em;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 0.9em;
+	text-anchor: middle;
+	background-color: #f4f4f4;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+.svg-diagram-mobile {
+	background-color: #f4f4f4;
+	text-align: center;
+	padding-top: 2em;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-bottom: 1em;
+	margin-bottom: 3em;
+}
+.svg-diagram-mobile-text {
+	text-align: center;
+	margin-bottom: 2em;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;	
+	margin-top: 1em;
+}
+.svg-diagram-mobile-link {
+	text-transform: uppercase;
+}
+.svg-diagram-mobile-link a {
+	border: none;
+	color: #69c3aa;
+	font-weight: 500;
+}
+.svg-diagram-mobile-link a:hover {
+	color: #bbb;
+}
+.svg-diagram-element a:hover {
+	-webkit-filter: grayscale(100%); 
+	-webkit-filter: grayscale(1); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+.svg-diagram-label {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: right;
+}
+.svg-diagram-link {
+	text-transform: uppercase;
+	fill: #69c3aa;
+	font-weight: 500;
+}
+.svg-diagram-link a:hover {
+	fill: #bbb;
+}
+.svg-diagram-link a:visited {
+	fill: #69c3aa;
+}
+.svg-diagram-mobile {
+    display: none;
+}
+/* Responsive - Left align sections on mobile/tab screens */
+@media screen and (max-width: 3000px) {
+    html {font-size: 12pt;}
+}
+@media screen and (max-width: 767px) {
+    .content h3 {margin: 0.2em 0 1em 0;}
+    .content h5 {margin-top: -1em;}
+    .content p {font-size:1.1rem;}
+    #empty {display: none;}
+    .meta {text-align: left;}
+    .title h3 {margin-bottom: 0.5em;}
+}
+@media screen and (max-width: 480px) {
+	html {font-size: 11pt;}
+    .break {top: 1rem; height: 0rem;}
+    .content p.instructions {display: none;}
+    .content p.instructions-mobile {display: block;}
+    .content h5 {margin-top: 0.7em;}
+    .diagram {margin-top: 2rem; margin-bottom: 4rem;}
+    .img-caption {display: none;}
+    .img-caption-mobile {display: block;}
+    .content h4 {line-height: 1.3em;}
+    .meta h3 {margin-bottom: -0.7em;}
+    .meta h4 {margin-bottom: -0.7em; font-weight: 400;}
+    .post-title h2 {font-size: 2.4rem; line-height: 2.8rem; margin-top: 0.5em;}
+    .svg-diagram {display: none;}
+	.svg-diagram-mobile {display: block; padding: 3em 2em;}
+}

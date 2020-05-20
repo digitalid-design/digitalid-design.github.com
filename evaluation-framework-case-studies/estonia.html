@@ -1,807 +1,629 @@
-<!DOCTYPE HTML>
-<!--
-	Digital Identities: Design and Uses
-	The Centre for Internet and Society, India
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Digital Identities: Design and Uses</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="../assets/css/post.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1><a href="../index.html">Digital Identities:<br />Design and Uses</a></h1>
-							<p>A project of <a href="https://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a><br /> supported by <a href="https://www.omidyar.com/" target="_blank">Omidyar Network</a></p>
-						</header>
-					</section>
-
-				<!-- Section -->
-					<section id="first">
-						<div class="content">
-							<h2>Governing ID:<br/> Estonia’s E-Identity Programme</h2>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<p id="meta"><strong>April 9, 2020</strong> 
-							<br/>
-									<br/><em>Research and Writing by</em> Shruti Trikanad
-									<br/><em>Review and Editing by</em> Amber Sinha
-									<br/><em>With inputs from</em> Dr. Katrin Nyman Metcalf
-							</p>
-							<p id="meta"><a href="../docs/CIS_DigitalID_EstoniaCaseStudy_2020.04.pdf" target="_blank">Download as PDF</a></p>
-
-							
-						</header>
-						<div class="content">
-							<p class="intro">This is the fifth in a series of case studies, using our <a href="../evaluation-framework-02.html" target="_blank">evaluation framework</a> for the governance of digital identity systems. These case studies, which analyse identity programmes and their uses, illustrate how our evaluation framework may be adapted to study instances of digital identity across different regions and contexts. This case study looks at the Estonian digital ID system.</p>
-
-							<p>The <a href="../research-maps/estonia.html" target="_blank">Estonian Digital ID landscape</a> is unique both in terms of its complex legal framework, and the reliance of Estonian residents on their Digital IDs. Digital governance is viewed as integral parts of governance and identity, and focuses more on sector specific applications rather than “digital” legislation. The Population Register Act issues a unique number to every Estonian resident, termed the Personal Identification Code (“PIC”), and the Identity Documents Act governs the issue of the digital ID, or the e-ID, incorporating this PIC. The PIC is issued to every individual at birth or any time after, on application to the processor of the Population Register (“PR”), but it does not function independently as a digital ID. When a resident applies for the issue of a digital ID, the information they submit is checked against the Population Register, and they are issued a digital ID that is made unique by the inclusion of the PIC. Thus, the digital ID evaluated below is a sum of the parts issued under the Identity Documents framework, and the Population Register framework. On issue of the ID, the ID database acts as a repository of ID related personal data and documents, and the PR is a repository for other personal information. However, what is important to note is that the digital ID is not used merely to access these databases, but any other registered database storing personal information and allowing access through the ID, including private databases. This is done through the X road system, which is an interface that allows databases to communicate such that when data is needed, actors can access the relevant database directly. Access is determined by agreements entered into between different data collectors, and completely eliminates a system of requesting and releasing data.</p>
-						</div>
-					</section>
-
-				<!-- Divider -->
-				<div id="divider"><hr /></div>
-
-				<!-- Section -->
-					<section>
-						<div class="content">
-							<h3>Rule of Law Tests</h3>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.1</h3>
-						</header>
-						<div class="content">
-
-							<h5>Legislative Mandate</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is the law governing digital ID a valid law?</h4>
-
-							<p>The validity of a law governing digital ID can be tested on its clarity, foreseeability, and accessibility, and whether it categorically allows the use of the digital ID in the manner it is being used. The governing ID law — the Identity Documents Act — makes it mandatory for all residents and aliens who reside permanently in Estonia to possess an identity document, one of which is a digital ID. This Act was passed by the Legislature (<em>Riigikogu</em>), is clear, foreseeable and easily accessible on the database (<em>Riigi Teataja</em>), and explicitly regulates the issue and use of the digital ID. </p>
-
-							<p class="indent">However, the Act permits excessive delegation in the determination of its regulations; it allows the “minister responsible for the area” to issue regulations to decide the list of certificates and data to be submitted upon application for the issue of a document, the procedure for identification and verification of identity, the nature or governance of the identity documents database etc.<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> As these are some of the most crucial aspects of governance for a digital ID program, failing to adequately delineate them in legislation and allowing the Executive to regulate it falls foul of a strict interpretation of a “valid law”.</p>
-
-							<p class="indent">Further, the Estonian legal system is designed such that there is little overarching legislation governing all aspects of the use of the ID. The ID is permitted to be used for any purpose provided there is a valid law that permits it. Thus, while the ID Act governs the issue of the ID, it does little to regulate any other aspect of the use of the ID itself — including the sharing of collected data — and thus leaves such critical matters unaddressed, to be determined by other laws or regulations. Although this is done deliberately, to have sector specific governance informed by the transaction that uses the digital ID, it creates a system where the Digital ID is not restricted by a purpose limitation, and just operates as a database of information to be leveraged by any sector and for any purpose.</p>
-
-							<br/>
-
-							<p class="pullquote2">Thus, the law that issues the Digital ID is valid, but it fails to govern crucial aspects of the use of the ID.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.2</h3>
-						</header>
-						<div class="content">
-							<h5>Legitimate Aim</h5>
-
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the law have a ‘legitimate aim?’</h4>
-
-							<p>The Identity Documents Act does not explicitly lay out an aim or purpose, but does note that its purpose is to establish an “identity document requirement” and to regulate the issue of identity documents to Estonian citizens and aliens. Since the Act governs all identity documents issued by the Republic of Estonia, its implicit purpose can be identified as providing the means to identify and authenticate persons for all State purposes including national security, determination of citizenship, provisions of services, foreign relations, etc.</p>
-
-							<br/>	
-
-							<p class="pullquote2">The aim backing the Act, of identifying and authenticating persons for different State purposes, is legitimate.</p>
-
-							<br/>
-
-							<p>Another aim that influenced the ID system, one that is often touted as a great success in Estonia, is the Once Only Principles (OOP). Here citizens and businesses provide diverse data only once to public administration, after which the bodies internally share and reuse the data.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> This is also open to private actors, who leverage the ID system to efficiently access data about the ID holder intending to use their services. The design of the ID system, as a web of interoperable databases connected through the X road system, point at the easy access of personal information as a primary criteria for its implementation. This is difficult to categorize as a ‘legitimate aim’ warranting the creation of a digital ID, and is more of a move favouring political expediency.</p>
-
-						</div>
-					</section>
-
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.3</h3>
-						</header>
-						<div class="content">
-							<h5>Defining Purpose</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the law clearly define the purposes for which the ID can be used?</h4>
-
-							<br/>	
-
-							<p class="pullquote2">No, the Identity Documents Act does not delineate the uses of the digital ID.</p>
-
-							<br/>
-
-							<p>It merely regulates the issue and revocation of digital IDs, and does not in any manner limit the purposes it may be used for. While it does mandate the use of digital ID for the electronic provision of services, if such service provider requires it, it fails to place any limits on where else it might be used. It permits the ID to be leveraged by other service providers, provided it is within the contours of any other applicable law. While this once again points to a deliberate design to prevent parallel legislation for e-governance, with more legislative focus on the sector that uses the digital ID, it does fail the purpose limitation test. By not limiting the uses of the ID in the ID law, it permits data collected for the ID to be used for any purpose in the future, regardless of whether such a use was determined at the time of collecting data.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.4</h3>
-						</header>
-						<div class="content">
-							<h5>Defining Actors</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the law governing digital ID clearly define all the actors that can use/manage or are connected to the ID database in any way?</h4>
-
-							<p>The Identity Documents Act does not define the actors that use/manage the digital ID or the database. It categorizes the issuers based on the document they are issuing, which for the digital ID is the Police and Border Guard Board of Estonia,<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> but does not prescribe other actors associated with the use or management of the database. In fact, it even permits the issuer to delegate the task of issuing (digital) certificates to any service provider,<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> the eligibility of whom is determined by the Electronic Identification and Trust Services Act. This Act does not in any way limit the number or types of actors that can manage the system, but merely imposes (largely security related) compliances. Further, it completely fails to address how the digital ID may be used. The task of regulating access to the Identity Documents Database 一 where data collected during the issue of the ID is stored, along with details of the ID itself一 is delegated to the executive. The Statutes for the Maintenance of a Database of Identity Documents, enacted in 2016, govern the collection and access of ID information. Besides the identified public bodies who are permitted to access data in the system, the Statutes also allow data to be accessed by third parties “if there is a legal basis for their access” and in accordance with a contract concluded with the recipient.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> However, since the ID system is intended as a series of interoperable databases accessible through the unique digital ID, and not one central repository, regulating merely the Identity Documents database is insufficient; it only addresses one particular use of the ID.</p>
-
-							<p class="indent">Similarly, the Population Register 一 which is also accessible through the digital ID 一 fails to define or limit the category of actors who may access personal data that it stores, but has broadly established certain controls for access of actors based on their duties and interests.</p>
-
-							<p class="indent">Although it fails to identify the categories of actors that can access the system, the Estonian Digital ID framework does have in place controls to ensure accountability and transparency in the use of the ID: the General Data Protection Regulation (“GDPR”) mandates consent for private sector use, and a valid purpose outlined in law for public use; the design of the ID system is also such that any access of the system leaves behind a footprint of what data was accessed, at what time, by which actors, and for what purpose. However, even with such controls in place, by not limiting the actors that can access the Digital ID system, more risk is introduced into the system, and it moves further away from a purpose driven design.</p>
-
-							<br/>	
-
-							<p class="pullquote2">The ID framework fails to identify the actors that can use the ID, but has in place controls to regulate their use.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-				
-					<section>
-						<header>
-							<h3>1.5</h3>
-						</header>
-						<div class="content">
-							<h5>Regulating Private Actors</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is the use of the ID system by private actors adequately regulated?</h4>
-
-							<br/>	
-
-							<p class="pullquote2">No, the Estonian digital ID framework does not specify or limit access to personal information through the digital ID by private actors.</p>
-
-							<br/>
-
-							<p>Both in the issue and the use of the ID, the role of private actors is sparsely regulated.</p>
-
-							<p class="indent">In the process of issuing the ID, private actors offer technological services in collaboration with the State. Section 9(8) of the Identity Documents Act allows the administrative authority to transfer personal data to third parties for identification and revocation of ID, and permits third parties to process data for this purpose. It does not restrict the role of private actors in the issue of certificates to enable digital IDs, and merely allows the issuing authority to regulate third parties via administrative contracts and standards. In November 2018, the Government recognised a new form of authentication for the digital ID, called the “Smart-ID”. The Smart-ID is a mobile application developed by the banking sector in Estonia, that was used as an identification solution in banking services. By leveraging a technology that is essentially created and run by the private sector, for a function as important as authentication in the widely used digital ID, the Estonian Government’s control over its e-governance system is further diluted.</p>
-
-							<p class="indent">Since there is no overarching Act regulating the uses of the ID, private actors are not in any manner restricted from using the ID system. The Statutes for the Maintenance of Identity Documents Database, issued by the “minister concerned for the area” under the Identity Documents Act, designates the data stored in the database for “internal purposes,”&thinsp;<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> but allows access to third parties if there exists a legal basis, and in accordance with the Public Information Act and the Personal Data Protection Act.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> This is left to the discretion of the chief processor (the Police and Border Guard Board) of the database. Further, it allows the release of data to any party on a written application for release, if there is a legal basis for the release and if it is required for the verification of identity or identity document.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a></p>
-
-							<p class="indent">The Population Register Act has some added controls for the use of the stored data by actors (other than those performing <em>public duties</em>), including an application for access, specified terms of processing, rights and obligations of processor, etc.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> Thus, while it still does not prescribe the actors that have access, it does regulate the process of granting access in some manner.</p>
-
-							<p class="indent">Apart from the ID database and the PR, private actors can access all the personal data stored in databases created within the ID system, provided they have a legal basis for it. In these situations, the actors access data on a personal basis, after identifying themselves through their ID; to that extent, it is always possible to determine exactly who has accessed data, even within an institution or the State. This introduces transparency and accountability in the system, which does majorly contribute to effective regulation.</p>
-
-						</div>
-					</section>
-				
-				
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.6</h3>
-						</header>
-						<div class="content">
-							<h5>Data Specification</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the law clearly define the nature of data that will be collected?</h4>
-
-							<br/>	
-
-							<p class="pullquote2">Yes, the law is fairly prescriptive on the nature of data it collects for the issue of the digital ID.</p>
-
-							<br/>
-
-							<p>The Identities Documents Act prescribes certain categories of personal data that may be entered in a document, and restricts entry of any other category unless a treaty, law, or legislation of general application allows it.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> Within such boundaries, the law permits the ‘minister for the concerned area’ to determine by regulation the categories of data that can be collected for issue of the digital ID.<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> However, since the Act does not regulate the actual use of collected data, it does not address issues of the nature of data recorded on every use of the ID, and has no limitations or safeguards regarding such use whatsoever. The Personal Data Protection Act, together with the GDPR, fill these gaps, with safeguards concerning the use or purpose of data collected.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a></p>
-
-							<p class="indent">Similarly, the Population Register Act prescribes several categories of data collected including ethnic nationality, residence and contact details, details of marital status, custody, voter registration data etc.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> The Act also specifies the categories of data that will be periodically added/updated to the population register on the conclusion of certain events, such as the addition of data contained in identity documents on their issue.</p>
-
-							<p class="indent">However, it must be noted that the Digital ID system is such that it allows several databases to be created and accessed on the basis of the digital ID, all of which involve collection of fresh data. For instance, when the digital ID is used to access healthcare services, it involves the creation of a new database, that of electronic health records, which can subsequently be accessed by an insurance provider, when the ID holder avails insurance services. Because of the way these databases are interoperable and easily accessible through the digital ID, the collection of data at every instance of use is comparable to the collection of data during the issue of the ID. This is inadequately restricted or regulated by the Identity Documents Act, but there are regulations in place in the relevant sectors that use the ID that govern the nature of data collected.</p>	
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.7</h3>
-						</header>
-						<div class="content">
-							<h5>User Notification</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the ID system provide adequate user notification mechanisms?</h4>
-
-							<p>Since the Identity Documents Act only deals with the issue of the documents, it does not set up any notification mechanism. However, some other laws are applicable to digital identity and form part of the ID system; the State Information System Management Act mandates traceability in the functioning of the system, such that all access to the database and responses to the user must be stored and recoverable.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a> This has been implemented through a portal, which allows users to check the dates and time of the use of their ID for authentication or digital signature purposes, along with the mode of ID (Digi ID card, Mobile ID, or Smart ID).<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a> Thus, there is no mandate to proactively notify users every time their data is accessed, but the system allows easy access for records of when such data has been accessed. However, what must also be noted is that in the Estonian digital ID system, ID holders do not necessarily give consent each time their data is accessed for use by service providers; their consent is taken via a contract while applying for the digital ID, and data is easily transferred from one service provider to another through the Estonian information exchange system (X-Road), as the need arises. Thus, while an ID holder in a different digital ID system might otherwise be aware of every use of their ID because they have to consent to such use and authorize every transaction, the lack of an active notification system in Estonia means an ID holder may never be aware of all the times their personal data is accessed unless they make a proactive effort to check access records.</p>
-
-							<p class="indent">The Personal Data Protection Data Act mandates notifications for breach of data (to the Data Protection Inspectorate and the data subject) if it is likely to entail a high risk to the rights and freedoms of natural persons, within 72 hours of becoming aware of it. It also requires that the notification include a description of the possible consequences of the personal data breach. Thus, through the applicability of the national data protection law, there is a user notification mechanism in place for breach of the system.</p>
-
-							<br/>	
-
-							<p class="pullquote2">The data protection law mandates a notification mechanism for breach of data, but there is no system in place to notify ID holders every time their personal data is accessed.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.8</h3>
-						</header>
-						<div class="content">
-							<h5>User Rights</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Do individuals have rights to access, confirmation, correction and opt out?</h4>
-
-							<p>Since the Identity Documents Act only governs the issue of the ID, it does not provide for any right to access, correct, or opt out of the digital ID system. However, The Statutes for the Maintenance of Identity Documents Database allows the data subject to access their personal data stored in the database free of charge,<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> and mandates the controller of the database to amend incorrect data when notified of its inaccuracy. It does specify any right for ID holders to opt out of the ID or delete their personal data from the ID database.</p>
-
-							<p class="indent">It must be noted here that since the digital ID can be used for purposes outside the Identity Documents Act, and data may be collected independently for these purposes, the ID database itself does not comprise all the data involved in the digital ID; for this reason, governing the ID database is very limiting in terms of the entire scope of personal data involved in the digital ID. For instance, the use of the ID for the creation of electronic health records is governed by an entirely different framework of law, and may contain different rights and obligations on ID holders.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a></p>
-
-							<p class="indent">With respect to the data contained in the PR, Section 45(1) read with Section 53 of the Population Register Act allows a person to access data in the registry about themselves, the agencies and persons who have the right to access data in the PR, and the purpose and legal basis of the processing of their data. Further, a person can dispute the accuracy of the data collected about them, based on which the processor will submit an inquiry about the accuracy of the data and temporarily restrict access to such data.<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a></p>
-
-							<p class="indent">As for opting out, Sections 17 and 19 of the Electronic Identification and Trust Services or Electronic Transactions Act (“Electronics Act”) allows the certificate holder (the ID holder) to apply for the suspension and/or revocation of their certificate,<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a> and effectively opt out of the ID system for that duration. However, reasons for such applications and durations of suspension are not identified in the Act, and therefore paint only an incomplete picture of how an ID holder may opt out of the system. There is also no indication as to whether the ID holder’s personal data will be deleted from the ID system in case their ID is suspended.</p>
-
-							<p class="indent">Lastly, to the extent that the Personal Data Protection Act impacts the data in question, subjects have the right access and confirmation, and to demand rectification of inaccurate data. They may also demand erasure of data if the data was not collected pursuant to law, principles of processing were not adequately followed, or if erasure is required under any binding obligation.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a></p>
-
-							<br/>	
-
-							<p class="pullquote2">There are sufficient rights to access, confirmation, and correction in the governing framework, but an ID holder cannot effectively opt out of the ID system.</p>
-
-						</div>
-					</section>
-				
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.9</h3>
-						</header>
-						<div class="content">
-							<h5>Redressal Mechanisms</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Are there adequate civil and criminal redressal mechanisms in place to deal with violations of their rights arising from the use of digital ID?</h4>
-
-							<p>The Identity Documents Act fails to set up any redressal mechanisms pertaining to the use of the ID. The Electronics Act, which governs electronic identification, requires that a person or authority who suspends or revokes a certificate without legal basis — intentionally or due to gross negligence — must compensate for damage caused.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> The Personal Data Protection Act identifies the Data Protection Inspectorate as an extra-judicial body to settle complaints from persons whose rights have been violated under the Act.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a> It also sets up a system of fines in case of violation of rights by the controller or supervising agencies.<sup class="superscript"><a href="#fn23">23</a></sup><a name="ref23"></a> Compensation may also be payable for violation of rights, under the State Liability Act<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> in case of violations by State while performing public duties, or Law of Obligations Act<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a> in case of private parties in contractual relationships. Thus, while the ID system itself fails to set up an adequate mechanism, the data protection framework sufficiently addresses this gap.</p>
-
-							<br/>	
-
-							<p class="pullquote2">There are adequate redressal mechanisms, including compensation for victims whose rights are violated in the use of the ID, in the data protection law.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.10</h3>
-						</header>
-						<div class="content">
-							<h5>Accountability</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is there an independent/adequate regulatory mechanism to ensure accountability of the administrator of the digital ID?</h4>
-
-							<br/>	
-
-							<p class="pullquote2">The Data protection Inspectorate, established under the Personal Data Protection Act, exists as an independent regulator and is empowered to take action against data controllers who violate the Act.</p>
-
-							<br/>
-
-							<p>This would presumably apply to the Police and Border Guard Board as well, who is the administrator of the digital ID.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>1.11</h3>
-						</header>
-						<div class="content">
-							<h5>Mission Creep</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">In case there are newer purposes identified, are there regulatory procedures in place to determine their legitimacy?</h4>
-
-							<p>No; the relevant Acts that govern the digital ID system do not prescribe the purposes for which data is collected, and in fact encourage the sharing of collected data for new purposes such that duplicate data need never be collected. The Data Exchange Layer of Information Systems Regulation,<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a> together with the Electronics Act, regulate the agencies that may have access to collected data, but the controls that are in place relate to security and integrity of the data shared, and do not concern the purposes for which they may be used (neither do they entail fresh consent from users). </p>
-
-							<p class="indent">The Personal Data Protection Act, read with the General Data Protection Regulation,<sup class="superscript"><a href="#fn27">27</a></sup><a name="ref27"></a> impose a purpose limitation on data, restricting its use for reasons other than that of its collection without fresh consent. However, it exempts this obligation if the data collection is permitted by a legitimate law (that is necessary and proportionate in a democratic society). Since the ID framework explicitly allows data collected during the issue of the ID to be used by actors if “there is a legal basis for it,” this exception seems to be applied to indiscriminately allow new purposes and actors provided there is legal backing. This fails the purpose limitation test.</p>
-
-							<br/>	
-
-							<p class="pullquote2">The Estonian digital ID framework does not limit the purposes that the ID can be used for, and fails to protect against mission creep.</p>
-
-						</div>
-					</section>
-
-				<!-- Divider -->
-				<div id="divider"><hr /></div>
-
-				<!-- Section -->
-					<section>
-
-						<div class="content">
-							<h3>Rights based Tests</h3>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>2.1</h3>
-						</header>
-						<div class="content">
-							<h5>Data Minimisation</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Are principles of data minimisation followed in the collection, use, and retention of personal data?</h4>
-
-							<p>The Identity Documents Act does not prescribe a purpose for the creation and issue of identity documents, and therefore allows the collection of a wide range of details including iris images, signature, etc.<sup class="superscript"><a href="#fn28">28</a></sup><a name="ref28"></a> Further, it permits the specification of required data to be determined by a regulation of the ‘minister concerned for the area’.<sup class="superscript"><a href="#fn29">29</a></sup><a name="ref29"></a> Biometric data is collected during the ID issue process, even though it is not (currently) being used for authentication (or any other) purposes.</p>
-
-							<p class="indent">The Population Register Act describes as its purpose “the collection of reliable information and grant of access to personal data”.<sup class="superscript"><a href="#fn30">30</a></sup><a name="ref30"></a> This broad and overarching purpose does nothing to enable data minimization. Accordingly, the categories of data it collects is vast and includes ethnic nationality, residence and contact details, details of marital status, custody and voter registration data.<sup class="superscript"><a href="#fn31">31</a></sup><a name="ref31"></a> Further, all identity documents and citizenship documents are entered into the PR.<sup class="superscript"><a href="#fn32">32</a></sup><a name="ref32"></a> All the data continues to remain in the PR permanently<sup class="superscript"><a href="#fn33">33</a></sup><a name="ref33"></a> unless amended or replaced, until the validity of the documents in question. Even after, the data is stored as ‘non-actual data.’&thinsp;<sup class="superscript"><a href="#fn34">34</a></sup><a name="ref34"></a> The PR also contains data on submission of data to PR, access and restrictions to access, etc.<sup class="superscript"><a href="#fn35">35</a></sup><a name="ref35"></a></p>
-
-							<p class="indent">Lastly, since data is collected at every new use of the ID — with its primary purpose being <em>easy</em> access to data — and the system is highly interoperable without any need for user consent, it encourages the creation of a large repository of data spanning several categories and purposes. This is different from most other ID system designs, where data collected or accessed is largely for identification purposes, and such data is not permanently recorded for reuse. The aim of the system is to collect and share data efficiently such that the ID holder may never have to submit the same data more than once; thus, it becomes difficult to estimate whether only the data necessary to achieve this aim is being collected, as the aim itself is vast and open-ended.</p>
-
-							<br/>	
-
-							<p class="pullquote2">With extensive personal data being collected and indefinitely stored, the digital ID system does not follow principles of data minimisation.</p>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>2.2</h3>
-						</header>
-						<div class="content">
-							<h5>Access to Data</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does the law specify access that various private and public actors have to personal data?</h4>
-
-							<p>The Identity Documents Act does not prescribe or limit access of any (private or public) actors to data collected under the Act. The Statutes for the Maintenance of Identity Documents Database, though only an executive Regulation, regulates access that actors have to data in the Identity Documents Database. It designates the data as for “internal use” and permits employees of the chief processor access to the extent assigned to them for the performance of their supervisory duties,<sup class="superscript"><a href="#fn36">36</a></sup><a name="ref36"></a> as well as to the parties developing or maintaining the database.<sup class="superscript"><a href="#fn37">37</a></sup><a name="ref37"></a> It is unclear if this party could be a private actor, in which case they have almost unrestrained access to the database, which is regulated by a maintenance or development contract. The Statue also permits employees of the Ministry of the Interior to access the database for the performance of their duties.<sup class="superscript"><a href="#fn38">38</a></sup><a name="ref38"></a> Finally, the chief processor can grant access to third parties if there exists a “legal basis”, and in accordance with the Public Information Act and the Personal Data Protection Act.<sup class="superscript"><a href="#fn39">39</a></sup><a name="ref39"></a> This is, once again, regulated through a contract concluded between the processor and the recipient.</p>
-
-							<p class="indent">The Population Register Act, which governs the collection of information that is often used for digital identity, allows access to State and local governments, and natural and legal persons performing <em>public duties</em>, as well as legal persons and natural persons with <em>legitimate interest</em>. Access is allowed on an application submitted to the population registration information system, and is decided based on an administrative Act that determines the purpose of the received data, its transferability to other databases and persons, time limits for processing, and rights and obligations of the applicant, among other factors.<sup class="superscript"><a href="#fn40">40</a></sup><a name="ref40"></a> The controller, which is the Ministry for Interior, decides the access that a person may have, and this access is typically done through the data exchange layer of the information system (X-Road).<sup class="superscript"><a href="#fn41">41</a></sup><a name="ref41"></a> The processor rules on the <em>legitimate interest</em> of an application to access data (after the person is granted access by the controller) on a case-by-case basis, and allows it only if it does not breach the inviolability of private life or endanger national security.<sup class="superscript"><a href="#fn42">42</a></sup><a name="ref42"></a> Further, access to data is also categorically refused if it may cause damage to the data subject, or if it is sought for research or advertising purposes.<sup class="superscript"><a href="#fn43">43</a></sup><a name="ref43"></a> However, according to Section 54 of the Act, this may be overridden by specific consent given by the data subject to the processor in case of a request by the applicant.<sup class="superscript"><a href="#fn44">44</a></sup><a name="ref44"></a></p>
-
-							<p class="indent">X-Road is the primary mode of accessing information from various databases, and is regulated by the Data Exchange Layer of Information Regulation (“X-Road Regulation”).<sup class="superscript"><a href="#fn45">45</a></sup><a name="ref45"></a> To access information through X-Road, persons have to become members and sign contracts with the Estonian Information System Authority. The Authority can refuse membership if they fail to meet certain obligations prescribed in the Electronic Identification and Trust Services for Electronic Transactions Act<sup class="superscript"><a href="#fn46">46</a></sup><a name="ref46"></a> (and related EU Regulation) regarding eSeals. There are no restrictions on membership that depend on the nature of duties that the applicant performs, and therefore there is effectively no purpose-related classification of persons or authorities who can and cannot use X-Road to access personal data. An X-Road member will also have to register their sub-system (a particular organisational part of the X-Road system) with X-Road on meeting certain obligations regarding specifying natural person within the member responsible for its functioning, measures appointed to ensure integrity/security of data, etc. These sub-systems can then be accessed by other members of X-road.</p>
-
-							<br/>	
-
-							<p class="pullquote2">The ID framework has in place controls to delineate the access that actors have to personal data, but it also allows for excessive discretion on part of executive bodies.</p>
-
-						</div>
-					</section>
-				
-				<!-- Section -->
-				
-					<section>
-						<header>
-							<h3>2.3</h3>
-						</header>
-						<div class="content">
-							<h5>Exclusions due to Design Flaws</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is the use of digital ID to access services exclusionary?</h4>
-
-							<p>Section 18(1)(3) of the Identity Documents Act allows the provider of a public service electronically with the right to require the use of a digital ID card (or digital certificates) for the provision of their service. However, for most other purposes, the digital ID card is simply one of many ways to prove their identity, and the Identity Documents Act does not prescribe any mandates for their use. Further, Estonia has managed to achieve near complete internet accessibility to its population, and therefore does not suffer the typical roadblocks in e-services that other countries do.<sup class="superscript"><a href="#fn47">47</a></sup><a name="ref47"></a></p>
-
-							<br/>	
-
-							<p class="pullquote2">The use of digital ID to access services in Estonia is not exclusionary.</p>
-
-						</div>
-					</section>
-				
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>2.4</h3>
-						</header>
-						<div class="content">
-							<h5>Exclusions due to Failure</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Does failure of the ID system lead to exclusion?</h4>
-
-							<p>Since use of the digital ID is not mandatory but used mainly for the purpose of convenience, failure of the digital ID system does not easily lead to exclusion (provided not many online public services <em>mandate</em> the use of the ID, which is consistent with what we have found so far). The Identity Documents Act permits identity to be  verified with any valid document that has certain key categories of personal data on it,<sup class="superscript"><a href="#fn48">48</a></sup><a name="ref48"></a> and thus a resident may easily use a different ID in place of their digital ID. Further, it is the Personal Identification Code issued to every person on the entry of their data to the PR that can be used to link their information across databases, which continues to be usable without the digital ID.</p>
-
-							<p class="indent">Exclusion may also occur due to inaccurate data, leading to errors in authentication. This is adequately addressed by having in place a mechanism to identify and correct inaccurate data. The Statutes for the Maintenance of Identity Documents Database attributes the responsibility of ensuring accurate data to the provider of data (the applicant) when such data is being submitted, and to the controller for accurately recording the data. It also imposes the responsibility of ensuring rectification of incorrect data, on becoming aware of inaccuracy, on the controller. The Population Register Act makes it mandatory for the person submitting the data (typically the authority/person who issued the identity document on the basis of which data is being entered) to ensure the accuracy of data and its compliance with the documents.<sup class="superscript"><a href="#fn49">49</a></sup><a name="ref49"></a> On being given notice, the processor is required to correct the data.<sup class="superscript"><a href="#fn50">50</a></sup><a name="ref50"></a> Further, in cases where it is suspected that the data stored is inaccurate,<sup class="superscript"><a href="#fn51">51</a></sup><a name="ref51"></a> the processor is required to restrict access to such data until such time it is verified and corrected (access must be allowed to persons performing public duties but with the notice of it being inaccurate).<sup class="superscript"><a href="#fn52">52</a></sup><a name="ref52"></a> However, in both cases, there is no liability imposed in case of inaccurate data or failure of the system. This does not adequately dissuade inaccuracy in data collection, or a failure of the system. There is also no mechanism, or redressal system, in place to safeguard the rights of those who have been excluded due to failure. </p>
-
-							<br/>	
-
-							<p class="pullquote2">Failure of the ID system does not lead to exclusion, largely because use of the ID is not mandatory to access most services in Estonia.</p>
-
-						</div>
-					</section>
-
-				<!-- Divider -->
-				<div id="divider"><hr /></div>
-
-				<!-- Section -->
-					<section>
-							<div class="content">
-								<h3>Risk based Tests</h3>
-							</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>3.1</h3>
-						</header>
-						<div class="content">
-							<h5>Risk Assessment</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is the ID system designed taking into account the potential risk of its use?</h4>
-							
-							<p>The design of the ID system introduces potential risk in its use in several ways. The complete lack of a purpose limitation on the use of the digital ID and collected personal data is alarming. The ID system, in the attempt to be highly interoperable and all-encompassing, creates a large repository of personal data of residents. Although this data is collected and stored in a federated manner, the ID documents database and the Population Register collect a lot more data than is seen in analogous digital ID programs. Thus a breach of these databases would gravely impact an ID holder’s privacy, in a manner similar to having a central ID database. The use of private actors in the issue and management of the ID, and in offering authentication services, is also a risk-inducing factor to account for.</p>
-
-							<p class="indent">However, the system is also privacy enhancing in some other ways. The attributes for authentication of identity are restricted to chip-readers and passwords or OTPs, and thus the non-utilisation of biometrics limits the intrusive use of physical or bodily data. In terms of security measures, the Electronics Act (together with the Regulation (EU) No. 910/2014) mandates the active creation of a list of qualified trust service providers and trust services that have to consistently comply with obligations to maintain their status. Further, the Police and Border Guard Board has a Certificate Policy that defines the procedural and operational requirements that Certification Authority adheres to and requires entities to adhere to when issuing and managing the Certificates.<sup class="superscript"><a href="#fn53">53</a></sup><a name="ref53"></a> Having in place a strong data protection law with an independent data protection authority, and measures to introduce transparency and accountability into the system, are redeeming factors that impact the functioning of the system.</p>
-
-							<br/>	
-
-							<p class="pullquote2">By not having a purpose driven design, or prioritising consent in the use of the ID,  the system cannot be said to have been designed taking into account the risks of its use.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>3.2</h3>
-						</header>
-						<div class="content">
-							<h5>Privacy Risk Mitigation</h5>
-							<h4>Is there a national data protection law in place?</h4>
-
-							<br/>	
-
-							<p class="pullquote2">The Personal Data Protection Act,<sup class="superscript"><a href="#fn54">54</a></sup><a name="ref54"></a> read with the General Data Protection Regulation<sup class="superscript"><a href="#fn55">55</a></sup><a name="ref55"></a> governs the use of personal data in Estonia.</p>
-
-						</div>
-					</section>
-
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>3.3</h3>
-						</header>
-						<div class="content">
-							<h5>Privacy by Design</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Are there privacy by design systems that minimise the harms from data breach?</h4>
-
-							<p>The framework that governs access to data from the interoperable databases is the set of laws and contracts that govern the X Road. Regulation No. 331,<sup class="superscript"><a href="#fn56">56</a></sup><a name="ref56"></a> governing the implementation of the X road, puts in place several privacy by design obligations, and requires a data sharing contract between the administrator and a participant (in the data sharing process) that elaborately sets out rights, obligations, and responsibilities of parties. However, even with these privacy mechanisms, it fails to adequately provide agency to the ID holder in the sharing of their data, as consent is taken only once — at the issue of the ID — and not at every instance their data is accessed. Other privacy by design mechanisms include pseudonymizing of personal data while logging data sharing transactions; anonymizing data when used for analytics; encrypting and requiring digital signatures for the sharing of data; and using blockchain technology for transaction logs to ensure their immutability.<sup class="superscript"><a href="#fn57">57</a></sup><a name="ref57"></a></p>
-
-							<br/>	
-
-							<p class="pullquote2">The digital ID framework incorporates some privacy by design systems that minimise harms arising from its use.</p>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h3>3.4</h3>
-						</header>
-						<div class="content">
-							<h5>Response to Risks</h5>
-							<h4 style="margin-bottom: 0.75em; font-size: 1.5em; line-height: 1.2em;">Is there a mitigation strategy in place in case of failure or breach of the ID system?</h4>
-
-							<p>The framework surrounding the ID system does not seem to identify a mitigation strategy for failure or breach of the system. However, the National Cyber Security strategy,<sup class="superscript"><a href="#fn58">58</a></sup><a name="ref58"></a> read with the Digital Agenda for Estonia, hints at some consideration being given to crisis management in situations of breach: the 2017 National Cyber Security Strategy identifies as a goal the creation of a system of alternate solutions to be used in cases where the normal functioning of ICT infrastructure and e-services, for ‘important’ services, is disrupted, and for ensuring the uninterrupted functioning of the infrastructure for essential/vital services.<sup class="superscript"><a href="#fn59">59</a></sup><a name="ref59"></a> Similarly, the Emergency Act and the Cybersecurity Act create a legal framework for responding to and managing risks, though once again it targets cyberthreats and responses  with regard to vital services in the public or private sector, and is not specifically tailored toward risks in the ID system.<sup class="superscript"><a href="#fn60">60</a></sup><a name="ref60"></a> The 2022 Cyber Security Strategy also proposes regular joint cooperative exercises with political leaders and vital service providers to ensure readiness in case of crises.<sup class="superscript"><a href="#fn61">61</a></sup><a name="ref61"></a></p>
-
-							<p class="indent">In its functioning, the Estonian system seems to be responsive to incidents impacting the safety of the ID system; in 2017, when the digital ID card chips were reportedly exposed to an unknown digital vulnerability, the PBGB, along with the Information System Authority and the Ministry of Economic Affairs and Communication, immediately (on being notified) suspended the certification of the Digital ID cards and mandated a an electronic renewal of all IDs.<sup class="superscript"><a href="#fn62">62</a></sup><a name="ref62"></a></p>
-
-							<br/>	
-
-							<p class="pullquote2">There is no identifiable mitigation strategy in the ID framework, but the e-governance system itself seems well equipped to handle failures and crises. </p>
-
-							<br/><br/>
-
-							<p><em>We are grateful to Katrin Nyman Metcalf for taking the time to review this case study. As remote researchers, the perspectives of a local expert were of immense value to us. We would also note while Dr. Metcalf had disagreements with our approach and its suitability for Estonia, her feedback gave us a lot of insights into digital identity in Estonia.</em></p>
-
-
-						</div>
-					</section>
-
-				<!-- Divider -->
-				<div id="divider"><hr style="border-width: 3px;"/></div>
-
-
-					<section>
-
-						<div class="content">
-							<h3>Notes</h3>
-							<br/>
-
-							<table class="footnote">
-  								<tr>
-    								<td class="number">1</td>
-    								<td class="reference"><a name="fn1"></a>Section 15, 15(2), Identity Documents Act, 2000 [“ID Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">2</td>
-    								<td class="reference"><a name="fn2"></a>“Once-Only,” The Once Only Principle, last accessed February 11, 2020, <em><a href="http://toop.eu/once-only" target="_blank">http://toop.eu/once-only</a></em>; European Commission, “Trends in Electronic Verification: An Overview” (September 2018).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">3</td>
-    								<td class="reference"><a name="fn3"></a>Section 15(4), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">4</td>
-    								<td class="reference"><a name="fn4"></a>Section 9(4)(3), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">5</td>
-    								<td class="reference"><a name="fn5"></a>Section 16, Statutes for Maintenance of Identity Documents Database, 2016 [“ID Database Statutes”] <em><a href="https://www.riigiteataja.ee/akt/102022018003" target="_blank">https://www.riigiteataja.ee/akt/102022018003</a></em> [In Estonian].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">6</td>
-    								<td class="reference"><a name="fn6"></a><em>Section 16(1), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">7</td>
-    								<td class="reference"><a name="fn7"></a>Section 16(5), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">8</td>
-    								<td class="reference"><a name="fn8"></a>Section 17(1)(2), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">9</td>
-    								<td class="reference"><a name="fn9"></a>Sections 49, 51, Population Register Act, 2000 [“PR Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">10</td>
-    								<td class="reference"><a name="fn10"></a>Section 9, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">11</td>
-    								<td class="reference"><a name="fn11"></a>Section 15, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">12</td>
-    								<td class="reference"><a name="fn12"></a>Sections 14, 16, Personal Data Protection Act, 2019 [“PDP Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td></td>
-  								</tr>
-  								<tr>
-    								<td class="number">13</td>
-    								<td class="reference"><a name="fn13"></a>Sections 20, 23, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td></td>
-  								</tr>
-  								<tr>
-    								<td class="number">14</td>
-    								<td class="reference"><a name="fn14"></a>State Information System Management Act, 2008.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td></td>
-  								</tr>
-  								<tr>
-    								<td class="number">15</td>
-    								<td class="reference"><a name="fn15"></a>Information System Authority, “My ID-card activities”, iD, <em><a href="https://www.id.ee/index.php?id=31014" target="_blank">https://www.id.ee/index.php?id=31014</a></em>;  Eesti.ee, Estonian Government Information Portal, <em><a href="https://www.eesti.ee/en/" target="_blank">https://www.eesti.ee/en/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">16</td>
-    								<td class="reference"><a name="fn16"></a>Sections 17(1), 17(3), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">17</td>
-    								<td class="reference"><a name="fn17"></a>See Healthcare Services Organization Act, 2002, Statutes of Health Information System, 2016.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">18</td>
-    								<td class="reference"><a name="fn18"></a>Sections 32, 33, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">19</td>
-    								<td class="reference"><a name="fn19"></a>Electronic Identification and Trust Services for Electronic Transactions Act, 2016 [“Electronics Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">20</td>
-    								<td class="reference"><a name="fn20"></a>Chapter 4, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">21</td>
-    								<td class="reference"><a name="fn21"></a>Section 21, Electronics Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">22</td>
-    								<td class="reference"><a name="fn22"></a>Section 56, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref22">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">23</td>
-    								<td class="reference"><a name="fn23"></a>Chapter 6, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">24</td>
-    								<td class="reference"><a name="fn24"></a>State Liability Act, 2002, accessible at <em><a href="https://www.riigiteataja.ee/akt/113092011011" target="_blank">https://www.riigiteataja.ee/akt/113092011011</a></em> [in Estonian].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">25</td>
-    								<td class="reference"><a name="fn25"></a>Law of Obligations Act, 2018.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">26</td>
-    								<td class="reference"><a name="fn26"></a>Data Exchange Layer of Information Regulation, 2016 [“X-Road Regulation”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</em></a></span></td>
-  								</tr>
-  								<tr>
-    								<td class="number">27</td>
-    								<td class="reference"><a name="fn27"></a>Articles 5-7, General Data Protection Regulation, 2018 [“GDPR”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">28</td>
-    								<td class="reference"><a name="fn28"></a>Section 9, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">29</td>
-    								<td class="reference"><a name="fn29"></a>Section 20(2), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">30</td>
-    								<td class="reference"><a name="fn30"></a>Section 4, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref30">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">31</td>
-    								<td class="reference"><a name="fn31"></a>Section 20, 23, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">32</td>
-    								<td class="reference"><a name="fn32"></a>Sections 21,22, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref32">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">33</td>
-    								<td class="reference"><a name="fn33"></a>Section 8, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">34</td>
-    								<td class="reference"><a name="fn34"></a>Section 26, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref34">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">35</td>
-    								<td class="reference"><a name="fn35"></a>Section 25, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref35">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">36</td>
-    								<td class="reference"><a name="fn36"></a>Section 16(2), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref36">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">37</td>
-    								<td class="reference"><a name="fn37"></a>Section 16(4), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref37">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">38</td>
-    								<td class="reference"><a name="fn38"></a>Section 16(3), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref38">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">39</td>
-    								<td class="reference"><a name="fn39"></a>Section 16(5), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref39">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">40</td>
-    								<td class="reference"><a name="fn40"></a>Sections 49, 50, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref40">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">41</td>
-    								<td class="reference"><a name="fn41"></a>Section 48, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref41">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">42</td>
-    								<td class="reference"><a name="fn42"></a>Section 51, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref42">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">43</td>
-    								<td class="reference"><a name="fn43"></a>Section 51, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref43">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">44</td>
-    								<td class="reference"><a name="fn44"></a>Section 54, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref44">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">45</td>
-    								<td class="reference"><a name="fn45"></a>X-Road Regulation.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref45">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">46</td>
-    								<td class="reference"><a name="fn46"></a>Electronics Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref46">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">47</td>
-    								<td class="reference"><a name="fn47"></a>Mari Roonemaa, “Global lessons from Estonia’s tech-savvy government,” The UNESCO Courier, <em><a href="https://en.unesco.org/courier/2017-april-june/global-lessons-estonia-s-tech-savvy-government" target="_blank">https://en.unesco.org/courier/2017-april-june/global-lessons-estonia-s-tech-savvy-government</a></em>; <em><a href="https://e-estonia.com/" target="_blank">https://e-estonia.com/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref47">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">48</td>
-    								<td class="reference"><a name="fn48"></a>Section 4, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref48">&uarr;</em></a></span></td>
-								</tr>
-  								<tr>
-    								<td class="number">49</td>
-    								<td class="reference"><a name="fn49"></a>Section 32, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref49">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">50</td>
-    								<td class="reference"><a name="fn50"></a>Section 33, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref50">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">51</td>
-    								<td class="reference"><a name="fn51"></a>Section 32(3), PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref51">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">52</td>
-    								<td class="reference"><a name="fn52"></a>Section 59, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref52">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">53</td>
-    								<td class="reference"><a name="fn53"></a>Id.ee, “Police and Border Guard Board-Certificate Policy for identity card, digital identity card, residence permit card and diplomatic identity card,” April 17, 2019, <em><a href="https://www.id.ee/public/CP_ESTEID_v1.1.pdf" target="_blank">https://www.id.ee/public/CP_ESTEID_v1.1.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref53">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">54</td>
-    								<td class="reference"><a name="fn54"></a>PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref54">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">55</td>
-    								<td class="reference"><a name="fn55"></a>GDPR.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref55">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">56</td>
-    								<td class="reference"><a name="fn56"></a>Applying the data exchange layer of information systems, Regulation No. 331, accessible at <em><a href="https://www.riigiteataja.ee/akt/688079" target="_blank">https://www.riigiteataja.ee/akt/688079</a></em> [in Estonian]. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref56">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">57</td>
-    								<td class="reference"><a name="fn57"></a>World Bank Group, “Privacy by Design: Current Practices in Estonia, India, and Austria,” (2016), <em><a href="https://id4d.worldbank.org/sites/id4d.worldbank.org/files/PrivacyByDesign_112918web.pdf" target="_blank">https://id4d.worldbank.org/sites/id4d.worldbank.org/files/PrivacyByDesign_112918web.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref57">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">58</td>
-    								<td class="reference"><a name="fn58"></a>Cyber Security Strategy 2014-2017, Ministry of Economic Affairs and Communication, Republic of Estonia <em><a href="https://www.mkm.ee/sites/default/files/cyber_security_strategy_2014-2017_public_version.pdf" target="_blank">https://www.mkm.ee/sites/default/files/cyber_security_strategy_2014-2017_public_version.pdf</a></em> [“Cyber Security Strategy, 2017”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref58">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">59</td>
-    								<td class="reference"><a name="fn59"></a><em>Cyber Security Strategy</em>, <em>supra</em>, Page 8.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref59">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">60</td>
-    								<td class="reference"><a name="fn60"></a>Cybersecurity Act, 2018; Emergency Act, 2017.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref60">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">61</td>
-    								<td class="reference"><a name="fn61"></a>Cyber Security Strategy 2019-2022, Ministry of Economic Affairs and Communications, Republic of Estonia, <em><a href="https://www.mkm.ee/sites/default/files/kyberturvalisuse_strateegia_2022_eng.pdf" target="_blank">https://www.mkm.ee/sites/default/files/kyberturvalisuse_strateegia_2022_eng.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref61">&uarr;</em></a></span></td>
-								</tr>
-								<tr>
-    								<td class="number">62</td>
-    								<td class="reference"><a name="fn62"></a>“What we learned from the eID card security risk?,” e-estonia, last accessed February 11, 2020, <em><a href="https://e-estonia.com/card-security-risk/" target="_blank">https://e-estonia.com/card-security-risk/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref62">&uarr;</em></a></span></td>
-								</tr>
-							</table>
-
-						</div>
-					</section>
-
-
-
-				<!-- Divider -->
-				<div id="divider"><hr /></div>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<span class="image logo"><img src="../images/CIS_Logo.jpg" alt="The Centre for Internet and Society (CIS), India" /></span>
-						</header>
-						<div class="content">
-							<p>This website presents research undertaken by <a href="https://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a <a href="https://www.omidyar.com/investees/centre-internet-and-society" target="_blank">grant</a> from <a href="https://www.omidyarnetwork.in/" target="_blank">Omidyar Network India</a>.<br /></p>
-							<p>CIS is a non-profit organisation that undertakes interdisciplinary research on internet and digital technologies from policy and academic perspectives. Through its diverse initiatives, CIS explores, intervenes in, and advances contemporary discourse and regulatory practices around internet, technology, and society in India, and elsewhere.</p>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section>
-						<header>
-							<footer>
-
-								<p>Copyright: <a href="https://cis-india.org" target="_blank">CIS, India</a>, 2019<br />
-								License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a><br />
-								Design: <a href="https://html5up.net/paradigm-shift" target="_blank">Paradigm Shift</a> by <a href="https://html5up.net" target="_blank">HTML5 UP</a><br />
-								Fonts: <a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br />
-								Hosted on <a href="https://github.com/cis-india/digitalid.design" target="_blank">GitHub</a></p>
-							</footer>
-						</header>
-						<div class="content">
-						</div>
-					</section>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<!-- Hypothesis -->
-			<script type="application/json" class="js-hypothesis-config">
-				{"showHighlights": false}
-			</script>
-			<script src="https://hypothes.is/embed.js" async></script>
-
-	</body>
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Governing ID: Estonia’s E-Identity Programme | Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network" />
+  <!-- Title + CSS + Favicon -->
+  <title>Digital Identities: Design and Uses</title>
+  <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/post.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4c415b9185.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="green nav-top">
+    <div class="ui container">
+      <a href="../index.html">Home</a> / <a href="../index.html#governingID">Governing ID</a> / <a href="../index.html#maps">Exploratory Research Maps</a> / <a href="../index.html#method">Methodology</a> / <a href="../index.html#blog">Blog</a>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="gray">
+    <div class="ui fluid container banner">
+      <div class="banner-image"></div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="site-title">
+      <h1>Digital Identities</h1>
+      <h2>Design and Uses</h2>
+    </div>
+    <div class="site-desc">
+      <p>A project of the Centre for Internet and Society, India<br/>Supported by Omidyar Network</p>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="white">
+    <div class="ui container two column stackable grid">
+      <div class="six wide column">
+      </div>
+      <div class="ten wide column post-title">
+        <h2>Governing ID:<br/> Estonia’s E-Identity Programme</h2>
+      </div>
+      <div class="five wide column meta">
+        <p><strong>April 9, 2020</strong></p> 
+         <p><em>Research and Writing by</em> Shruti Trikanad<br/>
+          <em>Review and Editing by</em> Amber Sinha<br/>
+          <em>With inputs from</em> Dr. Katrin Nyman Metcalf</p>
+        <p><a href="../docs/CIS_DigitalID_EstoniaCaseStudy_2020.04.pdf" target="_blank">Download as PDF</a></p>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <p class="intro">This is the fifth in a series of case studies, using our <a href="../evaluation-framework-02.html" target="_blank">evaluation framework</a> for the governance of digital identity systems. These case studies, which analyse identity programmes and their uses, illustrate how our evaluation framework may be adapted to study instances of digital identity across different regions and contexts. This case study looks at the Estonian digital ID system.</p>
+		<p>The <a href="../research-maps/estonia.html" target="_blank">Estonian Digital ID landscape</a> is unique both in terms of its complex legal framework, and the reliance of Estonian residents on their Digital IDs. Digital governance is viewed as integral parts of governance and identity, and focuses more on sector specific applications rather than “digital” legislation. The Population Register Act issues a unique number to every Estonian resident, termed the Personal Identification Code (“PIC”), and the Identity Documents Act governs the issue of the digital ID, or the e-ID, incorporating this PIC. The PIC is issued to every individual at birth or any time after, on application to the processor of the Population Register (“PR”), but it does not function independently as a digital ID. When a resident applies for the issue of a digital ID, the information they submit is checked against the Population Register, and they are issued a digital ID that is made unique by the inclusion of the PIC. Thus, the digital ID evaluated below is a sum of the parts issued under the Identity Documents framework, and the Population Register framework. On issue of the ID, the ID database acts as a repository of ID related personal data and documents, and the PR is a repository for other personal information. However, what is important to note is that the digital ID is not used merely to access these databases, but any other registered database storing personal information and allowing access through the ID, including private databases. This is done through the X road system, which is an interface that allows databases to communicate such that when data is needed, actors can access the relevant database directly. Access is determined by agreements entered into between different data collectors, and completely eliminates a system of requesting and releasing data.</p>
+      </div>
+      <div class="sixteen wide column">
+        <div class="break"></div>
+      </div>
+      <div class="six wide column" id="empty">
+      </div>
+      <div class="ten wide column title">
+        <h3>Rule of Law Tests</h3>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.1</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Legislative Mandate</h6>
+        <h4>Is the law governing digital ID a valid law?</h4>
+		<p>The validity of a law governing digital ID can be tested on its clarity, foreseeability, and accessibility, and whether it categorically allows the use of the digital ID in the manner it is being used. The governing ID law — the Identity Documents Act — makes it mandatory for all residents and aliens who reside permanently in Estonia to possess an identity document, one of which is a digital ID. This Act was passed by the Legislature (<em>Riigikogu</em>), is clear, foreseeable and easily accessible on the database (<em>Riigi Teataja</em>), and explicitly regulates the issue and use of the digital ID. </p>
+		<p class="indent">However, the Act permits excessive delegation in the determination of its regulations; it allows the “minister responsible for the area” to issue regulations to decide the list of certificates and data to be submitted upon application for the issue of a document, the procedure for identification and verification of identity, the nature or governance of the identity documents database etc.<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> As these are some of the most crucial aspects of governance for a digital ID program, failing to adequately delineate them in legislation and allowing the Executive to regulate it falls foul of a strict interpretation of a “valid law”.</p>
+		<p class="indent">Further, the Estonian legal system is designed such that there is little overarching legislation governing all aspects of the use of the ID. The ID is permitted to be used for any purpose provided there is a valid law that permits it. Thus, while the ID Act governs the issue of the ID, it does little to regulate any other aspect of the use of the ID itself — including the sharing of collected data — and thus leaves such critical matters unaddressed, to be determined by other laws or regulations. Although this is done deliberately, to have sector specific governance informed by the transaction that uses the digital ID, it creates a system where the Digital ID is not restricted by a purpose limitation, and just operates as a database of information to be leveraged by any sector and for any purpose.</p>
+		<p class="pullquote">Thus, the law that issues the Digital ID is valid, but it fails to govern crucial aspects of the use of the ID.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.2</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Legitimate Aim</h6>
+        <h4>Does the law have a ‘legitimate aim?’</h4>
+		<p>The Identity Documents Act does not explicitly lay out an aim or purpose, but does note that its purpose is to establish an “identity document requirement” and to regulate the issue of identity documents to Estonian citizens and aliens. Since the Act governs all identity documents issued by the Republic of Estonia, its implicit purpose can be identified as providing the means to identify and authenticate persons for all State purposes including national security, determination of citizenship, provisions of services, foreign relations, etc.</p>
+		<p class="pullquote">The aim backing the Act, of identifying and authenticating persons for different State purposes, is legitimate.</p>
+		<p>Another aim that influenced the ID system, one that is often touted as a great success in Estonia, is the Once Only Principles (OOP). Here citizens and businesses provide diverse data only once to public administration, after which the bodies internally share and reuse the data.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> This is also open to private actors, who leverage the ID system to efficiently access data about the ID holder intending to use their services. The design of the ID system, as a web of interoperable databases connected through the X road system, point at the easy access of personal information as a primary criteria for its implementation. This is difficult to categorize as a ‘legitimate aim’ warranting the creation of a digital ID, and is more of a move favouring political expediency.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.3</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Defining Purpose</h6>
+        <h4>Does the law clearly define the purposes for which the ID can be used?</h4>
+		<p class="pullquote">No, the Identity Documents Act does not delineate the uses of the digital ID.</p>
+		<p>It merely regulates the issue and revocation of digital IDs, and does not in any manner limit the purposes it may be used for. While it does mandate the use of digital ID for the electronic provision of services, if such service provider requires it, it fails to place any limits on where else it might be used. It permits the ID to be leveraged by other service providers, provided it is within the contours of any other applicable law. While this once again points to a deliberate design to prevent parallel legislation for e-governance, with more legislative focus on the sector that uses the digital ID, it does fail the purpose limitation test. By not limiting the uses of the ID in the ID law, it permits data collected for the ID to be used for any purpose in the future, regardless of whether such a use was determined at the time of collecting data.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.4</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Defining Actors</h6>
+        <h4>Does the law governing digital ID clearly define all the actors that can use/manage or are connected to the ID database in any way?</h4>
+		<p>The Identity Documents Act does not define the actors that use/manage the digital ID or the database. It categorizes the issuers based on the document they are issuing, which for the digital ID is the Police and Border Guard Board of Estonia,<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> but does not prescribe other actors associated with the use or management of the database. In fact, it even permits the issuer to delegate the task of issuing (digital) certificates to any service provider,<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> the eligibility of whom is determined by the Electronic Identification and Trust Services Act. This Act does not in any way limit the number or types of actors that can manage the system, but merely imposes (largely security related) compliances. Further, it completely fails to address how the digital ID may be used. The task of regulating access to the Identity Documents Database 一 where data collected during the issue of the ID is stored, along with details of the ID itself一 is delegated to the executive. The Statutes for the Maintenance of a Database of Identity Documents, enacted in 2016, govern the collection and access of ID information. Besides the identified public bodies who are permitted to access data in the system, the Statutes also allow data to be accessed by third parties “if there is a legal basis for their access” and in accordance with a contract concluded with the recipient.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> However, since the ID system is intended as a series of interoperable databases accessible through the unique digital ID, and not one central repository, regulating merely the Identity Documents database is insufficient; it only addresses one particular use of the ID.</p>
+		<p class="indent">Similarly, the Population Register 一 which is also accessible through the digital ID 一 fails to define or limit the category of actors who may access personal data that it stores, but has broadly established certain controls for access of actors based on their duties and interests.</p>
+		<p class="indent">Although it fails to identify the categories of actors that can access the system, the Estonian Digital ID framework does have in place controls to ensure accountability and transparency in the use of the ID: the General Data Protection Regulation (“GDPR”) mandates consent for private sector use, and a valid purpose outlined in law for public use; the design of the ID system is also such that any access of the system leaves behind a footprint of what data was accessed, at what time, by which actors, and for what purpose. However, even with such controls in place, by not limiting the actors that can access the Digital ID system, more risk is introduced into the system, and it moves further away from a purpose driven design.</p>
+		<p class="pullquote">The ID framework fails to identify the actors that can use the ID, but has in place controls to regulate their use.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.5</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Regulating Private Actors</h6>
+        <h4>Is the use of the ID system by private actors adequately regulated?</h4>
+		<p class="pullquote">No, the Estonian digital ID framework does not specify or limit access to personal information through the digital ID by private actors.</p>
+    	<p>Both in the issue and the use of the ID, the role of private actors is sparsely regulated.</p>
+		<p class="indent">In the process of issuing the ID, private actors offer technological services in collaboration with the State. Section 9(8) of the Identity Documents Act allows the administrative authority to transfer personal data to third parties for identification and revocation of ID, and permits third parties to process data for this purpose. It does not restrict the role of private actors in the issue of certificates to enable digital IDs, and merely allows the issuing authority to regulate third parties via administrative contracts and standards. In November 2018, the Government recognised a new form of authentication for the digital ID, called the “Smart-ID”. The Smart-ID is a mobile application developed by the banking sector in Estonia, that was used as an identification solution in banking services. By leveraging a technology that is essentially created and run by the private sector, for a function as important as authentication in the widely used digital ID, the Estonian Government’s control over its e-governance system is further diluted.</p>
+		<p class="indent">Since there is no overarching Act regulating the uses of the ID, private actors are not in any manner restricted from using the ID system. The Statutes for the Maintenance of Identity Documents Database, issued by the “minister concerned for the area” under the Identity Documents Act, designates the data stored in the database for “internal purposes,”&thinsp;<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> but allows access to third parties if there exists a legal basis, and in accordance with the Public Information Act and the Personal Data Protection Act.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> This is left to the discretion of the chief processor (the Police and Border Guard Board) of the database. Further, it allows the release of data to any party on a written application for release, if there is a legal basis for the release and if it is required for the verification of identity or identity document.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a></p>
+		<p class="indent">The Population Register Act has some added controls for the use of the stored data by actors (other than those performing <em>public duties</em>), including an application for access, specified terms of processing, rights and obligations of processor, etc.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> Thus, while it still does not prescribe the actors that have access, it does regulate the process of granting access in some manner.</p>
+		<p class="indent">Apart from the ID database and the PR, private actors can access all the personal data stored in databases created within the ID system, provided they have a legal basis for it. In these situations, the actors access data on a personal basis, after identifying themselves through their ID; to that extent, it is always possible to determine exactly who has accessed data, even within an institution or the State. This introduces transparency and accountability in the system, which does majorly contribute to effective regulation.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.6</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Data Specification</h6>
+		<h4>Does the law clearly define the nature of data that will be collected?</h4>
+		<p class="pullquote">Yes, the law is fairly prescriptive on the nature of data it collects for the issue of the digital ID.</p>
+        <p>The Identities Documents Act prescribes certain categories of personal data that may be entered in a document, and restricts entry of any other category unless a treaty, law, or legislation of general application allows it.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> Within such boundaries, the law permits the ‘minister for the concerned area’ to determine by regulation the categories of data that can be collected for issue of the digital ID.<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> However, since the Act does not regulate the actual use of collected data, it does not address issues of the nature of data recorded on every use of the ID, and has no limitations or safeguards regarding such use whatsoever. The Personal Data Protection Act, together with the GDPR, fill these gaps, with safeguards concerning the use or purpose of data collected.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a></p>
+		<p class="indent">Similarly, the Population Register Act prescribes several categories of data collected including ethnic nationality, residence and contact details, details of marital status, custody, voter registration data etc.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> The Act also specifies the categories of data that will be periodically added/updated to the population register on the conclusion of certain events, such as the addition of data contained in identity documents on their issue.</p>
+		<p class="indent">However, it must be noted that the Digital ID system is such that it allows several databases to be created and accessed on the basis of the digital ID, all of which involve collection of fresh data. For instance, when the digital ID is used to access healthcare services, it involves the creation of a new database, that of electronic health records, which can subsequently be accessed by an insurance provider, when the ID holder avails insurance services. Because of the way these databases are interoperable and easily accessible through the digital ID, the collection of data at every instance of use is comparable to the collection of data during the issue of the ID. This is inadequately restricted or regulated by the Identity Documents Act, but there are regulations in place in the relevant sectors that use the ID that govern the nature of data collected.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.7</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>User Notification</h6>
+		<h4>Does the ID system provide adequate user notification mechanisms?</h4>
+		<p>Since the Identity Documents Act only deals with the issue of the documents, it does not set up any notification mechanism. However, some other laws are applicable to digital identity and form part of the ID system; the State Information System Management Act mandates traceability in the functioning of the system, such that all access to the database and responses to the user must be stored and recoverable.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a> This has been implemented through a portal, which allows users to check the dates and time of the use of their ID for authentication or digital signature purposes, along with the mode of ID (Digi ID card, Mobile ID, or Smart ID).<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a> Thus, there is no mandate to proactively notify users every time their data is accessed, but the system allows easy access for records of when such data has been accessed. However, what must also be noted is that in the Estonian digital ID system, ID holders do not necessarily give consent each time their data is accessed for use by service providers; their consent is taken via a contract while applying for the digital ID, and data is easily transferred from one service provider to another through the Estonian information exchange system (X-Road), as the need arises. Thus, while an ID holder in a different digital ID system might otherwise be aware of every use of their ID because they have to consent to such use and authorize every transaction, the lack of an active notification system in Estonia means an ID holder may never be aware of all the times their personal data is accessed unless they make a proactive effort to check access records.</p>
+		<p class="indent">The Personal Data Protection Data Act mandates notifications for breach of data (to the Data Protection Inspectorate and the data subject) if it is likely to entail a high risk to the rights and freedoms of natural persons, within 72 hours of becoming aware of it. It also requires that the notification include a description of the possible consequences of the personal data breach. Thus, through the applicability of the national data protection law, there is a user notification mechanism in place for breach of the system.</p>
+		<p class="pullquote">The data protection law mandates a notification mechanism for breach of data, but there is no system in place to notify ID holders every time their personal data is accessed.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.8</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>User Rights</h6>
+		<h4>Do individuals have rights to access, confirmation, correction and opt out?</h4>
+		<p>Since the Identity Documents Act only governs the issue of the ID, it does not provide for any right to access, correct, or opt out of the digital ID system. However, The Statutes for the Maintenance of Identity Documents Database allows the data subject to access their personal data stored in the database free of charge,<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> and mandates the controller of the database to amend incorrect data when notified of its inaccuracy. It does specify any right for ID holders to opt out of the ID or delete their personal data from the ID database.</p>
+		<p class="indent">It must be noted here that since the digital ID can be used for purposes outside the Identity Documents Act, and data may be collected independently for these purposes, the ID database itself does not comprise all the data involved in the digital ID; for this reason, governing the ID database is very limiting in terms of the entire scope of personal data involved in the digital ID. For instance, the use of the ID for the creation of electronic health records is governed by an entirely different framework of law, and may contain different rights and obligations on ID holders.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a></p>
+		<p class="indent">With respect to the data contained in the PR, Section 45(1) read with Section 53 of the Population Register Act allows a person to access data in the registry about themselves, the agencies and persons who have the right to access data in the PR, and the purpose and legal basis of the processing of their data. Further, a person can dispute the accuracy of the data collected about them, based on which the processor will submit an inquiry about the accuracy of the data and temporarily restrict access to such data.<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a></p>
+		<p class="indent">As for opting out, Sections 17 and 19 of the Electronic Identification and Trust Services or Electronic Transactions Act (“Electronics Act”) allows the certificate holder (the ID holder) to apply for the suspension and/or revocation of their certificate,<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a> and effectively opt out of the ID system for that duration. However, reasons for such applications and durations of suspension are not identified in the Act, and therefore paint only an incomplete picture of how an ID holder may opt out of the system. There is also no indication as to whether the ID holder’s personal data will be deleted from the ID system in case their ID is suspended.</p>
+		<p class="indent">Lastly, to the extent that the Personal Data Protection Act impacts the data in question, subjects have the right access and confirmation, and to demand rectification of inaccurate data. They may also demand erasure of data if the data was not collected pursuant to law, principles of processing were not adequately followed, or if erasure is required under any binding obligation.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a></p>
+		<p class="pullquote">There are sufficient rights to access, confirmation, and correction in the governing framework, but an ID holder cannot effectively opt out of the ID system.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.9</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Redressal Mechanisms</h6>
+		<h4>Are there adequate civil and criminal redressal mechanisms in place to deal with violations of their rights arising from the use of digital ID?</h4>
+		<p>The Identity Documents Act fails to set up any redressal mechanisms pertaining to the use of the ID. The Electronics Act, which governs electronic identification, requires that a person or authority who suspends or revokes a certificate without legal basis — intentionally or due to gross negligence — must compensate for damage caused.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> The Personal Data Protection Act identifies the Data Protection Inspectorate as an extra-judicial body to settle complaints from persons whose rights have been violated under the Act.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a> It also sets up a system of fines in case of violation of rights by the controller or supervising agencies.<sup class="superscript"><a href="#fn23">23</a></sup><a name="ref23"></a> Compensation may also be payable for violation of rights, under the State Liability Act<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> in case of violations by State while performing public duties, or Law of Obligations Act<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a> in case of private parties in contractual relationships. Thus, while the ID system itself fails to set up an adequate mechanism, the data protection framework sufficiently addresses this gap.</p>
+		<p class="pullquote">There are adequate redressal mechanisms, including compensation for victims whose rights are violated in the use of the ID, in the data protection law.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.10</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Accountability</h6>
+		<h4>Is there an independent/adequate regulatory mechanism to ensure accountability of the administrator of the digital ID?</h4>
+		<p class="pullquote">The Data protection Inspectorate, established under the Personal Data Protection Act, exists as an independent regulator and is empowered to take action against data controllers who violate the Act.</p>
+		<p>This would presumably apply to the Police and Border Guard Board as well, who is the administrator of the digital ID.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>1.11</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Mission Creep</h6>
+		<h4>In case there are newer purposes identified, are there regulatory procedures in place to determine their legitimacy?</h4>
+		<p>No; the relevant Acts that govern the digital ID system do not prescribe the purposes for which data is collected, and in fact encourage the sharing of collected data for new purposes such that duplicate data need never be collected. The Data Exchange Layer of Information Systems Regulation,<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a> together with the Electronics Act, regulate the agencies that may have access to collected data, but the controls that are in place relate to security and integrity of the data shared, and do not concern the purposes for which they may be used (neither do they entail fresh consent from users). </p>
+		<p class="indent">The Personal Data Protection Act, read with the General Data Protection Regulation,<sup class="superscript"><a href="#fn27">27</a></sup><a name="ref27"></a> impose a purpose limitation on data, restricting its use for reasons other than that of its collection without fresh consent. However, it exempts this obligation if the data collection is permitted by a legitimate law (that is necessary and proportionate in a democratic society). Since the ID framework explicitly allows data collected during the issue of the ID to be used by actors if “there is a legal basis for it,” this exception seems to be applied to indiscriminately allow new purposes and actors provided there is legal backing. This fails the purpose limitation test.</p>
+		<p class="pullquote">The Estonian digital ID framework does not limit the purposes that the ID can be used for, and fails to protect against mission creep.</p>
+
+      </div>
+      <div class="sixteen wide column">
+        <div class="break"></div>
+      </div>
+      <div class="six wide column" id="empty">
+      </div>
+      <div class="ten wide column title">
+        <h3>Rights based Tests</h3>
+      </div>
+      <div class="five wide column meta">
+        <h3>2.1</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Data Minimisation</h6>
+		<h4>Are principles of data minimisation followed in the collection, use, and retention of personal data?</h4>
+		<p>The Identity Documents Act does not prescribe a purpose for the creation and issue of identity documents, and therefore allows the collection of a wide range of details including iris images, signature, etc.<sup class="superscript"><a href="#fn28">28</a></sup><a name="ref28"></a> Further, it permits the specification of required data to be determined by a regulation of the ‘minister concerned for the area’.<sup class="superscript"><a href="#fn29">29</a></sup><a name="ref29"></a> Biometric data is collected during the ID issue process, even though it is not (currently) being used for authentication (or any other) purposes.</p>
+		<p class="indent">The Population Register Act describes as its purpose “the collection of reliable information and grant of access to personal data”.<sup class="superscript"><a href="#fn30">30</a></sup><a name="ref30"></a> This broad and overarching purpose does nothing to enable data minimization. Accordingly, the categories of data it collects is vast and includes ethnic nationality, residence and contact details, details of marital status, custody and voter registration data.<sup class="superscript"><a href="#fn31">31</a></sup><a name="ref31"></a> Further, all identity documents and citizenship documents are entered into the PR.<sup class="superscript"><a href="#fn32">32</a></sup><a name="ref32"></a> All the data continues to remain in the PR permanently<sup class="superscript"><a href="#fn33">33</a></sup><a name="ref33"></a> unless amended or replaced, until the validity of the documents in question. Even after, the data is stored as ‘non-actual data.’&thinsp;<sup class="superscript"><a href="#fn34">34</a></sup><a name="ref34"></a> The PR also contains data on submission of data to PR, access and restrictions to access, etc.<sup class="superscript"><a href="#fn35">35</a></sup><a name="ref35"></a></p>
+		<p class="indent">Lastly, since data is collected at every new use of the ID — with its primary purpose being <em>easy</em> access to data — and the system is highly interoperable without any need for user consent, it encourages the creation of a large repository of data spanning several categories and purposes. This is different from most other ID system designs, where data collected or accessed is largely for identification purposes, and such data is not permanently recorded for reuse. The aim of the system is to collect and share data efficiently such that the ID holder may never have to submit the same data more than once; thus, it becomes difficult to estimate whether only the data necessary to achieve this aim is being collected, as the aim itself is vast and open-ended.</p>
+		<p class="pullquote">With extensive personal data being collected and indefinitely stored, the digital ID system does not follow principles of data minimisation.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>2.2</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Access to Data</h6>
+		<h4>Does the law specify access that various private and public actors have to personal data?</h4>
+		<p>The Identity Documents Act does not prescribe or limit access of any (private or public) actors to data collected under the Act. The Statutes for the Maintenance of Identity Documents Database, though only an executive Regulation, regulates access that actors have to data in the Identity Documents Database. It designates the data as for “internal use” and permits employees of the chief processor access to the extent assigned to them for the performance of their supervisory duties,<sup class="superscript"><a href="#fn36">36</a></sup><a name="ref36"></a> as well as to the parties developing or maintaining the database.<sup class="superscript"><a href="#fn37">37</a></sup><a name="ref37"></a> It is unclear if this party could be a private actor, in which case they have almost unrestrained access to the database, which is regulated by a maintenance or development contract. The Statue also permits employees of the Ministry of the Interior to access the database for the performance of their duties.<sup class="superscript"><a href="#fn38">38</a></sup><a name="ref38"></a> Finally, the chief processor can grant access to third parties if there exists a “legal basis”, and in accordance with the Public Information Act and the Personal Data Protection Act.<sup class="superscript"><a href="#fn39">39</a></sup><a name="ref39"></a> This is, once again, regulated through a contract concluded between the processor and the recipient.</p>
+		<p class="indent">The Population Register Act, which governs the collection of information that is often used for digital identity, allows access to State and local governments, and natural and legal persons performing <em>public duties</em>, as well as legal persons and natural persons with <em>legitimate interest</em>. Access is allowed on an application submitted to the population registration information system, and is decided based on an administrative Act that determines the purpose of the received data, its transferability to other databases and persons, time limits for processing, and rights and obligations of the applicant, among other factors.<sup class="superscript"><a href="#fn40">40</a></sup><a name="ref40"></a> The controller, which is the Ministry for Interior, decides the access that a person may have, and this access is typically done through the data exchange layer of the information system (X-Road).<sup class="superscript"><a href="#fn41">41</a></sup><a name="ref41"></a> The processor rules on the <em>legitimate interest</em> of an application to access data (after the person is granted access by the controller) on a case-by-case basis, and allows it only if it does not breach the inviolability of private life or endanger national security.<sup class="superscript"><a href="#fn42">42</a></sup><a name="ref42"></a> Further, access to data is also categorically refused if it may cause damage to the data subject, or if it is sought for research or advertising purposes.<sup class="superscript"><a href="#fn43">43</a></sup><a name="ref43"></a> However, according to Section 54 of the Act, this may be overridden by specific consent given by the data subject to the processor in case of a request by the applicant.<sup class="superscript"><a href="#fn44">44</a></sup><a name="ref44"></a></p>
+		<p class="indent">X-Road is the primary mode of accessing information from various databases, and is regulated by the Data Exchange Layer of Information Regulation (“X-Road Regulation”).<sup class="superscript"><a href="#fn45">45</a></sup><a name="ref45"></a> To access information through X-Road, persons have to become members and sign contracts with the Estonian Information System Authority. The Authority can refuse membership if they fail to meet certain obligations prescribed in the Electronic Identification and Trust Services for Electronic Transactions Act<sup class="superscript"><a href="#fn46">46</a></sup><a name="ref46"></a> (and related EU Regulation) regarding eSeals. There are no restrictions on membership that depend on the nature of duties that the applicant performs, and therefore there is effectively no purpose-related classification of persons or authorities who can and cannot use X-Road to access personal data. An X-Road member will also have to register their sub-system (a particular organisational part of the X-Road system) with X-Road on meeting certain obligations regarding specifying natural person within the member responsible for its functioning, measures appointed to ensure integrity/security of data, etc. These sub-systems can then be accessed by other members of X-road.</p>
+		<p class="pullquote">The ID framework has in place controls to delineate the access that actors have to personal data, but it also allows for excessive discretion on part of executive bodies.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>2.3</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Exclusions due to Design Flaws</h6>
+		<h4>Is the use of digital ID to access services exclusionary?</h4>
+		<p>Section 18(1)(3) of the Identity Documents Act allows the provider of a public service electronically with the right to require the use of a digital ID card (or digital certificates) for the provision of their service. However, for most other purposes, the digital ID card is simply one of many ways to prove their identity, and the Identity Documents Act does not prescribe any mandates for their use. Further, Estonia has managed to achieve near complete internet accessibility to its population, and therefore does not suffer the typical roadblocks in e-services that other countries do.<sup class="superscript"><a href="#fn47">47</a></sup><a name="ref47"></a></p>
+		<p class="pullquote">The use of digital ID to access services in Estonia is not exclusionary.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>2.4</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Exclusions due to Failure</h6>
+		<h4>Does failure of the ID system lead to exclusion?</h4>
+		<p>Since use of the digital ID is not mandatory but used mainly for the purpose of convenience, failure of the digital ID system does not easily lead to exclusion (provided not many online public services <em>mandate</em> the use of the ID, which is consistent with what we have found so far). The Identity Documents Act permits identity to be  verified with any valid document that has certain key categories of personal data on it,<sup class="superscript"><a href="#fn48">48</a></sup><a name="ref48"></a> and thus a resident may easily use a different ID in place of their digital ID. Further, it is the Personal Identification Code issued to every person on the entry of their data to the PR that can be used to link their information across databases, which continues to be usable without the digital ID.</p>
+		<p class="indent">Exclusion may also occur due to inaccurate data, leading to errors in authentication. This is adequately addressed by having in place a mechanism to identify and correct inaccurate data. The Statutes for the Maintenance of Identity Documents Database attributes the responsibility of ensuring accurate data to the provider of data (the applicant) when such data is being submitted, and to the controller for accurately recording the data. It also imposes the responsibility of ensuring rectification of incorrect data, on becoming aware of inaccuracy, on the controller. The Population Register Act makes it mandatory for the person submitting the data (typically the authority/person who issued the identity document on the basis of which data is being entered) to ensure the accuracy of data and its compliance with the documents.<sup class="superscript"><a href="#fn49">49</a></sup><a name="ref49"></a> On being given notice, the processor is required to correct the data.<sup class="superscript"><a href="#fn50">50</a></sup><a name="ref50"></a> Further, in cases where it is suspected that the data stored is inaccurate,<sup class="superscript"><a href="#fn51">51</a></sup><a name="ref51"></a> the processor is required to restrict access to such data until such time it is verified and corrected (access must be allowed to persons performing public duties but with the notice of it being inaccurate).<sup class="superscript"><a href="#fn52">52</a></sup><a name="ref52"></a> However, in both cases, there is no liability imposed in case of inaccurate data or failure of the system. This does not adequately dissuade inaccuracy in data collection, or a failure of the system. There is also no mechanism, or redressal system, in place to safeguard the rights of those who have been excluded due to failure. </p>
+		<p class="pullquote">Failure of the ID system does not lead to exclusion, largely because use of the ID is not mandatory to access most services in Estonia.</p>
+      </div>
+      <div class="sixteen wide column">
+        <div class="break"></div>
+      </div>
+      <div class="six wide column" id="empty">
+      </div>
+      <div class="ten wide column title">
+        <h3>Risk based Tests</h3>
+      </div>
+      <div class="five wide column meta">
+        <h3>3.1</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Risk Assessment</h6>
+		<h4>Is the ID system designed taking into account the potential risk of its use?</h4>
+		<p>The design of the ID system introduces potential risk in its use in several ways. The complete lack of a purpose limitation on the use of the digital ID and collected personal data is alarming. The ID system, in the attempt to be highly interoperable and all-encompassing, creates a large repository of personal data of residents. Although this data is collected and stored in a federated manner, the ID documents database and the Population Register collect a lot more data than is seen in analogous digital ID programs. Thus a breach of these databases would gravely impact an ID holder’s privacy, in a manner similar to having a central ID database. The use of private actors in the issue and management of the ID, and in offering authentication services, is also a risk-inducing factor to account for.</p>
+		<p class="indent">However, the system is also privacy enhancing in some other ways. The attributes for authentication of identity are restricted to chip-readers and passwords or OTPs, and thus the non-utilisation of biometrics limits the intrusive use of physical or bodily data. In terms of security measures, the Electronics Act (together with the Regulation (EU) No. 910/2014) mandates the active creation of a list of qualified trust service providers and trust services that have to consistently comply with obligations to maintain their status. Further, the Police and Border Guard Board has a Certificate Policy that defines the procedural and operational requirements that Certification Authority adheres to and requires entities to adhere to when issuing and managing the Certificates.<sup class="superscript"><a href="#fn53">53</a></sup><a name="ref53"></a> Having in place a strong data protection law with an independent data protection authority, and measures to introduce transparency and accountability into the system, are redeeming factors that impact the functioning of the system.</p>
+		<p class="pullquote">By not having a purpose driven design, or prioritising consent in the use of the ID, the system cannot be said to have been designed taking into account the risks of its use.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>3.2</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Privacy Risk Mitigation</h6>
+		<h4>Is there a national data protection law in place?</h4>
+    	<p class="pullquote">The Personal Data Protection Act,<sup class="superscript"><a href="#fn54">54</a></sup><a name="ref54"></a> read with the General Data Protection Regulation<sup class="superscript"><a href="#fn55">55</a></sup><a name="ref55"></a> governs the use of personal data in Estonia.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>3.3</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Privacy by Design</h6>
+		<h4>Are there privacy by design systems that minimise the harms from data breach?</h4>
+		<p>The framework that governs access to data from the interoperable databases is the set of laws and contracts that govern the X Road. Regulation No. 331,<sup class="superscript"><a href="#fn56">56</a></sup><a name="ref56"></a> governing the implementation of the X road, puts in place several privacy by design obligations, and requires a data sharing contract between the administrator and a participant (in the data sharing process) that elaborately sets out rights, obligations, and responsibilities of parties. However, even with these privacy mechanisms, it fails to adequately provide agency to the ID holder in the sharing of their data, as consent is taken only once — at the issue of the ID — and not at every instance their data is accessed. Other privacy by design mechanisms include pseudonymizing of personal data while logging data sharing transactions; anonymizing data when used for analytics; encrypting and requiring digital signatures for the sharing of data; and using blockchain technology for transaction logs to ensure their immutability.<sup class="superscript"><a href="#fn57">57</a></sup><a name="ref57"></a></p>
+		<p class="pullquote">The digital ID framework incorporates some privacy by design systems that minimise harms arising from its use.</p>
+      </div>
+      <div class="five wide column meta">
+        <h3>3.4</h3>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h6>Response to Risks</h6>
+		<h4>Is there a mitigation strategy in place in case of failure or breach of the ID system?</h4>
+		<p>The framework surrounding the ID system does not seem to identify a mitigation strategy for failure or breach of the system. However, the National Cyber Security strategy,<sup class="superscript"><a href="#fn58">58</a></sup><a name="ref58"></a> read with the Digital Agenda for Estonia, hints at some consideration being given to crisis management in situations of breach: the 2017 National Cyber Security Strategy identifies as a goal the creation of a system of alternate solutions to be used in cases where the normal functioning of ICT infrastructure and e-services, for ‘important’ services, is disrupted, and for ensuring the uninterrupted functioning of the infrastructure for essential/vital services.<sup class="superscript"><a href="#fn59">59</a></sup><a name="ref59"></a> Similarly, the Emergency Act and the Cybersecurity Act create a legal framework for responding to and managing risks, though once again it targets cyberthreats and responses  with regard to vital services in the public or private sector, and is not specifically tailored toward risks in the ID system.<sup class="superscript"><a href="#fn60">60</a></sup><a name="ref60"></a> The 2022 Cyber Security Strategy also proposes regular joint cooperative exercises with political leaders and vital service providers to ensure readiness in case of crises.<sup class="superscript"><a href="#fn61">61</a></sup><a name="ref61"></a></p>
+		<p class="indent">In its functioning, the Estonian system seems to be responsive to incidents impacting the safety of the ID system; in 2017, when the digital ID card chips were reportedly exposed to an unknown digital vulnerability, the PBGB, along with the Information System Authority and the Ministry of Economic Affairs and Communication, immediately (on being notified) suspended the certification of the Digital ID cards and mandated a an electronic renewal of all IDs.<sup class="superscript"><a href="#fn62">62</a></sup><a name="ref62"></a></p>
+		<p class="pullquote">There is no identifiable mitigation strategy in the ID framework, but the e-governance system itself seems well equipped to handle failures and crises. </p>
+		<br/><br/>
+		<p><em>We are grateful to Dr. Katrin Nyman Metcalf for taking the time to review this case study. As remote researchers, the perspectives of a local expert were of immense value to us. We would also note while Dr. Metcalf had disagreements with our approach and its suitability for Estonia, her feedback gave us a lot of insights into digital identity in Estonia.</em></p>
+      </div>
+      <div class="sixteen wide column">
+        <div class="break"></div>
+      </div>
+      <div class="six wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+        <h3>Notes</h3>
+        <p>&nbsp;</p>
+        <table class="footnote">
+          <tr>
+            <td class="number">1</td>
+			<td class="reference"><a name="fn1"></a>Section 15, 15(2), Identity Documents Act, 2000 [“ID Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">2</td>
+    		<td class="reference"><a name="fn2"></a>“Once-Only,” The Once Only Principle, last accessed February 11, 2020, <em><a href="http://toop.eu/once-only" target="_blank">http://toop.eu/once-only</a></em>; European Commission, “Trends in Electronic Verification: An Overview” (September 2018).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">3</td>
+    		<td class="reference"><a name="fn3"></a>Section 15(4), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">4</td>
+    		<td class="reference"><a name="fn4"></a>Section 9(4)(3), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">5</td>
+    		<td class="reference"><a name="fn5"></a>Section 16, Statutes for Maintenance of Identity Documents Database, 2016 [“ID Database Statutes”] <em><a href="https://www.riigiteataja.ee/akt/102022018003" target="_blank">https://www.riigiteataja.ee/akt/102022018003</a></em> [In Estonian].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">6</td>
+    		<td class="reference"><a name="fn6"></a><em>Section 16(1), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">7</td>
+    		<td class="reference"><a name="fn7"></a>Section 16(5), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">8</td>
+    		<td class="reference"><a name="fn8"></a>Section 17(1)(2), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">9</td>
+    		<td class="reference"><a name="fn9"></a>Sections 49, 51, Population Register Act, 2000 [“PR Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">10</td>
+    		<td class="reference"><a name="fn10"></a>Section 9, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">11</td>
+    		<td class="reference"><a name="fn11"></a>Section 15, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">12</td>
+    		<td class="reference"><a name="fn12"></a>Sections 14, 16, Personal Data Protection Act, 2019 [“PDP Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">13</td>
+    		<td class="reference"><a name="fn13"></a>Sections 20, 23, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">14</td>
+    		<td class="reference"><a name="fn14"></a>State Information System Management Act, 2008.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">15</td>
+    		<td class="reference"><a name="fn15"></a>Information System Authority, “My ID-card activities”, iD, <em><a href="https://www.id.ee/index.php?id=31014" target="_blank">https://www.id.ee/index.php?id=31014</a></em>;  Eesti.ee, Estonian Government Information Portal, <em><a href="https://www.eesti.ee/en/" target="_blank">https://www.eesti.ee/en/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">16</td>
+    		<td class="reference"><a name="fn16"></a>Sections 17(1), 17(3), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">17</td>
+    		<td class="reference"><a name="fn17"></a>See Healthcare Services Organization Act, 2002, Statutes of Health Information System, 2016.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">18</td>
+    		<td class="reference"><a name="fn18"></a>Sections 32, 33, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">19</td>
+    		<td class="reference"><a name="fn19"></a>Electronic Identification and Trust Services for Electronic Transactions Act, 2016 [“Electronics Act”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">20</td>
+    		<td class="reference"><a name="fn20"></a>Chapter 4, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">21</td>
+    		<td class="reference"><a name="fn21"></a>Section 21, Electronics Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">22</td>
+    		<td class="reference"><a name="fn22"></a>Section 56, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref22">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">23</td>
+    		<td class="reference"><a name="fn23"></a>Chapter 6, PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">24</td>
+    		<td class="reference"><a name="fn24"></a>State Liability Act, 2002, accessible at <em><a href="https://www.riigiteataja.ee/akt/113092011011" target="_blank">https://www.riigiteataja.ee/akt/113092011011</a></em> [in Estonian].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">25</td>
+    		<td class="reference"><a name="fn25"></a>Law of Obligations Act, 2018.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">26</td>
+    		<td class="reference"><a name="fn26"></a>Data Exchange Layer of Information Regulation, 2016 [“X-Road Regulation”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</em></a></span></td>
+  		  </tr>
+  		  <tr>
+    		<td class="number">27</td>
+    		<td class="reference"><a name="fn27"></a>Articles 5-7, General Data Protection Regulation, 2018 [“GDPR”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">28</td>
+    		<td class="reference"><a name="fn28"></a>Section 9, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">29</td>
+    		<td class="reference"><a name="fn29"></a>Section 20(2), ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">30</td>
+    		<td class="reference"><a name="fn30"></a>Section 4, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref30">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+            <td class="number">31</td>
+    		<td class="reference"><a name="fn31"></a>Section 20, 23, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">32</td>
+    		<td class="reference"><a name="fn32"></a>Sections 21,22, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref32">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">33</td>
+    		<td class="reference"><a name="fn33"></a>Section 8, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">34</td>
+    		<td class="reference"><a name="fn34"></a>Section 26, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref34">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">35</td>
+    		<td class="reference"><a name="fn35"></a>Section 25, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref35">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">36</td>
+    		<td class="reference"><a name="fn36"></a>Section 16(2), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref36">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">37</td>
+    		<td class="reference"><a name="fn37"></a>Section 16(4), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref37">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">38</td>
+    		<td class="reference"><a name="fn38"></a>Section 16(3), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref38">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">39</td>
+    		<td class="reference"><a name="fn39"></a>Section 16(5), ID Database Statutes.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref39">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">40</td>
+    		<td class="reference"><a name="fn40"></a>Sections 49, 50, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref40">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">41</td>
+    		<td class="reference"><a name="fn41"></a>Section 48, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref41">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">42</td>
+    		<td class="reference"><a name="fn42"></a>Section 51, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref42">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">43</td>
+    		<td class="reference"><a name="fn43"></a>Section 51, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref43">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">44</td>
+    		<td class="reference"><a name="fn44"></a>Section 54, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref44">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    	    <td class="number">45</td>
+    		<td class="reference"><a name="fn45"></a>X-Road Regulation.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref45">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">46</td>
+    		<td class="reference"><a name="fn46"></a>Electronics Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref46">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">47</td>
+    		<td class="reference"><a name="fn47"></a>Mari Roonemaa, “Global lessons from Estonia’s tech-savvy government,” The UNESCO Courier, <em><a href="https://en.unesco.org/courier/2017-april-june/global-lessons-estonia-s-tech-savvy-government" target="_blank">https://en.unesco.org/courier/2017-april-june/global-lessons-estonia-s-tech-savvy-government</a></em>; <em><a href="https://e-estonia.com/" target="_blank">https://e-estonia.com/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref47">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">48</td>
+    		<td class="reference"><a name="fn48"></a>Section 4, ID Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref48">&uarr;</em></a></span></td>
+		  </tr>
+  		  <tr>
+    		<td class="number">49</td>
+    		<td class="reference"><a name="fn49"></a>Section 32, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref49">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">50</td>
+    		<td class="reference"><a name="fn50"></a>Section 33, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref50">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">51</td>
+    		<td class="reference"><a name="fn51"></a>Section 32(3), PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref51">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">52</td>
+    		<td class="reference"><a name="fn52"></a>Section 59, PR Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref52">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">53</td>
+    		<td class="reference"><a name="fn53"></a>Id.ee, “Police and Border Guard Board-Certificate Policy for identity card, digital identity card, residence permit card and diplomatic identity card,” April 17, 2019, <em><a href="https://www.id.ee/public/CP_ESTEID_v1.1.pdf" target="_blank">https://www.id.ee/public/CP_ESTEID_v1.1.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref53">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">54</td>
+    		<td class="reference"><a name="fn54"></a>PDP Act.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref54">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">55</td>
+    		<td class="reference"><a name="fn55"></a>GDPR.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref55">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">56</td>
+    		<td class="reference"><a name="fn56"></a>Applying the data exchange layer of information systems, Regulation No. 331, accessible at <em><a href="https://www.riigiteataja.ee/akt/688079" target="_blank">https://www.riigiteataja.ee/akt/688079</a></em> [in Estonian]. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref56">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">57</td>
+    		<td class="reference"><a name="fn57"></a>World Bank Group, “Privacy by Design: Current Practices in Estonia, India, and Austria,” (2016), <em><a href="https://id4d.worldbank.org/sites/id4d.worldbank.org/files/PrivacyByDesign_112918web.pdf" target="_blank">https://id4d.worldbank.org/sites/id4d.worldbank.org/files/PrivacyByDesign_112918web.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref57">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">58</td>
+    		<td class="reference"><a name="fn58"></a>Cyber Security Strategy 2014-2017, Ministry of Economic Affairs and Communication, Republic of Estonia <em><a href="https://www.mkm.ee/sites/default/files/cyber_security_strategy_2014-2017_public_version.pdf" target="_blank">https://www.mkm.ee/sites/default/files/cyber_security_strategy_2014-2017_public_version.pdf</a></em> [“Cyber Security Strategy, 2017”].&nbsp;&nbsp;<span class="internal-nav"><a href="#ref58">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">59</td>
+    		<td class="reference"><a name="fn59"></a><em>Cyber Security Strategy</em>, <em>supra</em>, Page 8.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref59">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">60</td>
+    		<td class="reference"><a name="fn60"></a>Cybersecurity Act, 2018; Emergency Act, 2017.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref60">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    	    <td class="number">61</td>
+    		<td class="reference"><a name="fn61"></a>Cyber Security Strategy 2019-2022, Ministry of Economic Affairs and Communications, Republic of Estonia, <em><a href="https://www.mkm.ee/sites/default/files/kyberturvalisuse_strateegia_2022_eng.pdf" target="_blank">https://www.mkm.ee/sites/default/files/kyberturvalisuse_strateegia_2022_eng.pdf</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref61">&uarr;</em></a></span></td>
+		  </tr>
+		  <tr>
+    		<td class="number">62</td>
+    		<td class="reference"><a name="fn62"></a>“What we learned from the eID card security risk?,” e-estonia, last accessed February 11, 2020, <em><a href="https://e-estonia.com/card-security-risk/" target="_blank">https://e-estonia.com/card-security-risk/</a></em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref62">&uarr;</em></a></span></td>
+		  </tr>
+        </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">	
+    <div class="ui container four column stackable grid">
+      <div class="six wide column">
+        <h1>Digital Identities: Design and Uses</h1>
+        <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyar.com/" target="_blank">Omidyar Network</a>.</p>
+        <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
+        <p>Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> and <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a><br/>
+          <a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>
+          Social media icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a><br/>
+          Hosted on <a href="https://github.com/digitalid-design/digitalid-design.github.com" target="_blank">GitHub</a></p>
+      </div>
+      <div class="three wide column team">
+        <h1>Team</h1>
+        <p>Akash Sheshadri</p>
+        <p>Amber Sinha</p>
+        <p>Anubha Sinha</p>
+        <p>Divyank Katira</p>
+        <p>Pooja Saxena</p>
+        <p>Saumyaa Naidu</p>
+        <p>Shruti Trikanad</p>
+        <p>Yesha Tshering Paul</p>
+      </div>
+      <div class="three wide column contributors">
+        <h1>Contributors</h1>
+        <p>Kushang Mishra</p>
+        <p>Prakriti Singh</p>
+        <p>Sumandro Chattapadhyay</p>
+        <p>Sunil Abraham</p>
+        <p>Vrinda Bhandari</p>
+      </div>
+      <div class="four wide column">
+        <div>
+          <a href="https://cis-india.org/" target="_blank" style="border-bottom: 0px solid"><img src="../img/logo.png" alt="The Centre for Internet and Society, India" class="logo" /></a>
+        </div>
+        <div class="icons">
+          <a href="https://twitter.com/cis_india" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a href="https://www.instagram.com/cis.india/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a> <a href="https://www.youtube.com/channel/UC0SLNXQo9XQGUE7Enujr9Ng" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hypothesis
+  <script type="application/json" class="js-hypothesis-config">
+    {"showHighlights": false}
+  </script>
+  <script src="https://hypothes.is/embed.js" async></script>  -->
+</body>
 </html>
