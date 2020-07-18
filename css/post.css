@@ -25,6 +25,13 @@ a:hover {
 .meta a:hover {
     color: #222
 }
+.img-link a {
+	border-bottom: 0px solid;
+}
+.img-link a:hover,
+.img-link a:active {
+    border-bottom: 0px solid;
+}
 h3 {
     font-size: 1.8rem;
     font-weight: 400;
@@ -106,6 +113,14 @@ p.caption {
 	line-height: 1.2rem !important;
 	text-align: right;
 	margin-bottom: 30px;
+}
+.img-link {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.img-link:hover {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
 }
 .img-caption {
     text-align: right;
