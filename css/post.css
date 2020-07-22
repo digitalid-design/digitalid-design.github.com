@@ -137,6 +137,9 @@ p.caption {
 .contents a {
     color: #222;
 }
+.contents h4 {
+    margin-bottom: 1.3em;
+}
 .contents h5 {
     font-family: "Fira Sans", sans;
     font-size: 0.9rem;
