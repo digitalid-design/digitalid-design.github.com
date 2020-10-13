@@ -60,7 +60,7 @@
       <div class="ten wide column content">
 		<p class="intro">This series of research maps, based on our global survey of digital identity systems, is for India. Read together with our glossary of core concepts and processes, these maps provide a coherent view of digital identity in India. They shine a light on the pervasiveness of digital identity, as well as dissect digital identity systems in a way that brings attention to the actions of key stakeholders, and to kinds of data and how they are shared. Designed as stepping stones to further research, the maps facilitate the identification of points of accountability and intervention.</p>
 		<p>The Digital ID system in India, Aadhaar was launched in 2010, with the primary aim to improve the Public Distribution System in the country. It is managed by the Unique Identification Authority of India (UIDAI). The Digital ID system includes the Unique Identification (UID) numbers, called ‘Aadhaar,’ which can be assigned to all residents of India. The Aadhaar number is a random 12-digit number issued by the UIDAI after a verification process. The enrollment and authentication processes are conducted by the UIDAI. The enrolment process includes capturing demographic and biometric data from residents.</p>
-		<p class="indent">Aadhaar is currently used for identity verification in several private and public services by linking the Aadhaar numbers of residents with their mobile SIM cards, bank accounts, and a large number of welfare schemes. Other key digital services that have been planned are in the healthcare and finance sectors. While Aadhaar is envisioned to be used by state and private hospitals for registration and appointments, and for identification in other government healthcare schemes, there is also the proposed National Health Stack, which will include an identifier for beneficiaries. It is not yet confirmed if this identifier will be Aadhaar number itself or a new unique ID. In the finance sector, a set of Application Program Interfaces (APIs) for provision of financial infrastructure for governments, businesses, startups, and developers called India Stack has been created. IndiaStack currently includes the following APIs — are DigiLocker, e-KYC, e-Sign, Aadhaar Auth, and UPI.</p>
+		<p class="indent">Aadhaar is currently used for identity verification in several private and public services by linking the Aadhaar numbers of residents with their mobile SIM cards, bank accounts, and a large number of welfare schemes. Other key digital services that have been planned are in the healthcare and finance sectors. While Aadhaar is envisioned to be used by state and private hospitals for registration and appointments, and for identification in other government healthcare schemes, there is also the proposed National Health Stack, which will include an identifier for beneficiaries. It is not yet confirmed if this identifier will be Aadhaar number itself or a new unique ID. In the finance sector, a set of Application Program Interfaces (APIs) for provision of financial infrastructure for governments, businesses, startups, and developers called India Stack has been created. IndiaStack currently includes the following APIs — DigiLocker, e-KYC, e-Sign, Aadhaar Auth, and UPI.</p>
 		<p class="indent">The National Health Service (NHS) is the publicly-funded healthcare system of the UK, which uses digital ID  to provide services in the form of a patient identifier, the NHS Number, and smartcards for healthcare staff.</p>
       </div>
       <div class="sixteen wide column">
@@ -82,146 +82,216 @@
 		<p class="indent">The Swim Lane Model represents a process as a sequence of steps, and places the entities in different lanes (or columns) to show who is responsible for taking those steps. Each column shows the action taken by the respective entity. The numbered rows establish the sequence of steps. The arrows connect the end of each step to the beginning of the next one. Refer to the key on the right to navigate the process maps. They also indicate multiple routes that can be taken within a step. Additionally, these process maps highlight the data being collected and digital identity artifacts being used in various steps.</p>
       </div>
 	  <div class="five wide column meta">
-		<h4>1</h4>
-		<a name="processmaps-identification"></a>
+		<h3>1</h3>
+		<a name="processmaps-id"></a>
 	  </div>
 	  <div class="one wide column" id="empty">
       </div>
 	  <div class="ten wide column content">
-		<h4>Identification</h4>
+		<h3>Identification</h3>
+	  </div>
+      <div class="five wide column meta">
+		<h4>1.1</h4>
+		<a name="processmaps-id-aadhaar"></a>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+		<h4>Aadhaar</h4>
 		<p>The enrolment process is carried out by the UIDAI through registrars and enrolment agencies. Enrolment centres are set up to collect demographic and biometric data. The biometric data captured includes photograph, fingerprint scans, and iris scans. The data is stored in a centralised database, and a unique Aadhaar number is generated upon verification of captured data. Residents can also update their data online through the UIDAI.</p>
-	  </div>
+      </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_Identification.png" width=95% />
+	  <img src="../img/CIS_India_IdentificationAadhaar.png" width=95% />
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
 	  <div class="five wide column meta">
-		<h4>2</h4>
-		<a name="processmaps-authentication"></a>
+		<h4></h4>
 	  </div>
 	  <div class="one wide column" id="empty">
       </div>
 	  <div class="ten wide column content">
-		<h4>Authentication</h4>
-		<p>The UIDAI conducts the authentication process through the Authentication Service Agencies (ASAs) and Authentication User Agencies (AUAs) which have been appointed from various Government and non-Government organisations. When the resident submits their Aadhaar number and biometric data or OTP to a requesting entity, it is encrypted and sent to the Central Identities Data Repository (CIDR). On successful validation by the CIDR, a Yes/No response is sent back to the requesting entity.</p>
+		<h4><em>Updating Aadhaar</em></h4>
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_Authentication.png" width=95%/>
+	  <img src="../img/CIS_India_IdentificationAadhaarUpdate.png" width=95%/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
 	  <div class="five wide column meta">
-		<h4>3</h4>
-		<a name="processmaps-digilocker-id"></a>
+		<h4></h4>
 	  </div>
 	  <div class="one wide column" id="empty">
       </div>
 	  <div class="ten wide column content">
-		<h4>DigiLocker Identification</h4>
+		<h4><em>Cancellation of Aadhaar</em></h4>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_IdentificationAadhaarCancellation.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4></h4>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4><em>Deactivation of Aadhaar</em></h4>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_IdentificationAadhaarDeactivation.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4>1.2</h4>
+		<a name="processmaps-id-indiastack"></a>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4>IndiaStack</h4>
+		<br />
+		<h4><em>DigiLocker</em></h4>
 		<p>DigiLocker is a platform for issuance and verification of digital documents & certificates. On creating a DigiLocker account, residents get a dedicated cloud storage space that is linked to their Aadhaar number. Organizations that are registered with DigiLocker can add digital copies of documents and certificates directly into the residents’ accounts. Residents can also upload scanned documents and use e-Sign to add a digital signature to them. The identification process during signing up on DigiLocker is done through Aadhaar Number and biometrics or OTP, or directly through the website using biometrics.</p>
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_DigiLockerIdentification.png" width=95%/>
+	  <img src="../img/CIS_India_IdentificationDigiLocker.png" width=70%/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
-	  <div class="five wide column meta">
-		<h4>4</h4>
-		<a name="processmaps-digilocker-auth"></a>
+	  <div class="six wide column meta">
+		<h4></h4>
 	  </div>
-	  <div class="one wide column" id="empty">
-      </div>
 	  <div class="ten wide column content">
-		<h4>DigiLocker Authentication</h4>
-		<p>The authentication process in DigiLocker is carried out through Aadhaar Number and OTP, or through a username and password created during identification, or through Facebook ID validation.</p>
-	  </div>
-	</div>
-    <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_DigiLockerAuthentication.png" width=95%/>
-	</div>
-	<div class="space5" id="notOnMobile"></div>
-	<div class="ui container two column stackable grid">
-	  <div class="five wide column meta">
-		<h4>5</h4>
-		<a name="processmaps-ekyc-auth"></a>
-	  </div>
-	  <div class="one wide column" id="empty">
-      </div>
-	  <div class="ten wide column content">
-		<h4>e-KYC Authentication</h4>
-		<p>e-KYC is a digital Know Your Customer (KYC) process, which involves the verification of the identity and address of a resident using a service through Aadhaar authentication. The authentication process in e-KYC can only be done by a KYC User Agency (KUA).</p>
-	  </div>
-	</div>
-    <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_EKYCAuthentication.png" width=95%/>
-	</div>
-	<div class="space5" id="notOnMobile"></div>
-	<div class="ui container two column stackable grid">
-	  <div class="five wide column meta">
-		<h4>6</h4>
-		<a name="processmaps-esign-auth"></a>
-	  </div>
-	  <div class="one wide column" id="empty">
-      </div>
-	  <div class="ten wide column content">
-		<h4>e-Sign Authentication</h4>
-		<p>The eSign service allows a resident with Aadhaar to electronically sign a form/ document. The authentication of the resident is carried out using Aadhaar e-KYC services, and the digital signature on a document is carried out on a backend server of the e-Sign provider.</p>
-	  </div>
-	</div>
-    <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_ESignAuthentication.png" width=95%/>
-	</div>
-	<div class="space5" id="notOnMobile"></div>
-	<div class="ui container two column stackable grid">
-	  <div class="five wide column meta">
-		<h4>7</h4>
-		<a name="processmaps-aadhaar-auth-API"></a>
-	  </div>
-	  <div class="one wide column" id="empty">
-      </div>
-	  <div class="ten wide column content">
-		<h4>Aadhaar Auth API</h4>
-		<p>In addition to the larger process of authentication for Aadhaar shown above, this process map shows the use of the Point-of-Sale (POS) machine, or the resident’s own device during the authentication process.</p>
-	  </div>
-	</div>
-    <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_AadhaarAuthAPI.png" width=95%/>
-	</div>
-	<div class="space5" id="notOnMobile"></div>
-	<div class="ui container two column stackable grid">
-	  <div class="five wide column meta">
-		<h4>8</h4>
-		<a name="processmaps-upi-id"></a>
-	  </div>
-	  <div class="one wide column" id="empty">
-      </div>
-	  <div class="ten wide column content">
-		<h4>UPI Identification</h4>
+		<h4><em>UPI</em></h4>
 		<p>Unified Payment Interface (UPI) allows residents with bank accounts to make financial transactions using their mobile phones instantly. During the identification process, UPI requires users to create a Virtual Payment Address (VPA) and link it to any bank account. The resident then creates a UPI Pin for transactions.</p>
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_UPIIdentification.png" width=95%/>
+	  <img src="../img/CIS_India_IdentificationUPI.png" width=95%/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
 	  <div class="five wide column meta">
-		<h4>9</h4>
-		<a name="processmaps-upi-auth"></a>
+		<h3>2</h3>
+		<a name="processmaps-auth"></a>
 	  </div>
 	  <div class="one wide column" id="empty">
       </div>
 	  <div class="ten wide column content">
-		<h4>UPI Authentication</h4>
+		<h3>Authentication</h3>
+	  </div>
+      <div class="five wide column meta">
+		<h4>2.1</h4>
+		<a name="processmaps-auth-aadhaar"></a>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+		<h4>Aadhaar</h4>
+		<p>The UIDAI conducts the authentication process through the Authentication Service Agencies (ASAs) and Authentication User Agencies (AUAs) which have been appointed from various Government and non-Government organisations. When the resident submits their Aadhaar number and biometric data or OTP to a requesting entity, it is encrypted and sent to the Central Identities Data Repository (CIDR). On successful validation by the CIDR, a Yes/No response is sent back to the requesting entity.</p>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_AuthenticationAadhaar.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="six wide column meta">
+		<h4></h4>
+		<a name="processmaps-auth-aadhaar-offline"></a>
+	  </div>
+	  <div class="ten wide column content">
+		<h4><em>Offline Aadhaar Data Verification</em></h4>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_OfflineAadhaarDataVerification.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+      <div class="five wide column meta">
+		<h4>2.2</h4>
+		<a name="processmaps-auth-indiastack"></a>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+		<h4>IndiaStack</h4>
+		<br />
+		<h4><em>Aadhaar Auth API</em></h4>
+		<p>In addition to the larger process of authentication for Aadhaar shown above, this process map shows the use of the Point-of-Sale (POS) machine, or the resident’s own device during the authentication process.</p>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_AuthenticationAadhaarAPI.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4></h4>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4><em>DigiLocker</em></h4>
+		<p>The authentication process in DigiLocker is carried out through Aadhaar Number and OTP, or through a username and password created during identification, or through Facebook ID validation.</p>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_AuthenticationDigiLocker.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4></h4>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4><em>e-KYC</em></h4>
+		<p>e-KYC is a digital Know Your Customer (KYC) process, which involves the verification of the identity and address of a resident using a service through Aadhaar authentication. The authentication process in e-KYC can only be done by a KYC User Agency (KUA).</p>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_AuthenticationEKYC.png" width=95%/>
+	</div>
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4></h4>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4><em>e-Sign</em></h4>
+		<p>The eSign service allows a resident with Aadhaar to electronically sign a form/ document. The authentication of the resident is carried out using Aadhaar e-KYC services, and the digital signature on a document is carried out on a backend server of the e-Sign provider.</p>
+	  </div>
+	</div>
+    <div class="ui fluid container diagram">
+	  <img src="../img/CIS_India_AuthenticationESign.png" width=95%/>
+	</div>		
+	<div class="space5" id="notOnMobile"></div>
+	<div class="ui container two column stackable grid">
+	  <div class="five wide column meta">
+		<h4></h4>
+	  </div>
+	  <div class="one wide column" id="empty">
+      </div>
+	  <div class="ten wide column content">
+		<h4><em>UPI</em></h4>
 		<p>In the UPI authentication process, the login password and further the UPI Pin are validated by the issuer bank. Upon successful validation, the transaction is carried out based on the VPA provided for the receiver.</p>
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_UPIAuthentication.png" width=95%/>
+	  <img src="../img/CIS_India_AuthenticationUPI.png" width=95%/>
 	</div>
 	<div class="space5"></div>
 	<div class="ui container two column stackable grid">
@@ -248,11 +318,11 @@
       </div>
 	  <div class="ten wide column content">
 		<h4>Healthcare - Aadhaar</h4>
-		<p>It is envisioned that the healthcare system will use  Aadhaar number based registration and appointment system, for both state and private hospitals. Services and schemes such as insurance and maternal health, are also provided based on Aadhaar authentication.</p>
+		<p>It is envisioned that the healthcare system will use Aadhaar number based registration and appointment system, for both state and private hospitals. Services and schemes such as insurance and maternal health, are also provided based on Aadhaar authentication.</p>
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-	  <img src="../img/CIS_India_HealthcareAadhaar.png" width=90% class="wide-screen"/>
+	  <img src="../img/CIS_India_HealthcareAadhaar.png" width=80% class="wide-screen"/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
@@ -268,7 +338,7 @@
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-      <img src="../img/CIS_India_HealthcareNHS.png" width=90% class="wide-screen"/>
+      <img src="../img/CIS_India_HealthcareNHS.png" width=80% class="wide-screen"/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
@@ -284,7 +354,7 @@
 	  </div>
 	</div>
     <div class="ui fluid container diagram">
-      <img src="../img/CIS_India_FinanceIndiaStack.png" width=90% class="wide-screen"/>
+      <img src="../img/CIS_India_FinanceIndiaStack.png" width=80% class="wide-screen"/>
 	</div>
 	<div class="space5" id="notOnMobile"></div>
 	<div class="ui container two column stackable grid">
@@ -293,7 +363,7 @@
       <div class="ten wide column content">
         <a name="stakeholders"></a>
 		<h3>Stakeholders</h3><br/>
-		<h5>Unique Identification Authority of India (UIDAI)</h5>
+		<h5><a href="https://uidai.gov.in/" target="_blank">Unique Identification Authority of India (UIDAI)</a></h5>
 		<p>The Unique Identification Authority of India (UIDAI) is a statutory authority that was established with the objective to issue Unique Identification numbers (UID) to all residents of India. UIDAI is responsible for Aadhaar enrolment and authentication, including operation and management of all stages of the Aadhaar life cycle, developing the policy, procedure and system for issuing Aadhaar numbers to individuals and performing authentication, and the security of identity information and authentication records of individuals.</p>
 		<br/>
 		<h5>Registrars</h5>
@@ -317,10 +387,10 @@
 		<h5>KYC Service Agencies (KSAs)</h5>
 		<p>KYC Service Agencies (KSAs) are ASAs that are eligible to provide access to the e-KYC service through their network.</p>
 		<br/>
-		<h5>NITI Aayog</h5>
+		<h5><a href="https://niti.gov.in/" target="_blank">NITI Aayog</a></h5>
 		<p>The NITI (National Institution for Transforming India) Aayog is a policy think tank of the Government of India which designs strategic and long term policies and programmes for the Government of India. It also provides relevant technical advice to the Centre and States.</p>
 		<br/>
-		<h5>Pradhan Mantri Matru Vandana Yojana</h5>
+		<h5><a href="https://wcd.nic.in/schemes/pradhan-mantri-matru-vandana-yojana" target="_blank">Pradhan Mantri Matru Vandana Yojana</a></h5>
 		<p>Pradhan Mantri Matru Vandana Yojana is a maternity benefit program run by the government of India, and implemented by the Ministry of Women and Child Development. It is a conditional cash transfer scheme for pregnant and lactating women of 19 years of age or above for the first live birth. It also provides a partial wage compensation to women for wage-loss during childbirth and childcare and to provide conditions for safe delivery and good nutrition and feeding practices.</p>
 		<br/>
 		<h5>Anganwadi Centre</h5>
@@ -338,28 +408,28 @@
 		<h5>Public Distribution System (PDS) Department</h5>
 		<p>The Public Distribution System (PDS) in the country facilitates the supply of food grains and distribution of essential commodities to a large number of poor people through a network of Fair Price Shops at a subsidized price on a recurring basis.</p>
 		<br/>
-		<h5>Socio Economic and Caste Census (SECC)</h5>
+		<h5><a href="https://secc.gov.in/welcome" target="_blank">Socio Economic and Caste Census (SECC)</a></h5>
 		<p>Socio Economic and Caste Census (SECC) is a study of socio economic status of rural and urban households that allows ranking of households based on predefined parameters.</p>
 		<br/>
-		<h5>Ayushman Bharat Yojana</h5>
+		<h5><a href="https://pmjay.gov.in/" target="_blank">Ayushman Bharat Yojana</a></h5>
 		<p>Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB PM-JAY) is a flagship scheme of the Indian government's National Health Policy which aims to provide free health coverage at the secondary and tertiary level to its bottom 40% poor and vulnerable population.</p>
 		<br/>
 		<h5>Ayushman Mitra Kiosk Operator</h5>
 		<p>A Pradhan Mantri Arogya Mitra is a certified frontline health service professional who is to be present at each of the Empanelled Health Care Providers (EHCP) and serve as a first contact point for beneficiaries.</p>
 		<br/>
-		<h5>iSPIRT</h5>
+		<h5><a href="https://ispirt.in/" target="_blank">iSPIRT</a></h5>
 		<p>Indian Software Products Industry Round Table (iSPIRT), is a think tank for the Indian software products industry.</p>
 		<br/>
-		<h5>Controller of Certifying Authorities (CCA)</h5>
+		<h5><a href="http://cca.gov.in/" target="_blank">Controller of Certifying Authorities (CCA)</a></h5>
 		<p>The Controller of Certifying Authorities (CCA) provides the required legal sanctity to digital signatures based on asymmetric cryptosystems. CCAs license and regulate the working of Certifying Authorities.</p>
 		<br/>
 		<h5>Certifying Authority (CA)</h5>
 		<p>Certifying Authorities (CAs) issue digital signature certificates for electronic authentication of users.</p>
 		<br/>
-		<h5>Ministry of Electronics and Information Technology (MeitY)</h5>
+		<h5><a href="https://www.meity.gov.in/" target="_blank">Ministry of Electronics and Information Technology (MeitY)</a></h5>
 		<p>The Ministry of Electronics and Information Technology (MeitY) is a standalone ministerial agency responsible for IT policy, strategy and development of the electronics industry.</p>
 		<br/>
-		<h5>National Payments Corporation of India (NPCI)</h5>
+		<h5><a href="https://www.npci.org.in/" target="_blank">National Payments Corporation of India (NPCI)</a></h5>
 		<p>National Payments Corporation of India (NPCI) is an umbrella organisation for operating retail payments and settlement systems in India. It is an initiative of Reserve Bank of India (RBI) and Indian Banks’ Association (IBA) for creating a robust Payment & Settlement Infrastructure in India.</p>
 		<p id="notOnMobile">&nbsp;</p>
 	  </div>
@@ -402,21 +472,21 @@
 		<br/>
 		<h6>India Stack</h6>
 		<br/>
-		<p class="footnote"><strong>UPI</strong></p>
-		<p class="footnote">United Payment Interference Procedural Guidelines Version 1.7, NPCI, January 2016, <a href="https://www.npci.org.in/sites/default/files/UPI-PG-17_01_31_RBI_Final%20version%201.7.pdf" target="blank">https://www.npci.org.in/sites/default/files/UPI-PG-17_01_31_RBI_Final%20version%201.7.pdf</a></p>
-		<p class="footnote">Aadhaar Authentication API Specification Version 2.0, UIDAI, February 2017, <a href="https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf" target="blank">https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf</a></p>
-		<p class="footnote">Digital Payments Step by Step Instructions, NITI Aayog, <a href="https://niti.gov.in/writereaddata/files/Step-by-step_presentation_on_digital_payments-English.pdf" target="blank">https://niti.gov.in/writereaddata/files/Step-by-step_presentation_on_digital_payments-English.pdf</a></p>
-		<br/>
-		<p class="footnote"><strong>e-Sign</strong></p>
-		<p class="footnote">E-authentication Guidelines for e-Sign Version 1.6, CCA, May 2019, <a href="http://cca.gov.in/sites/files/pdf/esign/CCA-EAUTH.pdf" target="blank">http://cca.gov.in/sites/files/pdf/esign/CCA-EAUTH.pdf</a></p>
-		<p class="footnote">“E-sign- Online Electronic Signature Service,” CCA, last accessed May 31, 2020, <a href="http://cca.gov.in/eSign.html" target="blank">http://cca.gov.in/eSign.html</a></p>
-		<br/>
 		<p class="footnote"><strong>Digilocker</strong></p>
 		<p class="footnote">“Digilocker Registration Process: An Ultimate Digilocker App Guide,” Digilocker- Create Digital Locker Account, last accessed May 31, 2020, <a href="https://www.digilocker.info/digilocker-registration-process/" target="blank">https://www.digilocker.info/digilocker-registration-process/</a></p>
 		<p class="footnote">Digilocker User Manual, DeiTY, <a href="https://digilocker.gov.in/assets/img/DigiLocker-User-Manual.pdf" target="blank">https://digilocker.gov.in/assets/img/DigiLocker-User-Manual.pdf</a></p>
 		<br/>
 		<p class="footnote"><strong>e-KYC</strong></p>
 		<p class="footnote">Aadhaar Authentication API Specification Version 2.0, UIDAI, February 2017, <a href="https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf" target="blank">https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf</a></p>
+		<br/>
+		<p class="footnote"><strong>e-Sign</strong></p>
+		<p class="footnote">E-authentication Guidelines for e-Sign Version 1.6, CCA, May 2019, <a href="http://cca.gov.in/sites/files/pdf/esign/CCA-EAUTH.pdf" target="blank">http://cca.gov.in/sites/files/pdf/esign/CCA-EAUTH.pdf</a></p>
+		<p class="footnote">“E-sign- Online Electronic Signature Service,” CCA, last accessed May 31, 2020, <a href="http://cca.gov.in/eSign.html" target="blank">http://cca.gov.in/eSign.html</a></p>
+		<br/>
+		<p class="footnote"><strong>UPI</strong></p>
+		<p class="footnote">United Payment Interference Procedural Guidelines Version 1.7, NPCI, January 2016, <a href="https://www.npci.org.in/sites/default/files/UPI-PG-17_01_31_RBI_Final%20version%201.7.pdf" target="blank">https://www.npci.org.in/sites/default/files/UPI-PG-17_01_31_RBI_Final%20version%201.7.pdf</a></p>
+		<p class="footnote">Aadhaar Authentication API Specification Version 2.0, UIDAI, February 2017, <a href="https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf" target="blank">https://uidai.gov.in/images/FrontPageUpdates/aadhaar_authentication_api_2_0.pdf</a></p>
+		<p class="footnote">Digital Payments Step by Step Instructions, NITI Aayog, <a href="https://niti.gov.in/writereaddata/files/Step-by-step_presentation_on_digital_payments-English.pdf" target="blank">https://niti.gov.in/writereaddata/files/Step-by-step_presentation_on_digital_payments-English.pdf</a></p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 	  </div>
