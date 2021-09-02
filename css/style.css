@@ -356,3 +356,9 @@ h1,h2,h3,h4,p {
     .text h1 {margin-top: 1.2em;}
     #maps {padding-left: 0em;}
 }
+
+.ui.card.green,
+.ui.cards>.card.green {
+    background-color: #69c3aa;
+    box-shadow: none;
+}
