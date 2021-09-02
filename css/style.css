@@ -357,8 +357,18 @@ h1,h2,h3,h4,p {
     #maps {padding-left: 0em;}
 }
 
+.card h3, .card p {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.card p {
+    font-size: 0.8em;
+}
+
 .ui.card.green,
 .ui.cards>.card.green {
     background-color: #69c3aa;
     box-shadow: none;
 }
+
+
