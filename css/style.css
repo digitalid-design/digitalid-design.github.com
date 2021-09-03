@@ -90,6 +90,12 @@ h1,h2,h3,h4,p {
 .green {
     background-color: #69c3aa;
 }
+.space1 {
+    height: 1em;
+}
+.space2 {
+    height: 2em;
+}
 .space3 {
     height: 3em;
 }
@@ -357,12 +363,14 @@ h1,h2,h3,h4,p {
     #maps {padding-left: 0em;}
 }
 
-.card h3, .card p {
+.card p {
     font-family: "Fira Sans", sans-serif;
+    font-size: 0.8em;
 }
 
-.card p {
-    font-size: 0.8em;
+.card h3 {
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
 }
 
 .ui.card.green,
@@ -372,3 +380,13 @@ h1,h2,h3,h4,p {
 }
 
 
+.ui.card.black,
+.ui.cards>.card.black {
+    color: white;
+    background-color: #333333;
+    box-shadow: none;
+}
+
+#understandingDigitalIdentity h3 {
+    font-size: 0.75em;
+}
