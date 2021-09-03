@@ -379,6 +379,9 @@ h1,h2,h3,h4,p {
     box-shadow: none;
 }
 
+.ui.image {
+    padding-bottom: 0.8em;
+}
 
 .ui.card.black,
 .ui.cards>.card.black {
