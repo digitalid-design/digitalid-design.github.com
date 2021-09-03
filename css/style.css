@@ -393,3 +393,19 @@ h1,h2,h3,h4,p {
 #understandingDigitalIdentity h3 {
     font-size: 0.75em;
 }
+
+#designingDigitalIdentity .card {
+    min-height: 25em;
+    min-width: 25em;
+}
+
+#designingDigitalIdentity .content {
+    padding: 2em;
+}
+
+#designingDigitalIdentity .card h4 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
