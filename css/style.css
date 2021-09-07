@@ -409,3 +409,36 @@ h1,h2,h3,h4,p {
     letter-spacing: 0.5px;
     line-height: 1.5em;
 }
+
+#appropriateRolesOfTheState .content {
+    padding: 0.5em 1em;
+}
+
+#appropriateRolesOfTheState .card.black h3 {
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+
+#appropriateRolesOfTheState .card.green {
+    min-height: 13em;
+    min-width: 13em;
+}
+
+#appropriateRolesOfTheState .ui.grid > .row {
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}
+
+#appropriateRolesOfTheState .ui.three.cards {
+    flex-wrap: nowrap;
+}
+
+#appropriateRolesOfTheState .content.center.aligned {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#appropriateRolesOfTheState .content.center.aligned .text p {
+    font-weight: bold;
+}
