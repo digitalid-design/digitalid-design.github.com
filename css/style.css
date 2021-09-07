@@ -406,16 +406,16 @@ h1,h2,h3,h4,p {
     font-size: 0.75em;
 }
 
-#designingDigitalIdentity .card {
+#designingDigitalIdentity .card, #policyDesignChoices .card {
     min-height: 25em;
     min-width: 25em;
 }
 
-#designingDigitalIdentity .content {
+#designingDigitalIdentity .content, #policyDesignChoices .content {
     padding: 2em;
 }
 
-#designingDigitalIdentity .card h4 {
+#designingDigitalIdentity .card h4, #policyDesignChoices .card h4 {
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
