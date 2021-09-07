@@ -419,14 +419,29 @@ h1,h2,h3,h4,p {
     text-transform: none;
 }
 
-#appropriateRolesOfTheState .card.green {
-    min-height: 13em;
-    min-width: 13em;
+#appropriateRolesOfTheState .green.card {
+    height: 13em;
+    width: 13em;
+    margin: 6px;
 }
 
-#appropriateRolesOfTheState .ui.grid > .row {
+#appropriateRolesOfTheState .ui > .row {
+    display: flex;
     flex-wrap: nowrap;
     overflow-y: scroll;
+}
+
+#appropriateRolesOfTheState .ui > .row > .column {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#appropriateRolesOfTheState .ui > .row > .column:first-child {
+    margin-left: 0;
+}
+
+#appropriateRolesOfTheState .ui > .row > .column:last-child {
+    margin-right: 0;
 }
 
 #appropriateRolesOfTheState .ui.three.cards {
