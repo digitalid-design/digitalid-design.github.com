@@ -390,6 +390,12 @@ h1,h2,h3,h4,p {
     box-shadow: none;
 }
 
+.ui.card.light-gray,
+.ui.cards>.card.light-gray{
+    background-color: #f4f4f4;
+    box-shadow: none;
+}
+
 #understandingDigitalIdentity h3 {
     font-size: 0.75em;
 }
@@ -420,8 +426,8 @@ h1,h2,h3,h4,p {
 }
 
 #appropriateRolesOfTheState .green.card {
-    height: 13em;
-    width: 13em;
+    height: 13.5em;
+    width: 13.5em;
     margin: 6px;
 }
 
@@ -460,5 +466,28 @@ h1,h2,h3,h4,p {
 }
 
 #appropriateRolesOfTheState .content.center.aligned .text p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#establishingTrust .light-gray.card {
+    height: 13.5em;
+    width: 13.5em;
+    margin: 6px;
+}
+
+#establishingTrust .content.center.aligned {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#establishingTrust .content.center.aligned img{
+    padding-bottom: 30px;
+}
+
+#establishingTrust .content.center.aligned .text p {
+    font-size: 1em;
     font-weight: bold;
 }
