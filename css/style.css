@@ -426,9 +426,10 @@ h1,h2,h3,h4,p {
 }
 
 #appropriateRolesOfTheState .ui > .row {
+    min-height: 240px;
     display: flex;
     flex-wrap: nowrap;
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 #appropriateRolesOfTheState .ui > .row > .column {
@@ -446,6 +447,10 @@ h1,h2,h3,h4,p {
 
 #appropriateRolesOfTheState .ui.three.cards {
     flex-wrap: nowrap;
+}
+
+#appropriateRolesOfTheState .ui.three.cards:first-child > .green.card:first-child {
+    margin-left: 14px;
 }
 
 #appropriateRolesOfTheState .content.center.aligned {
