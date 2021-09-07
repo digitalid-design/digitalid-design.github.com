@@ -373,14 +373,14 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
 }
 
+.ui.image {
+    padding-bottom: 0.8em;
+}
+
 .ui.card.green,
 .ui.cards>.card.green {
     background-color: #69c3aa;
     box-shadow: none;
-}
-
-.ui.image {
-    padding-bottom: 0.8em;
 }
 
 .ui.card.black,
@@ -393,6 +393,12 @@ h1,h2,h3,h4,p {
 .ui.card.light-gray,
 .ui.cards>.card.light-gray{
     background-color: #f4f4f4;
+    box-shadow: none;
+}
+
+.ui.card.white,
+.ui.cards>.card.white{
+    background-color: white;
     box-shadow: none;
 }
 
@@ -432,7 +438,7 @@ h1,h2,h3,h4,p {
 }
 
 #appropriateRolesOfTheState .ui > .row {
-    min-height: 240px;
+    min-height: 250px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -490,4 +496,57 @@ h1,h2,h3,h4,p {
 #establishingTrust .content.center.aligned .text p {
     font-size: 1em;
     font-weight: bold;
+}
+
+#technologicalDesignChoices .content {
+    padding: 0.5em 1em;
+}
+
+#technologicalDesignChoices .card.black {
+    width: auto;
+}
+
+#technologicalDesignChoices .card.black h3 {
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+#technologicalDesignChoices .white.card, #technologicalDesignChoices .green.card {
+    height: 18.75em;
+    width: 13.5em;
+    margin: 6px;
+}
+
+#technologicalDesignChoices .ui > .row {
+    min-height: 330px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#technologicalDesignChoices .ui > .row > .column {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#technologicalDesignChoices .ui > .row > .column:first-child {
+    margin-left: 0;
+}
+
+#technologicalDesignChoices .ui > .row > .column:last-child {
+    margin-right: 0;
+}
+
+#technologicalDesignChoices .ui.four.cards {
+    flex-wrap: nowrap;
+}
+
+#technologicalDesignChoices .ui.four.cards:first-child > .white.card:first-child {
+    margin-left: 14px;
+}
+
+#technologicalDesignChoices .content.center.aligned {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
