@@ -396,6 +396,10 @@ h1,h2,h3,h4,p {
     box-shadow: none;
 }
 
+.black .text p {
+    color: white;
+}
+
 .ui.card.light-gray,
 .ui.cards>.card.light-gray{
     background-color: #f4f4f4;
@@ -510,4 +514,11 @@ h1,h2,h3,h4,p {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+}
+
+#governanceFramework .content img{
+    padding-bottom: 0;
+    padding-top: 1.5em;
+}{
+
 }
