@@ -412,6 +412,18 @@ h1,h2,h3,h4,p {
     box-shadow: none;
 }
 
+.ui.card.pale-red,
+.ui.cards > .card.pale-red{
+    background-color: #DBA9AC;
+    box-shadow: none;
+}
+
+.ui.card.pale-yellow,
+.ui.cards > .card.pale-yellow{
+    background-color: #DBCAA9;
+    box-shadow: none;
+}
+
 .big.card {
     min-height: 25em;
     min-width: 25em;
@@ -428,6 +440,10 @@ h1,h2,h3,h4,p {
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 1.5em;
+}
+
+.ui.cards > .big.card .text p {
+    padding-top: 2em;
 }
 
 .ui.cards > .title.card h3 {
