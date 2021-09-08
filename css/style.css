@@ -363,6 +363,8 @@ h1,h2,h3,h4,p {
     #maps {padding-left: 0;}
 }
 
+/* Custom Styles */
+
 .card p {
     font-family: "Fira Sans", sans-serif;
     font-size: 0.8em;
@@ -371,6 +373,10 @@ h1,h2,h3,h4,p {
 .card h3 {
     font-family: "Fira Sans", sans-serif;
     text-transform: uppercase;
+}
+
+.ui.cards {
+    flex-wrap: nowrap;
 }
 
 .ui.image {
@@ -402,39 +408,65 @@ h1,h2,h3,h4,p {
     box-shadow: none;
 }
 
-#understandingDigitalIdentity h3 {
-    font-size: 0.75em;
-}
-
-#designingDigitalIdentity .card, #policyDesignChoices .card {
+.big.card {
     min-height: 25em;
     min-width: 25em;
+    height: 25em;
+    width: 25em;
 }
 
-#designingDigitalIdentity .content, #policyDesignChoices .content {
+.ui.cards > .big.card > .content {
     padding: 2em;
 }
 
-#designingDigitalIdentity .card h4, #policyDesignChoices .card h4 {
+.ui.cards > .big.card h4 {
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 1.5em;
 }
 
-#appropriateRolesOfTheState .content {
-    padding: 0.5em 1em;
-}
-
-#appropriateRolesOfTheState .card.black h3 {
+.ui.cards > .title.card h3 {
     letter-spacing: 0.5px;
-    text-transform: none;
+    text-transform: capitalize;
 }
 
-#appropriateRolesOfTheState .green.card {
+.ui.cards > .small.card {
     height: 13.5em;
     width: 13.5em;
     margin: 6px;
+}
+
+.ui.cards > .small.card > .content {
+    padding: 0.5em 1em;
+}
+
+.ui.cards > .small.card > .content.center.aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.ui.cards > .small.card > .content.center.aligned img{
+    padding-bottom: 30px;
+}
+
+.ui.cards > .small.card > .content .text p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.ui.cards:first-child > .small.card:first-child {
+    margin-left: 14px;
+}
+
+/* Specific targets */
+
+#understandingDigitalIdentity h3 {
+    font-size: 0.75em;
 }
 
 #appropriateRolesOfTheState .ui > .row {
@@ -444,31 +476,20 @@ h1,h2,h3,h4,p {
     overflow-x: scroll;
 }
 
-#appropriateRolesOfTheState .ui > .row > .column {
+#appropriateRolesOfTheState .ui > .row > .column,
+#technologicalDesignChoices .ui > .row > .column  {
     margin-left: 25px;
     margin-right: 25px;
 }
 
-#appropriateRolesOfTheState .ui > .row > .column:first-child {
+#appropriateRolesOfTheState .ui > .row > .column:first-child,
+#technologicalDesignChoices .ui > .row > .column:first-child {
     margin-left: 0;
 }
 
-#appropriateRolesOfTheState .ui > .row > .column:last-child {
+#appropriateRolesOfTheState .ui > .row > .column:last-child,
+#technologicalDesignChoices .ui > .row > .column:last-child {
     margin-right: 0;
-}
-
-#appropriateRolesOfTheState .ui.three.cards {
-    flex-wrap: nowrap;
-}
-
-#appropriateRolesOfTheState .ui.three.cards:first-child > .green.card:first-child {
-    margin-left: 14px;
-}
-
-#appropriateRolesOfTheState .content.center.aligned {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
 }
 
 #appropriateRolesOfTheState .content.center.aligned .text p {
@@ -476,45 +497,12 @@ h1,h2,h3,h4,p {
     font-weight: bold;
 }
 
-#establishingTrust .light-gray.card {
-    height: 13.5em;
-    width: 13.5em;
-    margin: 6px;
-}
-
-#establishingTrust .content.center.aligned {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-#establishingTrust .content.center.aligned img{
-    padding-bottom: 30px;
-}
-
-#establishingTrust .content.center.aligned .text p {
-    font-size: 1em;
-    font-weight: bold;
-}
-
-#technologicalDesignChoices .content {
-    padding: 0.5em 1em;
-}
-
 #technologicalDesignChoices .card.black {
     width: auto;
 }
 
-#technologicalDesignChoices .card.black h3 {
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
-}
-
-#technologicalDesignChoices .white.card, #technologicalDesignChoices .green.card {
+#technologicalDesignChoices .small.card {
     height: 18.75em;
-    width: 13.5em;
-    margin: 6px;
 }
 
 #technologicalDesignChoices .ui > .row {
@@ -522,31 +510,4 @@ h1,h2,h3,h4,p {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-}
-
-#technologicalDesignChoices .ui > .row > .column {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#technologicalDesignChoices .ui > .row > .column:first-child {
-    margin-left: 0;
-}
-
-#technologicalDesignChoices .ui > .row > .column:last-child {
-    margin-right: 0;
-}
-
-#technologicalDesignChoices .ui.four.cards {
-    flex-wrap: nowrap;
-}
-
-#technologicalDesignChoices .ui.four.cards:first-child > .white.card:first-child {
-    margin-left: 14px;
-}
-
-#technologicalDesignChoices .content.center.aligned {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
 }
