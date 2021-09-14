@@ -90,6 +90,9 @@ h1,h2,h3,h4,p {
 .green {
     background-color: #69c3aa;
 }
+.light-green {
+    background-color: #AADCCD;
+}
 .space1 {
     height: 1em;
 }
@@ -633,3 +636,27 @@ h1,h2,h3,h4,p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.ui.table tr td {
+    border-top: none;
+}
+
+.ui.table tbody + tbody tr:first-child td {
+    border-top: none;
+}
+
+.ui.table .header td{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+}
+.ui.table tr:last-child th {
+    padding-bottom: 1em;
+}
+
+.ui.table tr:not(.header) td {
+    padding-bottom: 3em;
+    vertical-align: top;
+}
+
+
