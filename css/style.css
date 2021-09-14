@@ -601,6 +601,10 @@ h1,h2,h3,h4,p {
 
 /* Other Pages */
 
+.footnote {
+    overflow-wrap: anywhere;
+}
+
 #establishingTrust-subpage .content h6 {
     font-size: 1em;
     letter-spacing: 0.32px;
