@@ -486,13 +486,19 @@ h1,h2,h3,h4,p {
 }
 
 .ui.cards > .title.card h3 {
+    font-size: 1.285rem;
     letter-spacing: 0.5px;
     text-transform: capitalize;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .ui.cards > .small.card {
     height: 13.5em;
     width: 13.5em;
+    min-height: 13.5em;
+    min-width: 13.5em;
     margin: 6px;
 }
 
@@ -525,32 +531,50 @@ h1,h2,h3,h4,p {
     margin-left: 14px;
 }
 
-/* Specific targets */
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+.ui.cards > .card .description p{
+    font-size: 1em;
+    font-weight: 200;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.375em;
+}
+
+/* Landing Page - Specific Targets */
 
 #understandingDigitalIdentity h3 {
     font-size: 0.75em;
 }
 
-#appropriateRolesOfTheState .ui > .row {
-    min-height: 250px;
+#appropriateRolesOfTheState .ui > .row{
+    min-height: 255px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
 
 #appropriateRolesOfTheState .ui > .row > .column,
-#technologicalDesignChoices .ui > .row > .column  {
+#technologicalDesignChoices .ui > .row > .column,
+#governanceFramework-subpage .ui > .row > .column {
     margin-left: 25px;
     margin-right: 25px;
 }
 
 #appropriateRolesOfTheState .ui > .row > .column:first-child,
-#technologicalDesignChoices .ui > .row > .column:first-child {
+#technologicalDesignChoices .ui > .row > .column:first-child,
+#governanceFramework-subpage .ui > .row > .column:first-child {
     margin-left: 0;
 }
 
 #appropriateRolesOfTheState .ui > .row > .column:last-child,
-#technologicalDesignChoices .ui > .row > .column:last-child {
+#technologicalDesignChoices .ui > .row > .column:last-child,
+#governanceFramework-subpage .ui > .row > .column:last-child {
     margin-right: 0;
 }
 
@@ -577,7 +601,31 @@ h1,h2,h3,h4,p {
 
 /* Other Pages */
 
-#establishingTrust .content h6 {
+#establishingTrust-subpage .content h6 {
     font-size: 1em;
     letter-spacing: 0.32px;
+}
+
+#governanceFramework-subpage .card.black {
+    width: auto;
+}
+
+#governanceFramework-subpage .ui > .row:last-child{
+    min-height: 205px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#governanceFramework-subpage .ui.cards > .card {
+    min-width: 15em;
+}
+
+#governanceFramework-subpage .ui.cards:last-child > .row:last-child {
+    min-height: 330px;
+}
+
+#governanceFramework-subpage .ui .cards {
+    margin-top: 0;
+    margin-bottom: 0;
 }
