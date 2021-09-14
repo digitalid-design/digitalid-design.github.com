@@ -649,6 +649,7 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
     font-weight: bold;
     padding: 0;
+    padding-left: 1em;
 }
 .ui.table tr:last-child th {
     padding-bottom: 1em;
