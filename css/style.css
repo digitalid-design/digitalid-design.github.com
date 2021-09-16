@@ -549,6 +549,32 @@ h1,h2,h3,h4,p {
     line-height: 1.375em;
 }
 
+.ui.ordered.list,
+.ui.ordered.list .list,
+ol.ui.list,
+ol.ui.list ol {
+    color: black;
+    list-style: decimal;
+}
+
+.ui.list:first-child,
+ol.ui.list:first-child,
+ul.ui.list:first-child {
+    margin-top: 1em;
+}
+
+.ui.ordered.list .list > .item,
+.ui.ordered.list > .item,
+ol.ui.list li {
+    list-style: decimal;
+}
+
+.ui.ordered.list .list > .item::before,
+.ui.ordered.list > .item::before,
+ol.ui.list li::before {
+    content: "";
+}
+
 /* Landing Page - Specific Targets */
 
 #understandingDigitalIdentity h3 {
