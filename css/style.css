@@ -534,6 +534,10 @@ h1,h2,h3,h4,p {
     margin-left: 14px;
 }
 
+.ui.cards > .card > .content {
+    border-top: none;
+}
+
 .ui.card > .content > .header:not(.ui),
 .ui.cards > .card > .content > .header:not(.ui) {
     text-transform: uppercase;
@@ -576,6 +580,15 @@ ol.ui.list li::before {
 }
 
 /* Landing Page - Specific Targets */
+
+#decisionsGuide .green.card {
+    padding-top: 1em;
+    min-height: 20em;
+}
+
+#decisionsGuide .green.card > .header > h3 {
+    min-height: 2.5em;
+}
 
 #understandingDigitalIdentity h3 {
     font-size: 0.75em;
