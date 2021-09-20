@@ -594,6 +594,11 @@ ol.ui.list li::before {
     font-size: 0.75em;
 }
 
+#establishingTrust .ui.cards > .small.card > .content.center.aligned {
+    padding-top: 1.75em;
+    justify-content: start;
+}
+
 #appropriateRolesOfTheState .ui > .row{
     min-height: 255px;
     display: flex;
