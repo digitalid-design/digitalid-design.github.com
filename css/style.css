@@ -14,7 +14,7 @@ h1,h2,h3,h4,p {
     font-weight: 700;
     padding: 1rem 0;
     line-height: 1.6em;
-    position: fixed;
+    position: sticky;
     text-transform: uppercase;
     top: 0;
     width: 100%;
