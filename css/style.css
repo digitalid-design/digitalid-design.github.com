@@ -553,6 +553,15 @@ h1,h2,h3,h4,p {
     line-height: 1.375em;
 }
 
+.ui.container > .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui.icon:hover {
+    filter: invert(70%) sepia(53%) saturate(297%) hue-rotate(113deg) brightness(90%) contrast(89%);
+}
+
 .ui.ordered.list,
 .ui.ordered.list .list,
 ol.ui.list,
