@@ -553,12 +553,26 @@ h1,h2,h3,h4,p {
     line-height: 1.375em;
 }
 
-.ui.container > .header {
+.ui.container > .header a {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: baseline;
+    color: black;
 }
 
-.ui.icon:hover {
+.ui.container > .header a h2 {
+    margin-right: 0.5em;
+    border-bottom: 2px dotted #69c3aa;
+}
+
+.ui.container > .header a h2:hover {
+    border-bottom: 2px solid #69c3aa;
+}
+
+.ui.container > .header a img {
+    width: 1.5em;
+}
+.ui.container > .header a img:hover {
     filter: invert(70%) sepia(53%) saturate(297%) hue-rotate(113deg) brightness(90%) contrast(89%);
 }
 
