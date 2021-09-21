@@ -553,6 +553,16 @@ h1,h2,h3,h4,p {
     line-height: 1.375em;
 }
 
+.ui.cards .big.card .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui.cards .extra.content {
+    align-self: end;
+    margin: auto 0 0 auto;
+}
+
 .ui.container > .header a {
     width: 100%;
     display: flex;
