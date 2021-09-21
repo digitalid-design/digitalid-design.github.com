@@ -414,7 +414,7 @@
   <div class="ui container">
     <div class="header text">
       <a href="./technological-choices.html">
-      <h2>Technological Design Choices</h2>
+        <h2>Technological Design Choices</h2>
         <img src="icons/flip-arrow.svg" />
       </a>
     </div>
@@ -659,8 +659,8 @@
     <div class="space3"></div>
     <div class="row">
       <div class="ui cards scrolling">
-        <div class="big pale-red card">
-          <div class="content">
+        <div class="big pale-red card flip">
+          <div class="content card--front">
             <div class="text">
               <h4>
                 Defining Threats
@@ -677,9 +677,7 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="big pale-red card card--back">
-          <div class="content">
+          <div class="content card--back">
             <div class="description text">
               <p>In the context of digital ID systems, this entails:</p>
             </div>
@@ -856,6 +854,19 @@
   });
   slider.addCaptions();
   slider.start();
+</script>
+
+<!-- Card Flip -->
+<script>
+  const flipCards = document.getElementsByClassName("card flip");
+  Array.from(flipCards).forEach(card => {
+    card.addEventListener("click", flip)
+  })
+
+  function flip(event){
+    let element = event.target.closest(".card");
+    element.className = `${element.className} active`
+  };
 </script>
 </body>
 </html>

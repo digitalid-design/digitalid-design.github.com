@@ -737,4 +737,37 @@ ol.ui.list li::before {
     vertical-align: top;
 }
 
+.ui.cards > .card.flip {
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    z-index: 1;
+    perspective: 30em;
+}
 
+.card--front {
+    z-index: 100;
+    backface-visibility: hidden;
+}
+
+.card--back {
+    z-index: 80;
+    transform: rotateY(180deg);
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.active {
+    transform: rotateY(180deg);
+}
+
+.active .card--front {
+    z-index: 100;
+    visibility: collapse !important;
+    transform: rotateY(180deg);
+}
+
+.active .card--back {
+    z-index: 120;
+}
