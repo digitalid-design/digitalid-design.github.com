@@ -129,9 +129,10 @@
         </div>
 
         </div>
-<!--        Large image    -->
+
+    <!--        Large image    -->
     <div class="space5"></div>
-    <div class="ui light-gray">
+    <div class="ui light-gray" id="breakoutA">
         <div class="ui container two column stackable grid">
             <div class="two wide column" id="empty">
             </div>
@@ -189,7 +190,6 @@
     </div>
     <div class="space5"></div>
 
-
     <div class="ui container two column stackable grid">
         <div class="five wide column meta">
             <h4>2.2</h4>
@@ -205,17 +205,184 @@
             <p> In a centralised system, there is a large central identity provider that stores the private information of all participating individuals and metadata relating to usage of the ID. This forms a lucrative target for data breaches and presents a privacy risk as the operator of the system has insight into all activity within it.</p>
             <p> A federated system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
         </div>
+    </div>
 
 <!--        Large Image     -->
+        <div class="space5"></div>
+        <div class="ui light-gray" id="breakoutB">
+            <div class="ui container two column stackable grid">
+                <div class="row">
+                    <div class="one wide column" id="empty">
+                </div>
+                    <div class="four wide column content">
+                        <div class="ui cards">
+                            <div class="ui card breakout light-gray">
+                                <div class="content">
+                                    <div class="text description">
+                                        <h3>
+                                            CENTRALISED SYSTEM
+                                        </h3>
+                                        <p>A large central IDENTITY PROVIDER stores the private information of all participating individuals.</p>
+                                    </div>
+                                    <img src="./images/technological-choices-storage-centralised-system.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seven wide column content">
+                        <div class="ui cards">
+                            <div class="ui card breakout light-gray">
+                                <div class="content">
+                                    <div class="text description">
+                                        <h3>
+                                            FEDERATED SYSTEM
+                                        </h3>
+                                        <p>
+                                            Multiple identity providers store the information and metadata of a subset of users.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ui images">
+                                <img src="./images/technological-choices-storage-fedarated-system-a.svg">
+                                <img src="./images/technological-choices-storage-fedarated-system-b.svg">
+                                <img src="./images/technological-choices-storage-fedarated-system-b.svg">
+                                </div>
 
-        <div class="six wide column" id="empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two wide column" id="empty">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="one wide column" id="empty">
+                    </div>
+                    <div class="fifteen wide column content">
+                        <div class="ui cards">
+                            <div class="ui card breakout light-gray">
+                                <div class="content">
+                                    <div class="text description">
+                                        <h3>
+                                            DECENTRALISED SYSTEM
+                                        </h3>
+                                        <p>
+                                            Data is distributed among multiple identity providers. IDENTITY PROVIDER issues IDENTITY CREDENTIALS to the INDIVIDUAL, who shares the it with RELYING PARTIES who can consult a DECENTRALISED STORAGE NETWORK to verify its authenticity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ui images">
+                                    <img src="./images/technological-choices-storage-decentralised-system.svg">
+                                    <img src="./images/technological-choices-storage-decentralised-system.svg">
+                                    <img src="./images/technological-choices-storage-decentralised-system.svg">
+                                    <img src="./images/technological-choices-storage-decentralised-system.svg">
+                                    <img src="./images/technological-choices-storage-decentralised-system.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space1"></div>
+
+    <div class="ui container two column stackable grid">
+    <div class="six wide column" id="empty"></div>
         <div class="ten wide column content">
-            <p> A federated system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
+            <p>
+                Like federated systems, proposed ‘decentralised’ or ‘self-sovereign’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues identity credentials to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially glean metadata into usage activity.
+            </p>
         </div>
 
 <!--        TABLE    -->
+    <div class="space2"></div>
+    <div class="one wide column" id="empty"></div>
+    <div class="fifteen wide column">
+        <h2>
+            Storage of Sensitive Data Across Identity Systems
+        </h2>
+        <table class="ui very basic table">
+            <theader>
+                <tr>
+                    <th class="three wide top aligned">
+                        WHO SEES/STORES SENSITIVE DATA
+                    </th>
+                    <th class="three wide top aligned">
+                        IDENTITY PROVIDER
+                    </th>
+                    <th class="two wide top aligned">
+                        BROKER/VENDOR
+                    </th>
+                    <th class="two wide top aligned">
+                        DECENTRALISED STORAGE NETWORK
+                    </th>
+                    <th class="three wide top aligned">
+                        INDIVIDUAL’S DEVICE/CLOUD STORAGE PROVIDED BY VENDOR
+                    </th>
+                    <th class="two wide top aligned">
+                        RELYING PARTY
+                    </th>
+                </tr>
+            </theader>
+            <tbody>
+            <tr>
+                <th class="top aligned">CENTRALISED</th>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    Single large IdP
+                </td>
+                <td class="top aligned">N/A</td>
+                <td class="top aligned">N/A</td>
+                <td class="top aligned">N/A</td>
+                <td><img src="icons/technological-choices-yes.svg"></td>
+            </tr>
+            <tr>
+                <th class="top aligned">FEDERATED</th>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    Multiple smaller IdPs
+                </td>
+                <td class="top aligned">N/A</td>
+                <td class="top aligned">N/A</td>
+                <td class="top aligned">N/A</td>
+                <td><img src="icons/technological-choices-yes.svg"></td>
+            </tr>
+            <tr>
+                <th class="top aligned">BROKERED FEDERATED</th>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    Multiple smaller IdPs
+                </td>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    <p>Metadata</p>
+                </td>
+                <td class="top aligned">N/A</td>
+                <td class="top aligned">N/A</td>
+                <td><img src="icons/technological-choices-yes.svg"></td>
+            </tr>
+            <tr>
+                <th class="top aligned">DECENTRALISED/ SELF-SOVEREIGN ID</th>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    Multiple smaller IdPs
+                </td>
+                <td class="top aligned">N/A</td>
+                <td>
+                    <img src="icons/technological-choices-yes.svg">
+                    Metadata
+                </td>
+                <td><img src="icons/technological-choices-yes.svg"></td>
+                <td><img src="icons/technological-choices-yes.svg"></td>
+            </tr>
 
-        <div class="five wide column meta">
+            </tbody>
+        </table>
+    </div>
+    <div class="space1"></div>
+
+
+    <div class="five wide column meta">
             <h4>2.3</h4>
         </div>
         <div class="one wide column" id="empty">
@@ -227,10 +394,13 @@
             <p> In the proposed ‘decentralised’ or ‘self-sovereign’ ID systems, the individual holds their own credentials or delegates this responsibility to the vendors of these systems. This allows the credential to be used even when the issuing identity provider is unavaliable/offline, as the relying party can verify its authenticity by consulting a decentralised storage network.</p>
             <p> Additionally, while identity providers have Theo power to unilaterally and arbitrarily revoke credentials in all of the three models described above, the decentralised model stores a tamper-resistant record of credentials in its storage network (usually a public or permissioned blockchain), which provide some accountability in the face of abuse of power by an identity provider.</p>
         </div>
+        </div>
 
 <!--        Large Image -->
 
-        <div class="five wide column meta">
+    <div class="ui container two column stackable grid">
+
+    <div class="five wide column meta">
             <h4>2.4</h4>
         </div>
         <div class="one wide column" id="empty">

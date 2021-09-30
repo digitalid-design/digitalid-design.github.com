@@ -793,3 +793,49 @@ ol.ui.list li::before {
 #technologicalChoices-subpage .cards > .card:nth-child(2) p {
     width: 70%;
 }
+
+#technologicalChoices-subpage .ui.card, .ui.cards > .card {
+    width: 100%;
+}
+
+#breakoutB .seven.column .cards > .card p {
+    width: 50%;
+}
+
+#breakoutB .fifteen.column .cards > .card p {
+    width: 30%;
+}
+
+#technologicalChoices-subpage table {
+    font-family: "Fira Sans", sans-serif;
+    border-spacing: 1em 0;
+    border-collapse: collapse;
+}
+
+#technologicalChoices-subpage .ui.table tr:not(.header) td {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#technologicalChoices-subpage table th {
+    padding-top: 1em;
+    color: #68B699;
+}
+
+#technologicalChoices-subpage table tr {
+    border-bottom: 0.5px solid #787573;
+}
+
+#technologicalChoices-subpage table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#technologicalChoices-subpage table tbody tr td,
+#technologicalChoices-subpage table tbody tr th{
+    vertical-align: middle;
+}
+
+#technologicalChoices-subpage table img {
+    display: block;
+    margin-bottom: 0.5em;
+}
