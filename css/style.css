@@ -772,3 +772,24 @@ ol.ui.list li::before {
     padding-bottom: 3em;
     vertical-align: top;
 }
+
+#technologicalChoices-subpage .breakout h3 {
+    font-size: 0.875rem;
+}
+
+#technologicalChoices-subpage .breakout p {
+    font-size: 0.875em;
+}
+
+#technologicalChoices-subpage .breakout img {
+    margin-top: 1em;
+}
+
+#technologicalChoices-subpage .cards > .card {
+    flex-direction: column;
+    align-items: center;
+}
+
+#technologicalChoices-subpage .cards > .card:nth-child(2) p {
+    width: 70%;
+}
