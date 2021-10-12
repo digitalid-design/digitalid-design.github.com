@@ -81,7 +81,6 @@ h1,h2,h3,h4,p {
 /* Body */
 .light-gray {
     background-color: #f4f4f4;
-    padding: 1em 0 5em 0;
 }
 .gray {
     background-color: #efefef;
@@ -101,6 +100,9 @@ h1,h2,h3,h4,p {
 }
 .space3 {
     height: 3em;
+}
+.space4 {
+    height: 4em;
 }
 .space5 {
     height: 5em;
@@ -650,12 +652,12 @@ ol.ui.list li::before {
 
 /* Landing Page - Specific Targets */
 
-#decisionsGuide .green.card {
+#decisionGuide .green.card {
     padding-top: 1em;
     min-height: 20em;
 }
 
-#decisionsGuide .green.card > .header > h3 {
+#decisionGuide .green.card > .header > h3 {
     min-height: 2.5em;
 }
 
