@@ -716,6 +716,16 @@ ol.ui.list li::before {
     overflow-x: scroll;
 }
 
+#policyDesignChoices .ui > .row > .ui.cards {
+    overflow-x: scroll;
+}
+
+#policyDesignChoices .ui.cards > .card > .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
 #governanceFramework .content img{
     padding-bottom: 0;
     padding-top: 1.5em;
