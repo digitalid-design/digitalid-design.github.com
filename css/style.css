@@ -696,6 +696,10 @@ ol.ui.list li::before {
     margin-right: 0;
 }
 
+#appropriateRolesOfTheState .card.black {
+    width: auto;
+}
+
 #appropriateRolesOfTheState .content.center.aligned .text p {
     font-size: 1em;
     font-weight: bold;
