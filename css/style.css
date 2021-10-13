@@ -601,26 +601,26 @@ h1,h2,h3,h4,p {
     z-index: 120;
 }
 
-.ui.container > .header a {
+.ui.container .header a {
     width: 100%;
     display: flex;
     align-items: baseline;
     color: black;
 }
 
-.ui.container > .header a h2 {
+.ui.container .header a h2 {
     margin-right: 0.5em;
     border-bottom: 2px dotted #69c3aa;
 }
 
-.ui.container > .header a h2:hover {
+.ui.container .header a h2:hover {
     border-bottom: 2px solid #69c3aa;
 }
 
-.ui.container > .header a img {
+.ui.container .header a img {
     width: 1.5em;
 }
-.ui.container > .header a img:hover {
+.ui.container .header a img:hover {
     filter: invert(70%) sepia(53%) saturate(297%) hue-rotate(113deg) brightness(90%) contrast(89%);
 }
 
@@ -650,6 +650,10 @@ ol.ui.list li::before {
     content: "";
 }
 
+.ui .row.scrolling .column {
+    min-width: max-content;
+}
+
 /* Landing Page - Specific Targets */
 
 #decisionGuide .green.card {
@@ -657,7 +661,7 @@ ol.ui.list li::before {
     min-height: 20em;
 }
 
-#decisionGuide .green.card > .header > h3 {
+#decisionGuide .green.card .header > h3 {
     min-height: 2.5em;
 }
 
@@ -670,7 +674,7 @@ ol.ui.list li::before {
     justify-content: start;
 }
 
-#appropriateRolesOfTheState .ui > .row{
+#appropriateRolesOfTheState .ui > .row.scrolling{
     min-height: 255px;
     display: flex;
     flex-wrap: nowrap;
@@ -709,14 +713,16 @@ ol.ui.list li::before {
     width: auto;
 }
 
-#technologicalDesignChoices .ui > .row {
+#technologicalDesignChoices .ui .row.scrolling{
     min-height: 330px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
 
-#policyDesignChoices .ui > .row > .ui.cards {
+#policyDesignChoices .ui .row.scrolling {
+    display: flex;
+    flex-wrap: nowrap;
     overflow-x: scroll;
 }
 
