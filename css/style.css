@@ -725,7 +725,7 @@ ol.ui.list li::before {
     overflow-x: scroll;
 }
 
-#technologicalDesignChoices .content .description {
+#technologicalDesignChoices .flip .content .description {
     font-family: "IBM Plex Serif", serif;
     font-weight: bold;
     font-size: 1.375em;
