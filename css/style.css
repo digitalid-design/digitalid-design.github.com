@@ -499,6 +499,26 @@ h1,h2,h3,h4,p {
     margin-bottom: 0;
 }
 
+.ui.cards > .tiny.card {
+    height: 9em;
+    width: 9em;
+    min-height: 9em;
+    min-width: 9em;
+    margin: 6px;
+}
+
+.ui.cards > .tiny.card > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui.cards > .tiny.card > .content > .description {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .ui.cards > .small.card {
     height: 13.5em;
     width: 13.5em;
@@ -528,12 +548,12 @@ h1,h2,h3,h4,p {
     font-weight: bold;
 }
 
-.ui.cards > .taller.card {
-    height: 18.75em;
-}
-
 .ui.cards:first-child > .small.card:first-child {
     margin-left: 12px;
+}
+
+.ui.cards > .taller.card {
+    height: 18.75em;
 }
 
 .ui.cards > .card > .content {
@@ -681,25 +701,6 @@ ol.ui.list li::before {
     overflow-x: scroll;
 }
 
-#appropriateRolesOfTheState .ui > .row > .column,
-#technologicalDesignChoices .ui > .row > .column,
-#governanceFramework-subpage .ui > .row > .column {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#appropriateRolesOfTheState .ui > .row > .column:first-child,
-#technologicalDesignChoices .ui > .row > .column:first-child,
-#governanceFramework-subpage .ui > .row > .column:first-child {
-    margin-left: 0;
-}
-
-#appropriateRolesOfTheState .ui > .row > .column:last-child,
-#technologicalDesignChoices .ui > .row > .column:last-child,
-#governanceFramework-subpage .ui > .row > .column:last-child {
-    margin-right: 0;
-}
-
 #appropriateRolesOfTheState .card.black {
     width: auto;
 }
@@ -707,6 +708,10 @@ ol.ui.list li::before {
 #appropriateRolesOfTheState .content.center.aligned .text p {
     font-size: 1em;
     font-weight: bold;
+}
+
+#technologicalDesignChoices .ui.cards {
+    flex-wrap: wrap;
 }
 
 #technologicalDesignChoices .card.black {
@@ -719,6 +724,11 @@ ol.ui.list li::before {
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
+
+/*#technologicalDesignChoices .ui.two.cards {*/
+/*    max-width: 60%;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 
 #policyDesignChoices .ui .row.scrolling {
     display: flex;
