@@ -725,10 +725,12 @@ ol.ui.list li::before {
     overflow-x: scroll;
 }
 
-/*#technologicalDesignChoices .ui.two.cards {*/
-/*    max-width: 60%;*/
-/*    flex-wrap: wrap;*/
-/*}*/
+#technologicalDesignChoices .content .description {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: bold;
+    font-size: 1.375em;
+    line-height: 1.5em;
+}
 
 #policyDesignChoices .ui .row.scrolling {
     display: flex;
