@@ -1045,12 +1045,13 @@
 <script>
   const flipCards = document.getElementsByClassName("card flip");
   Array.from(flipCards).forEach(card => {
-    card.addEventListener("click", flip)
+    card.addEventListener("mouseenter", flip)
+    card.addEventListener("mouseleave", flip)
   })
 
   function flip(event){
     let element = event.target.closest(".card");
-    element.className = `${element.className} active`
+    element.classList.toggle("active")
   };
 </script>
 </body>

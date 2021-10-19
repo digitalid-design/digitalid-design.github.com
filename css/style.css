@@ -602,9 +602,10 @@ h1,h2,h3,h4,p {
 .card--back {
     z-index: 80;
     transform: rotateY(180deg);
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    display: none;
 }
 
 .active {
@@ -614,10 +615,11 @@ h1,h2,h3,h4,p {
 .active .card--front {
     z-index: 100;
     visibility: collapse !important;
-    transform: rotateY(180deg);
 }
 
 .active .card--back {
+    display: block;
+    visibility: visible;
     z-index: 120;
 }
 
