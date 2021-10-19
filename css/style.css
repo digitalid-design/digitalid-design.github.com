@@ -501,9 +501,9 @@ h1,h2,h3,h4,p {
 
 .ui.cards > .tiny.card {
     height: 9em;
-    width: 9em;
+    width: 10em;
     min-height: 9em;
-    min-width: 9em;
+    min-width: 10em;
     margin: 6px;
 }
 
@@ -516,7 +516,8 @@ h1,h2,h3,h4,p {
 
 .ui.cards > .tiny.card > .content > .description {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 1rem;
 }
 
 .ui.cards > .small.card {
@@ -732,6 +733,11 @@ ol.ui.list li::before {
     font-weight: bold;
     font-size: 1.375em;
     line-height: 1.5em;
+}
+
+#technologicalDesignChoices .tiny.card .content img {
+    width: 60px;
+    height: 60px;
 }
 
 #policyDesignChoices .ui .row.scrolling {
