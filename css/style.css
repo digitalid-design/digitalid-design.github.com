@@ -493,7 +493,7 @@ h1,h2,h3,h4,p {
 .ui.cards > .title.card h3 {
     font-size: 1.285rem;
     letter-spacing: 0.5px;
-    text-transform: capitalize;
+    text-transform: none;
 
     margin-top: 0;
     margin-bottom: 0;
