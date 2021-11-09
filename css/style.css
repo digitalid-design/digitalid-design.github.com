@@ -677,6 +677,10 @@ ol.ui.list li::before {
     min-width: max-content;
 }
 
+.ui.card > .content::after, .ui.cards > .card > .content::after {
+    display: none;
+}
+
 /* Landing Page - Specific Targets */
 
 #decisionGuide .green.card {
@@ -738,6 +742,20 @@ ol.ui.list li::before {
 #technologicalDesignChoices .tiny.card .content img {
     width: 60px;
     height: 60px;
+}
+
+#technologicalDesignChoices .content.card--front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#technologicalDesignChoices .content.card--front .extra.content {
+    margin: 0;
+}
+
+#technologicalDesignChoices .ui.centered.image {
+    margin: auto;
 }
 
 #policyDesignChoices .ui .row.scrolling {
