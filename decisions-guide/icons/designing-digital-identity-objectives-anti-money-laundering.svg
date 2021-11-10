@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Group_4104" data-name="Group 4104" transform="translate(-574.552 -338.05)">
+    <g id="Group_4103" data-name="Group 4103">
+      <g id="Group_4097" data-name="Group 4097">
+        <rect id="Rectangle_849" data-name="Rectangle 849" width="51.701" height="25.614" transform="translate(586.202 338.05)" fill="#040506"/>
+        <g id="Group_4096" data-name="Group 4096">
+          <path id="Path_3395" data-name="Path 3395" d="M637.3,363.065H586.8V338.648h50.5Zm-50.105-.4h49.706V339.047H587.2Z" fill="#fff"/>
+        </g>
+        <path id="Path_3396" data-name="Path 3396" d="M615.2,359.2l-5.481-7.278h-3.859v-1.338h5.437a2.708,2.708,0,0,0,2.97-2.853h-8.407v-1.293h8.392a2.7,2.7,0,0,0-2.931-2.577h-5.461v-1.338h12.394v1.338H614.43a3.736,3.736,0,0,1,1.239,2.577h2.58v1.293h-2.562a4.1,4.1,0,0,1-4.228,4.187l5.53,7.282Z" fill="#fff"/>
+      </g>
+      <g id="Group_4099" data-name="Group 4099">
+        <rect id="Rectangle_850" data-name="Rectangle 850" width="51.701" height="25.614" transform="translate(586.202 387.436)" fill="#57b093"/>
+        <g id="Group_4098" data-name="Group 4098">
+          <path id="Path_3397" data-name="Path 3397" d="M637.3,412.451H586.8V388.035h50.5Zm-50.105-.4h49.706V388.434H587.2Z" fill="#fff"/>
+        </g>
+        <path id="Path_3398" data-name="Path 3398" d="M615.2,408.582l-5.481-7.279h-3.859v-1.338h5.437a2.708,2.708,0,0,0,2.97-2.853h-8.407v-1.293h8.392a2.7,2.7,0,0,0-2.931-2.577h-5.461V391.9h12.394v1.338H614.43a3.736,3.736,0,0,1,1.239,2.577h2.58v1.293h-2.562a4.1,4.1,0,0,1-4.228,4.188l5.53,7.282Z" fill="#fff"/>
+      </g>
+      <g id="Group_4102" data-name="Group 4102">
+        <g id="Group_4100" data-name="Group 4100">
+          <path id="Path_3399" data-name="Path 3399" d="M612.052,382.538a1.5,1.5,0,0,1-1.5-1.5V367.722a1.5,1.5,0,0,1,3,0v13.319A1.5,1.5,0,0,1,612.052,382.538Z" fill="#57b093"/>
+        </g>
+        <g id="Group_4101" data-name="Group 4101">
+          <path id="Path_3400" data-name="Path 3400" d="M612.052,384.289a1.494,1.494,0,0,1-1.067-.446l-4.822-4.893a1.5,1.5,0,1,1,2.133-2.1l3.756,3.81,3.756-3.81a1.5,1.5,0,1,1,2.133,2.1l-4.822,4.893A1.494,1.494,0,0,1,612.052,384.289Z" fill="#57b093"/>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_851" data-name="Rectangle 851" width="75" height="75" transform="translate(574.552 338.05)" fill="none"/>
+  </g>
+</svg>
