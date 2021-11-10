@@ -681,6 +681,10 @@ ol.ui.list li::before {
     display: none;
 }
 
+.introduction p strong{
+    font-family: "Fira Sans", sans-serif;
+}
+
 /* Landing Page - Specific Targets */
 
 #decisionGuide .green.card {
