@@ -700,6 +700,11 @@ ol.ui.list li::before {
     font-size: 0.75em;
 }
 
+#designingDigitalIdentity .ui.cards > .small.card > .content.center.aligned {
+    padding-top: 3rem;
+    justify-content: flex-start;
+}
+
 #establishingTrust .ui.cards > .small.card > .content.center.aligned {
     padding-top: 1.75em;
     justify-content: start;
