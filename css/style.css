@@ -883,9 +883,17 @@ ol.ui.list li::before {
     margin-bottom: 1.25em;
 }
 
+.super.table.header span {
+    text-align: center;
+    width: 30%;
+}
+
 .super.table.header span:not(:last-of-type) {
     border-right: 2px solid var(--high);
-    width: 30%;
+}
+
+.identity-artifacts .super.table.header span {
+    width: 45%;
 }
 
 .factor {
@@ -927,6 +935,9 @@ ol.ui.list li::before {
     padding: 0.4em 0;
 }
 
+.identity-artifacts .comparison.table .item {
+    width: 45%;
+}
 
 .header.gray {
     background-color: var(--gray);
