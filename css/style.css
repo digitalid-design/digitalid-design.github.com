@@ -707,7 +707,7 @@ ol.ui.list li::before {
     font-size: 0.75em;
 }
 
-#designingDigitalIdentity .ui.cards > .small.card > .content.center.aligned {
+#objectives .ui.cards > .small.card > .content.center.aligned {
     padding-top: 2.5rem;
     justify-content: flex-start;
 }
