@@ -1028,6 +1028,14 @@ ol.ui.list li::before {
     margin-bottom: 0.5em;
 }
 
+#technologicalChoices-subpage .footnote tr {
+    border: none;
+}
+
+#technologicalChoices-subpage .footnote table tbody tr td {
+    vertical-align: initial;
+}
+
 #respondingToCybersecurityThreatsFailures .ui .row.scrolling {
     height: 380px;
     max-height: 380px;
