@@ -685,6 +685,12 @@ ol.ui.list li::before {
     content: "";
 }
 
+.ui .row.scrolling {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
 .ui .row.scrolling .column {
     min-width: max-content;
 }
@@ -715,6 +721,10 @@ ol.ui.list li::before {
 #objectives .ui.cards > .small.card > .content.center.aligned {
     padding-top: 2.5rem;
     justify-content: flex-start;
+}
+
+#objectives .ui > .row.scrolling{
+    min-height: 280px;
 }
 
 #establishingTrust .ui.cards > .small.card > .content.center.aligned {
@@ -748,9 +758,6 @@ ol.ui.list li::before {
 
 #technologicalDesignChoices .ui .row.scrolling{
     min-height: 330px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
 }
 
 #technologicalDesignChoices .flip .content .description {
@@ -777,12 +784,6 @@ ol.ui.list li::before {
 
 #technologicalDesignChoices .ui.centered.image {
     margin: auto;
-}
-
-#policyDesignChoices .ui .row.scrolling {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
 }
 
 #policyDesignChoices .ui.cards > .card > .content {
@@ -1025,4 +1026,10 @@ ol.ui.list li::before {
 #technologicalChoices-subpage table img {
     display: block;
     margin-bottom: 0.5em;
+}
+
+#respondingToCybersecurityThreatsFailures .ui .row.scrolling {
+    height: 380px;
+    max-height: 380px;
+    overflow-y: hidden;
 }
