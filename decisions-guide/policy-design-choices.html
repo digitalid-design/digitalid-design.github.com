@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Governing ID: A Framework for Evaluation of Digital Identity | Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network India" />
+  <!-- Title + CSS + Favicon -->
+  <title>Digital Identities: Design and Uses</title>
+  <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/post.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4c415b9185.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Top Navigation Bar -->
+<div class="green nav-top">
+  <div class="ui container">
+    <a href="../index.html">Home</a> /
+    <a href="./index.html#decisionGuide">Decision Guide</a> /
+    <a href="./index.html#understandingDigitalIdentity">Understanding Digital Identity</a> /
+    <a href="./index.html#objectives">Objectives</a> /
+    <a href="./index.html#appropriateRolesOfTheState">
+      <span id="inactive">Policy Design Choices</span>
+    </a> /
+    <a href="./index.html#establishingTrust">Establishing Trust</a> /
+    <a href="./index.html#technologicalDesignChoices">Technological Design Choices</a> /
+    <a href="./index.html#policyDesignChoices">Policy Design Choices</a> /
+      <a href="./index.html#governanceFramework">Governance Framework</a> /
+      <a href="./index.html#respondingToCybersecurityThreatsFailures">Responding To Cybersecurity Threats & Failures</a> /
+    <a href="./index.html#caseStudies">Case Studies</a>
+  </div>
+</div>
+<div class="space5"></div>
+
+<!-- Content -->
+<div class="white" id="technologicalChoices-subpage">
+  <div class="ui container two column stackable grid">
+    <div class="six wide column">
+    </div>
+    <div class="ten wide column post-title">
+      <h2>Appropriate Roles of Actors</h2>
+    </div>
+    <div class="five wide column meta">
+<!--      TODO-->
+      <p><em>Research and Writing by</em> Amber Sinha & <br/>Shruti Trikanad</p>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content introduction">
+      <h3>What kind of ID system should be implemented?</h3>
+      <p><strong>1.1 Has there been an examination of whether a digital ID system is strictly necessary (especially if a less invasive, non-digital or paper-based ID is a viable option to achieve the same stated aims)?</br>
+1.2 Does it aim to be foundational, or one of multiple functional IDs?</br>
+1.3 Does it aim to serve as legal identification for all citizens and residents throughout their lifetime?</br>
+1.4 Does it aim to establish uniqueness within the population?</br></strong></br>
+A “legal” identity should not automatically translate into a “digital” identity without sufficient examination into whether it is strictly necessary to serve its stated purposes. There is a tendency to push digital ID as an immediate solution to provide a legal identity to undocumented populations and enable their recognition by the State. Here, we must briefly delve into the quantum of data collected, and the resulting harms that could arise. A legal identity is an officially recognised form of documentation that certifies one’s identity and usually requires only basic demographic information such as name and date of birth, sex, and country of birth or residence. A digital ID, in addition to this information, usually entails the collection of further categories of sensitive information in addition to biometric data (usually fingerprints and iris scans at minimum). The quantum of data collected about an individual could lead to profiling and surveillance, and the use of biometric information introduces additional security concerns (especially since biometrics, once compromised, cannot be changed or replaced). Under these circumstances, one must examine whether a digital ID system would better serve the need for providing legal identity over traditional or existing ID systems that can instead be improved to better serve these needs.
+</p></br>
+<h3>What is the intended purpose of the ID system?</h3>
+<p><strong>2.1 Does it intend to act as an authoritative source of basic identity information? Does it serve as a registry or a repository of data?</br>
+2.2 Does it intend to provide authentication credentials for other services?</br></strong></br>
+Based on the objectives the ID is meant to serve, a broad purpose must be allotted to the ID system, that will in turn impact key choices around its model, features and identity credentials. The determination of this purpose is also necessary to identify what data to collect from users, and therefore the privacy harms and risks posed by the system.</p>
+<p>If the intended objective is for the ID system to serve as legal identity, then it typically follows a largely centralised model, with the government as the identity provider and with minimal involvement of the private sector in verification or authentication of the identity. Several developing countries such as India, Nigeria and Kenya have created ID systems with the main goal of providing legal identity to their residents. In India, the Aadhaar system was intended to provide a reliable identity to address problems of fraud and leakages in its welfare delivery system, and is now used pan-India as an authoritative source of identity for most Aadhaar holders. The need for a biometric digital identity was attributed to the reliability and cost-effectiveness it allows, together with the ability to deliver online services such as banking and cash subsidy deposits, amongst others.</p>
+<p>This may be a useful purpose when there is a lack of legal identity documentation, but countries should not so easily substitute the need for a legal identity with a digital identity. This is primarily because the privacy and surveillance risk created through a digital ID system such as this is far wider than that of a traditional legal identity model. Additionally, even when the main goal is that of providing reliable legal identity to the excluded population, often it is also intended as means to access services online using the authentication offered by the ID (otherwise the need for a digital ID must be reconsidered).  While it may serve a wider purpose of allowing online/remote authentication as well, there is a big cost associated with combining the purposes of legal identification and service delivery (when the State is the provider and manager of the ID) which is the case when it serves as legal identity. The access to a large body of identity information along with continuously growing data about their activities allows for extensive State surveillance. Additionally, it creates a substantial power imbalance, as the ID provider now has the means to exclude the ID holder from key services by being in control of their ID.</p>
+<p>As a registry of information: Estonia had a population registry and an identity documents database before it introduced its digital ID system. This ID served as a means to link the information present in various databases, and give easy and safe authorization to reuse such data so that Estonian residents need not repeatedly share information they have already divulged. Improving the ease of doing business, in Estonia as well as with the rest of the EU, was the motive that initially influenced the Estonian system. As a result, its intended purpose was to act as a data registry, and to provide reliable identity credentials (for electronic signatures). The X-road interoperability platform can also be traced back to this purpose; by linking the public and private sector e-information systems, it allows seamless communication between data systems and instant information exchanges. Similarly this is why the ID is available not only to citizens and residents, but even e-residents of Estonia.</p>
+<p>To serve as authentication attributes: In Canada, the digital ID system was intended to create an interlinked identity management system that could be easily used to access both public and private services. This is achieved through a federated system where citizens can choose from a disparate set of identity providers to create attributes. This ID system is governed largely through standards, such that private organizations that are certified to meet such standards can be ID providers. A key difference here from the other systems seen above, is that use of this digital ID is only optional, with an alternative login method remaining available for citizens.</p>
+</br>
+<h3>What should be the ID credential?</h3>
+<p><strong>3.1 What are the authentication factors assigned to the digital ID?</br>
+3.2 Have authentication factors been determined keeping in mind potential exclusions due to inability to authenticate one’s identity because of infrastructural and other factors, such as lack of internet connectivity or viable fingerprints?
+</br></strong></br>
+An identity credential is a document, object, or data structure that can digitally affirm the identity of an individual through some method of authentication in an identity system. They typically rely on six kinds of factors to authenticate: knowledge, possession, inherence, location, behavioral, multi-modal and multi-factor.</p>
+<p>Choosing the identity credential for an ID system impacts much of the functionality and use of the ID, as it can determine the level of assurance it provides to transactions, the privacy and exclusionary risk it introduces, and is the key factor in the system with which users interact. When considered at the scale of a national ID program, it also plays a large role in the cost of implementing the ID system.</p>
+<p>Some credentials that can be adopted in an ID system are listed below:</p>
+<p>Static Passwords: Passwords can be static passwords, passphrases, one-time passwords, and dynamic passwords. Static passwords are reusable and may or may not expire. They are usually generated by the user, and for security purposes work best when combined with another form of authentication. Static password systems with unencrypted transmission are very vulnerable to malicious actors, and can be accessed through eavesdropping, dictionary attacks, social engineering attacks and phishing.</p>
+<p>One Time Password (OTP): An OTP is a dynamic password that remains valid for a single authentication session. This password expires once an individual has authenticated themself, or if the allotted time elapses. OTP authentication requires access to something that an individual possesses, such as an email address or a mobile phone, and optionally something only that individual knows or has access to, such as a PIN. OTPs are considered easy to use, and compatible with a wide range of devices such as mobile phones, computers and smart tokens. They can be executed through SMS or PC-based software, and can be used as both standalone authentication or as part of multifactor authentication (which is more secure). Multi-factor authentication will additionally use another form of authentication such as biometrics, PIN or contextual data. Since OTPs are easy to use and have minimal additional requirements, they are highly scalable as well as easy to adopt. They have also been widely in use for over a decade.</p>
+<p>However, the technology provides multiple points of attack - for instance, cloning a SIM could provide someone else with illegal access to a live OTP (and consequently enable identity fraud).</p>
+<p>OTP via Mobile App: Mobile authentication apps mitigate the security risks of static OTPs by using either HMAC-based OTPs (HOTPs) or time-based OTPs (TOTPs). HMAC stands for “hash message authentication code”, and HOTPs are utilised in token-based authentication. They are not time-based, and instead use a secret key and a counter. Each attempt to authenticate the counter on the token generates a new OTP. On the other hand, TOTPs are temporary and do not use a counter. Instead, the time is synchronised on both the user and the resource’s end through a network time protocol. Popular mobile authentication apps use TOTPs enabling two-factor authentication. These apps are scalable and easy to adopt and use, as well as less vulnerable to circumvention by malicious actors. Two-factor authentication with biometric validation of OTP would solve the issue of stealing a token in TOTP authentication. However, app-based OTP mechanisms require individuals to possess a smartphone for authentication.</p>
+<p>Non-electronic card: These are usually plastic cards that contain basic demographic information. They can also have a photograph, allowing them to be used as photo identity proof. Non-electronic cards used in identity systems can also contain a unique identification number linked to records in a database in order to validate identity. Barcodes and QR codes on non-electronic cards can automate the process of data-capturing and reduce errors.</br>
+Non-electronic cards provide the simplest method of identity authentication. They also have a high level of interoperability with other technologies. They are usually more affordable than other methods of authentication since they are easy to implement and do not usually require additional technology (except for barcode or QR code scanners in some instances). These factors contribute to ease of adoption, since a high level of technological literacy is not required to use them.</p>
+<p>However, these cards pose issues of security and scalability. They do not possess electronic security features, and anyone in possession of a card can use it in the absence of biometric validation. They are not an ideal means of local biometric authentication since any biometric template encoded on the card is either not encrypted, or in case of encryption requires keys that must be distributed and secured.</p>
+<p>Contact smart card: These cards are embedded with a microchip and processing unit which work with a card reader through physical contact. Card readers contain a processor, memory and a cryptographic controller and provide high processing speeds and security. These have seen wide country adoption, and are used to access a wide array of services.</br>
+The cards allow online and offline transactions, and attempt to secure communication through built-in hashing, digital signatures, and encryption. They are versatile across purposes and scalable as they are capable of storing and transmitting increasingly large volumes of data. Other applications can be added to the card, and they can be also used as multi-application credentials to allow physical access to various facilities.</p>
+<p>However, these cards require a card reader in order to function, and retrieving information from them is relatively slow. While they are relatively cheaper than contactless smart cards, they can still entail high overall costs. Security issues may arise by guessing or observing the PIN or stealing biometric credentials required for authentication.</p>
+<p>Contactless smart card: These have the same features as contact smart cards with an additional radio frequency (RF) transceiver and antenna powered by electromagnetic waves emitted by the card reader. Contactless cards share similar dimensions and processor options as contact cards, but have slower data transmission rates. Documents such as electronic passports can also act as contactless cards. The identity can be authenticated and verified through a password or a PIN, but this feature can also be circumvented. Cryptography implemented through an integrated circuit chip can also protect user and application information. Contactless cards are being increasingly adopted, and can be adapted for various uses because of their ability to store increasing amounts of data and perform cryptographic computations.</p>
+<p>Contactless cards can also be expensive, making them out of reach to low-income communities. They are also subject to the same RFID tracking vulnerabilities as non-smart RFID cards.</p>
+<p>Non-smart RFID cards are a form of contactless cards that use radio frequency identification (RFID) to process the information in RFID tags. Unlike active RFID, passive RFID does not have an internal power source, and is powered by the electromagnetic energy transmitted by an RFID reader. Depending on their technological specifications, non-smart RFID cards can operate at various distances. They consist of an embedded RFID tag which has a microchip that has restricted computational ability and memory, as well as an antenna. Passive RFID tags work in conjunction with a reader, and the information transmitted does not typically include personally identifiable information. To prevent unauthorised access, contactless cards should ideally be stored in an RF-blocking sleeve.</p>
+<p>These long-range cards offer the advantage of allowing quick and efficient identification, and do not require the card to be in the line of sight of the card reader. They do not contain personally-identifiable information (PII), and also have a serial number that limits access by authorised users to information from a secured database.</p>
+<p>However when tags are not shielded, they could be read by both authorised and unauthorised individuals and rogue RFID readers. This raises privacy, and surveillance, and security concerns, and individuals will not know that their information has been compromised. Overall, this is a baseline technology that requires relatively low investment to implement, but is more expensive than barcode stickers and readers (which could be a point of comparative disadvantage and an obstacle in developing countries). Scalability issues also arise because they store limited amounts of data and lack sufficient processing power.</p>
+<p>Biometrics: When biometrics used in identification are assigned the nature of an ID credential, they usually involve matching the person’s biometrics against the stored biometrics in the ID system collected during the process of Identification. Biometric technologies involve a risk of both false positives and false negatives, particularly in large populations. Biometric factors are immutable and, in most cases, visible in the public domain. This makes them impossible to change in case of breach and are susceptible to forgery.</p>
+<p>Biometric system on card (BSoC): BSoC technology involves a smart card with a biometric sensor and matcher. After a biometric sample is captured by the sensor, its biometric features are extracted by the processor and verified against the enrolled feature set. All data remains on the card.</p>
+<p>BSoC provides more secure authentication, since it is only performed in the presence of the cardholder and this technology is fairly resistant to circumvention. Only authentication data (and not PII) is transmitted. Since the card does not require biometric fingerprint information to be transmitted to a central server, this technology is fairly scalable. It does not require external biometric fingerprint readers which can be expensive, however this technology is more expensive than standard smart cards. While authentication accuracy is moderate, matching speed is high. If mishandled, the performance of the cards may get affected by wear and tear if mishandled.</p>
+<p>When determining the selection of an ID artifact, ID providers should take into account the following factors:</p>
+<p>Level of technological literacy of targeted individuals, and quality of access to internet and technological infrastructures: For instance, in India, the implementation of Aadhaar has lead to a large-scale exclusions through authentication failures caused by poor internet connectivity and lack of proper training of operators.</p>
+<p>Uses of the ID: The choice of ID artifact and authentication-credential should be secure and support the proper exercise and enjoyment of the individual's rights.</p>
+<p>Risks of biometric factors: Opting for biometric factors should be justifiable in terms of proportionality since biometrics create serious privacy and security risks, and may be a violation of privacy and other fundamental human rights.</p></br>
+<h3>How should verification be done?</h3>
+<p><strong>4.1 What are the attributes and documentation required to verify a user’s identity?</br>
+4.2 In the absence of required documentation to establish identity, can a user’s identity be vouched for by a reliable person?</br>
+4.3 Is identity proofing based on government sources such as existing civil registration systems/ legacy identification systems?</br>
+4.4 Does identity proofing involve deduplication based on biometric or biographic data?</br>
+</br></strong></br>
+During the registration phase of a digital ID system, an applicant goes through the process of recording their attributes (identity claim) and verifying their data (identity proof). This verification process forms an important part of the ID system, and is often determinative of both the trustworthiness of the final identity credentials, as well as the inclusivity of the ID system. This also presents a trade-off: a process that requires comprehensive documentation or identity evidence to verify an applicant’s identity might ensure reliability of the ID, but may make it less accessible to applicants who do not have these required documents or are otherwise unable to complete such a robust vetting process. It could also substantially increase the costs for the implementing country.</p>
+<p>Typically, credentials and documents that have already been issued are used to demonstrate attributes for this stage, as prescribed by the identifying entity. This can follow several different models:</p>
+<p>Civil Registration and Vital Statistics Systems (CRVS): Here, an applicant’s identity attributes are verified by comparing it to supporting documents such as birth certificates, marriage certificates, passports, driving licenses, and death certificates. This might also involve checking the authenticity and accuracy of these documents, and that the applicant is the true owner of the claimed identity and evidence.</p>
+<p>Vouching: In some countries, such as India and Nigeria, the verification process also allows vouching of an applicant’s identity by certain individuals (such as designated ‘introducers’ in India) when the applicant does not possess the required identity documents. This is particularly for excluded populations that do not possess any legal identity, and is intended to minimize the inevitable exclusions that arise from insisting on specific identity documents.</p>
+<p>Credit reference agencies: These agencies produce scores of ‘credit-worthiness’ of individuals based on an analysis of their credit histories, personal information, and other factors. This score may legally be provided to various identifying entities (employers, lenders, etc.), and is widely used in countries where banking is accessible. This, among others, is used by the UK Verify service while enrolling users. It is considered fairly accurate.</p>
+<p>Other existing databases: The use of other databases relies on the pre-existence of trustworthy documentation which can be utilised for verification. For instance, in Estonia, the Population Register containing personal information such as educational and marital records is used for verification.</p>
+<p>Police verification: Law enforcement authorities such as police and border authorities may oversee or act as an additional step to conduct verification.</p>
+<p>Choosing the appropriate system of verification requires consideration of many factors, but would depend most on the intended purpose of the system (and therefore the level of assurance it needs to achieve) and the unique needs and particularities of the local population. Factors to consider should include:</p>
+<p>Costs involved: The use of an existing and reliable database to conduct verification can reduce the costs involved in performing verification through other means. It may also reduce the visits that an applicant has to make to a centre for physical checks, which in itself can act as an obstacle to digital ID adoption. For instance, in the UK Verify registration process, all the steps of verification happen online, with the ID provider checking the applicant’s identity against certain recognised databases.</p>
+<p>Privacy and surveillance: On the other hand, the use of an existing identity database to generate a digital identity may increase risks of privacy and digital surveillance, particularly when carried out through seeding. The ID provider must also be wary of the additional privacy risks involved in using private actors or databases managed by private actors in the performance of this function, as it could lead to misuse of sensitive data (such as one prominent instance of an enrollment centre leaking the personal information of a famous cricketer).</p>
+<p>Exclusion and discrimination: Many exclusionary effects of digital ID arise at this stage, as applicants can be denied an ID dude to lack of documentation, errors in the verification system, or a difficult registration process that is not well adapted to the needs of the population. Sometimes this can also be discriminatory, when it affects a particular community or group that faces special challenges in obtaining these IDs. In Kenya, border communities such as the Nubian community have to undergo a special vetting process that makes it difficult to acquire basic identity documents. Since the Kenyan digital ID requires these documents to verify identity attributes, members of these communities are more likely to be excluded from obtaining these IDs.</p>
+<p>A flexible verification policy that allows different attributes, uses diverse methods and/or infrastructure, and accounting for exceptional situations, can help mitigate these risks. The use of vouchers in India and Nigeria, where many persons do not have identity documents or the use of non-government databases such as those of credit agencies and mobile phone providers in UK for persons who do not have government documents are good practices to address exclusionary risks.</p>
+<p>Exclusion can also present as the costs, in both time and money, and it takes to obtain a digital ID. In Nigeria, the verification process involves 3 visits to an enrolment (or other) centres by an applicant; this may exclude that part of the population that are unable to afford such costs. Thus, a process that requires minimal physical presence (or can be conducted online if existing infrastructure allows for it), similar to ones adopted by the UK and Canada for their digital ID systems, should be prioritised.</p>
+<p>Deduplication and seeding: Where a country intends to only issue unique identities, the verification process often involves a deduplication of the identity information provided by the applicant. In countries with strong civil registration and vital statistics systems (CRVS), this is often done by relying on existing databases. This can involve the process of seeding, where identity records in an existing database are mapped with those in another database, typically through a unique identifier. However, in other systems, where robust CRVS databases may not exist, other verification strategies have been employed, such as deduplication on the basis of biometrics or other demographic information. For instance, the Aadhaar system in India conducts de-duplication by comparing an applicant’s demographic and biometric information, collected during the process of enrolment, with records in the UIDAI database to verify if the resident is already in the database or not. This aims to ensure that only one Aadhaar number is generated per individual in the database.</p></br>
+<h3>Who is eligible?</h3>
+<p><strong>5.1 Is the coverage of the digital ID system intended to be universal or limited in its scope?</br></strong></br>
+  One of the central questions of national Identity Systems is deciding who should enrol and use the Identity System (i.e. eligibility). The choices for the who question are groups of either one or both of:
+<ol>
+  <li>residents, non-residents;</li>
+  <li>citizens, aliens;</li>
+  <li>adults, minors.</li>
+</ol></p>
+<p>In the initial stages, uses and aims of a national Identity System are typical considerations in deciding eligibility. But when ID schemes bring new aims and uses into their fold, the nexus between eligibility and the (new) uses and aims gets diluted. The cost of such an approach is high — poor choices in eligibility criteria risks the exclusion of marginalised groups including refugees, homeless people, and migrants from rightful access to entitlements and services.</br>
+Further, on the choice between residence, identity, and citizenship, it is not unusual for countries to revisit questions of citizenship and processes for determining it. Making citizenship as the sole eligibility criteria ignores such possibilities.</p></br>
+    </div>
+    <div class="five wide column meta">
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+      <p> </p>
+    </div>
+    <div class="five wide column meta">
+      <h4>1.2</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="state-endorsing-other-id-providers"></a>
+      <h4>The State as endorsing other ID providers</h4>
+      <p>In Estonia, Smart ID and Mobile ID are provided by private entities.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> Mobile ID requires a special SIM card to be inserted into the user’s smartphone; and one needs a smartphone or tablet to use the Smart ID application.</p>
+      <p>Digilocker, a document storage service provided by the Indian government, adopted a mechanism to identify users and allow them to authenticate using the Facebook Login service.<sup class="superscript"><a href="#fn8">8,</a></sup><a name="ref8"></a><sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> However, this option was later discontinued.</p>
+      <p>India’s Aadhaar ID system also relies heavily on the use of One-time Passwords (OTPs) to authenticate citizens. In this case, the cell service provider, which is usually a private entity, plays the role of ID provider, as individuals are identified by their phone numbers.</p>
+    </div>
+    <div class="five wide column meta">
+      <h4>1.3</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="state-broker-id-providers"></a>
+      <h4>The State as broker of ID providers</h4>
+      <p>In the UK and Canada, we see a model where the State acts as a broker of identity systems provided by multiple public and private entities.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> The role of the state is in providing standards for identity verification for different levels of identity assurance, and private identity providers validate residents’ identity and provide them login credentials for authentication. In order to maintain user privacy, identity providers do not know which government service the resident is attempting to access, and the government service does not know which identity provider has been used to verify residents’ identity. Moreover, different government services require varying levels of identity assurance, which allows residents who may not have all the required documentation to access a wider pool of services than if all government services demanded one single high standard of identity assurance.</p>
+    </div>
+
+    <div class="five wide column meta">
+      <h3>2</h3>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+      <h3>Models of Creation</h3>
+      <p>Even where the State is the provider of the digital ID, it typically utilises private services in building the ID system, through public-private partnerships. As digital ID systems are technically complex to build and require significant investment, many State ID providers are delegating some of the services involved in building, operating, or managing the ID system to private companies. This may also increase the State’s public service efficiency, as the expertise and services involved in operating an ID system are highly specialised, and therefore benefit from having partnerships between different actors.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> Perhaps the biggest advantage to using private services is that it removes the requirement of a big upfront investment by the government; costs are shouldered by the private investor, and typically managed over the contract period.<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a></p>
+      <p>The degree of private firm involvement varies, depending on the capacity of the State, private sector expertise and profitability. Amongst other things, the private actor can be involved in (1) designing and building identity infrastructure, (2) financing initial and ongoing capital investments, (3) key services in operating and maintaining digital IDs throughout their lifecycle, including registration, issuance or authentication.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> Public-private partnerships in the creation of an ID system can typically be categorised into one of the following:</p>
+    </div>
+
+    <div class="five wide column meta">
+      <h4>2.1</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="service-agreement"></a>
+      <h4>Service agreement</h4>
+      <p>Here, the government contracts with a private firm to undertake a specific role in one or more stages of the digital ID lifecycle. The firm may either receive payment from the government depending on its performance, or it may get revenue directly from consumers.</p>
+      <p>In <strong>Nigeria</strong>, the National Identity Management Commission (NIMC) is in charge of its National Identity Database, and ID card, but it partnered with financial service companies to issue a smartcard (used for authentication) that is also a payment card.</p>
+      <p>In <strong>Estonia, Finland, and Norway</strong>, the national digital ID system is operated by the State, but private entities offer and operate one mode of authentication through a mobile sim.</p>
+    </div>
+    <div class="five wide column meta">
+      <h4>2.2</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="build-operate-transfer-concession-agreement"></a>
+      <h4>Build-Operate-Transfer/Concession agreement</h4>
+      <p>These agreements are typically for a more significant role in the ID project, entailing higher risk and investment on the part of the private actor. Here, the private actor is almost solely in charge of designing, building and operating a project, usually for a fixed concession period. The public authority typically grants the private company the right to use its assets for a fixed period, and at the end of the contract the authority recovers its assets. </p>
+      <p><strong>Chile</strong>: In 2013, in order to modernize its national identification system, Chile’s Registro Civil e Identificación (SRCeI) awarded a 10 year concession to a private firm, Morpho Chile, to upgrade, build, install, and maintain new hardware and software, integrate existing databases, train SRCeI staff, and personalize eID smartcards. The government continues to operate the system and manage the collected data, but it was the private firm that invested significant capital for the upgrade, and is paid a fee per document issued by the government.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a></p>
+      <p><strong>Albania</strong>: Pursuing similar goals of modernizing its national identification system, Albania’s Ministry of Interior Affairs awarded a full concession to a private firm, Aleat, to design, build, operate, and maintain an eID system. This model differed from the one seen in Chile; the firm was tasked with building an entirely new database, for which it enrolled citizens, collected and stored their data, and issued eIDs at a fee. A copy of the collected data was shared with the government, and they were also paid a portion of the fee collected.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a></p>
+    </div>
+
+    <div class="five wide column meta">
+      <h3>3</h3>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+      <h3>Vendor Lock-in and Interoperability</h3>
+      <p>On building digital ID systems, a universal problem identified by governments has been that of inflexibility, caused by having to depend on select solution providers. This is often because while the identity solution uses the current best technology and is intended to meet the needs of the current population, it does not adapt to the growing needs or advancement in technology. Sometimes, these systems are developed in silos, on proprietary technologies from multiple technology partners, and struggle to operate with each other or be upgraded or replaced. In fact, the lack of provider and technology neutrality was identified by several bodies tasked with implementing national ID systems as a major concern, particularly by those countries in Africa that recently introduced digital ID systems.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a> Thus, this is a major concern to consider when conceiving a digital ID system, to ensure easy upgrades at minimum cost and operational risk. For this, there are several factors to consider.</p>
+    </div>
+
+    <div class="five wide column meta">
+      <h4>3.1</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="interoperability"></a>
+      <h4>Interoperability</h4>
+      <p>“Interoperability” can be seen as: a constantly shifting interconnection among ID users, ID providers, and ID consumers that permits the transmission of Digital ID information between them via a secure, privacy-protected channel.<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> In this context, is the characteristic of a system whose interfaces are completely understood, to work with other products or systems, (present or future), without any restrictions.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a></p>
+      <p>When viewed through the perspective of its major stakeholder groups, it looks like this<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a>:</p>
+      <ol>
+        <li>Individuals (or users, subjects) – who want to be able to share aspects of their identity efficiently and securely regardless of the service or platform, with at least some level of ID portability;</li>
+        <li>Relying parties (usually providers of services individuals want to use) – who want easy and secure access to accurate, timely, and relevant information about individuals from any source to maximize the value of their trust relationships and better serve their users, while limiting their own exposure to risks of a data breach;</li>
+        <li> ID providers – who want effective and sustainable means to provide Digital ID services to any user and any relying party; and</li>
+        <li>Society as a whole – to balance convenient and secure authentication and accreditation with other social needs such as privacy.</li>
+      </ol>
+      <p>Interoperability is an important factor to consider here, as it directly influences flexibility and vendor lock-ins. Often, different components of an ID system (such as a civil registry, authentication system, etc) are incompatible with those made by a different provider, forcing the government to rely on the same vendor, often at some cost. Similarly, ID holders may want to be able to expand the scope of the access their ID gives them, but are unable to because different components of the system are unable to communicate with each other.<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a></p>
+    </div>
+    <div class="five wide column meta">
+      <h4>3.2</h4>
+    </div>
+    <div class="one wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+        <a name="open-standards-approach"></a>
+      <h4>Open standards approach</h4>
+      <p>Building an identity platform using open standards may aid in ensuring interoperability and avoiding vendor lock-in. Open standards are simply a set of rules designed to do a specific job in technology. They comprise file formats, protocols and application interfaces that can be implemented by everyone since the specifications are available at no cost, and since their development and standardization is open and transparent.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a></p>
+      <p>This approach uses these agreed upon standards to create a framework for developers by defining the components of a system and how they interact with each other; this allows the developer a variety of choices from the market in terms of components that can be substituted for each other.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> The fixed standards result in substitutable and compatible technical components, and the standardized interfaces (APIs) enable these components (and any new ones that are added later) interact with each other.  Thus, through this model, governments can use existing modules and components from several existing ID technology providers, and are not limited by any one vendor or hardware.</p>
+        <br/>
+        <h5>India: Aadhaar</h5>
+        <p>The Aadhaar program utilises the open standards approach in its largely centralised structure, with its single ID provider (the government) and its centralised data storage system. It does this for the dual purpose of encouraging interoperability, and reducing upfront infrastructural costs.  Aadhaar uses an open standards-based interoperable platform to allow easy plug-and-play for various service delivery/support systems; this is supported by defined Application Programming Interface (APIs) and standards for ecosystem partners to leverage while building their solutions.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a> This includes core authentication APIs (both biometric and OTP requests), and APIs for the plug-and-play services that can be added on. For its hardware, it has distributed commodity computing running Linux machines on open source fully parallelizable, such that processes happen concurrently on different nodes.<sup class="superscript"><a href="#fn23">23</a></sup><a name="ref23"></a></p>
+        <br/>
+        <h5>Canada: PCIM</h5>
+        <p>This approach has also been used in Canada, where the ID system is not centralised, with several ID providers, both public and private, and different credentials, authentication factors etc. The Pan-Canadian approach for identity management is an agreement of principles and standards to develop solutions for use by all Canadians. It has an overarching framework, the Pan Canadian Trust Framework (PCTF), that amongst other things, sets standards that allow different platforms, services, architectures, and technologies to work interoperably to create a digital ID ecosystem. The PCTF supports the acceptance of trusted digital IDs and relationships by defining a set of agreed-upon standardized trusted processes that can be mapped to existing business processes, independently assessed using conformance criteria, and certified to be trusted and interoperable within the many contexts that comprise the digital ecosystem. The standards it sets has 2 main purposes:
+        </p>
+        <ol>
+            <li>Defining participant roles and associated identity-related functions within the ecosystem.</li>
+            <li>Facilitating interactions within the ecosystem by defining requirements and guidelines that establish a level of trustworthiness for functions performed by ecosystem Participants.</li>
+        </ol>
+    </div>
+      <div class="five wide column meta">
+          <h4>3.3</h4>
+      </div>
+      <div class="one wide column" id="empty">
+      </div>
+      <div class="ten wide column content">
+          <a name="open-source-approach"></a>
+          <h4>Open source approach</h4>
+          <p>Open source platforms, typically built with the use of open standards, is another approach to avoid the vendor lock in problem. Open source systems are designed to be publicly accessible, allowing any developer to inspect, modify or enhance them. With this, the government ID provider can build or use an existing (vendor neutral) open source platform concurrently with multiple vendors and service providers, allowing a  flexible and scalable identification system.</p>
+          <p>The governments of Morocco and Philippines have been using the Modular Open Source Identity Platform (MOSIP) platform to build their foundational digital ID platforms.<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> MOSIP is a modular, open source platform that countries (and other ID issuing organisations) can adopt and customise to their requirements.<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a> It is designed as a core foundational identity layer, with a set of modules that can be added as per the desired design, and is completely vendor neutral. As an open-source platform,  service providers can be used interchangeably, avoiding vendor lock-in.<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a></p>
+      </div>
+
+  </div>
+
+    <div class="ui container two column stackable grid">
+    <div class="six wide column" id="empty">
+    </div>
+    <div class="ten wide column content">
+      <h3>Notes</h3>
+      <br/>
+      <table class="footnote">
+          <tr>
+              <td class="number">1</td>
+              <td class="reference"><a name="fn1"></a>
+                  Jon Pietruszkiewicz, “What are the Appropriate Roles for Government in Technology Deployment? A White Paper with Author’s Response to Comments”, <i>NREL</i> (1999), <a href="https://www.nrel.gov/docs/gen/fy00/26970.pdf" target="_blank">https://www.nrel.gov/docs/gen/fy00/26970.pdf</a>
+                  <span class="internal-nav"><a href="#ref1">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">2</td>
+              <td class="reference"><a name="fn2"></a>
+                  Jon Pietruszkiewicz, “What are the Appropriate Roles for Government in Technology Deployment? A White Paper with Author’s Response to Comments”, <i>NREL</i> (1999), <a href="https://www.nrel.gov/docs/gen/fy00/26970.pdf" target="_blank">https://www.nrel.gov/docs/gen/fy00/26970.pdf</a>
+                  <span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">3</td>
+              <td class="reference"><a name="fn3"></a>
+                  Frist, B.; Domenici, P.; Lieberman, J.; Rockefeller, J. Letter Attachment Statement of Guiding Principles for the Science and Technology Caucus. Washington D. C.: United States Senate, January 28, 1998.
+                  <span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">4</td>
+              <td class="reference"><a name="fn4"></a>
+                  Environmental Engineering Division of the Council on Engineering of the American Society of Mechanical Engineers (ASME), “Position Statement on the Role of Federal Government in Environmental Technology Development.” in Jon Pietruszkiewicz, “What are the Appropriate Roles for Government in Technology Deployment?”, <a href="https://www.nrel.gov/docs/gen/fy00/26970.pdf" target="_blank">https://www.nrel.gov/docs/gen/fy00/26970.pdf</a>
+                  <span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">5</td>
+              <td class="reference"><a name="fn5"></a>
+                  Kaliya Young, “Key Differences Between the U.S. Social Security System and India’s Aadhaar System”, <i>New America</i>, 2019, <a href="https://www.newamerica.org/fellows/reports/anthology-working-papers-new-americas-us-india-fellows/key-differences-between-the-us-social-security-system-and-indias-aadhaar-system-kaliya-young/" target="_blank">https://www.newamerica.org/fellows/reports/anthology-working-papers-new-americas-us-india-fellows/key-differences-between-the-us-social-security-system-and-indias-aadhaar-system-kaliya-young/</a>
+                  <span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">6</td>
+              <td class="reference"><a name="fn6"></a>
+                  Sunil Abraham, “Building Trust: Lessons from Canada’s Approach to Digital Identity”, <i>Observer Research Foundation</i>, June 5, 2020, <a href="https://www.orfonline.org/research/building-trust-lessons-from-canadas-approach-to-digital-identity-67360/" target="_blank">https://www.orfonline.org/research/building-trust-lessons-from-canadas-approach-to-digital-identity-67360/</a>
+                  <span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">7</td>
+              <td class="reference"><a name="fn7"></a>
+                  “Smart-ID”, <i>E-Identity</i>, last accessed November 12, 2021. <a href="https://e-estonia.com/solutions/e-identity/smart-id" target="_blank">https://e-estonia.com/solutions/e-identity/smart-id</a>
+                  <span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">8</td>
+              <td class="reference"><a name="fn8"></a>
+                  Digilocker User Manual, <a href="https://web.archive.org/web/20210408140853/https://digilocker.gov.in/assets/img/DigiLocker-User-Manual.pdf" target="_blank">https://web.archive.org/web/20210408140853/https://digilocker.gov.in/assets/img/DigiLocker-User-Manual.pdf</a>
+                  <span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">9</td>
+              <td class="reference"><a name="fn9"></a>
+                  “Facebook Login”, Facebook for Developers, last accessed November 12, 2021. <a href="https://developers.facebook.com/docs/facebook-login/" target="_blank">https://developers.facebook.com/docs/facebook-login/</a>
+                  <span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">10</td>
+              <td class="reference"><a name="fn10"></a>
+                  “Public private partnership models for national identity programs”, Thales, last accessed November 12, 2021. <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/identity/public-private-partnerships" target="_blank">https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/identity/public-private-partnerships</a>
+                  <span class="internal-nav"><a href="#ref10">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">11</td>
+              <td class="reference"><a name="fn11"></a>
+                  “Public private partnership models for national identity programs”, Thales, last accessed November 12, 2021. <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/identity/public-private-partnerships" target="_blank">https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/identity/public-private-partnerships</a>
+                  <span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">12</td>
+              <td class="reference"><a name="fn12"></a>
+                  Digital Identity: Towards Shared Principles for Public and Private Sector Cooperation (July 2016), <a href="https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf" target="_blank">https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf</a> . See pages 30-32 for more details.
+                  <span class="internal-nav"><a href="#ref12">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">13</td>
+              <td class="reference"><a name="fn13"></a>
+                  Digital Identity: Towards Shared Principles for Public and Private Sector Cooperation (July 2016), <a href="https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf" target="_blank">https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf</a> Page 36.
+                  <span class="internal-nav"><a href="#ref13">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">14</td>
+              <td class="reference"><a name="fn14"></a>
+                  Digital Identity: Towards Shared Principles for Public and Private Sector Cooperation (July 2016), <a href="https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf" target="_blank">https://documents1.worldbank.org/curated/en/600821469220400272/pdf/107201-WP-PUBLIC-WB-GSMA-SIADigitalIdentity-WEB.pdf</a> Page 35.
+                  <span class="internal-nav"><a href="#ref14">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">15</td>
+              <td class="reference"><a name="fn15"></a>
+                  Chris Burt, “Two ideas to break down vendor lock-in in foundational biometric ID systems launch at ID4Africa 2019”, <i>Biometric Update</i>, June 20, 2019, <a href="https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019" target="_blank">https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019</a>
+                  <span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">16</td>
+              <td class="reference"><a name="fn16"></a>
+                  John Palfrey and Urs Gasser, “Digital Identity Interoperability and eInnovation”, <i>Berkman Publication Series</i> (2007). <a href="https://cyber.harvard.edu/pubrelease/interop/pdfs/interop-digital-id.pdf" target="_blank">https://cyber.harvard.edu/pubrelease/interop/pdfs/interop-digital-id.pdf</a>
+                  <span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">17</td>
+              <td class="reference"><a name="fn17"></a>
+                  “Best Practices for Adopting Open Standards”, <i>Open First Whitepaper: Open Standards</i>, last accessed November 12, 2021. <a href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/open-source-software/open-first-whitepaper/open-first-whitepaper-standards.html#best-practices-for-adopting-open-standards" target="_blank">https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/open-source-software/open-first-whitepaper/open-first-whitepaper-standards.html#best-practices-for-adopting-open-standards</a>
+                  <span class="internal-nav"><a href="#ref1">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">18</td>
+              <td class="reference"><a name="fn18"></a>
+                  John Palfrey and Urs Gasser, “Digital Identity Interoperability and eInnovation”, <i>Berkman Publication Series</i> (2007). <a href="https://cyber.harvard.edu/pubrelease/interop/pdfs/interop-digital-id.pdf" target="_blank">https://cyber.harvard.edu/pubrelease/interop/pdfs/interop-digital-id.pdf</a>
+                  <span class="internal-nav"><a href="#ref18">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">19</td>
+              <td class="reference"><a name="fn19"></a>
+                  Putting government back in control: Solving vendor lock-in with open standards (2019), <a href="https://www.id4africa.com/2019/almanac/SECURE-IDENTITY-ALLIANCE-SIA.pdf" target="_blank">https://www.id4africa.com/2019/almanac/SECURE-IDENTITY-ALLIANCE-SIA.pdf</a>
+                  <span class="internal-nav"><a href="#ref19">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">20</td>
+              <td class="reference"><a name="fn20"></a>
+                  Dr. Pramod Varma, “Big Data at Aadhaar”, July 31, 2012 (Presentation), <a href="https://www.slideshare.net/regunathbalasubramanian/aadhaar-at-5thelephantv3/10-Open_APIs_Aadhaar_Services_Core" target="_blank">https://www.slideshare.net/regunathbalasubramanian/aadhaar-at-5thelephantv3/10-Open_APIs_Aadhaar_Services_Core</a> .; Ambika Choudhury, “The Birth Of Aadhaar To Address Problems Of Fraud And Duplication In Individual Identities: Aadhaar Chief Architect Dr Pramod Varma”, <i>Analytics India Magazine</i>, April 1, 2020, <a href="https://analyticsindiamag.com/the-birth-of-aadhaar-to-address-problems-of-fraud-and-duplication-in-individual-identities/" target="_blank">https://analyticsindiamag.com/the-birth-of-aadhaar-to-address-problems-of-fraud-and-duplication-in-individual-identities/</a>
+                  <span class="internal-nav"><a href="#ref20">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">21</td>
+              <td class="reference"><a name="fn21"></a>
+                  Chris Burt, “MOSIP open digital identity initiative partners up to enhance platform for developing countries”, <i>Biometric Update</i>, October 1, 2020, <a href="https://www.biometricupdate.com/202010/mosip-open-digital-identity-initiative-partners-up-to-enhance-platform-for-developing-countries" target="_blank">https://www.biometricupdate.com/202010/mosip-open-digital-identity-initiative-partners-up-to-enhance-platform-for-developing-countries</a>
+                  <span class="internal-nav"><a href="#ref21">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">22</td>
+              <td class="reference"><a name="fn22"></a>
+                  “Principles of Engagement”, MOSIP, April 2019, <a href="https://www.mosip.io/uploads/resources/5cc84b0a08284Country%20Engagement%20Principles_v2.pdf" target="_blank">https://www.mosip.io/uploads/resources/5cc84b0a08284Country%20Engagement%20Principles_v2.pdf</a>
+                  <span class="internal-nav"><a href="#ref22">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">23</td>
+              <td class="reference"><a name="fn23"></a>
+                  Chris Burt, “Two ideas to break down vendor lock-in in foundational biometric ID systems launch at ID4Africa 2019”, <i>Biometric Update</i>, June 20, 2019, <a href="https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019" target="_blank">https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019</a>
+                  <span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">24</td>
+              <td class="reference"><a name="fn24"></a>
+                  Chris Burt, “MOSIP open digital identity initiative partners up to enhance platform for developing countries”, <i>Biometric Update</i>, October 1, 2020, <a href="https://www.biometricupdate.com/202010/mosip-open-digital-identity-initiative-partners-up-to-enhance-platform-for-developing-countries" target="_blank">https://www.biometricupdate.com/202010/mosip-open-digital-identity-initiative-partners-up-to-enhance-platform-for-developing-countries</a>
+                  <span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">25</td>
+              <td class="reference"><a name="fn25"></a>
+                  “Principles of Engagement”, MOSIP, April 2019, <i>MOSIP</i>, April, 2019, <a href="https://www.mosip.io/uploads/resources/5cc84b0a08284Country%20Engagement%20Principles_v2.pdf" target="_blank">https://www.mosip.io/uploads/resources/5cc84b0a08284Country%20Engagement%20Principles_v2.pdf</a>
+                  <span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
+          </tr>
+          <tr>
+              <td class="number">26</td>
+              <td class="reference"><a name="fn26"></a>
+                  Chris Burt, “Two ideas to break down vendor lock-in in foundational biometric ID systems launch at ID4Africa 2019”, <i>Biometric Update</i>, June 20, 2019, <a href="https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019" target="_blank">https://www.biometricupdate.com/201906/two-ideas-to-break-down-vendor-lock-in-in-foundational-biometric-id-systems-launch-at-id4africa-2019</a>
+                  <span class="internal-nav"><a href="#ref23">&uarr;</em></a></span></td>
+          </tr>
+      </table>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+  <div class="ui container four column stackable grid">
+    <div class="six wide column">
+      <h1>Digital Identities: Design and Uses</h1>
+      <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyarnetwork.in/" target="_blank">Omidyar Network India</a>.</p>
+      <p>Designed by Pooja Saxena, Saumyaa Naidu<br/>
+        Illustration by Akash Sheshadri<br/>
+        Developed by Sumandro Chattapadhyay, Tanvi Bhakta<br />
+        <br />
+        Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> and <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a><br/>
+        <a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>
+        Social media icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a><br/>
+        This website uses icons from <a href="https://thenounproject.com/" target="_blank">The Noun Project</a><br/>
+        Hosted on <a href="https://github.com/digitalid-design/digitalid-design.github.com" target="_blank">GitHub</a></p>
+      <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
+    </div>
+    <div class="three wide column team">
+      <h1>Team</h1>
+      <p>Akash Sheshadri</p>
+      <p>Amber Sinha</p>
+      <p>Anubha Sinha</p>
+      <p>Divyank Katira</p>
+      <p>Pooja Saxena</p>
+      <p>Saumyaa Naidu</p>
+      <p>Shruti Trikanad</p>
+      <p>Yesha Tshering Paul</p>
+    </div>
+    <div class="three wide column contributors">
+      <h1>Contributors</h1>
+      <p>Aparna Chivukula</p>
+      <p>Kushang Mishra</p>
+      <p>Nikil Augustine</p>
+      <p>Prakriti Singh</p>
+      <p>Pranav MB</p>
+      <p>Sumandro Chattapadhyay</p>
+      <p>Sunil Abraham</p>
+      <p>Vrinda Bhandari</p>
+    </div>
+    <div class="four wide column">
+      <div>
+        <a href="https://cis-india.org/" target="_blank" style="border-bottom: 0px solid"><img src="../img/logo.png" alt="The Centre for Internet and Society, India" class="logo" /></a>
+      </div>
+      <div class="icons">
+        <a href="https://twitter.com/cis_india" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a href="https://www.instagram.com/cis.india/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a> <a href="https://www.youtube.com/channel/UC0SLNXQo9XQGUE7Enujr9Ng" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
