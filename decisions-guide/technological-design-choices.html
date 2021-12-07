@@ -104,6 +104,44 @@
             <p>In addition to being susceptible to unintentional faults, technological solutions are also susceptible to cyberattacks. Having well-tested human-operated processes to fallback upon also makes identity infrastructure and the services that rely on it less vulnerable to cybersecurity threats.</p>
         </div>
 
+                <div class="five wide column meta">
+                    <h4>1.2</h4>
+                </div>
+                <div class="one wide column" id="empty">
+                </div>
+                <div class="ten wide column content">
+                    <h4>Storing biometric data in central repositories is ill-informed and not sustainable</h4>
+                    <p>Another trend that we have observed in national digital ID systems is the use of biometric information, such as fingerprint or iris scans, to identify individuals and then authenticate their identity. In comparison to knowledge and possession factors, biometric factors allow for quick, cost-effective and convenient authentication as they do not require users to remember a secret password or present costly physical tokens such as smartcards or security keys at the point of authentication. They also serve as highly accurate identification factors for most people. But from a cybersecurity perspective, biometrics are weak authentication factors. They are immutable and, in most cases, publicly visible. This makes them impossible to change in case the database used to store them is breached and also prone to forgery. To understand this, we can compare them to passwords, which have served as a de-facto authentication factor on the web for the past two decades. Over this time a total of at least 8.4 billion passwords have been leaked through successive data breaches. Without the invention of the mythical unhackable database, it is likely that the use of centralised biometric authentication will yield similar results over time. Leaks of biometric information are also more severe than passwords as they cannot be reset after a leak. As such, the appropriate use of biometrics is limited to local authentication i.e. when the storage and matching of biometrics takes place on an end-user device or credential such as a cellular phone, smartcard, or security key.</p>
+                </div>
+
+                        <div class="five wide column meta">
+                            <h4>1.3</h4>
+                        </div>
+                        <div class="one wide column" id="empty">
+                        </div>
+                        <div class="ten wide column content">
+                            <h4>Foundational ID systems must ensure separation of responsibilities</h4>
+                            <p>Unlike Functional ID systems which are designed and built for a specific purpose, Foundational ID systems are general-purpose systems that can be used for many different purposes. They are responsible for conducting the processes of identification, authentication, and authorisation. However, the ease with which such systems allow processes to incorporate these mechanisms creates a potential for their misuse or overuse.</p>
+                            <p>As an example, we can look at Nigeria’s National Electronic Identity Card. It is a Foundational ID system that allows for the creation of ‘applets’ which enable its use for different purposes. One such applet is e-Transport, which allows the use of the ID card as a payment system for travel through public transportation. Through such use, the National Identification Number, which is an identity-linked identifier, is collected and linked to an individual's movements as they travel through public transport — a purpose that should not require any identification documents. This is a case of misuse of identification functionality in a Foundational ID System. Since the identification and authentication mechanisms are intertwined and rely on the same identifier, the system unnecessarily identifies individuals and creates a log of their movements when the goal of the system here should only be to authenticate an individual and check whether they have loaded sufficient funds onto their card to make the journey. A workaround to this issue is to use a unique, pseudonymous identifier, which is not linked to a person’s identity, for each different purpose that the ID card is used for. The Web Authentication standard supports such anonymous authentication.</p>
+                            <p>Another case of conflation of responsibilities in a Foundational ID system was seen in India’s Aadhaar ID program. Here, there were multiple instances where the process of authentication was used as a proxy for authorisation, leading to actions being taken on an individual’s behalf without their informed consent:
+                              <ul>
+                                <li>A telecom operator which also operates a payment service mistook authentication of individuals, which was required for KYC purposes, as authorisation to open an account on its payment service. This led to its users’ subsidy payments being silently redirected to this new account which they did not even know existed.</li>
+                                <li>Some individuals who used Aadhaar to authenticate themselves to receive vaccinations as part of the COVID-19 immunisation drive were also enrolled in a Unique Health ID program, without their consent.</li>
+                              </ul>
+                            </p>
+                            <p>Foundational ID systems, owing to their expansive scope, should be carefully designed and strictly regulated through both technical and legal means to prevent such abuse. They must ensure separation of the responsibilities of identification, authentication and authorisation and only use them where necessary.</p>
+                        </div>
+                                <div class="five wide column meta">
+                                    <h4>1.4</h4>
+                                </div>
+                                <div class="one wide column" id="empty">
+                                </div>
+                                <div class="ten wide column content">
+                                    <h4>Seamless public-private interoperability increases data sharing and collection</h4>
+                                    <p>In all of the identity systems we have encountered, Governments are the primary identity providers. From civil registration to driver’s licenses and voter IDs, there are many legitimate purposes for a state to identify its citizens. Even private-sector entities that take up the role of identity provider, such as the GOV.UK Verify platform or various commercial identity verification services, still rely on verification of Government-issued IDs as the source of identity attestation. Such document verification is done either manually or automatically and both processes suffer from drawbacks — they are either labour-intensive or expensive, and inaccurate.</p>
+                                    <p>To streamline the sharing and verification of identity data, several industrial actors are attempting to develop systems and protocols through which Governments can digitally issue identity credentials to individuals. These credentials can subsequently be shared with relying parties, who can then verify them. In addition to bringing down identity verification costs for the industry and increasing accuracy of the data collected, such systems would also benefit the individuals using them as they would no longer have to carry around multiple physical documents to prove their identity.</p>
+                                    <p>However, enabling streamlined access to sensitive identity data, with unprecedented levels of accuracy, will likely encourage industrial actors, who have historically collected data under meaningless, coercive notions of consent, to collect and retain even more private information. The adoption of such technologies must be carefully considered, and governed by strong regulatory and technical barriers to prevent unfettered commercial access to this previously inaccessible identity information.</p>
+                                </div>
         <div class="five wide column meta">
             <h3>2</h3>
         </div>
