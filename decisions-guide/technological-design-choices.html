@@ -149,7 +149,7 @@
         </div>
         <div class="ten wide column content">
             <h3>Typology of Information Architectures</h3>
-            <p>Over time, identity systems have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model.</p>
+            <p>Over time, <a href="https://digitalid.design/core-concepts-processes.html#idsystem"target="_blank">identity systems</a> have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model.</p>
             <p>We define the <i>axes</i><sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> of centralisation/federation/decentralisation of information in digital ID systems as follows:</p>
         </div>
 
@@ -159,13 +159,13 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
-            <h4>Source of Identity or Trust</h4>
-            <p>Any identification, authentication, or authorisation operation in a digital ID system can be thought of as a transaction between an individual, an identity provider, and a relying party.</p>
-            <p>In a centralised system, there is a single identity provider that serves as a source of identity or trust for one or more relying parties.</p>
-            <p>A federated system allows an individual to choose a single identity provider from a set of choices. These can be of two types:</p>
+            <h4>Source of identity or trust</h4>
+            <p>Any identification, authentication, or authorisation operation in a digital ID system can be thought of as a transaction between an <a href="https://digitalid.design/core-concepts-processes.html#individual"target="_blank">individual</a>, an identity provider, and a <a href="https://digitalid.design/core-concepts-processes.html#relyingparty"target="_blank">relying party</a>.</p>
+            <p>In a <strong>centralised</strong> system, there is a single identity provider that serves as a source of identity or trust for one or more relying parties.</p>
+            <p>A <strong>federated</strong> system allows an individual to choose a single identity provider from a set of choices. These can be of two types:</p>
             <p>Many (identity providers) to one (relying party), for example, a website that allows Google and Facebook login.</p>
             <p>Many (identity providers) to many (relying parties), for example, Canada and UK’s ID systems that allow online access to government services. Transactions in such systems are typically mediated by a ‘broker’ for ease of management so that not every relying party needs to learn about every identity provider, they simply trust the broker.</p>
-            <p>The proposed ‘decentralised’ or ‘self-sovereign’ ID systems also provide support for many identity providers with many relying parties, with even multiple identity providers participating in a single transaction (for added assurance). They have defined open standards with the hope of spawning a network or ecosystem of independent vendors, identity providers, and relying parties that can all interoperate with ease, for efficient data collection and sharing.</p>
+            <p>The proposed ‘<strong>decentralised</strong>’ or ‘<strong>self-sovereign</strong>’ ID systems also provide support for many identity providers with many relying parties, with even multiple identity providers participating in a single transaction (for added assurance). They have defined open standards with the hope of spawning a network or ecosystem of independent vendors, identity providers, and relying parties that can all interoperate with ease, for efficient data collection and sharing.</p>
         </div>
 
     </div>
@@ -243,9 +243,9 @@
             <p>Another important informational aspect of digital ID systems is where the vast amount of sensitive personal data and metadata handled by these systems resides. This is distributed among:</p>
             <p> Identity providers, who must necessarily store such data as they are responsible for issuing credentials</p>
             <p> Relying parties, which may verify and discard such information or store it indefinitely, depending on their privacy policies and other incentives. It is important to note that the information architecture of the ID system does not impact the data collection or retention policies of relying parties.</p>
-            <p> Other intermediaries, such as brokers (in federated systems) and network operators (in decentralised systems). These typically only store metadata (such as who accessed what service, when, and where), but this can also be sensitive, particularly if it is not de-identified or if there is a risk of re-identification.</p>
-            <p> In a centralised system, there is a large central identity provider that stores the private information of all participating individuals and metadata relating to usage of the ID. This forms a lucrative target for data breaches and presents a privacy risk as the operator of the system has insight into all activity within it.</p>
-            <p> A federated system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
+            <p> Other intermediaries, such as brokers (in federated systems) and network operators (in decentralised systems). These typically only store metadata (such as <strong>who</strong> accessed <strong>what</strong> service, <strong>when</strong>, and <strong>where</strong>), but this can also be sensitive, particularly if it is not de-identified or if there is a risk of re-identification.</p>
+            <p> In a <strong>centralised</strong> system, there is a large central identity provider that stores the private information of all participating individuals and metadata relating to usage of the ID. This forms a lucrative target for data breaches and presents a privacy risk as the operator of the system has insight into all activity within it.</p>
+            <p> A <strong>federated</strong> system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
         </div>
     </div>
 
@@ -339,7 +339,7 @@
         <div class="six wide column" id="empty"></div>
         <div class="ten wide column content">
             <p>
-                Like federated systems, proposed ‘decentralised’ or ‘self-sovereign’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues identity credentials to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> glean metadata into usage activity.
+                Like federated systems, proposed ‘<strong>decentralised</strong>’ or ‘<strong>self-sovereign</strong>’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues <a href="https://digitalid.design/core-concepts-processes.html#idcredential"target="_blank">identity credentials</a> to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> glean metadata into usage activity.
             </p>
         </div>
 
@@ -437,7 +437,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
-            <h4>Control and Availability</h4>
+            <h4>Control and fault tolerance</h4>
             <p>In a centralised ID system, a single large identity provider is tasked with the responsibility of issuing credentials and attesting the identity of all participants. This forms a single point of failure that could go offline (say, due to technical failure) leaving users with little recourse.</p>
             <p> A federated system distributes this responsibility among multiple identity providers, providing redundancy and some resilience to technical failure.</p>
             <p> In the proposed ‘decentralised’ or ‘self-sovereign’ ID systems, the individual holds their own credentials or delegates this responsibility to the vendors of these systems. This allows the credential to be used even when the issuing identity provider is unavaliable/offline, as the relying party can verify its authenticity by consulting a decentralised storage network.</p>
@@ -514,7 +514,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
-            <h4>Risk of Re-Centralisation</h4>
+            <h4>Risk of re-centralisation</h4>
             <p>Decentralisation is something that needs to be actively managed and maintained. Along each of the axes described above — source of identity, storage, and control — a decentralised or federated system can always regress to a more centralised one:</p>
             <p>Source of identity: One or two popular identity providers could emerge, effectively resembling a centralised system.</p>
             <p>Storage: The market could converge to a few popular vendors for storing credentials, creating a honeypot of sensitive data similar to a centralised system.</p>
@@ -540,7 +540,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
-            <h4>Choice of Identification Factors</h4>
+            <h4>Choice of identification factors</h4>
         </div>
 
         <div class="six wide column" id="empty">
@@ -645,7 +645,7 @@
         </div>
         <div class="one wide column" id="empty"></div>
         <div class="six wide column identity-artifacts">
-            <h4>Choice of Identity Artifacts</h4>
+            <h4>Choice of identity artifacts</h4>
             <div class="super table header">
                 <span>Security</span>
                 <span>Cost</span>
@@ -794,7 +794,7 @@
         </div>
         <div class="one wide column" id="empty"></div>
         <div class="ten wide column">
-            <h4>Choice of Authentication Factors</h4>
+            <h4>Choice of authentication factors</h4>
             <div class="super table header">
                 <span>Security</span>
                 <span>Privacy</span>
