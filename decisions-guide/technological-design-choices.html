@@ -100,7 +100,7 @@
         </div>
         <div class="ten wide column content">
             <h4>Digital technologies can supplement existing manual processes but not entirely replace them</h4>
-            <p>Despite a rapid rate of advancement in recent decades, the technologies that are used to compose digital ID systems still suffer from reliability issues. Faults in software and hardware systems, gaps in network connectivity between them, and their inability to accurately and adequately represent people’s identities can all lead to exclusion of individuals from benefits and services. For instance, a study found that about one-fifth of transactions in India’s Aadhaar-enabled Payments System failed due to technical reasons (17.03% due to biometric mismatch, 3.71% due to other technical issues). Even large technology companies with well-funded engineering and operations teams only guarantee 99.99% uptime for their cloud offerings, which roughly translates to one hour of downtime in a year. While not all of these faults will lead to denial of access to benefits or services, their outcome can be particularly grave in cases where they prevent access to essential services such as food distribution or healthcare. For this reason, it is necessary to have robust manual processes in place for when technological systems fail. </p>
+            <p>Despite a rapid rate of advancement in recent decades, the technologies that are used to compose digital ID systems still suffer from reliability issues. Faults in software and hardware systems, gaps in network connectivity between them, and their inability to accurately and adequately represent people’s identities can all lead to exclusion of individuals from benefits and services. For instance, a study found that about one-fifth of transactions in India’s Aadhaar-enabled Payments System failed due to technical reasons (17.03% due to biometric mismatch, 3.71% due to other technical issues).<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> Even large technology companies with well-funded engineering and operations teams only guarantee 99.99% uptime for their cloud offerings, which roughly translates to one hour of downtime in a year.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> While not all of these faults will lead to denial of access to benefits or services, their outcome can be particularly grave in cases where they prevent access to essential services such as food distribution or healthcare. For this reason, it is necessary to have robust manual processes in place for when technological systems fail. </p>
             <p>In addition to being susceptible to unintentional faults, technological solutions are also susceptible to cyberattacks. Having well-tested human-operated processes to fallback upon also makes identity infrastructure and the services that rely on it less vulnerable to cybersecurity threats.</p>
         </div>
 
@@ -111,7 +111,7 @@
                 </div>
                 <div class="ten wide column content">
                     <h4>Storing biometric data in central repositories is ill-informed and not sustainable</h4>
-                    <p>Another trend that we have observed in national digital ID systems is the use of biometric information, such as fingerprint or iris scans, to identify individuals and then authenticate their identity. In comparison to knowledge and possession factors, biometric factors allow for quick, cost-effective and convenient authentication as they do not require users to remember a secret password or present costly physical tokens such as smartcards or security keys at the point of authentication. They also serve as highly accurate identification factors for most people. But from a cybersecurity perspective, biometrics are weak authentication factors. They are immutable and, in most cases, publicly visible. This makes them impossible to change in case the database used to store them is breached and also prone to forgery. To understand this, we can compare them to passwords, which have served as a de-facto authentication factor on the web for the past two decades. Over this time a total of at least 8.4 billion passwords have been leaked through successive data breaches. Without the invention of the mythical unhackable database, it is likely that the use of centralised biometric authentication will yield similar results over time. Leaks of biometric information are also more severe than passwords as they cannot be reset after a leak. As such, the appropriate use of biometrics is limited to local authentication i.e. when the storage and matching of biometrics takes place on an end-user device or credential such as a cellular phone, smartcard, or security key.</p>
+                    <p>Another trend that we have observed in national digital ID systems is the use of biometric information, such as fingerprint or iris scans, to identify individuals and then authenticate their identity. In comparison to knowledge and possession factors, biometric factors allow for quick, cost-effective and convenient authentication as they do not require users to remember a secret password or present costly physical tokens such as smartcards or security keys at the point of authentication. They also serve as highly accurate identification factors for most people. But from a cybersecurity perspective, biometrics are weak authentication factors. They are immutable and, in most cases, publicly visible. This makes them impossible to change in case the database used to store them is breached and also prone to forgery. To understand this, we can compare them to passwords, which have served as a de-facto authentication factor on the web for the past two decades. Over this time a total of at least 8.4 billion passwords have been leaked through successive data breaches.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> Without the invention of the mythical unhackable database, it is likely that the use of centralised biometric authentication will yield similar results over time. Leaks of biometric information are also more severe than passwords as they cannot be reset after a leak. As such, the appropriate use of biometrics is limited to local authentication i.e. when the storage and matching of biometrics takes place on an end-user device or credential such as a cellular phone, smartcard, or security key.</p>
                 </div>
 
                         <div class="five wide column meta">
@@ -122,11 +122,11 @@
                         <div class="ten wide column content">
                             <h4>Foundational ID systems must ensure separation of responsibilities</h4>
                             <p>Unlike Functional ID systems which are designed and built for a specific purpose, Foundational ID systems are general-purpose systems that can be used for many different purposes. They are responsible for conducting the processes of identification, authentication, and authorisation. However, the ease with which such systems allow processes to incorporate these mechanisms creates a potential for their misuse or overuse.</p>
-                            <p>As an example, we can look at Nigeria’s National Electronic Identity Card. It is a Foundational ID system that allows for the creation of ‘applets’ which enable its use for different purposes. One such applet is e-Transport, which allows the use of the ID card as a payment system for travel through public transportation. Through such use, the National Identification Number, which is an identity-linked identifier, is collected and linked to an individual's movements as they travel through public transport — a purpose that should not require any identification documents. This is a case of misuse of identification functionality in a Foundational ID System. Since the identification and authentication mechanisms are intertwined and rely on the same identifier, the system unnecessarily identifies individuals and creates a log of their movements when the goal of the system here should only be to authenticate an individual and check whether they have loaded sufficient funds onto their card to make the journey. A workaround to this issue is to use a unique, pseudonymous identifier, which is not linked to a person’s identity, for each different purpose that the ID card is used for. The Web Authentication standard supports such anonymous authentication.</p>
+                            <p>As an example, we can look at Nigeria’s National Electronic Identity Card. It is a Foundational ID system that allows for the creation of ‘applets’ which enable its use for different purposes. One such applet is e-Transport, which allows the use of the ID card as a payment system for travel through public transportation.<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> Through such use, the National Identification Number, which is an identity-linked identifier, is collected and linked to an individual's movements as they travel through public transport — a purpose that should not require any identification documents. This is a case of misuse of identification functionality in a Foundational ID System. Since the identification and authentication mechanisms are intertwined and rely on the same identifier, the system unnecessarily identifies individuals and creates a log of their movements when the goal of the system here should only be to authenticate an individual and check whether they have loaded sufficient funds onto their card to make the journey. A workaround to this issue is to use a unique, pseudonymous identifier, which is not linked to a person’s identity, for each different purpose that the ID card is used for. The Web Authentication standard supports such anonymous authentication.</p>
                             <p>Another case of conflation of responsibilities in a Foundational ID system was seen in India’s Aadhaar ID program. Here, there were multiple instances where the process of authentication was used as a proxy for authorisation, leading to actions being taken on an individual’s behalf without their informed consent:
                               <ul>
-                                <li>A telecom operator which also operates a payment service mistook authentication of individuals, which was required for KYC purposes, as authorisation to open an account on its payment service. This led to its users’ subsidy payments being silently redirected to this new account which they did not even know existed.</li>
-                                <li>Some individuals who used Aadhaar to authenticate themselves to receive vaccinations as part of the COVID-19 immunisation drive were also enrolled in a Unique Health ID program, without their consent.</li>
+                                <li>A telecom operator which also operates a payment service mistook authentication of individuals, which was required for KYC purposes, as authorisation to open an account on its payment service. This led to its users’ subsidy payments being silently redirected to this new account which they did not even know existed.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a></li>
+                                <li>Some individuals who used Aadhaar to authenticate themselves to receive vaccinations as part of the COVID-19 immunisation drive were also enrolled in a Unique Health ID program, without their consent.<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a></li>
                               </ul>
                             </p>
                             <p>Foundational ID systems, owing to their expansive scope, should be carefully designed and strictly regulated through both technical and legal means to prevent such abuse. They must ensure separation of the responsibilities of identification, authentication and authorisation and only use them where necessary.</p>
@@ -138,9 +138,9 @@
                                 </div>
                                 <div class="ten wide column content">
                                     <h4>Seamless public-private interoperability increases data sharing and collection</h4>
-                                    <p>In all of the identity systems we have encountered, Governments are the primary identity providers. From civil registration to driver’s licenses and voter IDs, there are many legitimate purposes for a state to identify its citizens. Even private-sector entities that take up the role of identity provider, such as the GOV.UK Verify platform or various commercial identity verification services, still rely on verification of Government-issued IDs as the source of identity attestation. Such document verification is done either manually or automatically and both processes suffer from drawbacks — they are either labour-intensive or expensive, and inaccurate.</p>
-                                    <p>To streamline the sharing and verification of identity data, several industrial actors are attempting to develop systems and protocols through which Governments can digitally issue identity credentials to individuals. These credentials can subsequently be shared with relying parties, who can then verify them. In addition to bringing down identity verification costs for the industry and increasing accuracy of the data collected, such systems would also benefit the individuals using them as they would no longer have to carry around multiple physical documents to prove their identity.</p>
-                                    <p>However, enabling streamlined access to sensitive identity data, with unprecedented levels of accuracy, will likely encourage industrial actors, who have historically collected data under meaningless, coercive notions of consent, to collect and retain even more private information. The adoption of such technologies must be carefully considered, and governed by strong regulatory and technical barriers to prevent unfettered commercial access to this previously inaccessible identity information.</p>
+                                    <p>In all of the identity systems we have encountered, Governments are the primary identity providers. From civil registration to driver’s licenses and voter IDs, there are many legitimate purposes for a state to identify its citizens. Even private-sector entities that take up the role of identity provider, such as the GOV.UK Verify platform<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> or various commercial identity verification services,<sup class="superscript"><a href="#fn8">8,</a></sup><a name="ref8"></a><sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> still rely on verification of Government-issued IDs as the source of identity attestation. Such document verification is done either manually or automatically and both processes suffer from drawbacks — they are either labour-intensive or expensive, and inaccurate.</p>
+                                    <p>To streamline the sharing and verification of identity data, several industrial actors<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> are attempting to develop systems and protocols through which Governments can digitally issue identity credentials to individuals. These credentials can subsequently be shared with relying parties, who can then verify them. In addition to bringing down identity verification costs for the industry and increasing accuracy of the data collected, such systems would also benefit the individuals using them as they would no longer have to carry around multiple physical documents to prove their identity.</p>
+                                    <p>However, enabling streamlined access to sensitive identity data, with unprecedented levels of accuracy, will likely encourage industrial actors, who have historically collected data under meaningless, coercive notions of consent<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a>, to collect and retain even more private information. The adoption of such technologies must be carefully considered, and governed by strong regulatory and technical barriers to prevent unfettered commercial access to this previously inaccessible identity information.</p>
                                 </div>
         <div class="five wide column meta">
             <h3>2</h3>
@@ -149,8 +149,8 @@
         </div>
         <div class="ten wide column content">
             <h3>Typology of Information Architectures</h3>
-            <p>Over time, identity systems have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service is a federated model, and the W3C standards, proposed by organisations under the Decentralized Identity Foundation represent a typical decentralised model.</p>
-            <p>We define the axes of centralisation/federation/decentralisation of information in digital ID systems as follows:</p>
+            <p>Over time, identity systems have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model.</p>
+            <p>We define the <i>axes</i><sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> of centralisation/federation/decentralisation of information in digital ID systems as follows:</p>
         </div>
 
         <div class="five wide column meta">
@@ -339,7 +339,7 @@
         <div class="six wide column" id="empty"></div>
         <div class="ten wide column content">
             <p>
-                Like federated systems, proposed ‘decentralised’ or ‘self-sovereign’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues identity credentials to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially glean metadata into usage activity.
+                Like federated systems, proposed ‘decentralised’ or ‘self-sovereign’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues identity credentials to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> glean metadata into usage activity.
             </p>
         </div>
 
@@ -995,24 +995,108 @@
             <h3>Notes</h3>
             <br/>
             <table class="footnote">
-                <tr>
-                    <td class="number">1</td>
-                    <td class="reference"><a href="https://web.archive.org/web/20171229172420/http://www.nytimes.com/2000/12/14/technology/cartoon-captures-spirit-of-the-internet.html">
-                        https://web.archive.org/web/20171229172420/http://www.nytimes.com/2000/12/14/technology/cartoon-captures-spirit-of-the-internet.html
-                    </a>
-                </tr>
-                <tr>
-                    <td class="number">2</td>
-                    <td class="reference"><a href="https://pages.nist.gov/800-63-3/sp800-63-3.html">
-                        https://pages.nist.gov/800-63-3/sp800-63-3.html
-                    </a>
-                </tr>
-                <tr>
-                    <td class="number">3</td>
-                    <td class="reference"><a href="https://www.worldbank.org/en/news/immersive-story/2019/08/14/inclusive-and-trusted-digital-id-can-unlock-opportunities-for-the-worlds-most-vulnerable">
-                        https://www.worldbank.org/en/news/immersive-story/2019/08/14/inclusive-and-trusted-digital-id-can-unlock-opportunities-for-the-worlds-most-vulnerable
-                    </a>
-                </tr>
+              <tr>
+                  <td class="number">1</td>
+                  <td class="reference"><a name="fn1"></a>
+                      Padmanabhan Balasubramanian et al., “Fintech For The Poor: Do Technological Failures Deter Financial Inclusion?”, <i>SSRN</i> (2021), <a href="https://ssrn.com/abstract=3840021" target="_blank">https://ssrn.com/abstract=3840021.</a>
+                      <span class="internal-nav"><a href="#ref1">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">2</td>
+                  <td class="reference"><a name="fn2"></a>
+                      “Compute Engine Service Level Agreement (SLA)”, Google Cloud, last accessed November 12, 2021. <a href="https://cloud.google.com/compute/sla" target="_blank"><i>https://cloud.google.com/compute/sla</i></a>; “Amazon Compute Service Level Agreement”, Amazon Web Services, last accessed November 12, 2021. <a href="https://aws.amazon.com/compute/sla/" target="_blank"><i>https://aws.amazon.com/compute/sla/</i></a>
+                      <span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">3</td>
+                  <td class="reference"><a name="fn3"></a>
+                      Lance Whitney, “Billions of passwords leaked online from past data breaches”, <i>TechRepublic</i>, June 9, 2021, <a href="https://www.techrepublic.com/article/billions-of-passwords-leaked-online-from-past-data-breaches/" target="_blank"><i>https://www.techrepublic.com/article/billions-of-passwords-leaked-online-from-past-data-breaches/.</i></a>
+                      <span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">4</td>
+                  <td class="reference"><a name="fn4"></a>
+                      “Mapping Digital Identity Systems: Nigeria”, Digital Identities: Design and Uses, November 03, 2020. <a href="https://digitalid.design/research-maps/nigeria.html" target="_blank"><i>https://digitalid.design/research-maps/nigeria.html.</i></a>
+                      <span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">5</td>
+                  <td class="reference"><a name="fn5"></a>
+                      Anand Venkatanarayanan and Srikanth Lakshmanan, “Aadhaar Mess: How Airtel Pulled Off Its Rs 190 Crore Magic Trick”, <i>The Wire</i>, December 21, 2017, <a href="https://thewire.in/banking/airtel-aadhaar-uidai" target="_blank"><i>https://thewire.in/banking/airtel-aadhaar-uidai.</i></a>
+                      <span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">6</td>
+                  <td class="reference"><a name="fn6"></a>
+                      Mehab Qureshi, “Govt Created Health IDs Without Consent, Say Vaccinated Indians”, <i>The Quint</i>, June 9, 2021, <a href="https://www.thequint.com/tech-and-auto/govt-created-uhid-without-consent-say-vaccinated-indians#read-more" target="_blank"><i>https://www.thequint.com/tech-and-auto/govt-created-uhid-without-consent-say-vaccinated-indians#read-more.</i></a>
+                      <span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">7</td>
+                  <td class="reference"><a name="fn7"></a>
+                      “Mapping Digital Identity Systems: UK”, Digital Identities: Design and Uses, July 10, 2019. <a href="https://digitalid.design/research-maps/uk.html" target="_blank"><i>https://digitalid.design/research-maps/uk.html.</i></a>
+                      <span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">8</td>
+                  <td class="reference"><a name="fn8"></a>
+                      “Document Verification”, Onfido, last accessed November 12, 2021. <a href="https://onfido.com/solutions/document-verification/" target="_blank"><i>https://onfido.com/solutions/document-verification/.</i></a>
+                      <span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">9</td>
+                  <td class="reference"><a name="fn9"></a>
+                      “The easiest way to verify identities”, Stripe, last accessed November 12, 2021. <a href="https://stripe.com/identity" target="_blank"><i>https://stripe.com/identity.</i></a>
+                      <span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">10</td>
+                  <td class="reference"><a name="fn10"></a>
+                      Decentralised Identity Foundation, last accessed November 12, 2021. <a href="https://identity.foundation/" target="_blank"><i>https://identity.foundation/.</i></a>
+                      <span class="internal-nav"><a href="#ref10">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">11</td>
+                  <td class="reference"><a name="fn11"></a>
+                      A Critique of Consent in Information Privacy, The Centre for Internet and Society, last accessed December 7, 2021. <a href="https://cis-india.org/internet-governance/blog/a-critique-of-consent-in-information-privacy" target="_blank"><i>https://cis-india.org/internet-governance/blog/a-critique-of-consent-in-information-privacy.</i></a>
+                      <span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">12</td>
+                  <td class="reference"><a name="fn12"></a>
+                      “Mapping Digital Identity Systems: India”, Digital Identities: Design and Uses, October 13, 2020. <a href="https://digitalid.design/research-maps/india.html" target="_blank"><i>https://digitalid.design/research-maps/india.html.</i></a>
+                      <span class="internal-nav"><a href="#ref12">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">13</td>
+                  <td class="reference"><a name="fn13"></a>
+                      Alaca, Furkan, and Paul C. Van Oorschot. "Comparative analysis and framework evaluating web single sign-on systems." <i>ACM Computing Surveys (CSUR)</i> 53.5 (2020): 1-34.
+                      <span class="internal-nav"><a href="#ref13">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">14</td>
+                  <td class="reference"><a name="fn14"></a>
+                      “Decentralized Identifiers (DIDs) v1.0”, World Wide Web Consortium, last accessed November 12, 2021. <a href="https://www.w3.org/TR/did-core/" target="_blank"><i>https://www.w3.org/TR/did-core/.</i></a>
+                      <span class="internal-nav"><a href="#ref14">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">15</td>
+                  <td class="reference"><a name="fn15"></a>
+                      “Verifiable Credentials Data Model v1.1”, World Wide Web Consortium, last accessed November 12, 2021. <a href="https://www.w3.org/TR/vc-data-model/" target="_blank"><i>https://www.w3.org/TR/vc-data-model/.</i></a>
+                      <span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">16</td>
+                  <td class="reference"><a name="fn16"></a>
+                      Decentralised Identity Foundation, last accessed November 12, 2021. <a href="https://identity.foundation/" target="_blank"><i>https://identity.foundation/.</i></a>
+                      <span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">17</td>
+                  <td class="reference"><a name="fn17"></a>
+                      This term was used by Vitalik Buterin, who defined the axes of decentralisation for software. <a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274" target="_blank"><i>https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274.</i></a>
+                      <span class="internal-nav"><a href="#ref17">&uarr;</em></a></span></td>
+              </tr>
             </table>
             <br/>
             <br/>
