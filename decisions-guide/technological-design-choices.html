@@ -162,9 +162,11 @@
             <h4>Source of identity or trust</h4>
             <p>Any identification, authentication, or authorisation operation in a digital ID system can be thought of as a transaction between an <a href="https://digitalid.design/core-concepts-processes.html#individual"target="_blank">individual</a>, an identity provider, and a <a href="https://digitalid.design/core-concepts-processes.html#relyingparty"target="_blank">relying party</a>.</p>
             <p>In a <strong>centralised</strong> system, there is a single identity provider that serves as a source of identity or trust for one or more relying parties.</p>
-            <p>A <strong>federated</strong> system allows an individual to choose a single identity provider from a set of choices. These can be of two types:</p>
-            <p>Many (identity providers) to one (relying party), for example, a website that allows Google and Facebook login.</p>
-            <p>Many (identity providers) to many (relying parties), for example, Canada and UK’s ID systems that allow online access to government services. Transactions in such systems are typically mediated by a ‘broker’ for ease of management so that not every relying party needs to learn about every identity provider, they simply trust the broker.</p>
+            <p>A <strong>federated</strong> system allows an individual to choose a single identity provider from a set of choices. These can be of two types:
+              <ul>
+                <li>Many (identity providers) to one (relying party), for example, a website that allows Google and Facebook login.</li>
+                <li>Many (identity providers) to many (relying parties), for example, Canada and UK’s ID systems that allow online access to government services. Transactions in such systems are typically mediated by a ‘broker’ for ease of management so that not every relying party needs to learn about every identity provider, they simply trust the broker.</li>
+              </ul></p>
             <p>The proposed ‘<strong>decentralised</strong>’ or ‘<strong>self-sovereign</strong>’ ID systems also provide support for many identity providers with many relying parties, with even multiple identity providers participating in a single transaction (for added assurance). They have defined open standards with the hope of spawning a network or ecosystem of independent vendors, identity providers, and relying parties that can all interoperate with ease, for efficient data collection and sharing.</p>
         </div>
 
@@ -240,10 +242,12 @@
         </div>
         <div class="ten wide column content">
             <h4>Storage</h4>
-            <p>Another important informational aspect of digital ID systems is where the vast amount of sensitive personal data and metadata handled by these systems resides. This is distributed among:</p>
-            <p> Identity providers, who must necessarily store such data as they are responsible for issuing credentials</p>
-            <p> Relying parties, which may verify and discard such information or store it indefinitely, depending on their privacy policies and other incentives. It is important to note that the information architecture of the ID system does not impact the data collection or retention policies of relying parties.</p>
-            <p> Other intermediaries, such as brokers (in federated systems) and network operators (in decentralised systems). These typically only store metadata (such as <strong>who</strong> accessed <strong>what</strong> service, <strong>when</strong>, and <strong>where</strong>), but this can also be sensitive, particularly if it is not de-identified or if there is a risk of re-identification.</p>
+            <p>Another important informational aspect of digital ID systems is where the vast amount of sensitive personal data and metadata handled by these systems resides. This is distributed among:
+              <ul>
+                <li>Identity providers, who must necessarily store such data as they are responsible for issuing credentials</li>
+                <li>Relying parties, which may verify and discard such information or store it indefinitely, depending on their privacy policies and other incentives. It is important to note that the information architecture of the ID system does not impact the data collection or retention policies of relying parties.</li>
+                <li>Other intermediaries, such as brokers (in federated systems) and network operators (in decentralised systems). These typically only store metadata (such as <strong>who</strong> accessed <strong>what</strong> service, <strong>when</strong>, and <strong>where</strong>), but this can also be sensitive, particularly if it is not de-identified or if there is a risk of re-identification.</li>
+              </ul></p>
             <p> In a <strong>centralised</strong> system, there is a large central identity provider that stores the private information of all participating individuals and metadata relating to usage of the ID. This forms a lucrative target for data breaches and presents a privacy risk as the operator of the system has insight into all activity within it.</p>
             <p> A <strong>federated</strong> system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
         </div>
