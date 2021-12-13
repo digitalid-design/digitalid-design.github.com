@@ -99,6 +99,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
+            <a name="1.1"></a>
             <h4>Digital technologies can supplement existing manual processes but not entirely replace them</h4>
             <p>Despite a rapid rate of advancement in recent decades, the technologies that are used to compose digital ID systems still suffer from reliability issues. Faults in software and hardware systems, gaps in network connectivity between them, and their inability to accurately and adequately represent people’s identities can all lead to exclusion of individuals from benefits and services. For instance, a study found that about one-fifth of transactions in India’s Aadhaar-enabled Payments System failed due to technical reasons (17.03% due to biometric mismatch, 3.71% due to other technical issues).<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> Even large technology companies with well-funded engineering and operations teams only guarantee 99.99% uptime for their cloud offerings, which roughly translates to one hour of downtime in a year.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> While not all of these faults will lead to denial of access to benefits or services, their outcome can be particularly grave in cases where they prevent access to essential services such as food distribution or healthcare. For this reason, it is necessary to have robust manual processes in place for when technological systems fail. </p>
             <p>In addition to being susceptible to unintentional faults, technological solutions are also susceptible to cyberattacks. Having well-tested human-operated processes to fallback upon also makes identity infrastructure and the services that rely on it less vulnerable to cybersecurity threats.</p>
@@ -110,6 +111,7 @@
                 <div class="one wide column" id="empty">
                 </div>
                 <div class="ten wide column content">
+                  <a name="1.2"></a>
                     <h4>Storing biometric data in central repositories is ill-informed and not sustainable</h4>
                     <p>Another trend that we have observed in national digital ID systems is the use of biometric information, such as fingerprint or iris scans, to identify individuals and then authenticate their identity. In comparison to knowledge and possession factors, biometric factors allow for quick, cost-effective and convenient authentication as they do not require users to remember a secret password or present costly physical tokens such as smartcards or security keys at the point of authentication. They also serve as highly accurate identification factors for most people. But from a cybersecurity perspective, biometrics are weak authentication factors. They are immutable and, in most cases, publicly visible. This makes them impossible to change in case the database used to store them is breached and also prone to forgery. To understand this, we can compare them to passwords, which have served as a de-facto authentication factor on the web for the past two decades. Over this time a total of at least 8.4 billion passwords have been leaked through successive data breaches.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> Without the invention of the mythical unhackable database, it is likely that the use of centralised biometric authentication will yield similar results over time. Leaks of biometric information are also more severe than passwords as they cannot be reset after a leak. As such, the appropriate use of biometrics is limited to local authentication i.e. when the storage and matching of biometrics takes place on an end-user device or credential such as a cellular phone, smartcard, or security key.</p>
                 </div>
@@ -120,6 +122,7 @@
                         <div class="one wide column" id="empty">
                         </div>
                         <div class="ten wide column content">
+                          <a name="1.3"></a>
                             <h4>Foundational ID systems must ensure separation of responsibilities</h4>
                             <p>Unlike Functional ID systems which are designed and built for a specific purpose, Foundational ID systems are general-purpose systems that can be used for many different purposes. They are responsible for conducting the processes of identification, authentication, and authorisation. However, the ease with which such systems allow processes to incorporate these mechanisms creates a potential for their misuse or overuse.</p>
                             <p>As an example, we can look at Nigeria’s National Electronic Identity Card. It is a Foundational ID system that allows for the creation of ‘applets’ which enable its use for different purposes. One such applet is e-Transport, which allows the use of the ID card as a payment system for travel through public transportation.<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> Through such use, the National Identification Number, which is an identity-linked identifier, is collected and linked to an individual's movements as they travel through public transport — a purpose that should not require any identification documents. This is a case of misuse of identification functionality in a Foundational ID System. Since the identification and authentication mechanisms are intertwined and rely on the same identifier, the system unnecessarily identifies individuals and creates a log of their movements when the goal of the system here should only be to authenticate an individual and check whether they have loaded sufficient funds onto their card to make the journey. A workaround to this issue is to use a unique, pseudonymous identifier, which is not linked to a person’s identity, for each different purpose that the ID card is used for. The Web Authentication standard supports such anonymous authentication.</p>
@@ -137,6 +140,7 @@
                                 <div class="one wide column" id="empty">
                                 </div>
                                 <div class="ten wide column content">
+                                  <a name="1.4"></a>
                                     <h4>Seamless public-private interoperability increases data sharing and collection</h4>
                                     <p>In all of the identity systems we have encountered, Governments are the primary identity providers. From civil registration to driver’s licenses and voter IDs, there are many legitimate purposes for a state to identify its citizens. Even private-sector entities that take up the role of identity provider, such as the GOV.UK Verify platform<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> or various commercial identity verification services,<sup class="superscript"><a href="#fn8">8,</a></sup><a name="ref8"></a><sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> still rely on verification of Government-issued IDs as the source of identity attestation. Such document verification is done either manually or automatically and both processes suffer from drawbacks — they are either labour-intensive or expensive, and inaccurate.</p>
                                     <p>To streamline the sharing and verification of identity data, several industrial actors<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> are attempting to develop systems and protocols through which Governments can digitally issue identity credentials to individuals. These credentials can subsequently be shared with relying parties, who can then verify them. In addition to bringing down identity verification costs for the industry and increasing accuracy of the data collected, such systems would also benefit the individuals using them as they would no longer have to carry around multiple physical documents to prove their identity.</p>
@@ -149,7 +153,7 @@
         </div>
         <div class="ten wide column content">
             <h3>Typology of Information Architectures</h3>
-            <p>Over time, <a href="https://digitalid.design/core-concepts-processes.html#idsystem"target="_blank">identity systems</a> have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model.</p>
+            <p>Over time, <a href="https://digitalid.design/core-concepts-processes.html#idsystem"target="_blank">identity systems</a> have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model where financial institutions play the role of Identity Provider, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model which aims to create a marketplace of Identity Providers and Relying Parties for quick and efficient data sharing.</p>
             <p>We define the <i>axes</i><sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> of centralisation/federation/decentralisation of information in digital ID systems as follows:</p>
         </div>
 
@@ -159,6 +163,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
+            <a name="2.1"></a>
             <h4>Source of identity or trust</h4>
             <p>Any identification, authentication, or authorisation operation in a digital ID system can be thought of as a transaction between an <a href="https://digitalid.design/core-concepts-processes.html#individual"target="_blank">individual</a>, an identity provider, and a <a href="https://digitalid.design/core-concepts-processes.html#relyingparty"target="_blank">relying party</a>.</p>
             <p>In a <strong>centralised</strong> system, there is a single identity provider that serves as a source of identity or trust for one or more relying parties.</p>
@@ -241,6 +246,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
+            <a name="2.2"></a>
             <h4>Storage</h4>
             <p>Another important informational aspect of digital ID systems is where the vast amount of sensitive personal data and metadata handled by these systems resides. This is distributed among:
               <ul>
@@ -407,7 +413,7 @@
                         Multiple smaller IdPs
                     </td>
                     <td>
-                        <img src="icons/technological-choices-yes.svg">
+                        <img src="icons/technological-choices-yes.svg" style="opacity: 0.6;">
                         Metadata
                     </td>
                     <td class="top aligned">N/A</td>
@@ -422,7 +428,7 @@
                     </td>
                     <td class="top aligned">N/A</td>
                     <td>
-                        <img src="icons/technological-choices-yes.svg">
+                        <img src="icons/technological-choices-yes.svg" style="opacity: 0.6;">
                         Metadata
                     </td>
                     <td><img src="icons/technological-choices-yes.svg"></td>
@@ -441,11 +447,12 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
+            <a name="2.3"></a>
             <h4>Control and fault tolerance</h4>
             <p>In a centralised ID system, a single large identity provider is tasked with the responsibility of issuing credentials and attesting the identity of all participants. This forms a single point of failure that could go offline (say, due to technical failure) leaving users with little recourse.</p>
             <p> A federated system distributes this responsibility among multiple identity providers, providing redundancy and some resilience to technical failure.</p>
             <p> In the proposed ‘decentralised’ or ‘self-sovereign’ ID systems, the individual holds their own credentials or delegates this responsibility to the vendors of these systems. This allows the credential to be used even when the issuing identity provider is unavaliable/offline, as the relying party can verify its authenticity by consulting a decentralised storage network.</p>
-            <p> Additionally, while identity providers have Theo power to unilaterally and arbitrarily revoke credentials in all of the three models described above, the decentralised model stores a tamper-resistant record of credentials in its storage network (usually a public or permissioned blockchain), which provide some accountability in the face of abuse of power by an identity provider.</p>
+            <p> Additionally, while identity providers have the power to unilaterally and arbitrarily revoke credentials in all of the three models described above, the decentralised model stores a tamper-resistant record of credentials in its storage network (usually a public or permissioned blockchain), which provide some accountability in the face of abuse of power by an identity provider.</p>
         </div>
     </div>
 
@@ -518,11 +525,12 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
+            <a name="2.4"></a>
             <h4>Risk of re-centralisation</h4>
             <p>Decentralisation is something that needs to be actively managed and maintained. Along each of the axes described above — source of identity, storage, and control — a decentralised or federated system can always regress to a more centralised one:</p>
-            <p>Source of identity: One or two popular identity providers could emerge, effectively resembling a centralised system.</p>
-            <p>Storage: The market could converge to a few popular vendors for storing credentials, creating a honeypot of sensitive data similar to a centralised system.</p>
-            <p>Control: The decentralised storage network (usually a blockchain) must be maintained by many disparate operators. If a single operator controls a majority of nodes in the network, it would resemble a regular database controlled by a single entity, negating the tamper-resistance guarantees it provides.</p>
+            <ul><li>Source of identity: One or two popular identity providers could emerge, effectively resembling a centralised system.</li>
+            <li>Storage: The market could converge to a few popular vendors for storing credentials, creating a honeypot of sensitive data similar to a centralised system.</li>
+            <li>Control: The decentralised storage network (usually a blockchain) must be maintained by many disparate operators. If a single operator controls a majority of nodes in the network, it would resemble a regular database controlled by a single entity, negating the tamper-resistance guarantees it provides.</li></ul>
         </div>
 
         <div class="sixteen wide column">
@@ -535,7 +543,7 @@
         <div class="one wide column" id="empty">
         </div>
         <div class="ten wide column content">
-            <h3>Credentials, Identification and Authentication Factors, and Technical Standards</h3>
+            <h3>Credentials, Identification and Authentication Factors</h3>
         </div>
 
         <div class="five wide column meta">
@@ -635,11 +643,11 @@
                     </div>
                     <div class="item">
                         <div class="header low">Low</div>
+                        <div></br></br><i>(Ratings shown are relative to each other)</i></div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="sixteen wide column">
             <div class="break"></div>
         </div>
@@ -785,7 +793,7 @@
                     </div>
                     <div class="item">
                         <div class="header high">high</div>
-                        <div>This is only cost-effective if the intended users of the ID system already possess these devices.</div>
+                        <div>This is only cost-effective if the intended users of the ID system already possess these devices.</br></br></br></br><i>(Ratings shown are relative to each other)</i></div>
                     </div>
                 </div>
             </div>
@@ -983,7 +991,7 @@
                     </div>
                     <div class="item">
                         <div class="header low">low to high</div>
-                        <div>Depends on the artifact chosen (see above).</div>
+                        <div>Depends on the artifact chosen (see above).</br></br></br></br><i>(Ratings shown are relative to each other)</i></div>
                     </div>
                 </div>
             </div>

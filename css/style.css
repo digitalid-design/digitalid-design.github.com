@@ -820,9 +820,6 @@ ol.ui.list li::before {
 
 /* Other Pages */
 
-.footnote {
-    overflow-wrap: anywhere;
-}
 
 #establishingTrust-subpage .content h6 {
     font-size: 1em;
