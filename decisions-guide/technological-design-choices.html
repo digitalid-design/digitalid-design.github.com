@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Governing ID: A Framework for Evaluation of Digital Identity | Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network India" />
+    <!-- Title + CSS + Favicon -->
+    <title>Digital Identities: Design and Uses</title>
+    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/post.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c415b9185.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Top Navigation Bar -->
+<div class="green nav-top">
+    <div class="ui container">
+        <a href="../index.html">Home</a> /
+        <a href="./index.html#decisionGuide">Decision Guide</a> /
+        <a href="./index.html#understandingDigitalIdentity">Understanding Digital Identity</a> /
+        <a href="./index.html#objectives">Objectives</a> /
+        <a href="./index.html#appropriateRolesOfTheState">Appropriate Roles Of Actors</a> /
+        <a href="./index.html#establishingTrust">Establishing Trust</a> /
+        <a href="./index.html#technologicalDesignChoices">
+            <span id="inactive">
+                Technological Design Choices
+            </span>
+        </a> /
+        <a href="./index.html#policyDesignChoices">Policy Design Choices</a> /
+        <a href="./index.html#governanceFramework">Governance Framework</a> /
+        <a href="./index.html#respondingToCybersecurityThreatsFailures">Responding To Cybersecurity Threats & Failures</a> /
+        <a href="./index.html#caseStudies">Case Studies</a>
+    </div>
+</div>
+
+<div class="space5"></div>
+
+<!-- Content -->
+<div class="white" id="technologicalChoices-subpage">
+    <div class="ui container two column stackable grid">
+        <div class="six wide column">
+        </div>
+        <div class="ten wide column post-title">
+            <h2>Technological Design Choices</h2>
+        </div>
+        <div class="five wide column meta">
+            <p><em>Research and Writing by</em> Divyank Katira</p>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content introduction">
+            <p><strong>The use of digital technologies to aid the identification of individuals, the subsequent authentication of their identity, and to allow authorisation on their behalf is a common practice in emerging national ID schemes. We describe principles for the appropriate use of digital technologies in ID systems, common technical architectures that have emerged in their design, and summarise some of the key characteristics of these digital technologies.</strong></p>
+        </div>
+        <div class="five wide column meta">
+            <h3>1</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h3>Appropriate Use of Technology</h3>
+            <p>In this section, we present principles to achieve privacy, security, and inclusivity.</p>
+        </div>
+
+        <div class="four wide column" id="empty"></div>
+        <div class="twelve wide column">
+            <div class="ui four cards">
+                <div class="taller small light-gray card">
+                    <div class="content center aligned">
+                        <img class="ui centered image" src="icons/technological-design-choices-appropriate-use-of-technology-1.svg">
+                    </div>
+                </div>
+                <div class="taller small light-gray card">
+                    <div class="content center aligned">
+                        <img class="ui centered image" src="icons/technological-design-choices-appropriate-use-of-technology-2.svg">
+                    </div>
+                </div>
+                <div class="taller small light-gray card">
+                    <div class="content center aligned">
+                        <img class="ui centered image" src="icons/technological-design-choices-appropriate-use-of-technology-3.svg">
+                    </div>
+                </div>
+                <div class="taller small light-gray card">
+                    <div class="content center aligned">
+                        <img class="ui centered image" src="icons/technological-design-choices-appropriate-use-of-technology-4.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta">
+            <h4>1.1</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="1.1"></a>
+            <h4>Digital technologies can supplement existing manual processes but not entirely replace them</h4>
+            <p>Despite a rapid rate of advancement in recent decades, the technologies that are used to compose digital ID systems still suffer from reliability issues. Faults in software and hardware systems, gaps in network connectivity between them, and their inability to accurately and adequately represent people’s identities can all lead to exclusion of individuals from benefits and services. For instance, a study found that about one-fifth of transactions in India’s Aadhaar-enabled Payments System failed due to technical reasons (17.03% due to biometric mismatch, 3.71% due to other technical issues).<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> Even large technology companies with well-funded engineering and operations teams only guarantee 99.99% uptime for their cloud offerings, which roughly translates to one hour of downtime in a year.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> While not all of these faults will lead to denial of access to benefits or services, their outcome can be particularly grave in cases where they prevent access to essential services such as food distribution or healthcare. For this reason, it is necessary to have robust manual processes in place for when technological systems fail. </p>
+            <p>In addition to being susceptible to unintentional faults, technological solutions are also susceptible to cyberattacks. Having well-tested human-operated processes to fallback upon also makes identity infrastructure and the services that rely on it less vulnerable to cybersecurity threats.</p>
+        </div>
+
+                <div class="five wide column meta">
+                    <h4>1.2</h4>
+                </div>
+                <div class="one wide column" id="empty">
+                </div>
+                <div class="ten wide column content">
+                  <a name="1.2"></a>
+                    <h4>Storing biometric data in central repositories is ill-informed and not sustainable</h4>
+                    <p>Another trend that we have observed in national digital ID systems is the use of biometric information, such as fingerprint or iris scans, to identify individuals and then authenticate their identity. In comparison to knowledge and possession factors, biometric factors allow for quick, cost-effective and convenient authentication as they do not require users to remember a secret password or present costly physical tokens such as smartcards or security keys at the point of authentication. They also serve as highly accurate identification factors for most people. But from a cybersecurity perspective, biometrics are weak authentication factors. They are immutable and, in most cases, publicly visible. This makes them impossible to change in case the database used to store them is breached and also prone to forgery. To understand this, we can compare them to passwords, which have served as a de-facto authentication factor on the web for the past two decades. Over this time a total of at least 8.4 billion passwords have been leaked through successive data breaches.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> Without the invention of the mythical unhackable database, it is likely that the use of centralised biometric authentication will yield similar results over time. Leaks of biometric information are also more severe than passwords as they cannot be reset after a leak. As such, the appropriate use of biometrics is limited to local authentication i.e. when the storage and matching of biometrics takes place on an end-user device or credential such as a cellular phone, smartcard, or security key.</p>
+                </div>
+
+                        <div class="five wide column meta">
+                            <h4>1.3</h4>
+                        </div>
+                        <div class="one wide column" id="empty">
+                        </div>
+                        <div class="ten wide column content">
+                          <a name="1.3"></a>
+                            <h4>Foundational ID systems must ensure separation of responsibilities</h4>
+                            <p>Unlike Functional ID systems which are designed and built for a specific purpose, Foundational ID systems are general-purpose systems that can be used for many different purposes. They are responsible for conducting the processes of identification, authentication, and authorisation. However, the ease with which such systems allow processes to incorporate these mechanisms creates a potential for their misuse or overuse.</p>
+                            <p>As an example, we can look at Nigeria’s National Electronic Identity Card. It is a Foundational ID system that allows for the creation of ‘applets’ which enable its use for different purposes. One such applet is e-Transport, which allows the use of the ID card as a payment system for travel through public transportation.<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> Through such use, the National Identification Number, which is an identity-linked identifier, is collected and linked to an individual's movements as they travel through public transport — a purpose that should not require any identification documents. This is a case of misuse of identification functionality in a Foundational ID System. Since the identification and authentication mechanisms are intertwined and rely on the same identifier, the system unnecessarily identifies individuals and creates a log of their movements when the goal of the system here should only be to authenticate an individual and check whether they have loaded sufficient funds onto their card to make the journey. A workaround to this issue is to use a unique, pseudonymous identifier, which is not linked to a person’s identity, for each different purpose that the ID card is used for. The Web Authentication standard supports such anonymous authentication.</p>
+                            <p>Another case of conflation of responsibilities in a Foundational ID system was seen in India’s Aadhaar ID program. Here, there were multiple instances where the process of authentication was used as a proxy for authorisation, leading to actions being taken on an individual’s behalf without their informed consent:
+                              <ul>
+                                <li>A telecom operator which also operates a payment service mistook authentication of individuals, which was required for KYC purposes, as authorisation to open an account on its payment service. This led to its users’ subsidy payments being silently redirected to this new account which they did not even know existed.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a></li>
+                                <li>Some individuals who used Aadhaar to authenticate themselves to receive vaccinations as part of the COVID-19 immunisation drive were also enrolled in a Unique Health ID program, without their consent.<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a></li>
+                              </ul>
+                            </p>
+                            <p>Foundational ID systems, owing to their expansive scope, should be carefully designed and strictly regulated through both technical and legal means to prevent such abuse. They must ensure separation of the responsibilities of identification, authentication and authorisation and only use them where necessary.</p>
+                        </div>
+                                <div class="five wide column meta">
+                                    <h4>1.4</h4>
+                                </div>
+                                <div class="one wide column" id="empty">
+                                </div>
+                                <div class="ten wide column content">
+                                  <a name="1.4"></a>
+                                    <h4>Seamless public-private interoperability increases data sharing and collection</h4>
+                                    <p>In all of the identity systems we have encountered, Governments are the primary identity providers. From civil registration to driver’s licenses and voter IDs, there are many legitimate purposes for a state to identify its citizens. Even private-sector entities that take up the role of identity provider, such as the GOV.UK Verify platform<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> or various commercial identity verification services,<sup class="superscript"><a href="#fn8">8,</a></sup><a name="ref8"></a><sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> still rely on verification of Government-issued IDs as the source of identity attestation. Such document verification is done either manually or automatically and both processes suffer from drawbacks — they are either labour-intensive or expensive, and inaccurate.</p>
+                                    <p>To streamline the sharing and verification of identity data, several industrial actors<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> are attempting to develop systems and protocols through which Governments can digitally issue identity credentials to individuals. These credentials can subsequently be shared with relying parties, who can then verify them. In addition to bringing down identity verification costs for the industry and increasing accuracy of the data collected, such systems would also benefit the individuals using them as they would no longer have to carry around multiple physical documents to prove their identity.</p>
+                                    <p>However, enabling streamlined access to sensitive identity data, with unprecedented levels of accuracy, will likely encourage industrial actors, who have historically collected data under meaningless, coercive notions of consent<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a>, to collect and retain even more private information. The adoption of such technologies must be carefully considered, and governed by strong regulatory and technical barriers to prevent unfettered commercial access to this previously inaccessible identity information.</p>
+                                </div>
+        <div class="five wide column meta">
+            <h3>2</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h3>Typology of Information Architectures</h3>
+            <p>Over time, <a href="https://digitalid.design/core-concepts-processes.html#idsystem"target="_blank">identity systems</a> have evolved into three distinct informational models, namely, centralised, federated, and decentralised systems. Given the wide range of uses these systems have been applied to in both the public and private sectors, these categories are sometimes overlapping and take on different meanings in different contexts. In this section, we attempt to explain the various meanings of these terms in the context of digital ID systems by analysing three different systems that are representative of these three informational models: India’s Aadhaar ID system<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> with its “Central Identities Data Repository” is a centralised model, Canada’s Sign-in Partner service<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> is a federated model where financial institutions play the role of Identity Provider, and the W3C standards<sup class="superscript"><a href="#fn14">14,</a></sup><a name="ref14"></a><sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a>, proposed by organisations under the Decentralized Identity Foundation<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> represent a typical decentralised model which aims to create a marketplace of Identity Providers and Relying Parties for quick and efficient data sharing.</p>
+            <p>We define the <i>axes</i><sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> of centralisation/federation/decentralisation of information in digital ID systems as follows:</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h4>2.1</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="2.1"></a>
+            <h4>Source of identity or trust</h4>
+            <p>Any identification, authentication, or authorisation operation in a digital ID system can be thought of as a transaction between an <a href="https://digitalid.design/core-concepts-processes.html#individual"target="_blank">individual</a>, an identity provider, and a <a href="https://digitalid.design/core-concepts-processes.html#relyingparty"target="_blank">relying party</a>.</p>
+            <p>In a <strong>centralised</strong> system, there is a single identity provider that serves as a source of identity or trust for one or more relying parties.</p>
+            <p>A <strong>federated</strong> system allows an individual to choose a single identity provider from a set of choices. These can be of two types:
+              <ul>
+                <li>Many (identity providers) to one (relying party), for example, a website that allows Google and Facebook login.</li>
+                <li>Many (identity providers) to many (relying parties), for example, Canada and UK’s ID systems that allow online access to government services. Transactions in such systems are typically mediated by a ‘broker’ for ease of management so that not every relying party needs to learn about every identity provider, they simply trust the broker.</li>
+              </ul></p>
+            <p>The proposed ‘<strong>decentralised</strong>’ or ‘<strong>self-sovereign</strong>’ ID systems also provide support for many identity providers with many relying parties, with even multiple identity providers participating in a single transaction (for added assurance). They have defined open standards with the hope of spawning a network or ecosystem of independent vendors, identity providers, and relying parties that can all interoperate with ease, for efficient data collection and sharing.</p>
+        </div>
+
+    </div>
+
+    <!--        Large image    -->
+    <div class="space5"></div>
+    <div class="ui light-gray" id="breakoutA">
+        <div class="ui container two column stackable grid">
+            <div class="one wide column" id="empty">
+            </div>
+            <div class="four wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    CENTRALISED SYSTEM
+                                </h3>
+                                <p>A single IDENTITY PROVIDER serves as a source of identity or trust for one or more RELYING PARTIES.</p>
+                            </div>
+                            <img src="./images/technological-choices-centralised-systems.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="five wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    FEDERATED SYSTEM
+                                </h3>
+                                <p>
+                                    An INDIVIDUAL can choose a single IDENTITY PROVIDER from a set of choices.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./images/technological-choices-fedarated-systems.svg">
+
+                    </div>
+                </div>
+            </div>
+            <div class="one wide column" id="empty">
+            </div>
+            <div class="five wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    DECENTRALISED SYSTEM
+                                </h3>
+                                <p>
+                                    A network or ecosystem of INDEPENDENT VENDORS, IDENTITY PROVIDERS, and RELYING PARTIES that can interoperate with ease, for efficient data collection and sharing.
+                                </p>
+                            </div>
+                            <img src="./images/technological-choices-decentralised-systems.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space5"></div>
+
+    <div class="ui container two column stackable grid">
+        <div class="five wide column meta">
+            <h4>2.2</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="2.2"></a>
+            <h4>Storage</h4>
+            <p>Another important informational aspect of digital ID systems is where the vast amount of sensitive personal data and metadata handled by these systems resides. This is distributed among:
+              <ul>
+                <li>Identity providers, who must necessarily store such data as they are responsible for issuing credentials</li>
+                <li>Relying parties, which may verify and discard such information or store it indefinitely, depending on their privacy policies and other incentives. It is important to note that the information architecture of the ID system does not impact the data collection or retention policies of relying parties.</li>
+                <li>Other intermediaries, such as brokers (in federated systems) and network operators (in decentralised systems). These typically only store metadata (such as <strong>who</strong> accessed <strong>what</strong> service, <strong>when</strong>, and <strong>where</strong>), but this can also be sensitive, particularly if it is not de-identified or if there is a risk of re-identification.</li>
+              </ul></p>
+            <p> In a <strong>centralised</strong> system, there is a large central identity provider that stores the private information of all participating individuals and metadata relating to usage of the ID. This forms a lucrative target for data breaches and presents a privacy risk as the operator of the system has insight into all activity within it.</p>
+            <p> A <strong>federated</strong> system distributes this risk to some extent by having multiple identity providers, each of which will only store the information and metadata of a subset of users. Brokered federated systems, however, present a central trusted point through which all data passes (but is not necessarily stored) and has insight into all activity (metadata) within the system.</p>
+        </div>
+    </div>
+
+    <!--        Large Image     -->
+    <div class="space5"></div>
+    <div class="ui light-gray" id="breakoutB">
+        <div class="ui container two column stackable grid">
+            <div class="row">
+                <div class="one wide column" id="empty">
+                </div>
+                <div class="four wide column content">
+                    <div class="ui cards">
+                        <div class="ui card breakout light-gray">
+                            <div class="content">
+                                <div class="text description">
+                                    <h3>
+                                        CENTRALISED SYSTEM
+                                    </h3>
+                                    <p>A large central IDENTITY PROVIDER stores the private information of all participating individuals.</p>
+                                </div>
+                                <img src="./images/technological-choices-storage-centralised-system.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seven wide column content">
+                    <div class="ui cards">
+                        <div class="ui card breakout light-gray">
+                            <div class="content">
+                                <div class="text description">
+                                    <h3>
+                                        FEDERATED SYSTEM
+                                    </h3>
+                                    <p>
+                                        Multiple identity providers store the information and metadata of a subset of users.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui images">
+                                <img src="./images/technological-choices-storage-fedarated-system-a.svg">
+                                <img src="./images/technological-choices-storage-fedarated-system-b.svg">
+                                <img src="./images/technological-choices-storage-fedarated-system-b.svg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="two wide column" id="empty">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="one wide column" id="empty">
+                </div>
+                <div class="four wide column content">
+                    <div class="text description">
+                        <h3 style="font-family: 'Fira Sans', sans-serif; font-size: 0.875rem;">
+                            DECENTRALISED SYSTEM
+                        </h3>
+                        <p style="font-family: 'Fira Sans', sans-serif; font-size: 0.875rem; line-height: 1.375rem;">
+                            Data is distributed among multiple identity providers. IDENTITY PROVIDER issues IDENTITY CREDENTIALS to the INDIVIDUAL, who shares it with RELYING PARTIES who can consult a DECENTRALISED STORAGE NETWORK to verify its authenticity.
+                        </p>
+                    </div>
+                </div>
+                <div class="four wide column content">
+                    <img src="./images/technological-choices-storage-decentralised-systems-a.svg">
+                </div>
+                <div class="two wide column content">
+                    <img src="./images/technological-choices-storage-decentralised-systems-b.svg">
+                </div>
+                <div class="five wide column content">
+                    <img src="./images/technological-choices-storage-decentralised-systems-c.svg">
+
+                </div>
+<!--                <div class="fifteen wide column content">-->
+                    <div class="ui cards">
+                        <div class="ui card breakout light-gray">
+                            <div class="content">
+                                <div class="ui images bundle-of-images">
+                                </div>
+                            </div>
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space1"></div>
+
+    <div class="ui container two column stackable grid">
+        <div class="six wide column" id="empty"></div>
+        <div class="ten wide column content">
+            <p>
+                Like federated systems, proposed ‘<strong>decentralised</strong>’ or ‘<strong>self-sovereign</strong>’ ID systems also distribute data among multiple identity providers. Additionally, in place of a central trusted broker, in this model an identity provider issues <a href="https://digitalid.design/core-concepts-processes.html#idcredential"target="_blank">identity credentials</a> to the individual, who stores it on their own device or a cloud storage solution provided by vendors of such systems. The individual, in turn, shares the credential with relying parties who can consult a decentralised storage network (typically a blockchain) to verify its authenticity. In this model, the decentralised storage network stores pseudonymised metadata about affiliations of individuals to IdPs and RPs and its operators can potentially<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> glean metadata into usage activity.
+            </p>
+        </div>
+
+        <!--        TABLE    -->
+        <div class="space2"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="fifteen wide column">
+            <h2>
+                Storage of Sensitive Data Across Identity Systems
+            </h2>
+            <table class="ui very basic table">
+                <theader>
+                    <tr>
+                        <th class="three wide top aligned">
+                            WHO SEES/STORES SENSITIVE DATA
+                        </th>
+                        <th class="three wide top aligned">
+                            IDENTITY PROVIDER
+                        </th>
+                        <th class="two wide top aligned">
+                            BROKER/VENDOR
+                        </th>
+                        <th class="two wide top aligned">
+                            DECENTRALISED STORAGE NETWORK
+                        </th>
+                        <th class="three wide top aligned">
+                            INDIVIDUAL’S DEVICE/CLOUD STORAGE PROVIDED BY VENDOR
+                        </th>
+                        <th class="two wide top aligned">
+                            RELYING PARTY
+                        </th>
+                    </tr>
+                </theader>
+                <tbody>
+                <tr>
+                    <th class="top aligned">CENTRALISED</th>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg">
+                        Single large IdP
+                    </td>
+                    <td class="top aligned">N/A</td>
+                    <td class="top aligned">N/A</td>
+                    <td class="top aligned">N/A</td>
+                    <td><img src="icons/technological-choices-yes.svg"></td>
+                </tr>
+                <tr>
+                    <th class="top aligned">FEDERATED</th>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg">
+                        Multiple smaller IdPs
+                    </td>
+                    <td class="top aligned">N/A</td>
+                    <td class="top aligned">N/A</td>
+                    <td class="top aligned">N/A</td>
+                    <td><img src="icons/technological-choices-yes.svg"></td>
+                </tr>
+                <tr>
+                    <th class="top aligned">BROKERED FEDERATED</th>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg">
+                        Multiple smaller IdPs
+                    </td>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg" style="opacity: 0.6;">
+                        Metadata
+                    </td>
+                    <td class="top aligned">N/A</td>
+                    <td class="top aligned">N/A</td>
+                    <td><img src="icons/technological-choices-yes.svg"></td>
+                </tr>
+                <tr>
+                    <th class="top aligned">DECENTRALISED/ SELF-SOVEREIGN ID</th>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg">
+                        Multiple smaller IdPs
+                    </td>
+                    <td class="top aligned">N/A</td>
+                    <td>
+                        <img src="icons/technological-choices-yes.svg" style="opacity: 0.6;">
+                        Metadata
+                    </td>
+                    <td><img src="icons/technological-choices-yes.svg"></td>
+                    <td><img src="icons/technological-choices-yes.svg"></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="space1"></div>
+
+
+        <div class="five wide column meta">
+            <h4>2.3</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="2.3"></a>
+            <h4>Control and fault tolerance</h4>
+            <p>In a centralised ID system, a single large identity provider is tasked with the responsibility of issuing credentials and attesting the identity of all participants. This forms a single point of failure that could go offline (say, due to technical failure) leaving users with little recourse.</p>
+            <p> A federated system distributes this responsibility among multiple identity providers, providing redundancy and some resilience to technical failure.</p>
+            <p> In the proposed ‘decentralised’ or ‘self-sovereign’ ID systems, the individual holds their own credentials or delegates this responsibility to the vendors of these systems. This allows the credential to be used even when the issuing identity provider is unavaliable/offline, as the relying party can verify its authenticity by consulting a decentralised storage network.</p>
+            <p> Additionally, while identity providers have the power to unilaterally and arbitrarily revoke credentials in all of the three models described above, the decentralised model stores a tamper-resistant record of credentials in its storage network (usually a public or permissioned blockchain), which provide some accountability in the face of abuse of power by an identity provider.</p>
+        </div>
+    </div>
+
+    <!--        Large Image -->
+    <div class="space5"></div>
+    <div class="ui light-gray" id="breakoutC">
+        <div class="ui container two column stackable grid">
+            <div class="one wide column" id="empty">
+            </div>
+            <div class="four wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    CENTRALISED SYSTEM
+                                </h3>
+                                <p>A single IDENTITY PROVIDER serves as a source of identity or trust for one or more RELYING PARTIES.</p>
+                            </div>
+                            <img src="./images/technological-choices-control-availability-centralised-systems.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="five wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    FEDERATED SYSTEM
+                                </h3>
+                                <p>
+                                    An INDIVIDUAL can choose a single IDENTITY PROVIDER from a set of choices.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./images/technological-choices-control-availability-federated-systems.svg">
+
+                    </div>
+                </div>
+            </div>
+            <div class="one wide column" id="empty">
+            </div>
+            <div class="five wide column content">
+                <div class="ui cards">
+                    <div class="ui card breakout light-gray">
+                        <div class="content">
+                            <div class="text description">
+                                <h3>
+                                    DECENTRALISED SYSTEM
+                                </h3>
+                                <p>
+                                    A network or ecosystem of INDEPENDENT VENDORS, IDENTITY PROVIDERS, and RELYING PARTIES that can interoperate with ease, for efficient data collection and sharing.
+                                </p>
+                            </div>
+                            <img src="./images/technological-choices-control-availability-decentralised-systems.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space5"></div>
+
+    <div class="ui container two column stackable grid">
+        <div class="five wide column meta">
+            <h4>2.4</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="2.4"></a>
+            <h4>Risk of re-centralisation</h4>
+            <p>Decentralisation is something that needs to be actively managed and maintained. Along each of the axes described above — source of identity, storage, and control — a decentralised or federated system can always regress to a more centralised one:</p>
+            <ul><li>Source of identity: One or two popular identity providers could emerge, effectively resembling a centralised system.</li>
+            <li>Storage: The market could converge to a few popular vendors for storing credentials, creating a honeypot of sensitive data similar to a centralised system.</li>
+            <li>Control: The decentralised storage network (usually a blockchain) must be maintained by many disparate operators. If a single operator controls a majority of nodes in the network, it would resemble a regular database controlled by a single entity, negating the tamper-resistance guarantees it provides.</li></ul>
+        </div>
+
+        <div class="sixteen wide column">
+            <div class="break"></div>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>3</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h3>Credentials, Identification and Authentication Factors</h3>
+        </div>
+
+        <div class="five wide column meta">
+            <h4>3.1</h4>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h4>Choice of identification factors</h4>
+        </div>
+
+        <div class="six wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <p></p>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="super table header">
+                <span>Privacy</span>
+                <span>Accuracy</span>
+                <span>Cost</span>
+            </div>
+            <div class="row">
+                <div class="factor">
+                    <a name="biometric-factors"></a>
+                    <div class="header gray">Biometric Factors</div>
+                    <div>This refers to the use of physiological features to identify individuals.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">Low</div>
+                        <div>The immutable nature of biometrics makes it hard to place meaningful limits on their future use. Some biometric factors, such as face and gait recognition, can be deployed without an individual’s consent</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">High</div>
+                        <div>Biometrics are highly accurate identification factors. However, solely relying on them leads to exclusion as they are never fully accurate.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">High</div>
+                        <div>They require the use of dedicated hardware and software.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="document-verification"></a>
+                    <div class="header gray">Document Verification</div>
+                    <div>
+                        <p>If the people being identified possess pre-existing identity documents, these can be used to identify them.</p>
+                        <p>Verification is either done manually or through a computer-assisted process.</p>
+                    </div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header medium">Medium</div>
+                        <div>The use of existing identity documents minimizes the amount of additional identifying information that is collected.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">Medium to high</div>
+                        <div>
+                            <p>Both human and computer-assisted verification processes are prone to error.</p>
+                            <p>The use of security features such as holograms and microprinting can improve accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">Medium to high</div>
+                        <div>Manual processes are labour-intensive and computer-assisted processes require dedicated hardware and software.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="pseudonymous-identifiers"></a>
+                    <div class="header gray">Pseudonymous Identifiers</div>
+                    <div>Individuals can be identified by identifiers that are not linked to their identities, such as email ID, phone number or a public key.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">High</div>
+                        <div>Allows individuals to transact anonymously.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header gray">N/A</div>
+                    </div>
+                    <div class="item">
+                        <div class="header low">Low</div>
+                        <div></br></br><i>(Ratings shown are relative to each other)</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sixteen wide column">
+            <div class="break"></div>
+        </div>
+
+        <div class="five wide column meta">
+            <h4>3.2</h4>
+        </div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <h4>Choice of identity artifacts</h4>
+            <div class="super table header">
+                <span>Security</span>
+                <span>Cost</span>
+            </div>
+            <div class="row">
+                <div class="factor">
+                    <a name="qr-code"></a>
+                    <div class="header gray">QR Code</div>
+                    <div>A Quick Response (QR) code allows for convenient scanning of identity information encoded within it.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>They can be copied with ease.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>These are cheap to issue and can be printed on a piece of paper.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <div class="row">
+                <div class="factor">
+                    <a name="microchip-based-cards-smart-cards"></a>
+                    <div class="header gray">Microchip-based Cards (Smart Cards)</div>
+                    <div>Identity attributes are encoded into an Integrated Circuit chip that is embedded into a physical document.                   </div></div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">MEDIUM TO HIGH</div>
+                        <div>The chips are typically secured by a second factor, such as a PIN.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>Costlier than paper-based ID documents.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <div class="row">
+                <div class="factor">
+                    <a name="contactless-cards"></a>
+                    <div class="header gray">Contactless Cards</div>
+                    <div>These are similar to smart cards but can be scanned over a small distance.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>They can be remotely accessed. Their use is limited to low-risk scenarios for convenient access.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">Medium</div>
+                        <div>Cost is similar to smart cards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <div class="row">
+                <div class="factor">
+                    <a name="security-keys"></a>
+                    <div class="header gray">Security Keys</div>
+                    <div>A security key is a thumb drive shaped device with an embedded chip for storage of identity attributes.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">MEDIUM TO HIGH</div>
+                        <div>These are typically used as a second factor.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">Medium</div>
+                        <div>Cost is similar to smart cards and contactless cards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <div class="row">
+                <div class="factor">
+                    <a name="smart-card-or-security-key-with-biometrics"></a>
+                    <div class="header gray">Smart Card or Security Key with Biometrics</div>
+                    <div>A fingerprint scanner is embedded into a smart card or a security key.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Integrating possession, biometric, and knowledge factors into a single device makes them highly secure.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Costlier than regular smart cards or security keys.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="six wide column identity-artifacts">
+            <div class="row">
+                <div class="factor">
+                    <a name="smartphones-and-computers"></a>
+                    <div class="header gray">Smartphones & Computers</div>
+                    <div>A virtual credential can be issued that can be stored on a smartphone or a computer.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>Security properties are similar to smart cards and security keys. However, they are connected to the internet, making them more vulnerable.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>This is only cost-effective if the intended users of the ID system already possess these devices.</br></br></br></br><i>(Ratings shown are relative to each other)</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column" id="empty"></div>
+
+
+        <div class="five wide column meta">
+            <h4>3.3</h4>
+        </div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <h4>Choice of authentication factors</h4>
+            <div class="super table header">
+                <span>Security</span>
+                <span>Privacy</span>
+                <span>Cost</span>
+            </div>
+            <div class="row">
+                <div class="factor">
+                    <a name="biometrics-centralised"></a>
+                    <div class="header gray">Biometrics (Centralised)</div>
+                    <div>Biometric information is used to authenticate individuals. Centralised refers to storing many biometrics in a central database.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>Biometrics are immutable and, in most cases, publicly visible. This makes them prone to forgery and impossible to change in case of a breach.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>Storing biometrics on a large central database makes them vulnerable to breach.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">low to medium</div>
+                        <div>A small number of biometric readers are required at points of authentication.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="biometrics-local"></a>
+                    <div class="header gray">Biometrics (Local)</div>
+                    <div>This refers to matching and storing of biometric information on the end-user device performing authentication, such as a smartphone or security key.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>In this method, biometrics are typically used as a secondary factor.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Biometric information does not leave the device under the control of the individual.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>The individual being authenticated must possess a device capable of biometric authentication.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="document-verification-2"></a>
+                    <div class="header gray">Document verification</div>
+                    <div>A pre-existing identity document is used to authenticate an individual. Verification can be done either manually or through a computer-assisted process.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">Medium to high</div>
+                        <div>
+                            <p>Both human and computer-assisted verification processes are susceptible to forgery.</p>
+                            <p> The use of security features such as holograms and microprinting can improve security.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>The physical document may have personal information printed on it — potentially revealing more data than is required for the purpose of authentication.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">High</div>
+                        <div>Manual verification is labour-intensive and automated verification requires dedicated hardware and software.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="passwords"></a>
+                    <div class="header gray">Passwords</div>
+                    <div>An individual is authenticated on the basis of a secret piece of information.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>
+                            <p>Both human and computer-assisted verification processes are susceptible to forgery.</p>
+                            <p> This method’s reliance on individuals to choose secure passwords and not re-use or share them weakens its security.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Allows individuals to be authenticated anonymously.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>Passwords are highly cost-effective authentication mechanisms.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="one-time-passwords-sms"></a>
+                    <div class="header gray">One-Time Passwords (SMS)</div>
+                    <div>An OTP is sent to an individual over SMS.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">low</div>
+                        <div>SMS is not considered a secure communication method.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>The individual’s phone number needs to be disclosed for authentication.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>A cellular connection is required.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="one-time-passwords-app-based"></a>
+                    <div class="header gray">One-Time Passwords (App-based)</div>
+                    <div>In this method, after an initial registration phase, an OTP is automatically generated</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Typically used as a secondary factor, this is considered a security best-practice.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header high">high</div>
+                        <div>Typically used as a secondary factor, this is considered a security best-practice.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium</div>
+                        <div>A cellular connection is not needed during authentication, but a smartphone or other device is required.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column meta"></div>
+        <div class="one wide column" id="empty"></div>
+        <div class="ten wide column">
+            <div class="row">
+                <div class="factor">
+                    <a name="physical-id-artifacts"></a>
+                    <div class="header gray">Physical ID Artifacts</div>
+                    <div>If one has been issued, it can also be used for authentication.</div>
+                </div>
+                <div class="comparison table">
+                    <div class="item">
+                        <div class="header low">low to high</div>
+                        <div>Depends on the artifact chosen (see above).</div>
+                    </div>
+                    <div class="item">
+                        <div class="header medium">medium to high</div>
+                        <div>The physical artifact sometimes contains personal information printed on it, revealing more data than is required for authentication.</div>
+                    </div>
+                    <div class="item">
+                        <div class="header low">low to high</div>
+                        <div>Depends on the artifact chosen (see above).</br></br></br></br><i>(Ratings shown are relative to each other)</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixteen wide column">
+            <div class="break"></div>
+        </div>
+
+        <div class="six wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h3>Notes</h3>
+            <br/>
+            <table class="footnote">
+              <tr>
+                  <td class="number">1</td>
+                  <td class="reference"><a name="fn1"></a>
+                      Padmanabhan Balasubramanian et al., “Fintech For The Poor: Do Technological Failures Deter Financial Inclusion?”, <i>SSRN</i> (2021), <a href="https://ssrn.com/abstract=3840021" target="_blank">https://ssrn.com/abstract=3840021.</a>
+                      <span class="internal-nav"><a href="#ref1">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">2</td>
+                  <td class="reference"><a name="fn2"></a>
+                      “Compute Engine Service Level Agreement (SLA)”, Google Cloud, last accessed November 12, 2021. <a href="https://cloud.google.com/compute/sla" target="_blank"><i>https://cloud.google.com/compute/sla</i></a>; “Amazon Compute Service Level Agreement”, Amazon Web Services, last accessed November 12, 2021. <a href="https://aws.amazon.com/compute/sla/" target="_blank"><i>https://aws.amazon.com/compute/sla/</i></a>
+                      <span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">3</td>
+                  <td class="reference"><a name="fn3"></a>
+                      Lance Whitney, “Billions of passwords leaked online from past data breaches”, <i>TechRepublic</i>, June 9, 2021, <a href="https://www.techrepublic.com/article/billions-of-passwords-leaked-online-from-past-data-breaches/" target="_blank"><i>https://www.techrepublic.com/article/billions-of-passwords-leaked-online-from-past-data-breaches/.</i></a>
+                      <span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">4</td>
+                  <td class="reference"><a name="fn4"></a>
+                      “Mapping Digital Identity Systems: Nigeria”, Digital Identities: Design and Uses, November 03, 2020. <a href="https://digitalid.design/research-maps/nigeria.html" target="_blank"><i>https://digitalid.design/research-maps/nigeria.html.</i></a>
+                      <span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">5</td>
+                  <td class="reference"><a name="fn5"></a>
+                      Anand Venkatanarayanan and Srikanth Lakshmanan, “Aadhaar Mess: How Airtel Pulled Off Its Rs 190 Crore Magic Trick”, <i>The Wire</i>, December 21, 2017, <a href="https://thewire.in/banking/airtel-aadhaar-uidai" target="_blank"><i>https://thewire.in/banking/airtel-aadhaar-uidai.</i></a>
+                      <span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">6</td>
+                  <td class="reference"><a name="fn6"></a>
+                      Mehab Qureshi, “Govt Created Health IDs Without Consent, Say Vaccinated Indians”, <i>The Quint</i>, June 9, 2021, <a href="https://www.thequint.com/tech-and-auto/govt-created-uhid-without-consent-say-vaccinated-indians#read-more" target="_blank"><i>https://www.thequint.com/tech-and-auto/govt-created-uhid-without-consent-say-vaccinated-indians#read-more.</i></a>
+                      <span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">7</td>
+                  <td class="reference"><a name="fn7"></a>
+                      “Mapping Digital Identity Systems: UK”, Digital Identities: Design and Uses, July 10, 2019. <a href="https://digitalid.design/research-maps/uk.html" target="_blank"><i>https://digitalid.design/research-maps/uk.html.</i></a>
+                      <span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">8</td>
+                  <td class="reference"><a name="fn8"></a>
+                      “Document Verification”, Onfido, last accessed November 12, 2021. <a href="https://onfido.com/solutions/document-verification/" target="_blank"><i>https://onfido.com/solutions/document-verification/.</i></a>
+                      <span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">9</td>
+                  <td class="reference"><a name="fn9"></a>
+                      “The easiest way to verify identities”, Stripe, last accessed November 12, 2021. <a href="https://stripe.com/identity" target="_blank"><i>https://stripe.com/identity.</i></a>
+                      <span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">10</td>
+                  <td class="reference"><a name="fn10"></a>
+                      Decentralised Identity Foundation, last accessed November 12, 2021. <a href="https://identity.foundation/" target="_blank"><i>https://identity.foundation/.</i></a>
+                      <span class="internal-nav"><a href="#ref10">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">11</td>
+                  <td class="reference"><a name="fn11"></a>
+                      A Critique of Consent in Information Privacy, The Centre for Internet and Society, last accessed December 7, 2021. <a href="https://cis-india.org/internet-governance/blog/a-critique-of-consent-in-information-privacy" target="_blank"><i>https://cis-india.org/internet-governance/blog/a-critique-of-consent-in-information-privacy.</i></a>
+                      <span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">12</td>
+                  <td class="reference"><a name="fn12"></a>
+                      “Mapping Digital Identity Systems: India”, Digital Identities: Design and Uses, October 13, 2020. <a href="https://digitalid.design/research-maps/india.html" target="_blank"><i>https://digitalid.design/research-maps/india.html.</i></a>
+                      <span class="internal-nav"><a href="#ref12">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">13</td>
+                  <td class="reference"><a name="fn13"></a>
+                      Alaca, Furkan, and Paul C. Van Oorschot. "Comparative analysis and framework evaluating web single sign-on systems." <i>ACM Computing Surveys (CSUR)</i> 53.5 (2020): 1-34.
+                      <span class="internal-nav"><a href="#ref13">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">14</td>
+                  <td class="reference"><a name="fn14"></a>
+                      “Decentralized Identifiers (DIDs) v1.0”, World Wide Web Consortium, last accessed November 12, 2021. <a href="https://www.w3.org/TR/did-core/" target="_blank"><i>https://www.w3.org/TR/did-core/.</i></a>
+                      <span class="internal-nav"><a href="#ref14">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">15</td>
+                  <td class="reference"><a name="fn15"></a>
+                      “Verifiable Credentials Data Model v1.1”, World Wide Web Consortium, last accessed November 12, 2021. <a href="https://www.w3.org/TR/vc-data-model/" target="_blank"><i>https://www.w3.org/TR/vc-data-model/.</i></a>
+                      <span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">16</td>
+                  <td class="reference"><a name="fn16"></a>
+                      Decentralised Identity Foundation, last accessed November 12, 2021. <a href="https://identity.foundation/" target="_blank"><i>https://identity.foundation/.</i></a>
+                      <span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
+              </tr>
+              <tr>
+                  <td class="number">17</td>
+                  <td class="reference"><a name="fn17"></a>
+                      This term was used by Vitalik Buterin, who defined the axes of decentralisation for software. <a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274" target="_blank"><i>https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274.</i></a>
+                      <span class="internal-nav"><a href="#ref17">&uarr;</em></a></span></td>
+              </tr>
+            </table>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="ui container four column stackable grid">
+        <div class="six wide column">
+            <h1>Digital Identities: Design and Uses</h1>
+            <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyarnetwork.in/" target="_blank">Omidyar Network India</a>.</p>
+            <p>Designed by Pooja Saxena, Saumyaa Naidu<br/>
+                Illustration by Akash Sheshadri<br/>
+                Developed by Sumandro Chattapadhyay, Tanvi Bhakta<br />
+                <br />
+                Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> and <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a><br/>
+                <a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>
+                Social media icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a><br/>
+                This website uses icons from <a href="https://thenounproject.com/" target="_blank">The Noun Project</a><br/>
+                Hosted on <a href="https://github.com/digitalid-design/digitalid-design.github.com" target="_blank">GitHub</a></p>
+            <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
+        </div>
+        <div class="three wide column team">
+            <h1>Team</h1>
+            <p>Akash Sheshadri</p>
+            <p>Amber Sinha</p>
+            <p>Anubha Sinha</p>
+            <p>Divyank Katira</p>
+            <p>Pooja Saxena</p>
+            <p>Saumyaa Naidu</p>
+            <p>Shruti Trikanad</p>
+            <p>Yesha Tshering Paul</p>
+        </div>
+        <div class="three wide column contributors">
+            <h1>Contributors</h1>
+            <p>Aparna Chivukula</p>
+            <p>Kushang Mishra</p>
+            <p>Nikil Augustine</p>
+            <p>Prakriti Singh</p>
+            <p>Pranav MB</p>
+            <p>Sumandro Chattapadhyay</p>
+            <p>Sunil Abraham</p>
+            <p>Vrinda Bhandari</p>
+        </div>
+        <div class="four wide column">
+            <div>
+                <a href="https://cis-india.org/" target="_blank" style="border-bottom: 0px solid"><img src="../img/logo.png" alt="The Centre for Internet and Society, India" class="logo" /></a>
+            </div>
+            <div class="icons">
+                <a href="https://twitter.com/cis_india" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a href="https://www.instagram.com/cis.india/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a> <a href="https://www.youtube.com/channel/UC0SLNXQo9XQGUE7Enujr9Ng" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

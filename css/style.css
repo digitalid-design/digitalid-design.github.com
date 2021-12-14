@@ -1,5 +1,12 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i,700|IBM+Plex+Serif:300i,400,400i,500,500i,600,600i,700,700i");
+/* Variables */
+:root {
+    --gray: #D6D6D8;
+    --low: #DBA9AC;
+    --medium: #DBCAA9;
+    --high: #AADCCD;
+}
 /* Typography */
 html {
     font-size: 16px;
@@ -14,7 +21,7 @@ h1,h2,h3,h4,p {
     font-weight: 700;
     padding: 1rem 0;
     line-height: 1.6em;
-    position: fixed;
+    position: sticky;
     text-transform: uppercase;
     top: 0;
     width: 100%;
@@ -81,7 +88,6 @@ h1,h2,h3,h4,p {
 /* Body */
 .light-gray {
     background-color: #f4f4f4;
-    padding: 1em 0 5em 0;
 }
 .gray {
     background-color: #efefef;
@@ -90,8 +96,20 @@ h1,h2,h3,h4,p {
 .green {
     background-color: #69c3aa;
 }
+.light-green {
+    background-color: #AADCCD;
+}
+.space1 {
+    height: 1em;
+}
+.space2 {
+    height: 2em;
+}
 .space3 {
     height: 3em;
+}
+.space4 {
+    height: 4em;
 }
 .space5 {
     height: 5em;
@@ -135,7 +153,7 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
 }
 .media a {
-    border-bottom: none; 
+    border-bottom: none;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -143,7 +161,7 @@ h1,h2,h3,h4,p {
 }
 .media a:hover,
 .media a:active {
-    border-bottom: 2px solid #69c3aa; 
+    border-bottom: 2px solid #69c3aa;
     color: #333;
 }
 .media-mobile {
@@ -183,7 +201,7 @@ h1,h2,h3,h4,p {
     text-transform: uppercase;
 }
 .list a {
-    border-bottom: none; 
+    border-bottom: none;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -192,23 +210,23 @@ h1,h2,h3,h4,p {
 }
 .list a:hover,
 .list a:active {
-    border-bottom: 2px solid #69c3aa; 
+    border-bottom: 2px solid #69c3aa;
     color: #333;
 }
 .slider{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .slide{
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	float: left;
-	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    float: left;
+    position: absolute;
 }
 .maps {
     background-color: #69c3aa;
@@ -228,7 +246,7 @@ h1,h2,h3,h4,p {
     padding: 1rem;
 }
 .maps-desc h1 {
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 /* Footer */
 .footer {
@@ -262,10 +280,10 @@ h1,h2,h3,h4,p {
     margin-bottom: 0.2em;
 }
 .image-link {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 .image-link:hover {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 .logo {
     float: right;
@@ -275,7 +293,7 @@ h1,h2,h3,h4,p {
     width: 100%;
 }
 .logo p {
-    clear: all;
+    unset: all;
 }
 .icons {
     margin-top: 3em;
@@ -285,7 +303,7 @@ h1,h2,h3,h4,p {
 
 .icons a,
 .icons a:hover {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 .fa-twitter {
     margin-left: 0.4em;
@@ -319,7 +337,7 @@ h1,h2,h3,h4,p {
 }
 @media screen and (max-width: 800px) {
     .contributors h1 {padding-top: 2.4em; padding-bottom: 1.2em;}
-    .icons {margin-top: 0em; padding-top: 1em; margin-bottom: 1.5em;}
+    .icons {margin-top: 0; padding-top: 1em; margin-bottom: 1.5em;}
     .ideal-image-slider {display: none;}
     .list {margin-left: -1em;}
     .logo { float: none; margin-top: 3em;}
@@ -338,21 +356,688 @@ h1,h2,h3,h4,p {
 }
 @media screen and (max-width: 499px) {
     .banner-image {height: 300px;}
-    .contributors h1 {padding-top: 0em; padding-bottom: 0em;}
+    .contributors h1 {padding-top: 0; padding-bottom: 0;}
     .footer {margin-top: 1em; text-align: center;}
-    .list {margin-left: 0em;}
-    .logo { float: none; margin-top: 0em;}
+    .list {margin-left: 0;}
+    .logo { float: none; margin-top: 0;}
     .media-mobile {display: block;}
     .media-narrow {display: none;}
     .media-wide {display: none;}
-    .media p {margin-left: 0em;}
+    .media p {margin-left: 0;}
     .site-desc {top: 18rem; width: 68%;}
     .site-title h1 {font-size: 2.8em;}
     .site-title h2 {font-size: 2.5em;}
     .site-title {margin-right: 2em; top: 6.5rem;}
     .space5 {height: 3em;}
-    .team h1 {padding-top: 0em; padding-bottom: 0em;}
-    .text {margin-left: 0em;}
+    .team h1 {padding-top: 0; padding-bottom: 0;}
+    .text {margin-left: 0;}
     .text h1 {margin-top: 1.2em;}
-    #maps {padding-left: 0em;}
+    #maps {padding-left: 0;}
+}
+
+/* Custom Styles */
+
+.card p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.8em;
+}
+
+.card h3 {
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.ui.cards {
+    flex-wrap: nowrap;
+}
+
+.ui.image {
+    padding-bottom: 0.8em;
+}
+
+.ui.card.green,
+.ui.cards>.card.green {
+    background-color: #69c3aa;
+    box-shadow: none;
+}
+
+.ui.card.green:hover,
+.ui.cards > .card.green:hover {
+    box-shadow: none;
+}
+
+.ui.card.black,
+.ui.cards>.card.black {
+    color: white;
+    background-color: #333333;
+    box-shadow: none;
+}
+
+.ui.card.black:hover,
+.ui.cards > .card.black:hover {
+    box-shadow: none;
+}
+
+.ui.card.black:hover p,
+.ui.cards > .card.black:hover p {
+    color: black;
+}
+
+.black .text p {
+    color: white;
+}
+
+.ui.card:hover,
+.ui.cards > .card:hover {
+    box-shadow: none;
+}
+
+.ui.card.light-gray,
+.ui.cards > .card.light-gray {
+    background-color: #f4f4f4;
+    box-shadow: none;
+}
+
+.ui.card.light-gray:hover,
+.ui.cards > .card.light-gray:hover {
+    box-shadow: none;
+}
+
+.ui.card.white,
+.ui.cards > .card.white {
+    background-color: white;
+    box-shadow: none;
+}
+
+.ui.card.white:hover,
+.ui.cards > .card.white:hover {
+    box-shadow: none;
+}
+
+.ui.card.pale-red,
+.ui.cards > .card.pale-red {
+    background-color: #DBA9AC;
+    box-shadow: none;
+}
+
+.ui.card.pale-red:hover,
+.ui.cards > .card.pale-red:hover {
+    box-shadow: none;
+}
+
+.ui.card.pale-yellow,
+.ui.cards > .card.pale-yellow {
+    background-color: #DBCAA9;
+    box-shadow: none;
+}
+
+.ui.card.pale-yellow:hover,
+.ui.cards > .card.pale-yellow:hover {
+    box-shadow: none;
+}
+
+.big.card {
+    min-height: 25em;
+    min-width: 25em;
+    height: 25em;
+    width: 25em;
+}
+
+.ui.cards > .big.card > .content {
+    padding: 2em;
+}
+
+.ui.cards > .big.card h4 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+.ui.cards > .big.card .text p {
+    padding-top: 2em;
+}
+
+.ui.cards > .title.card {
+    border-radius: 0;
+}
+
+.ui.cards > .title.card h3 {
+    font-size: 1.285rem;
+    letter-spacing: 0.5px;
+    text-transform: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ui.cards > .tiny.card {
+    height: 9em;
+    width: 10em;
+    min-height: 9em;
+    min-width: 10em;
+    margin: 6px;
+}
+
+.ui.cards > .tiny.card > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui.cards > .tiny.card > .content > .description {
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.ui.cards > .small.card {
+    height: 13.5em;
+    width: 13.5em;
+    min-height: 13.5em;
+    min-width: 13.5em;
+    margin: 6px;
+}
+
+.ui.cards > .small.card > .content {
+    padding: 0.5em 1em;
+}
+
+.ui.cards > .small.card > .content.center.aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.ui.cards > .small.card > .content.center.aligned img{
+    padding-bottom: 30px;
+}
+
+.ui.cards > .small.card > .content .text p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.ui.cards:first-child > .small.card:first-child {
+    margin-left: 12px;
+}
+
+.ui.cards > .taller.card {
+    height: 18.75em;
+}
+
+.ui.cards > .card > .content {
+    border-top: none;
+}
+
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+.ui.cards > .card .description p{
+    font-size: 1em;
+    font-weight: 200;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.375em;
+}
+
+.ui.cards .big.card .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui.cards .extra.content {
+    align-self: end;
+    margin: auto 0 0 auto;
+}
+
+.ui.cards > .card.flip {
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    z-index: 1;
+    perspective: 30em;
+}
+
+.card--front {
+    min-height: 100%;
+    z-index: 100;
+    backface-visibility: hidden;
+}
+
+.card--back {
+    z-index: 80;
+    transform: rotateY(180deg);
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: none;
+}
+
+.active {
+    transform: rotateY(180deg);
+}
+
+.active .card--front {
+    z-index: 100;
+    visibility: collapse !important;
+}
+
+.active .card--back {
+    display: block;
+    visibility: visible;
+    z-index: 120;
+}
+
+.ui.container .header a {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    color: black;
+}
+
+.ui.container .header a h2 {
+    margin-right: 0.5em;
+    border-bottom: 2px dotted #69c3aa;
+}
+
+.ui.container .header a h2:hover {
+    border-bottom: 2px solid #69c3aa;
+}
+
+.ui.container .header a img {
+    width: 1.5em;
+}
+.ui.container .header a img:hover {
+    filter: invert(70%) sepia(53%) saturate(297%) hue-rotate(113deg) brightness(90%) contrast(89%);
+}
+
+.ui.ordered.list,
+.ui.ordered.list .list,
+ol.ui.list,
+ol.ui.list ol {
+    color: black;
+    list-style: decimal;
+}
+
+.ui.list:first-child,
+ol.ui.list:first-child,
+ul.ui.list:first-child {
+    margin-top: 1em;
+}
+
+.ui.ordered.list .list > .item,
+.ui.ordered.list > .item,
+ol.ui.list li {
+    list-style: decimal;
+}
+
+.ui.ordered.list .list > .item::before,
+.ui.ordered.list > .item::before,
+ol.ui.list li::before {
+    content: "";
+}
+
+.ui .row.scrolling {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.ui .row.scrolling .column {
+    min-width: max-content;
+}
+
+.ui.card > .content::after, .ui.cards > .card > .content::after {
+    display: none;
+}
+
+.introduction p strong{
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* Landing Page - Specific Targets */
+
+#decisionGuide .green.card {
+    padding-top: 1em;
+    min-height: 20em;
+}
+
+#decisionGuide .green.card .header > h3 {
+    min-height: 2.5em;
+}
+
+#understandingDigitalIdentity h3 {
+    font-size: 0.75em;
+}
+
+#objectives .ui.cards > .small.card > .content.center.aligned {
+    padding-top: 2.5rem;
+    justify-content: flex-start;
+}
+
+#objectives .ui > .row.scrolling{
+    min-height: 280px;
+}
+
+#establishingTrust .ui.cards > .small.card > .content.center.aligned {
+    padding-top: 1.75em;
+    justify-content: start;
+}
+
+#appropriateRolesOfTheState .ui > .row.scrolling{
+    min-height: 255px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#appropriateRolesOfTheState .card.black {
+    width: auto;
+}
+
+#appropriateRolesOfTheState .content.center.aligned .text p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#technologicalDesignChoices .ui.cards {
+    flex-wrap: wrap;
+}
+
+#technologicalDesignChoices .card.black {
+    width: auto;
+}
+
+#technologicalDesignChoices .ui .row.scrolling{
+    min-height: 330px;
+}
+
+#technologicalDesignChoices .flip .content .description {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: bold;
+    font-size: 1.375em;
+    line-height: 1.5em;
+}
+
+#technologicalDesignChoices .tiny.card .content img {
+    width: 60px;
+    height: 60px;
+}
+
+#technologicalDesignChoices .content.card--front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#technologicalDesignChoices .content.card--front .extra.content {
+    margin: 0;
+}
+
+#technologicalDesignChoices .ui.centered.image {
+    margin: auto;
+}
+
+#policyDesignChoices .ui.cards > .card > .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+#governanceFramework .content img{
+    padding-bottom: 0;
+    padding-top: 1.5em;
+}
+
+#caseStudies .ui.cards > .small.card > .content .text p {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+#caseStudies .ui.cards > .small.card {
+    width: auto;
+    height: auto;
+    min-width: min-content;
+    min-height: min-content;
+}
+
+#caseStudies .ui.cards > .card.light-gray:hover {
+    background-color: #f4f4f4;
+}
+
+#caseStudies .ui.card .content img,
+#caseStudies .ui.cards>.card .content img {
+    box-shadow: -1px 2px 20px 0px #888888;
+}
+
+/* Other Pages */
+
+td.reference {
+    overflow-wrap: anywhere;
+}
+
+#establishingTrust-subpage .content h6 {
+    font-size: 1em;
+    letter-spacing: 0.32px;
+}
+
+#governanceFramework-subpage .card.black {
+    width: auto;
+}
+
+#governanceFramework-subpage .ui > .row:last-child{
+    min-height: 205px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#governanceFramework-subpage .ui.cards > .card {
+    min-width: 15em;
+}
+
+#governanceFramework-subpage .ui.cards:last-child > .row:last-child {
+    min-height: 330px;
+}
+
+#governanceFramework-subpage .ui .cards {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ui.table tr td {
+    border-top: none;
+}
+
+.ui.table tbody + tbody tr:first-child td {
+    border-top: none;
+}
+
+.ui.table .header td{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+    padding-left: 1em;
+}
+.ui.table tr:last-child th {
+    padding-bottom: 1em;
+}
+
+.ui.table tr:not(.header) td {
+    padding-bottom: 3em;
+    vertical-align: top;
+}
+
+.super.table.header {
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 1.375em;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: bold;
+    color: black;
+    line-height: 2em;
+
+    margin-bottom: 1.25em;
+}
+
+.super.table.header span {
+    text-align: center;
+    width: 30%;
+}
+
+.super.table.header span:not(:last-of-type) {
+    border-right: 2px solid var(--high);
+}
+
+.identity-artifacts .super.table.header span {
+    width: 45%;
+}
+
+.factor {
+    font-family: "IBM Plex Serif", serif;
+    margin-bottom: 1.25em;
+}
+
+.factor .header {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    color: black;
+    padding: 0.4em 0 !important;
+    text-transform: capitalize;
+    text-align: center;
+
+    margin-bottom: 1em;
+}
+
+.comparison.table {
+    font-family: "IBM Plex Serif", serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comparison.table .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+
+    width: 30%;
+}
+
+.comparison.table .item .header {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4em 0;
+}
+
+.identity-artifacts .comparison.table .item {
+    width: 45%;
+}
+
+.header.gray {
+    background-color: var(--gray);
+}
+
+.header.low {
+    background-color: var(--low);
+}
+
+.header.medium {
+    background-color: var(--medium);
+}
+
+.header.high {
+    background-color: var(--high);
+}
+
+#technologicalChoices-subpage .breakout h3 {
+    font-size: 0.875rem;
+}
+
+#technologicalChoices-subpage .breakout p {
+    font-size: 0.875em;
+}
+
+#technologicalChoices-subpage .breakout img {
+    margin-top: 1em;
+}
+
+#technologicalChoices-subpage .cards > .card {
+    flex-direction: column;
+    align-items: center;
+}
+
+#technologicalChoices-subpage .cards > .card:nth-child(2) p {
+    width: 70%;
+}
+
+#technologicalChoices-subpage .ui.card, .ui.cards > .card {
+    width: 100%;
+}
+
+#breakoutB .seven.column .cards > .card p {
+    width: 50%;
+}
+
+#breakoutB .fifteen.column .cards > .card p {
+    width: 30%;
+}
+
+#technologicalChoices-subpage table {
+    font-family: "Fira Sans", sans-serif;
+    border-spacing: 1em 0;
+    border-collapse: collapse;
+}
+
+#technologicalChoices-subpage .ui.table tr:not(.header) td {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#technologicalChoices-subpage table th {
+    padding-top: 1em;
+    color: #68B699;
+}
+
+#technologicalChoices-subpage table tr {
+    border-bottom: 0.5px solid #787573;
+}
+
+#technologicalChoices-subpage table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#technologicalChoices-subpage table tbody tr td,
+#technologicalChoices-subpage table tbody tr th{
+    vertical-align: middle;
+}
+
+#technologicalChoices-subpage table img {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#technologicalChoices-subpage .footnote tr {
+    border: none;
+}
+
+#technologicalChoices-subpage .footnote table tbody tr td {
+    vertical-align: initial;
+}
+
+#respondingToCybersecurityThreatsFailures .ui .row.scrolling {
+    height: 380px;
+    max-height: 380px;
+    overflow-y: hidden;
 }

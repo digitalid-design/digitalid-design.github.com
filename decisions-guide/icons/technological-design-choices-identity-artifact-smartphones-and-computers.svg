@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Group_4000" data-name="Group 4000" transform="translate(-1680 -4222)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="37.275" cy="37.275" r="37.275" transform="translate(1680.104 4222.451)" fill="#fff"/>
+    <g id="Group_2872" data-name="Group 2872" transform="translate(1680 4222)">
+      <rect id="Rectangle_556" data-name="Rectangle 556" width="75" height="74.653" transform="translate(0)" fill="none"/>
+      <g id="Group_2803" data-name="Group 2803" transform="translate(22 10.281)">
+        <g id="phone-portrait-outline">
+          <path id="Path_2513" data-name="Path 2513" d="M14.915,1.125H34.632a5.691,5.691,0,0,1,5.915,5.437v43.5A5.691,5.691,0,0,1,34.632,55.5H14.915A5.691,5.691,0,0,1,9,50.059V6.562A5.691,5.691,0,0,1,14.915,1.125Z" transform="translate(-9 -1.125)" fill="none" stroke="#7ebfab" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Path_2514" data-name="Path 2514" d="M12.375,1.125H15.6a.98.98,0,0,1,1.077.836h0a1.958,1.958,0,0,0,2.153,1.67h8.611A1.958,1.958,0,0,0,29.6,1.961h0a.98.98,0,0,1,1.077-.836h3.23" transform="translate(-7.365 -1.125)" fill="none" stroke="#7ebfab" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <circle id="Ellipse_368" data-name="Ellipse 368" cx="2.28" cy="2.28" r="2.28" transform="translate(13.38 44.339)" fill="#7ebfab"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Group_3996" data-name="Group 3996" transform="translate(-1348 -4222)">
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="37.448" cy="37.275" rx="37.448" ry="37.275" transform="translate(1348.104 4222.451)" fill="#fff"/>
+    <g id="Group_2871" data-name="Group 2871" transform="translate(1348 4222)">
+      <rect id="Rectangle_552" data-name="Rectangle 552" width="74.896" height="74.549" transform="translate(0)" fill="none"/>
+      <g id="chip" transform="translate(11 10.862)">
+        <path id="Path_2511" data-name="Path 2511" d="M12.375,12.375V32.221H32.221V12.375ZM28.252,28.252H16.344V16.344H28.252Z" transform="translate(5.487 5.487)" fill="#7ebfab"/>
+        <path id="Path_2512" data-name="Path 2512" d="M57.819,24.081V20.112H49.881V14.158a3.969,3.969,0,0,0-3.969-3.969H39.958V2.25H35.989v7.938H24.081V2.25H20.112v7.938H14.158a3.969,3.969,0,0,0-3.969,3.969v5.954H2.25v3.969h7.938V35.989H2.25v3.969h7.938v5.954a3.969,3.969,0,0,0,3.969,3.969h5.954v7.938h3.969V49.881H35.989v7.938h3.969V49.881h5.954a3.969,3.969,0,0,0,3.969-3.969V39.958h7.938V35.989H49.881V24.081ZM45.912,45.912H14.158V14.158H45.912Z" transform="translate(-2.25 -2.25)" fill="#7ebfab"/>
+      </g>
+    </g>
+  </g>
+</svg>

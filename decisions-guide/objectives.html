@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Governing ID: A Framework for Evaluation of Digital Identity | Digital Identities: Design and Uses | A project of the Centre for Internet and Society, India, supported by Omidyar Network India" />
+    <!-- Title + CSS + Favicon -->
+    <title>Digital Identities: Design and Uses</title>
+    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/post.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c415b9185.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Top Navigation Bar -->
+<div class="green nav-top">
+    <div class="ui container">
+        <a href="../index.html">Home</a> /
+        <a href="./index.html#decisionGuide">Decision Guide</a> /
+        <a href="./index.html#understandingDigitalIdentity">Understanding Digital Identity</a> /
+        <a href="./index.html#objectives">
+            <span id="inactive">
+            Objectives
+            </span>
+        </a> /
+        <a href="./index.html#appropriateRolesOfTheState">Appropriate Roles Of Actors</a> /
+        <a href="./index.html#establishingTrust">Establishing Trust</a> /
+        <a href="./index.html#technologicalDesignChoices">Technological Design Choices</a> /
+        <a href="./index.html#policyDesignChoices">Policy Design Choices</a> /
+        <a href="./index.html#governanceFramework">Governance Framework</a> /
+        <a href="./index.html#respondingToCybersecurityThreatsFailures">Responding To Cybersecurity Threats & Failures</a> /
+        <a href="./index.html#caseStudies">Case Studies</a>
+    </div>
+</div>
+
+<div class="space5"></div>
+
+<!-- Content -->
+<div class="white" id="#objectives">
+    <div class="ui container two column stackable grid">
+        <div class="six wide column"></div>
+        <div class="ten wide column post-title">
+            <h2>Objectives</h2>
+        </div>
+
+        <div class="five wide column meta">
+            <p><em>Research and Writing by</em> Yesha Tshering Paul <br/><i>and</i> Anubha Sinha </p>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content introduction">
+            <p><strong>
+                Digital ID solutions are often vendor-driven, where a particular vision of technological specification dominates the process of designing the identification system. This is not ideal as it treats the identification system, or rather a pre-decided version of the identification system itself, as the end goal.
+            </strong></p>
+            <p>The process of designing a digital ID system must begin with its objectives. It must analyse the existing identification system and the desirable purposes it does not adequately meet. All these identified purposes for the use of the identification system must correspond to a legitimate aim identified in the valid law.</p>
+            <p>Some of the key objectives of a digital ID system are discussed below.</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>1</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="legal-identity"></a>
+            <h3>Legal identity </h3>
+            <p>The World Bank estimates that approximately 1 billion persons lack official proof of identity<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a>, with these undocumented populations being disproportionately concentrated in sub-Saharan Africa and South Asia, and amongst marginalised and vulnerable communities within these regions in particular. This is often due to many such countries having weak legacy systems for civil registration, a history of political turbulence that has resulted in civil registration records being destroyed or misused, or the State excluding certain classes of persons on the basis of religion, refugee status, or sexual or gender identity.</p>
+            <p>Digital ID has been posited as a way to address this, by providing proof of identity by modernising existing identity infrastructure and addressing the lack of a foundation of trust and accountability between the government and its citizens. Digital ID promises to provide a reliable and trustworthy identity to all, help overcome barriers to political and economic participation, and provide access to entitlements.</p>
+            <p>It is important, however, to delineate our understanding of a “legal” identity from a “digital” identity. While a technological solution promises seemingly obvious benefits, particularly to countries with large undocumented populations and limited resources, it cannot itself address the underlying political and structural issues that have actually caused these gaps in identification (in fact, it poses the danger of escalating them instead). Moreover, the sensitive data collected and stored by digital ID systems raises concerns around privacy and surveillance, and a potentially adverse impact on civil liberties. Many national digital ID programmes have been observed to resort to the collection of biometrics and other unnecessary data points<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a>, which bring about their own security issues and fear of misuse. These result in databases that are potential targets for cyberattacks, amplify exclusions, or aid in the targeting of already vulnerable communities.</p>
+            <p>Therefore, it is critical to reconsider whether digital ID should be pushed as the first-line solution to these issues. It is crucial to allow for multiple forms of identification (including non-digital), particularly keeping in mind infrastructural, political and other factors that may prevent persons from enrolling for digital ID or successfully authenticating their identities, and the adverse outcomes that have arisen from being locked out of these systems or databases being misused.</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>2</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="national-population-registers-and-determination-of-citizenship"></a>
+            <h3>National Population Registers and determination of citizenship</h3>
+            <p>While the stated aim of many digital ID system is to include undocumented populations and provide them access to government entitlements, many countries have witnessed these systems being weaponised to determine citizenship, resulting in exclusion of stateless persons, or those who do not have access to the required citizenship documents.</p>
+            <p>In Kenya, a major concern raised by the Huduma Namba system was that evidence of citizenship would be tied to the new system, raising concerns among border communities, refugees and ethnic minorities who have not been able to obtain proof of citizenship due to systemic barriers in obtaining identification.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a></p>
+            <p>In India, the controversial National Register of Citizens (NRC) and National Population Register (NPR) are built on existing Aadhaar infrastructure<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> despite assurances to the contrary by the Ministry of Home Affairs.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> The forceful eviction of nearly 2 million persons who have resided in the border state of Assam for generations but did not have the required documentation<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> is just one example of the adverse impacts of determining citizenship on this basis.</p>
+        </div>
+
+
+        <div class="five wide column meta">
+            <h3>3</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="welfare"></a>
+            <h3>Welfare</h3>
+            <p>The Aadhaar (Targeted Delivery of Financial and other Subsidies, Benefits and Services) Act was passed in 2016. The Supreme Court in its Aadhaar judgment held that the aim of the Act was legitimate, noting that it was “aimed at offering subsidies, benefits or services to the marginalised sections of the society for whom such welfare schemes have been formulated from time to time” and “the objective of the Act is to plug the leakages and ensure that the fruits of welfare schemes reach the targeted population, for whom such schemes are actually meant."<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a></p>
+            <p>The implementation of digital ID systems for this purpose is meant to increase inclusion and access to entitlements, while also tackling welfare fraud. However, making a digital ID the sole means of accessing basic services disregards the many barriers that hamper enrollment and authentication, and the difficulties in obtaining ID by persons for whom these welfare schemes are often intended. In the absence of alternative forms of identification, this has resulted in beneficiaries being locked out of basic entitlements.</p>
+            <p>The use of digital ID to tackle corruption in these systems has also been contested, on the basis that is assumes that the biggest source of corruption is through claims by people who don’t exist, or by people who have enrolled twice and therefore claim more than they are entitled to. Digital ID fails to address other major  forms of fraud within welfare systems, such as quantity fraud.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a> While estimates vary, one survey concluded that as much as 88% of ration cards that were deleted because they were not seeded with Aadhaar belonged to genuine non-ghost households.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> This highlights the high exclusion costs in pursuit of plugging leakages in welfare delivery systems. </p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>4</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="access-and-onboarding-to-private-services"></a>
+            <h3>Access and onboarding to private services</h3>
+            <p>In addition to accessing public services, many digital ID systems are being adopted by private actors (including essential services such as banking and telecommunications) for purposes such as KYC and anti-money laundering. Digital ID is seen as a way to provide verification and authentication to a high degree of assurance, ensure uniqueness of each customer, and ensure that the customer provides individual consent, their privacy is protected, and they maintain complete control over their personal data. Industry estimates project that it could have the potential to help countries unlock a value equivalent to 3 to 13 percent of GDP by 2030.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a></p>
+            <p>A survey of digital ID systems across 10 countries in Africa has found that most digital ID systems have few regulatory controls over access to data by private actors, allowing sensitive data to be accessed without any oversight.<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> In addition to this, there are concerns about digital ID being made mandatory to access these services.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> Being locked out of accessing basic banking and telecom services denies persons the opportunity to participate meaningfully in the economy, since these are essential for their daily existence as well.</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>5</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="voter-fraud-concerns"></a>
+            <h3>Voter fraud concerns </h3>
+            <p>Attempts to combat voter fraud involve making voter ID requirements increasingly strict. However, this has been shown to disproportionately affect minority communities, often as a deliberate attempt to systematically exclude certain sections of the population from voting.</p>
+            <p>In India, almost 3 million voters had their names struck off electoral rolls in the state of Telangana in 2015 after ​​the then chief electoral officer of the state began linking Aadhaar data with election photo identity card (EPIC) or voter ID under the National Electoral Roll Purification and Authentication Programme (NERPAP), in order to weed out duplicate and bogus voters. This also highlighted that ​​the state government had collected sensitive data such as caste and religion under the State Resident Data Hub (SRDH), which is an Aadhaar-seeded repository of information consolidated from multiple government databases.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> Despite this, the Election Commission of India recently mooted a proposal to link Aadhaar records with voter IDs and faced widespread criticism on the grounds that this would actually cause mass disenfranchisement and increase voter fraud (with self-reported errors in Aadhaar higher than that in the voter ID database). The additional introduction of biometric authentication for voting would cause additional exclusions, and linking of these two databases would result in demographic information from Aadhaar being linked to the voter database, increasing the likelihood of voter profiling and violating the fundamental right to privacy. This is illustrative of the need to keep databases separate, and allow for different forms of ID for different purposes.</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>6</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="national-security"></a>
+            <h3>National security</h3>
+            <p>Because of the high levels of assurance for identity verification and authentication that it claims to provide, digital ID has also been touted as a solution to address national security concerns - to prevent cyberattacks, ransomware attacks and identity fraud by adversaries.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a></p>
+            <p>However, this requires a comprehensive regulatory and accountability framework to govern the use of personal data, strict identity checks at the time of enrollment, robust security features, and transparency in the role of foreign players in the ecosystem. Many of these conditions are often not met, resulting in digital IDs in many countries not being conclusive proof of identity, residence or citizenship. Moreover, data protection laws usually grant an exemption in cases of ‘national security’, but the term itself is often broadly or not at all defined in statutory law. This opens up major avenues for abuse of sensitive personal data in the absence of any oversight, accountability or means for recourse. As with all such surveillance and profiling in the name of national security, this will inevitably impact the fundamental freedoms of communities that are considered to be ‘threats’ by the State.</p>
+        </div>
+
+        <div class="five wide column meta">
+            <h3>7</h3>
+        </div>
+        <div class="one wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <a name="handling-covid-19"></a>
+            <h3>Handling COVID-19</h3>
+            <p>The COVID-19 pandemic and the ensuing difficulties in claiming benefits, receiving vaccinations, the need for digital payment solutions and e-services, and the push for digital vaccine passports to resume international travel resulted in a worldwide push for various forms of digital ID.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a></p>
+            <p>The shortage of vaccines faced by many countries in the global south was exacerbated by enrollment for vaccination programmes sometimes being completely digital, and often linked to possession of a national digital ID. This led to many sections of the population without documentation or access to the internet being denied access to vaccines in a critical situation that required as many people to be vaccinated as quickly as possible. </p>
+            <p>In India, despite Aadhaar not being mandatory in order to get vaccinated, many patients have complained that hospitals have rejected other official forms of identification and demanded Aadhaar for registration instead.<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> India also witnessed many instances of patients in need of critical COVID care being denied admittance to hospitals in the absence of an Aadhaar card.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a></p>
+        </div>
+
+    </div>
+
+    <div class="ui container two column stackable grid">
+        <div class="six wide column" id="empty">
+        </div>
+        <div class="ten wide column content">
+            <h3>Notes</h3>
+            <br/>
+            <table class="footnote">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="reference">
+                        <a name="fn1"></a>
+                        Global Identification Challenge by the Numbers (2018), <a href="https://id4d.worldbank.org/global-dataset/visualization" target="_blank">https://id4d.worldbank.org/global-dataset/visualization</a>
+                        <span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="reference"><a name="fn2"></a>
+                        While challenging the introduction of the Huduma Namba system before the High Court of Kenya, the Petitioners argued that the expanded definition of ‘biometrics’ (which includes ‘unique identifiers or attributes including fingerprints, hand geometry, earlobe geometry, retina and iris patterns, voice waves and Deoxyribonucleic Acid in digital form’) and GPS coordinates were intrusive and unnecessary. Similarly, Ghana collects more than 30 data points about an individual <i>(Akuetteh Falconer & Odoru-Morfo, 2021)</i>, and Lesotho collects around 23 <i>(Pule, 2021)</i>.&nbsp;
+                        <span class="internal-nav"><a href="#ref2">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="reference"><a name="fn3"></a>
+                        Digital Identity in Kenya: Case study conducted as part of a ten-country exploration of socio-digital ID systems in parts of Africa (November 3, 2021), <a href="https://digitalid.design/RIA%20docs/CIS_DigitalID_RIA_Kenya_31.10.21.pdf" target="_blank">https://digitalid.design/RIA%20docs/CIS_DigitalID_RIA_Kenya_31.10.21.pdf</a>
+                        <span class="internal-nav"><a href="#ref3">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="reference"><a name="fn4"></a>
+                        Srinivas Kodali, “Digital India on Steroids: How Aadhaar Infra Enables the NPR and the NRC”, <i>The Wire</i>, December 24, 2019, <a href="https://thewire.in/tech/aadhaar-infra-npr-nrc" target="_blank">https://thewire.in/tech/aadhaar-infra-npr-nrc</a>
+                        <span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="reference"><a name="fn5"></a>
+                        Dheeraj Mishra, “Exclusive: Official File Notings on NPR and Aadhaar Contradict Home Ministry Assurances”, <i>The Wire</i>, January 16, 2020, <a href="https://thewire.in/government/exclusive-npr-aadhaar-home-ministry" target="_blank">https://thewire.in/government/exclusive-npr-aadhaar-home-ministry</a>
+                        <span class="internal-nav"><a href="#ref5">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
+                    <td class="reference"><a name="fn6"></a>
+                        “India excludes nearly 2 million people from Assam citizen list”, <i>Al Jazeera</i>, August 31, 2019, <a href="https://www.aljazeera.com/news/2019/8/31/india-excludes-nearly-2-million-people-from-assam-citizen-list" target="_blank">https://www.aljazeera.com/news/2019/8/31/india-excludes-nearly-2-million-people-from-assam-citizen-list</a>
+                        <span class="internal-nav"><a href="#ref6">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">7</td>
+                    <td class="reference"><a name="fn7"></a>
+                        <i>(2019) 1 SCC 1</i>, paras 314, 373.
+                        <span class="internal-nav"><a href="#ref7">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">8</td>
+                    <td class="reference"><a name="fn8"></a>
+                        Reetika Khera, “Impact of Aadhaar in Welfare Programmes”, September 29, 2017, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3045235" target="_blank"> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3045235</a>
+                        <span class="internal-nav"><a href="#ref8">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">9</td>
+                    <td class="reference"><a name="fn9"></a>
+                        Karthik Muralidharan et al., “Identity Verification Standards in Welfare Programs: Experimental Evidence from India”, Working Paper 26744, <i>NBER Working Paper Series</i> (2021), <a href="https://www.nber.org/papers/w26744" target="_blank">https://www.nber.org/papers/w26744</a>
+                        <span class="internal-nav"><a href="#ref9">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">10</td>
+                    <td class="reference"><a name="fn10"></a>
+                        Digital identification: A key to inclusive growth, April 17, 2019, <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/digital-identification-a-key-to-inclusive-growth" target="_blank">https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/digital-identification-a-key-to-inclusive-growth</a>
+                        <span class="internal-nav"><a href="#ref4">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">11</td>
+                    <td class="reference"><a name="fn11"></a>
+                        Towards the Evaluation of Socio-Digital ID Ecosystems in Africa: Comparative analysis of findings from ten country case studies, November 2021, <a href="https://digitalid.design/RIA%20docs/CIS_DigitalID_RIA_Comparative%20Report_5.11.21.pdf" target="_blank">https://digitalid.design/RIA%20docs/CIS_DigitalID_RIA_Comparative%20Report_5.11.21.pdf</a>
+                        <span class="internal-nav"><a href="#ref11">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">12</td>
+                    <td class="reference"><a name="fn12"></a>
+                        Digital Identity in Lesotho: Case study conducted as part of a ten-country exploration of socio-digital ID systems in parts of Africa (November 3, 2021), <a href="https://digitalid.design/RIA_Lesotho.html" target="_blank">https://digitalid.design/RIA_Lesotho.html</a>
+                        Digital Identity in Uganda: Case study conducted as part of a ten-country exploration of socio-digital ID systems in parts of Africa (November 3, 2021), <a href="https://digitalid.design/RIA_Uganda.html" target="_blank">https://digitalid.design/RIA_Uganda.html</a>
+                        <span class="internal-nav"><a href="#ref12">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">13</td>
+                    <td class="reference"><a name="fn13"></a>
+                        Yunus Y. Lasania, “Telangana voter deletion: Activists seek details of Aadhaar-Voter Iinkage”, <i>Mint</i>, February 25, 2019, <a href="https://www.livemint.com/politics/news/telangana-voter-deletion-activists-seek-details-of-aadhaar-voter-id-linkage-1551093961654.html" target="_blank">https://www.livemint.com/politics/news/telangana-voter-deletion-activists-seek-details-of-aadhaar-voter-id-linkage-1551093961654.html</a>
+                        <span class="internal-nav"><a href="#ref13">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">14</td>
+                    <td class="reference"><a name="fn14"></a>
+                        “Digital Identity is a National Security Issue”, War on the Rocks, last accessed November 12, 2021. <a href="https://warontherocks.com/2021/04/digital-identity-is-a-national-security-issue/" target="_blank">https://warontherocks.com/2021/04/digital-identity-is-a-national-security-issue/</a>
+                        <span class="internal-nav"><a href="#ref14">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">15</td>
+                    <td class="reference"><a name="fn15"></a>
+                        Mohamed Dabo, “Digital ID systems take centre stage as the world shuns physical contact”, <i>Electronic Payments International</i>, September 15, 2020, <a href="https://www.electronicpaymentsinternational.com/news/digital-id-systems-take-centre-stage-as-the-world-shuns-physical-contact/" target="_blank">https://www.electronicpaymentsinternational.com/news/digital-id-systems-take-centre-stage-as-the-world-shuns-physical-contact/</a>
+                        <span class="internal-nav"><a href="#ref15">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">16</td>
+                    <td class="reference"><a name="fn16"></a>
+                        Sunitha Rao R, “Bengaluru: Why hospitals insist on Aadhaar to register citizens for vaccination”, <i>The Times of India</i>, April 4, 2021, <a href="https://timesofindia.indiatimes.com/city/bengaluru/why-hospitals-insist-on-aadhaar-to-register-citizens-for-vaccination/articleshow/81895866.cms" target="_blank">https://timesofindia.indiatimes.com/city/bengaluru/why-hospitals-insist-on-aadhaar-to-register-citizens-for-vaccination/articleshow/81895866.cms</a>
+                        <span class="internal-nav"><a href="#ref16">&uarr;</em></a></span></td>
+                </tr>
+                <tr>
+                    <td class="number">17</td>
+                    <td class="reference"><a name="fn17"></a>
+                        “Bengaluru hospitals demand Aadhaar details, patient dies”, <i>The New Indian Express</i>, August 18, 2020, <a href="https://www.newindianexpress.com/cities/bengaluru/2020/aug/18/bengaluru-hospitals-demand-aadhaar-details-patient-dies-2184858.html" target="_blank">https://www.newindianexpress.com/cities/bengaluru/2020/aug/18/bengaluru-hospitals-demand-aadhaar-details-patient-dies-2184858.html</a>
+                        <span class="internal-nav"><a href="#ref17">&uarr;</em></a></span></td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="ui container four column stackable grid">
+        <div class="six wide column">
+            <h1>Digital Identities: Design and Uses</h1>
+            <p>This website presents research undertaken by <a href="http://cis-india.org/" target="_blank">the Centre for Internet and Society, India</a> on appropriate design choices for digital identity frameworks, and their implications for both the sustainable development agenda as well for civil, social and economic rights. This research is supported by a grant from <a href="https://www.omidyarnetwork.in/" target="_blank">Omidyar Network India</a>.</p>
+            <p>Designed by Pooja Saxena, Saumyaa Naidu<br/>
+                Illustration by Akash Sheshadri<br/>
+                Developed by Sumandro Chattapadhyay, Tanvi Bhakta<br />
+                <br />
+                Built using <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> and <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a><br/>
+                <a href="https://fonts.google.com/specimen/Fira+Sans" target="_blank">Fira Sans</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Serif" target="_blank">IBM Plex Serif</a> by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br/>
+                Social media icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a><br/>
+                This website uses icons from <a href="https://thenounproject.com/" target="_blank">The Noun Project</a><br/>
+                Hosted on <a href="https://github.com/digitalid-design/digitalid-design.github.com" target="_blank">GitHub</a></p>
+            <p>Copyright: <a href="http://cis-india.org/" target="_blank">CIS, India</a>, 2019<br />License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International</a></p>
+        </div>
+        <div class="three wide column team">
+            <h1>Team</h1>
+            <p>Akash Sheshadri</p>
+            <p>Amber Sinha</p>
+            <p>Anubha Sinha</p>
+            <p>Divyank Katira</p>
+            <p>Pooja Saxena</p>
+            <p>Saumyaa Naidu</p>
+            <p>Shruti Trikanad</p>
+            <p>Yesha Tshering Paul</p>
+        </div>
+        <div class="three wide column contributors">
+            <h1>Contributors</h1>
+            <p>Aparna Chivukula</p>
+            <p>Kushang Mishra</p>
+            <p>Nikil Augustine</p>
+            <p>Prakriti Singh</p>
+            <p>Pranav MB</p>
+            <p>Sumandro Chattapadhyay</p>
+            <p>Sunil Abraham</p>
+            <p>Vrinda Bhandari</p>
+        </div>
+        <div class="four wide column">
+            <div>
+                <a href="https://cis-india.org/" target="_blank" style="border-bottom: 0px solid"><img src="../img/logo.png" alt="The Centre for Internet and Society, India" class="logo" /></a>
+            </div>
+            <div class="icons">
+                <a href="https://twitter.com/cis_india" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a href="https://www.instagram.com/cis.india/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a> <a href="https://www.youtube.com/channel/UC0SLNXQo9XQGUE7Enujr9Ng" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
