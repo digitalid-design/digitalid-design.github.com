@@ -767,6 +767,13 @@ ol.ui.list li::before {
     line-height: 1.5em;
 }
 
+#technologicalDesignChoices .taller.card .text {
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
 #technologicalDesignChoices .tiny.card .content img {
     width: 60px;
     height: 60px;
