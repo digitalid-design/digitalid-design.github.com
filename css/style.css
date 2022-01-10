@@ -1030,6 +1030,10 @@ td.reference {
     vertical-align: middle;
 }
 
+#technologicalChoices-subpage td.number {
+    vertical-align: top;
+}
+
 #technologicalChoices-subpage table img {
     display: block;
     margin-bottom: 0.5em;
