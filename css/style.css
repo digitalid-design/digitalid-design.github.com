@@ -1043,6 +1043,11 @@ td.reference {
     vertical-align: initial;
 }
 
+#technologicalChoices-subpage i {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+}
+
 #respondingToCybersecurityThreatsFailures .ui .row.scrolling {
     height: 380px;
     max-height: 380px;
