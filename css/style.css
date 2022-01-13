@@ -1061,15 +1061,15 @@ td.reference {
 
 @media only screen and (max-width:767px) {
 
-    .banner-image {
+    .decisions-guide .banner-image {
         margin-top: 8rem;
     }
 
-    .site-title {
+    .decisions-guide .site-title {
         top: 12rem;
     }
 
-    .site-desc {
+    .decisions-guide .site-desc {
         top: 20rem;
     }
 
