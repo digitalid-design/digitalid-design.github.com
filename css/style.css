@@ -1059,6 +1059,10 @@ td.reference {
     overflow-y: hidden;
 }
 
+.cybersecurity-image {
+    font-family: "Fira Sans", sans-serif;
+}
+
 @media only screen and (max-width:767px) {
 
     .decisions-guide .banner-image {
