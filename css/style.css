@@ -1067,6 +1067,8 @@ td.reference {
 
     .arrow-padding {
         padding-top: 2rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
