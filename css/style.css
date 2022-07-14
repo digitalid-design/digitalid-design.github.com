@@ -1063,6 +1063,23 @@ td.reference {
     font-family: "Fira Sans", sans-serif;
 }
 
+@media only screen and (min-width:900px) {
+
+    .arrow-padding {
+        padding-top: 2rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .arrow-padding {
+        display: inline-flex !important;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width:767px) {
 
     .decisions-guide .banner-image {
